@@ -60,4 +60,60 @@
          }
       }
    }
+   &__lstcont{
+
+   }
+   &__lst{
+      list-style: disc inside;
+      color: @blue--green;
+      line-height: 1.62;
+      margin-top: 20px;
+   }
+   &__lsttitle{
+      display: inline-block;
+      .default--font();
+      color: @blue--green;
+   }
+   &__lstdesc{
+      margin-left: 23px;
+      .default--font();
+      margin-top: 5px;
+   }
+   &--headingwithbr{
+      border-top: solid 1px @blue--green;
+      padding-top: 20px;
+   }
+   &--scdrylayout{
+      background: rgba(2, 131, 124, 0.1);
+      padding: 25px;
+   }
+   &__scndlistcont{
+      margin-top: 20px;
+   }
+   &__scndlist{
+      list-style: disc inside;
+      .default--font();
+      line-height: 1.62;
+   }
+   &--scndheading{
+      .default--font();
+      font-size: 20px;
+      color: @blue--green;
+      .ricsartcf{
+         &__bigfont{
+            font-size: 20px!important;
+            line-height: 1.31;
+            margin-right: 0px;
+         }
+      }
+   }
+}
+.ricsarttbl{
+   &__headingcont{
+      margin-top: 70px;
+      background: @blue--green;
+      padding: 20px;
+      .default--font();
+      color: @ricswhite;
+   }
 }

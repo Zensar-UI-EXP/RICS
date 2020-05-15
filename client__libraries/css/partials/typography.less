@@ -101,8 +101,11 @@ a {
    margin: 0 15px;
    float: left;
    &--search{
+      width: 34px;
       background: url(/dam/images/icon__search__2x.png) no-repeat transparent;
       background-size: contain;
+      height: 34px;
+      margin-top: -8px;
    }
    &--play{
       background: url(/dam/images/video__play.svg) no-repeat transparent;
@@ -140,6 +143,9 @@ a {
       &--30{
          margin-bottom: 30px!important;
       }
+      &--50{
+         margin-bottom: 50px!important;
+      }
    }
    &-rht{
       &--0{
@@ -163,6 +169,16 @@ a {
       &--end{
          align-self: flex-end!important;
       }
+      &--ctr{
+         align-self: center!important;
+      }
+   }
+}
+.jus{
+   &-cnt{
+      &--spcard{
+         justify-content: space-around!important;
+      }
    }
 }
 .fnt{
@@ -175,6 +191,9 @@ a {
       &--oswald{
          font-family: @Modus;
       }
+      &--jornal{
+         font-family: @Journals;
+      }
    }
    &-clr{
       &--chrgry{
@@ -182,6 +201,14 @@ a {
       }
       &--trgrn{
          color: @true--green!important;
+      }
+      &--blgrn{
+         color: @blue--green!important;
+      }
+   }
+   &-wt{
+      &--smbld{
+         font-weight: @semi--bold;
       }
    }
 }
@@ -239,6 +266,9 @@ a {
       &--0{
          border-top: 0;
       }
+      &--blgrn{
+         border-top: solid 1px @blue--green;
+      }
    }
 }
 .dis{
@@ -278,4 +308,58 @@ a {
 @keyframes fading{
    0%    {opacity:0}
    100%  {opacity:1}
+}
+.bg{
+   &--blgrnwithopct{
+      background: rgba(2, 131, 124, 0.1);
+   }
+}
+.fnt-fmly--jornal{
+   .ricsartcf{
+      &__bigfont{
+         font-size: 24px;
+         line-height: 1.31;
+         margin-right: 0px;
+      }
+   }
+}
+.tbl{
+   position: relative;
+   &__tbl{
+      background: @verylight--pinktwo;
+      border-collapse: collapse;
+      border-top: solid 3px @ricsblack;
+   }
+   &__headcol, &__bodycol{
+      padding: 20px;
+      border: solid 1px @ricsblack;
+      .default--font();
+   }
+   &__headcol{
+      font-weight: bold;
+   }
+   &__leftline{
+      width: 1px;
+      position: absolute;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: @verylight--pinktwo;
+   }
+   &__rightline{
+      width: 2px;
+      position: absolute;
+      height: 100%;
+      right: 0;
+      top: 0;
+      background: @verylight--pinktwo;
+   }
+   &__bottomline{
+      height: 1px;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background: @verylight--pinktwo;
+   }
 }

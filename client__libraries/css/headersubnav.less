@@ -7,18 +7,23 @@
 
 .ricssubnav{
    border-top: solid 1px @ricsblack;
+   box-shadow: 0 4px 4px 0 rgba(212, 209, 209, 0.2);
    &__submenunav{
       width: 100%;
-      padding: 14px 0;
+      padding: 0 0;
       flex-direction: row;
    }
    &__submenulistcont{
       display: flex;
    }
    &__submenulist{
-      padding: 0 17px;
+      padding: 14px 17px;
+      line-height: 1.38;
       position: relative;
       &:hover{
+         .ricssubnav__submenulink{
+            font-weight: bold;
+         }
          .ricssubnav__drpdwnlistcont{
             display: block;
          }
@@ -26,7 +31,6 @@
    }
    &__submenulink{
       .default--font();
-      line-height: 1.38;
       color: @ricsblack;
    }
    &--submenulinkactive{
@@ -36,8 +40,10 @@
       position: absolute;
       box-shadow: 0 3px 4px 0 rgba(143, 143, 143, 0.5);
       left: 0;
-      top: 30px;
+      top: 50px;
       display: none;
+      z-index: 1;
+      background: @light--white;
    }
    &__drpdwnlist{
       padding: 10px;
