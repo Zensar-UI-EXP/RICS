@@ -1,0 +1,59 @@
+@import "./partials/reset.less";      // Normalize
+@import "./partials/grid.less";       // This is a modified version of the Bootstrap grid to account for MWF breakpoints and
+@import "./partials/fonts.less";      // Decalaring fonts per MWF guidelines
+@import "./partials/typography.less"; // Declaring all typography
+
+.ricsfooter{
+   background: @light--white;
+   padding: 60px 0;
+   &__left{
+      flex-direction: column;
+   }
+   &__heading{
+      .default--font();
+      font-size: 36px;
+      text-transform: uppercase;
+      margin: 20px 0 10px;
+   }
+   &__right{
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      flex-direction: column;
+   }
+   &__nav{
+      flex-direction: row;
+   }
+   &__logo{
+      width: 137px;
+      height: 48px;
+   }
+   &__logolink{
+      width: 100%;
+      float: left;
+      height: 100%;
+      text-indent: -99999em;
+      background: url(/dam/images/rics__greylogo.svg) no-repeat transparent;
+   }
+   &__navlistcont{
+      display: flex;
+      justify-content: flex-end;
+   }
+   &__navlist{
+      padding: 0px 10px;
+      line-height: 2.14!important;
+      .default--font();
+      color: @charcoal--grey;
+      font-size: 10px;
+      &:first-child{
+         padding-left: 0;
+      }
+      &:last-child{
+         padding-right: 0;
+      }
+   }
+   &__navlink{
+      .default--font();
+      font-size: 12px;
+   }
+}

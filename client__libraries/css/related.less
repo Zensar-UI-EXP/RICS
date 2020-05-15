@@ -1,0 +1,99 @@
+// All imported SCSS partials
+
+@import "./partials/reset.less";      // Normalize
+@import "./partials/grid.less";       // This is a modified version of the Bootstrap grid to account for MWF breakpoints and
+@import "./partials/fonts.less";      // Decalaring fonts per MWF guidelines
+@import "./partials/typography.less"; // Declaring all typography
+
+.ricsrltopics{
+   &__heading{
+      .default--font();
+      font-size: 25px;
+      line-height: 2.8;
+      border-bottom: solid 1px @ricsblack;
+      width: 100%;
+   }
+   &__tagcont{
+      padding-top: 70px;
+      padding-bottom: 70px;
+   }
+   &__tag{
+      background: @very--lightpink;
+      .default--font();
+      line-height: 2.14;
+      letter-spacing: 0.58px;
+      text-align: center;
+      padding: 0 20px;
+      margin: 0 13px 13px 0!important;
+   }
+}
+.ricsrlart{
+   &__heading{
+      .default--font();
+      font-size: 25px;
+      line-height: 2.8;
+      border-bottom: solid 1px @ricsblack;
+      width: 100%;
+   }
+   &__cardlist{
+      padding: 25px 0 50px;
+   }
+   &__card{
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+      background: @ricswhite;
+      height: 100%;
+   }
+   &__cardimage{
+      width: 100%;
+      max-height: 235px;
+   }
+   &__carddetail{
+      padding: 30px;
+   }
+   &__cardlabel{
+      .default--font();
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1.67;
+      letter-spacing: 0.1px;
+      color: @ricsblack;
+      padding: 10px;
+      display: inline-block;
+   }
+   &__articleheading{
+      .default--font();
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 1.38;
+      margin: 20px 0;
+   }
+   &__articledate{
+      .default--font();
+      font-size: 16px;
+      line-height: 1.88;
+      margin-bottom: 50px;
+   }
+   &__tag{
+      background: @very--lightpink;
+      .default--font();
+      font-size: 12px;
+      line-height: 2.14;
+      letter-spacing: 0.58px;
+      text-align: center;
+      padding: 0 10px;
+      margin: 0 7px 0px 0!important;
+      display: inline-block;
+   }
+   &--bluelabel{
+      background: @ricsblue;
+   }
+   &__tagmore{
+      text-indent: -99999em;
+      border: dashed 1px @charcoal--grey;
+      width: 13px;
+      height: 2px;
+      display: inline-block;
+      position: relative;
+      top: 22px;
+   }
+}

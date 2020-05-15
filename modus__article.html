@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>RICS - Built Environment / Article Name</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/x-icon" href="dam/images/rics__logo.ico" />
+        <link rel="stylesheet/less" type="text/css" href="client__libraries/css/header.less" />
+        <link rel="stylesheet/less" type="text/css" href="client__libraries/css/headernav.less" />
+        <link rel="stylesheet/less" type="text/css" href="client__libraries/css/headersubnav.less" />
+        <link rel="stylesheet/less" type="text/css" href="client__libraries/css/breadcrumb.less" />
+        <link rel="stylesheet/less" type="text/css" href="client__libraries/css/banner.less" />
+        <link rel="stylesheet/less" type="text/css" href="client__libraries/css/imagetext.less" />
+        <link rel="stylesheet/less" type="text/css" href="client__libraries/css/artcf.less" />
+        <link rel="stylesheet/less" type="text/css" href="client__libraries/css/infographic.less" />
+        <link rel="stylesheet/less" type="text/css" href="client__libraries/css/related.less" />
+        <link rel="stylesheet/less" type="text/css" href="client__libraries/css/newsletter.less" />
+        <link rel="stylesheet/less" type="text/css" href="client__libraries/css/footer.less" />
+        <style>
+            #journalsMenu{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="ricsskip" id="ricsskiplink-container">
+            <div class="ricsskip__inner">
+              <a class="ricsskip__link" href="#rics-content">Skip to main content</a>
+            </div>
+        </div>
+        <header class="ricsheader">
+            <div class="container container--fluid">
+                <div class="container--content">
+                    <div class="rics--row">
+                        <div class="ricsheader__logocont col--1">
+                            <h1 class="ricsheader__logo">
+                                <a class="ricsheader__logolink" href="javascript:void(0);" title="RICS">RICS</a>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="ricsnav container container--fluid">
+            <div class="container--content">
+                <div class="rics--row">
+                    <nav class="ricsnav__cont">
+                        <ul class="ricsnav__leftlistcont col--6">
+                            <li class="ricsnav__leftlist col--auto">
+                                <a class="ricsnav__leftlink ricsnav--moduslink ricsnav--leftlistactive" onclick="showHideMenu('modusMenu')" href="javascript:void(0);" title="Modus">Modus</a>
+                            </li>
+                            <li class="ricsnav__leftlist col--auto">
+                                <a class="ricsnav__leftlink ricsnav--jornalslink" href="javascript:void(0);" onclick="showHideMenu('journalsMenu')" title="Journals">Journals</a>
+                            </li>
+                        </ul>
+                        <ul class="ricsnav__rightlistcont col--6">
+                            <li class="ricsnav__rightlist col--auto">
+                                <a class="ricsnav__rightlink" href="javascript:void(0);" title="Browse by Specialism">Browse by Specialism</a>
+                            </li>
+                            <li class="ricsnav__rightlist ricsnav--rightlastlist col--auto">
+                                <a class="ricsnav__rightlink" href="javascript:void(0);" title="Search">
+                                    <i class="icon icon--search flt--rht mar-rht--0"></i>
+                                    Search
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="ricssubnav">
+            <div class="container container--fluid">
+                <div class="container--content">
+                    <div class="rics--row col--auto">
+                        <nav class="ricssubnav__submenunav" id="modusMenu">
+                            <ul class="ricssubnav__submenulistcont">
+                                <li class="ricssubnav__submenulist">
+                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Technology">Technology</a>
+                                    <ul class="ricssubnav__drpdwnlistcont">
+                                        <li class="ricssubnav__drpdwnlist">
+                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Surveying Tools">Surveying Tools</a>
+                                        </li>
+                                        <li class="ricssubnav__drpdwnlist">
+                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Skills">Skills</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="ricssubnav__submenulist">
+                                    <a class="ricssubnav__submenulink ricssubnav--submenulinkactive" href="javascript:void(0);" title="Built Environment">Built Environment</a>
+                                </li>
+                                <li class="ricssubnav__submenulist">
+                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Natural Environment">Natural Environment</a>
+                                </li>
+                                <li class="ricssubnav__submenulist">
+                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Business & Skills">Business & Skills</a>
+                                    <ul class="ricssubnav__drpdwnlistcont">
+                                        <li class="ricssubnav__drpdwnlist">
+                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Business Management">Business Management</a>
+                                        </li>
+                                        <li class="ricssubnav__drpdwnlist">
+                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Skills">Skills</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="ricssubnav__submenunav" id="journalsMenu">
+                            <ul class="ricssubnav__submenulistcont">
+                                <li class="ricssubnav__submenulist">
+                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Property Journal">Property Journal</a>
+                                </li>
+                                <li class="ricssubnav__submenulist">
+                                    <a class="ricssubnav__submenulink ricssubnav--submenulinkactive" href="javascript:void(0);" title="Construction Journal">Construction Journal</a>
+                                </li>
+                                <li class="ricssubnav__submenulist">
+                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Built Environment Journal">Built Environment Journal</a>
+                                </li>
+                                <li class="ricssubnav__submenulist">
+                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Land Journal">Land Journal</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ricsbreadcrumb container container--fluid">
+            <div class="container--content">
+                <div class="rics--row col--auto">
+                    <nav class="ricsbreadcrumb__nav">
+                        <ul class="ricsbreadcrumb__navlistcont">
+                            <li class="ricsbreadcrumb__navlist">
+                                <a class="ricsbreadcrumb__navlink" href="javascript:void(0);" title="Modus">Modus</a>
+                            </li>
+                            <li class="ricsbreadcrumb__navlist"> / </li>
+                            <li class="ricsbreadcrumb__navlist">
+                                <a class="ricsbreadcrumb__navlink" href="javascript:void(0);" title="Built Environment">Built Environment</a>
+                            </li>
+                            <li class="ricsbreadcrumb__navlist"> / </li>
+                            <li class="ricsbreadcrumb__navlist ricsbreadcrumb--navlast"> Article Name </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <section id="rics-content">
+            <div class="ricsartbanner container container--fluid">
+                <div class="container--content">
+                    <div class="ricsartbanner__container rics--row col--auto">
+                        <div class="ricsartbanner__leftcol col--1"></div>
+                        <div class="ricsartbanner__midcol col--7">
+                            <h2 class="ricsartbanner__heading">Modus</h2>
+                            <h3 class="ricsartbanner__subheading">The Spectacular fall of WeWork</h3>
+                            <h4 class="ricsartbanner__desc">How can we ensure that the Flexible office market keeps thriving and what went so wrong for WeWork?</h4>
+                            <div class="rics--row">
+                                <p class="ricsartbanner__authorname col--4">
+                                    <strong>Words:</strong>
+                                    Adam Branson
+                                </p>
+                                <p class="ricsartbanner__authordate col--4">
+                                    <strong>18 April 2020</strong>
+                                </p>
+                            </div>
+                            <div class="ricsartbanner__tagcont rics--row col--auto">
+                                <p class="ricsartbanner__tag">Tag example</p>
+                                <p class="ricsartbanner__tag">Tag example</p>
+                                <p class="ricsartbanner__tag">Tag example</p>
+                                <a class="ricsartbanner__tagmore" href="javascript:void(0);" title="Click to see more tagging">Click to see more tagging</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ricsartimgntxt container container--fluid">
+                <div class="container--content">
+                    <div class="ricsartimgntxt__container rics--row col--auto">
+                        <div class="ricsartimgntxt__midcol col--12">
+                            <img class="ricsartimgntxt__img" src="/dam/images/modus__article/artilcle__1.png" alt="WeWork Vancouver is one of the company’s 849 locations." />
+                        </div>
+                        <div class="ricsartimgntxt__midcol col--1"></div>
+                        <p class="ricsartimgntxt__txt col--11">WeWork Vancouver is one of the company’s 849 locations.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ricsartcf container container--fluid">
+                <div class="container--content">
+                    <div class="ricsartcf__container rics--row col--auto">
+                        <div class="ricsartcf__leftcol col--1"></div>
+                        <div class="ricsartcf__midcol col--7">
+                            <h5 class="ricsartcf__heading">
+                                <span class="ricsartcf__bigfont">F</span>
+                                or a long time, it seemed as though the flexible office market could do no wrong, with rapid expansion and new companies entering the market, seemingly on a weekly basis. Then cracks began to show, and people began to question whether the market was becoming overheated.
+                            </h5>
+                            <p class="ricsartcf__content">
+                                The big story, of course, was, and still is, WeWork. The flexible office behemoth had been lauded for its rapid growth and its charismatic leader, Adam Neumann. However, having filed the papers for its initial public offering (IPO), in August last year, the company abandoned its plans after failing to attract sufficient investor interest. It was a huge climbdown and led to Neumann’s resignation. Analysts suggested that the company was running out of cash, but at the end of October it was announced that Japanese investor Softbank had agreed to stump up $5bn in new financing in  exchange for an overall 80% stake in the business (it already owned a third). 
+                            </p>
+                            <p class="ricsartcf__content">
+                                WeWork’s latest financials appear to justify investor hesitancy: in November last year, it revealed an unadjusted loss of $1.25bn in the third quarter of 2019, up from $497m in the same period in 2018. The figures also showed that its occupancy rate was 79% – the lowest since mid-2017. However, WeWork wasn’t the only flexible office operator suffering in late 2019. In October, Central Working fell into administration, joining The Clubhouse, which was bought up by Regus owner IWG. And there was Second Home, the company set up by Rohan Silva, a former adviser to David Cameron, which had to seek new funding after suffering cost overruns on its first US development.
+                            </p>
+                            <p class="ricsartcf__content">
+                                What this means for the flexible office sector divides opinion. At a glance, it might appear that the whole market is suffering growing pains, but Giles Fuchs, chief executive of Office Space in Town, thinks there is a pattern in the companies that have hit trouble: the leasehold model isn’t viable.
+                            </p>
+                        </div>
+                        <div class="ricsartcf__leftcol col--1"></div>
+                        <div class="ricsartcf__rhtcol flx-alnsf--end col--3">
+                            <h6 class="ricsartcf__rhtcontent">
+                                Wework wasn’t the only flexible office operator suffering in late 2019. 
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ricsartimgntxt container container--fluid">
+                <div class="container--content">
+                    <div class="ricsartimgntxt__container rics--row col--auto">
+                        <div class="ricsartimgntxt__leftcol col--1"></div>
+                        <div class="ricsartimgntxt__midcol col--7">
+                            <video class="ricsartimgntxt__video" poster="/dam/images/modus__article/artilcle__2.png" controls="false">
+                                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                                <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+                                Your browser does not support the video tag.
+                            </video>
+                            <i class="icon icon--play"></i>
+                            <p class="ricsartimgntxt__txt mar-bot--0">WeWork at Constellation in Los Angeles, California. Photography by The We Company.</p>
+                        </div>
+                        <div class="ricsartimgntxt__leftcol col--1"></div>
+                        <div class="ricsartimgntxt__rhtcol flx-alnsf--end col--3">
+                            <h6 class="ricsartimgntxt__advheading">ADVERTISEMENT</h6>
+                            <img class="ricsartimgntxt__advimage" src="/dam/images/advertisement__image.svg" alt="advertisement" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ricsartcf container container--fluid mar-bot--30">
+                <div class="container--content">
+                    <div class="ricsartcf__container rics--row col--auto">
+                        <div class="ricsartcf__leftcol col--1"></div>
+                        <div class="ricsartcf__midcol col--7">
+                            <h5 class="ricsartcf__heading mar-top--30 ricsartcf--fstltrnrml">
+                                <span class="ricsartcf__bigfont">“</span>
+                                Quote style clients would prefer to have a business backed by an asset, but actually it can preclude expansion because it is an expensive way to grow,”
+                            </h5>
+                            <p class="ricsartcf__smalldesc">
+                                Douglas Green, director at flexible office advisory firm GKRE
+                            </p>
+                            <p class="ricsartcf__content">
+                                The big story, of course, was, and still is, WeWork. The flexible office behemoth had been lauded for its rapid growth and its charismatic leader, Adam Neumann. However, having filed the papers for its initial public offering (IPO), in August last year, the company abandoned its plans after failing to attract sufficient investor interest. It was a huge climbdown and led to Neumann’s resignation. Analysts suggested that the company was running out of cash, but at the end of October it was announced that Japanese investor Softbank had agreed to stump up $5bn in new financing in  exchange for an overall 80% stake in the business (it already owned a third). 
+                            </p>
+                            <p class="ricsartcf__content">
+                                WeWork’s latest financials appear to justify investor hesitancy: in November last year, it revealed an unadjusted loss of $1.25bn in the third quarter of 2019, up from $497m in the same period in 2018. The figures also showed that its occupancy rate was 79% – the lowest since mid-2017. However, WeWork wasn’t the only flexible office operator suffering in late 2019. In October, Central Working fell into administration, joining The Clubhouse, which was bought up by Regus owner IWG. And there was Second Home, the company set up by Rohan Silva, a former adviser to David Cameron, which had to seek new funding after suffering cost overruns on its first US development.
+                            </p>
+                            <!-- <p class="ricsartcf__content col--auto fnt-stl--itlc fnt-clr--chrgry max-wdh--382 pad-lft--0">
+                                To read the Valuation of Flexible Workspace insight paper, go to rics.org/flexibleworkspace
+                            </p> -->
+                        </div>
+                        <div class="ricsartcf__leftcol col--1"></div>
+                        <div class="ricsartcf__rhtcol flx-alnsf--end col--3">
+                            <h6 class="ricsartcf__rhtcontent bor-tp--0 mar-bot--0 pad-bot--0">
+                                “Quote style clients would prefer to have a business backed by an asset, but actually it can preclude expansion because it is an expensive way to grow,” 
+                                <span class="ricsartcf__smalldesc dis--inlblk">
+                                    Douglas Green, director at flexible office advisory firm GKRE
+                                </span>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ricsartcf container container--fluid mar-bot--30">
+                <div class="container--content">
+                    <div class="ricsartcf__container rics--row col--auto">
+                        <div class="ricsartcf__leftcol col--1"></div>
+                        <div class="ricsartcf__midcol col--7">
+                            <h5 class="ricsartcf__heading mar-top--30 ricsartcf--fstltrnrml">
+                                <span class="dis--blk">No. 6</span>
+                                Secondary Headline for listicle
+                            </h5>
+                            <p class="ricsartcf__content">
+                                The big story, of course, was, and still is, WeWork. The flexible office behemoth had been lauded for its rapid growth and its charismatic leader, Adam Neumann. However, having filed the papers for its initial public offering (IPO), in August last year, the company abandoned its plans after failing to attract sufficient investor interest. It was a huge climbdown and led to Neumann’s resignation. Analysts suggested that the company was running out of cash, but at the end of October it was announced that Japanese investor Softbank had agreed to stump up $5bn in new financing in  exchange for an overall 80% stake in the business (it already owned a third). 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ricsinfographic container container--fluid mar-bot--30">
+                <div class="container--content">
+                    <div class="ricsinfographic__container rics--row col--auto">
+                        <div class="ricsinfographic__leftcol col--1"></div>
+                        <div class="ricsinfographic__midcol col--7">
+                            <h5 class="ricsinfographic__heading">
+                                Secondary Headline reads like this style used for infographic headline here
+                            </h5>
+                            <div class="ricsinfographic__collist">
+                                <div class="ricsinfographic__col col--3">
+                                    <h6 class="ricsinfographic__colheading">219</h6>
+                                    <p class="ricsinfographic__coldesc">Number of flats in the proposed Alexandra House development</p>
+                                </div>
+                                <div class="ricsinfographic__col col--3">
+                                    <h6 class="ricsinfographic__colheading">84</h6>
+                                    <p class="ricsinfographic__coldesc">Number of complaints to Haringey Council about the scheme</p>
+                                </div>
+                                <div class="ricsinfographic__col col--3">
+                                    <h6 class="ricsinfographic__colheading">15m <sup class="ricsinfographic__super">2</sup></h6>
+                                    <p class="ricsinfographic__coldesc">Size of the smallest flats proposed for Alexandra House</p>
+                                </div>
+                                <div class="ricsinfographic__col col--3">
+                                    <h6 class="ricsinfographic__colheading">46K</h6>
+                                    <p class="ricsinfographic__coldesc">Number of new homes built using change of use policy up to March 2018</p>
+                                </div>
+                            </div>
+                            <p class="ricsinfographic__desc">Extending permitted development rights in England, go to rics.org/extendingpdr</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ricsartcf container container--fluid mar-bot--30">
+                <div class="container--content">
+                    <div class="ricsartcf__container rics--row col--auto">
+                        <div class="ricsartcf__leftcol col--1"></div>
+                        <div class="ricsartcf__midcol col--7">
+                            <div class="ricsartcf__slider slider">
+                                <a class="slider__arrow slider--arrowleft" onclick="gotoSlide(-1)" href="javascript:void(0);" title="Previous Slide">Previous Slide</a>
+                                <img class="slider__img slider--fade" src="/dam/images/modus__article/artilcle__1.png" alt="Article"/>
+                                <img class="slider__img slider--fade" src="/dam/images/modus__article/artilcle__2.png" alt="Article"/>
+                                <img class="slider__img slider--fade" src="/dam/images/modus__article/artilcle__3.png" alt="Article"/>
+                                <img class="slider__img slider--fade" src="/dam/images/modus__article/artilcle__4.png" alt="Article"/>
+                                <a class="slider__arrow slider--arrowright" onclick="gotoSlide(1)" href="javascript:void(0);" title="Next Slide">Next Slide</a>
+                            </div>
+                            <p class="ricsartcf__content col--auto fnt-stl--itlc fnt-clr--chrgry max-wdh--382 pad-lft--0">
+                                To read the Valuation of Flexible Workspace insight paper, go to 
+                                <a class="ricsartcf__link" href="javascript:void(0);" title="rics.org/flexibleworkspace">rics.org/flexibleworkspace</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ricsrltopics container container--fluid">
+                <div class="container--content">
+                    <div class="ricsrltopics__container rics--row col--auto">
+                        <h2 class="ricsrltopics__heading">Related Topics</h2>
+                        <div class="ricsrltopics__tagcont rics--row col--auto">
+                            <p class="ricsrltopics__tag">Affordable Housing</p>
+                            <p class="ricsrltopics__tag">Retail</p>
+                            <p class="ricsrltopics__tag">Insurance</p>
+                            <p class="ricsrltopics__tag">Ethics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ricsrlart container container--fluid">
+                <div class="container--content">
+                    <div class="ricsrlart__container rics--row col--auto">
+                        <h2 class="ricsrlart__heading">Related Articles</h2>
+                        <div class="ricsrlart__cardlist rics--row">
+                            <div class="col--4">
+                                <div class="ricsrlart__card">
+                                    <img class="ricsrlart__cardimage" src="/dam/images/modus__article/artilcle__4.png" alt="Time for a change of use" />
+                                    <div class="ricsrlart__carddetail">
+                                        <h3 class="ricsrlart__cardlabel fnt-clr--trgrn">LAND JOURNAL</h3>
+                                        <h4 class="ricsrlart__articleheading">Time for a change of use</h4>
+                                        <p class="ricsrlart__articledate">Adam Branson  <strong>17 April 2020</strong></p>
+                                        <div class="ricsrlart__tagcont">
+                                            <p class="ricsrlart__tag">Tag example</p>
+                                            <p class="ricsrlart__tag">Tag example</p>
+                                            <p class="ricsrlart__tag mar-rht--0">Tag example</p>
+                                            <a class="ricsrlart__tagmore" href="javascript:void(0);" title="Click to see more tagging">Click to see more tagging</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col--4">
+                                <div class="ricsrlart__card">
+                                    <img class="ricsrlart__cardimage" src="/dam/images/modus__article/artilcle__4.png" alt="Time for a change of use" />
+                                    <div class="ricsrlart__carddetail">
+                                        <h3 class="ricsrlart__cardlabel fnt-fmly--oswald">MODUS </h3>
+                                        <h4 class="ricsrlart__articleheading">Jenny Lynch talks about best practice</h4>
+                                        <p class="ricsrlart__articledate">Adam Branson  <strong>17 April 2020</strong></p>
+                                        <div class="ricsrlart__tagcont">
+                                            <p class="ricsrlart__tag">Tag example</p>
+                                            <p class="ricsrlart__tag">Tag example</p>
+                                            <p class="ricsrlart__tag mar-rht--0">Tag example</p>
+                                            <a class="ricsrlart__tagmore" href="javascript:void(0);" title="Click to see more tagging">Click to see more tagging</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col--4">
+                                <div class="ricsrlart__card">
+                                    <img class="ricsrlart__cardimage" src="/dam/images/modus__article/artilcle__2.png" alt="Time for a change of use" />
+                                    <div class="ricsrlart__carddetail">
+                                        <h3 class="ricsrlart__cardlabel fnt-clr--trgrn">LAND JOURNAL</h3>
+                                        <h4 class="ricsrlart__articleheading">The spectacular fall of WeWork</h4>
+                                        <p class="ricsrlart__articledate">Adam Branson  <strong>17 April 2020</strong></p>
+                                        <div class="ricsrlart__tagcont">
+                                            <p class="ricsrlart__tag">Tag example</p>
+                                            <p class="ricsrlart__tag">Tag example</p>
+                                            <p class="ricsrlart__tag mar-rht--0">Tag example</p>
+                                            <a class="ricsrlart__tagmore" href="javascript:void(0);" title="Click to see more tagging">Click to see more tagging</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ricsnewsltr container container--fluid">
+                <div class="container--content">
+                    <div class="ricsnewsltr__container rics--row col--auto">
+                        <div class="ricsnewsltr__inner col--4">
+                            <form action="#">
+                                <h2 class="ricsnewsltr__heading">Never miss a story</h2>
+                                <p class="ricsnewsltr__desc">
+                                    Sign up to the Newsletter to keep up with what’s emerging in the industry.
+                                </p>
+                                <input class="ricsnewsltr__email input" type="email" value="" placeholder="Name" />
+                                <input class="ricsnewsltr__email input" type="email" value="" placeholder="E-mail" />
+                                <button class="ricsnewsltr__btn btn" type="submit">Sign Up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="ricsbanner container container--fluid">
+                <div class="container--content">
+                    <div class="rics--row col--auto">
+                        <div class="ricsbanner__container ricsbanner--nobannerimage">
+                            <img class="ricsbanner__image" src="" alt="Author Image" />
+                            <div class="ricsbanner__content">
+                                <h2 class="ricsbanner__contentitle">The Spectacular Fall of WeWork</h2>
+                                <h3 class="ricsbanner__contentheading">Modus</h3>
+                                <p class="ricsbanner__contentdesc">It was widely hailed as the future of flexible workspace, but a disastrous IPO has left some people questioning whether or not the model itself is fundamentally flawed.</p>
+                                <div class="ricsbanner__contentauthorinfo">
+                                    <div class="ricsbanner__contentauthorimgcont">
+                                        <img class="ricsbanner__contentauthorimg" src="/dam/images/rics__authorimage.svg" alt="Author Image" />
+                                    </div>
+                                    <p class="ricsbanner__contentauthorname">Adam Branson  <strong>April 2020</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->
+        </section>
+        <footer class="ricsfooter">
+            <div class="container container--fluid">
+                <div class="container--content">
+                    <div class="rics--row">
+                        <div class="ricsfooter__left col--6">
+                            <div class="rics--row">
+                                <h6 class="ricsfooter__heading col--auto">Modus</h6>
+                            </div>
+                            <div class="rics--row">
+                                <nav class="ricsfooter__nav col--auto">
+                                    <ul class="ricsfooter__navlistcont">
+                                        <li class="ricsfooter__navlist">
+                                            <a class="ricsfooter__navlink" href="javascript:void(0);" title="Contact Us">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="ricsfooter__right col--6">
+                            <div class="rics--row">
+                                <div class="col--auto">
+                                    <h1 class="ricsfooter__logo">
+                                        <a class="ricsfooter__logolink" href="javascript:void(0);" title="RICS">RICS</a>
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="rics--row">
+                                <nav class="ricsfooter__nav col--auto">
+                                    <ul class="ricsfooter__navlistcont">
+                                        <li class="ricsfooter__navlist">
+                                            <a class="ricsfooter__navlink" href="javascript:void(0);" title="Privacy">Privacy</a>
+                                        </li>
+                                        <li class="ricsfooter__navlist">
+                                            <a class="ricsfooter__navlink" href="javascript:void(0);" title="Terms">Terms</a>
+                                        </li>
+                                        <li class="ricsfooter__navlist">
+                                            <a class="ricsfooter__navlink" href="javascript:void(0);" title="Cookies">Cookies</a>
+                                        </li>
+                                        <li class="ricsfooter__navlist">
+                                            <a class="ricsfooter__navlink" href="javascript:void(0);" title="Sitemap">Sitemap</a>
+                                        </li>
+                                        <li class="ricsfooter__navlist">
+                                            <a class="ricsfooter__navlink" href="javascript:void(0);" title="FAQ">FAQ</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="rics--row">
+                                <nav class="ricsfooter__nav col--auto">
+                                    <ul class="ricsfooter__navlistcont">
+                                        <li class="ricsfooter__navlist mar-top--10">
+                                            Copyright 2020 RICS.org. All rights reserved
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script data-env="development" src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html>

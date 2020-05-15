@@ -1,0 +1,31 @@
+// All imported SCSS partials
+
+@import "./partials/reset.less";      // Normalize
+@import "./partials/grid.less";       // This is a modified version of the Bootstrap grid to account for MWF breakpoints and
+@import "./partials/fonts.less";      // Decalaring fonts per MWF guidelines
+@import "./partials/typography.less"; // Declaring all typography
+
+.ricsnewsltr{
+   margin: 100px 0 150px;
+   &__container{
+      justify-content: space-around;
+      text-align: center;
+   }
+   &__heading{
+      .default--font();
+      font-size: 40px;
+      font-weight: bold;
+      line-height: 1.25;
+   }
+   &__desc{
+      font-size: 21px;
+      line-height: 1.43;
+   }
+   &__email{
+      width: 100%;
+      margin: 0 0 35px;
+   }
+   &__btn{
+      width: 125px;
+   }
+}

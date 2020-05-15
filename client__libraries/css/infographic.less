@@ -1,0 +1,44 @@
+// All imported SCSS partials
+
+@import "./partials/reset.less";      // Normalize
+@import "./partials/grid.less";       // This is a modified version of the Bootstrap grid to account for MWF breakpoints and
+@import "./partials/fonts.less";      // Decalaring fonts per MWF guidelines
+@import "./partials/typography.less"; // Declaring all typography
+
+.ricsinfographic{
+   background: @off--white;
+   padding: 36px 0;
+   &__heading{
+      .default--font();
+      font-family: @Modus;
+      font-size: 28px;
+      line-height: 1.31;
+   }
+   &__collist{
+      margin: 30px 0;
+      display: flex;
+      flex-wrap: wrap;
+   }
+   &__col{
+      border-left: solid 2px @ricsblack;
+   }
+   &__colheading{
+      .default--font();
+      font-family: @Modus;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 1.2;
+   }
+   &__coldesc{
+      .default--font();
+      padding: 20px 0 0;
+   }
+   &__desc{
+      .default--font();
+      float: left;
+      margin: 20px 0 10px;
+   }
+   &__super{
+      font-size: 20px;
+   }
+}

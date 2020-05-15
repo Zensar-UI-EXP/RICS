@@ -1,0 +1,36 @@
+// All imported SCSS partials
+
+@import "./partials/reset.less";      // Normalize
+@import "./partials/grid.less";       // This is a modified version of the Bootstrap grid to account for MWF breakpoints and
+@import "./partials/fonts.less";      // Decalaring fonts per MWF guidelines
+@import "./partials/typography.less"; // Declaring all typography
+
+.ricsbreadcrumb{
+   &__nav{
+      width: 100%;
+      padding: 14px 0 12px;
+      border-top-left-radius: 0;
+      flex-direction: row;
+   }
+   &__navlistcont{
+      display: flex;
+      padding-left: 14px;
+   }
+   &__navlist{
+      .default--font();
+      font-size: 12px;
+      padding: 0 3px;
+   }
+   &__navlink{
+      .default--font();
+      font-size: 12px;
+      line-height: 1.38;
+   }
+   &--navlast{
+      color: #686969;
+      width: 56px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+   }
+}

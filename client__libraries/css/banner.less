@@ -1,0 +1,125 @@
+// All imported SCSS partials
+
+@import "./partials/reset.less";      // Normalize
+@import "./partials/grid.less";       // This is a modified version of the Bootstrap grid to account for MWF breakpoints and
+@import "./partials/fonts.less";      // Decalaring fonts per MWF guidelines
+@import "./partials/typography.less"; // Declaring all typography
+
+.ricsbanner{
+   &__container{
+      padding: 0 17px;
+   }
+   &__content{
+      background: @purple--brown;
+      padding: 70px 30px 70px 80px;
+      position: relative;
+   }
+   &__contentitle{
+      .default--font();
+      font-size: 36px;
+      color: @ricswhite;
+      line-height: 1.2;
+   }
+   &__contentheading{
+      position: absolute;
+      background: @ricswhite;
+      padding: 5px 15px;
+      left: 0;
+      bottom: 35px;
+      .default--font();
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 2;
+   }
+   &__contentdesc{
+      .default--font();
+      line-height: 1.62;
+      color: @ricswhite;
+   }
+   &__contentauthorinfo{
+      .default--font();
+      line-height: 1.88;
+      color: @ricswhite;
+      margin-top: 50px;
+   }
+   &__contentauthorimgcont{
+      width: 61px;
+      height: 61px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: @purple--brown;
+      margin-right: 25px;
+      display: inline-block;
+   }
+   &__contentauthorimg{
+
+   }
+   &__contentauthorname{
+      display: inline-block;
+   }
+   &--nobannerimage{
+      .ricsbanner{
+         &__image{
+            display: none;
+         }
+         &__content{
+            padding: 150px 30vw 150px 15vw;
+         }
+         &__contentheading{
+            bottom: auto;
+            top: 150px;
+         }
+         &__contentauthorname{
+            display: inline-block;
+            position: relative;
+            top: -25px;
+         }
+      }
+   }
+}
+.ricsartbanner{
+   margin: 110px 0;
+   &__heading{
+      .default--font();
+      font-family: @Modus;
+      font-size: 20px;
+      font-weight: @semi--bold;
+      line-height: 2;
+      padding: 0 10px;
+      display: inline-block;
+      text-transform: uppercase;
+   }
+   &__subheading{
+      margin: 48px 0 31px;
+      .default--font();
+      font-family: @Modus;
+      font-size: 60px;
+      line-height: 0.92;
+   }
+   &__desc{
+      .default--font();
+      font-size: 24px;
+      line-height: 1.62;
+   }
+   &__authorname, &__authordate{
+      margin: 46px 0;
+      .default--font();
+      line-height: 2.25;
+   }
+   &__tag{
+      background: @very--lightpink;
+      .default--font();
+      line-height: 2.14;
+      letter-spacing: 0.58px;
+      text-align: center;
+      padding: 0 20px;
+      margin: 0 13px 13px 0!important;
+   }
+   &__tagmore{
+      text-indent: -99999em;
+      border: dashed 3px @charcoal--grey;
+      width: 20px;
+      height: 6px;
+      margin-top: 26px;
+   }
+}

@@ -1,0 +1,281 @@
+@import "./variables.less";  // Declare global variables here
+@import "./mixins.less";
+
+// Typography declaration
+body {
+   font-family: @RICS;
+   font-size: 16px;
+   line-height: 22px;
+   color: @ricsblack;
+}
+h1 {
+   font-family: @RICS--Bold;
+   font-weight: bold;
+   font-size: 3.5em;
+   line-height: 1.2em;
+   margin: 0 0 .3em 0;
+   padding: 0;
+}
+h2 {
+   font-family: @RICS--SemiBold;
+   font-weight: @semi--bold;
+   font-size: 2.75em;
+   line-height: 1.2em;
+   margin: 0 0 .3em 0;
+   padding: 0;
+}
+h3 {
+   font-family: @RICS--SemiBold;
+   font-weight: @semi--bold;
+   font-size: 2em;
+   line-height: 1.2em;
+   margin: 0 0 .3em 0;
+   padding: 0;
+}
+h4 {
+   font-family: @RICS--SemiBold;
+   font-weight: @semi--bold;
+   font-size: 1.5em;
+   line-height: 1.2em;
+   margin: 0;
+   padding: 0;
+}
+p {
+   font-family: @RICS;
+   font-weight: normal;
+   font-size: 1em;
+   margin: 0 0 .3em 0;
+   padding: 0;
+   &:last-child {
+      margin-bottom: 0;
+   }
+}
+strong {
+   font-family: @RICS--SemiBold;
+   font-weight: @semi--bold;
+}
+a {
+   font-family: @RICS--SemiBold;
+   font-weight: @semi--bold;
+   font-size: 1em;
+}
+// Custom highlight state
+::selection {
+   background: @grape--purple; /* WebKit/Blink Browsers */
+   color: @ricswhite;
+}
+::-moz-selection {
+   background: @grape--purple; /* Gecko Browsers */
+   color: @ricswhite;
+}
+.ricsskip{
+   text-align: center;
+   background: @purple--brown;
+   &__inner{
+      text-align: left;
+      margin: 0 auto;
+      max-width: 1020px;
+   }
+   &__link{
+      display: -moz-inline-stack;
+      display: inline-block;
+      position: absolute;
+      left: -9999em;
+      &:visited{
+         color: @grape--purple;
+      }
+      &:focus{
+         left: 0;
+         z-index: 1;
+         outline: 3px solid transparent;
+         color: @ricswhite;
+         background-color: @charcoal--grey;
+         box-shadow: 0 -2px @charcoal--grey, 0 4px @purple--brown;
+         text-decoration: none;
+      }
+   }
+}
+.icon{
+   width: 20px;
+   height: 20px;
+   margin: 0 15px;
+   float: left;
+   &--search{
+      background: url(/dam/images/icon__search__2x.png) no-repeat transparent;
+      background-size: contain;
+   }
+   &--play{
+      background: url(/dam/images/video__play.svg) no-repeat transparent;
+      background-size: contain;
+      width: 189px;
+      height: 189px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-top: -94.5px;
+      margin-left: -94.5px;
+   }
+}
+.clr{
+   &--both{
+      clear: both!important;
+   }
+}
+.mar{
+   &-top{
+      &--10{
+         margin-top: 10px!important;
+      }
+      &--30{
+         margin-top: 30px!important;
+      }
+   }
+   &-bot{
+      &--0{
+         margin-bottom: 0px!important;
+      }
+      &--10{
+         margin-bottom: 10px!important;
+      }
+      &--30{
+         margin-bottom: 30px!important;
+      }
+   }
+   &-rht{
+      &--0{
+         margin-right: 0!important;
+      }
+   }
+   &-tpbt{
+      &--30{
+         margin-top: 30px!important;
+         margin-bottom: 30px!important;
+      }
+   }
+}
+.flt{
+   &--rht{
+      float: right!important;
+   }
+}
+.flx{
+   &-alnsf{
+      &--end{
+         align-self: flex-end!important;
+      }
+   }
+}
+.fnt{
+   &-stl{
+      &--itlc{
+         font-style: italic!important;
+      }
+   }
+   &-fmly{
+      &--oswald{
+         font-family: @Modus;
+      }
+   }
+   &-clr{
+      &--chrgry{
+         color: @charcoal--grey!important;
+      }
+      &--trgrn{
+         color: @true--green!important;
+      }
+   }
+}
+.max{
+   &-wdh{
+      &--382{
+         max-width: 382px!important;
+      }
+   }
+}
+.pad{
+   &-lft{
+      &--0{
+         padding-left: 0!important;
+      }
+   }
+   &-bot{
+      &--0{
+         padding-bottom: 0!important;
+      }
+   }
+}
+.input{
+   border: 0;
+   border-bottom: solid 1px @brown--grey;
+   font-size: 17px;
+   font-weight: normal;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 1.65;
+   letter-spacing: normal;
+   color: @cool--greytwo;
+   padding: 10px;
+}
+.btn{
+   background: @ricsblack;
+   font-size: 16px;
+   font-weight: normal;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 2.06;
+   letter-spacing: normal;
+   text-align: center;
+   color: @ricswhite;
+}
+.txt{
+   &-trns{
+      &--uppercase{
+         text-transform: uppercase;
+      }
+   }
+}
+.bor{
+   &-tp{
+      &--0{
+         border-top: 0;
+      }
+   }
+}
+.dis{
+   &--inlblk{
+      display: inline-block;
+   }
+   &--blk{
+      display: block;
+   }
+}
+.slider{
+   &__img{
+      width: 100%;
+   }
+   &--fade{
+      animation: fading 5s;
+   }
+   &__arrow{
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 50%;
+      margin-top: -25px;
+      text-indent: -99999em;
+   }
+   &--arrowleft{
+      background: url(/dam/images/icon__arrowleft.svg) transparent;
+      background-size: cover;
+      left: 15px;
+   }
+   &--arrowright{
+      background: url(/dam/images/icon__arrowright.svg) transparent;
+      background-size: cover;
+      right: 15px;
+   }
+}
+@keyframes fading{
+   0%    {opacity:0}
+   100%  {opacity:1}
+}

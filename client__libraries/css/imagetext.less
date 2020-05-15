@@ -1,0 +1,33 @@
+// All imported SCSS partials
+
+@import "./partials/reset.less";      // Normalize
+@import "./partials/grid.less";       // This is a modified version of the Bootstrap grid to account for MWF breakpoints and
+@import "./partials/fonts.less";      // Decalaring fonts per MWF guidelines
+@import "./partials/typography.less"; // Declaring all typography
+
+.ricsartimgntxt{
+   margin: 30px 0;
+   &__img{
+      width: 100%;
+   }
+   &__txt{
+      margin: 26px 0!important;
+      .default--font();
+      line-height: 1.38;
+   }
+   &__advheading{
+      .default--font();
+      font-size: 14px;
+      line-height: 2.43;
+      letter-spacing: 0.5px;
+      text-align: center;
+      color: @steel;
+   }
+   &__advimage, &__video{
+      width: 100%;
+      object-fit: cover;
+      &::-webkit-media-controls, &::-webkit-media-controls-play-button, &::-webkit-media-controls-volume-slider, &::-webkit-media-controls-mute-button, &::-webkit-media-controls-timeline, &::-webkit-media-controls-current-time-display {
+         display: none;
+      }
+   }
+}

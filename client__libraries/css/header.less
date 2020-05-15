@@ -1,0 +1,23 @@
+// All imported SCSS partials
+
+@import "./partials/reset.less";      // Normalize
+@import "./partials/grid.less";       // This is a modified version of the Bootstrap grid to account for MWF breakpoints and
+@import "./partials/fonts.less";      // Decalaring fonts per MWF guidelines
+@import "./partials/typography.less"; // Declaring all typography
+
+.ricsheader{
+   box-shadow: 0 4px 4px 0 rgba(212, 209, 209, 0.2);
+   background-color: @ricswhite;
+   padding: 34px 0;
+   &__logo{
+      width: 135px;
+      height: 46px;
+   }
+   &__logolink{
+      width: 100%;
+      float: left;
+      height: 100%;
+      text-indent: -99999em;
+      background: url(/dam/images/rics__logo.svg) no-repeat transparent;
+   }
+}

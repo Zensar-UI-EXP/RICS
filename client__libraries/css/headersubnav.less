@@ -1,0 +1,50 @@
+// All imported SCSS partials
+
+@import "./partials/reset.less";      // Normalize
+@import "./partials/grid.less";       // This is a modified version of the Bootstrap grid to account for MWF breakpoints and
+@import "./partials/fonts.less";      // Decalaring fonts per MWF guidelines
+@import "./partials/typography.less"; // Declaring all typography
+
+.ricssubnav{
+   border-top: solid 1px @ricsblack;
+   &__submenunav{
+      width: 100%;
+      padding: 14px 0;
+      flex-direction: row;
+   }
+   &__submenulistcont{
+      display: flex;
+   }
+   &__submenulist{
+      padding: 0 17px;
+      position: relative;
+      &:hover{
+         .ricssubnav__drpdwnlistcont{
+            display: block;
+         }
+      }
+   }
+   &__submenulink{
+      .default--font();
+      line-height: 1.38;
+      color: @ricsblack;
+   }
+   &--submenulinkactive{
+      font-weight: bold;
+   }
+   &__drpdwnlistcont{
+      position: absolute;
+      box-shadow: 0 3px 4px 0 rgba(143, 143, 143, 0.5);
+      left: 0;
+      top: 30px;
+      display: none;
+   }
+   &__drpdwnlist{
+      padding: 10px;
+   }
+   &__drpdwnlink{
+      .default--font();
+      font-size: 14px;
+      white-space: nowrap;
+   }
+}

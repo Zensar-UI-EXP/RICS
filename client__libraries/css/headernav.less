@@ -1,0 +1,63 @@
+// All imported SCSS partials
+
+@import "./partials/reset.less";      // Normalize
+@import "./partials/grid.less";       // This is a modified version of the Bootstrap grid to account for MWF breakpoints and
+@import "./partials/fonts.less";      // Decalaring fonts per MWF guidelines
+@import "./partials/typography.less"; // Declaring all typography
+
+.ricsnav{
+   &__cont{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+   }
+   &__leftlistcont{
+      display: flex;
+      flex-direction: row;
+   }
+   &__leftlink{
+      .default--font();
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 0.79;
+      letter-spacing: normal;
+      text-align: center;
+      padding: 20px 0 5px;
+      float: left;
+      width: 100%;
+   }
+   &--moduslink{
+      .default--font();
+      font-family: @Modus;
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: 0.06px;
+      text-transform: uppercase;
+   }
+   &--jornalslink{
+      .default--font();
+      font-family: @Journals--Bold;
+      font-size: 26px;
+      letter-spacing: -0.35px;
+   }
+   &--leftlistactive{
+      border-bottom: solid 4px @ricsblack;
+   }
+   &__rightlistcont{
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row;
+   }
+   &__rightlist{
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 17px;
+      border-right: solid 1px @ricsblack;
+   }
+   &--rightlastlist{
+      border-right: 0;
+   }
+   &__rightlink{
+      .default--font();
+   }
+}
