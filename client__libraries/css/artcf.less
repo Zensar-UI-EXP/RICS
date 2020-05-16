@@ -7,6 +7,8 @@
 
 .ricsartcf{
    margin-top: 25px;
+   display: inline-block;
+   width: 100%;
    &__heading{
       .default--font();
       font-size: 32px;
@@ -25,7 +27,7 @@
       .default--font();
       font-family: Arial, Helvetica, sans-serif;
       font-size: 21px;
-      line-height: 1.62;
+      line-height: 34px;
    }
    &__rhtcontent{
       .default--font();
@@ -72,7 +74,7 @@
       color: @charcoal--grey;
    }
    &__lstcont{
-
+      padding-left: 20px;
    }
    &__lst{
       list-style: disc inside;
@@ -83,6 +85,7 @@
    &__lsttitle{
       display: inline-block;
       .default--font();
+      font-family: @Journals--Bold;
       color: @blue--green;
    }
    &__lstdesc{
@@ -96,24 +99,26 @@
    }
    &--scdrylayout{
       background: rgba(2, 131, 124, 0.1);
-      padding: 25px;
+      padding: 50px 0;
    }
    &__scndlistcont{
       margin-top: 20px;
+      padding-left: 20px;
    }
    &__scndlist{
       list-style: disc inside;
       .default--font();
-      line-height: 1.62;
+      font-size: 21px;
+      line-height: 34px;
    }
    &--scndheading{
       .default--font();
-      font-size: 20px;
+      font-size: 25px;
       color: @blue--green;
       .ricsartcf{
          &__bigfont{
-            font-size: 20px!important;
-            line-height: 1.31;
+            font-size: 25px!important;
+            line-height: 35px;
             width: auto;
          }
       }

@@ -9,6 +9,9 @@
    margin: 100px 0;
    width: 100%;
    display: inline-block;
+   &__container{
+      justify-content: space-between;
+   }
    &__heading{
       .default--font();
       font-size: 21px;
@@ -30,6 +33,14 @@
       text-align: center;
       padding: 0 8px;
       margin: 0 3px 10px 0!important;
+   }
+   &__socialsharing{
+      display: flex;
+      align-items: flex-end;
+   }
+   &__socialsharinglink{
+      margin-right: 45px;
+      text-indent: -99999em;
    }
 }
 .ricsrlart{
@@ -102,9 +113,5 @@
       display: inline-block;
       position: relative;
       top: 22px;
-   }
-   &__socialsharing{
-      display: flex;
-      align-items: flex-end;
    }
 }

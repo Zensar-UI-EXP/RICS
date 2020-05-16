@@ -23,6 +23,7 @@
         </style>
     </head>
     <body>
+        <div id="gridOverlay"></div>
         <div class="ricsskip" id="ricsskiplink-container">
             <div class="ricsskip__inner">
               <a class="ricsskip__link" href="#rics-content">Skip to main content</a>
@@ -31,11 +32,15 @@
         <header class="ricsheader">
             <div class="container container--fluid">
                 <div class="container--content">
-                    <div class="rics--row">
-                        <div class="ricsheader__logocont col--1">
+                    <div class="rics--row jus-cnt--spbtw">
+                        <div class="ricsheader__logocont col--auto ">
                             <h1 class="ricsheader__logo">
                                 <a class="ricsheader__logolink" href="javascript:void(0);" title="RICS">RICS</a>
                             </h1>
+                        </div>
+                        <div class="ricsheader__ricslinkcont col--auto">
+                            Visit
+                            <a href="https://www.rics.org/uk/" class="ricsheader__ricslink" target="_blank" title="rics.org">rics.org</a>
                         </div>
                     </div>
                 </div>
@@ -46,21 +51,21 @@
                 <div class="container--content">
                     <div class="rics--row">
                         <nav class="ricsnav__cont">
-                            <ul class="ricsnav__leftlistcont col--6">
-                                <li class="ricsnav__leftlist col--auto">
-                                    <a class="ricsnav__leftlink ricsnav--moduslink ricsnav--leftlistactive" onclick="showHideMenu('modusMenu')" href="javascript:void(0);" title="Modus">Modus</a>
+                            <ul class="ricsnav__leftlistcont col--6 col--fst">
+                                <li class="ricsnav__leftlist col--auto ">
+                                    <a class="ricsnav__leftlink ricsnav--moduslink ricsnav--leftlistactive" href="javascript:void(0);" title="Modus">Modus</a>
                                 </li>
-                                <li class="ricsnav__leftlist col--auto">
-                                    <a class="ricsnav__leftlink ricsnav--jornalslink" href="javascript:void(0);" onclick="showHideMenu('journalsMenu')" title="Journals">Journals</a>
+                                <li class="ricsnav__leftlist col--auto ">
+                                    <a class="ricsnav__leftlink ricsnav--jornalslink" href="javascript:void(0);" title="Journals">Journals</a>
                                 </li>
                             </ul>
-                            <ul class="ricsnav__rightlistcont col--6">
+                            <ul class="ricsnav__rightlistcont col--6 col--lst">
                                 <li class="ricsnav__rightlist col--auto">
                                     <a class="ricsnav__rightlink" href="javascript:void(0);" title="Browse by Specialism">Browse by Specialism</a>
                                 </li>
-                                <li class="ricsnav__rightlist ricsnav--rightlastlist col--auto">
+                                <li class="ricsnav__rightlist ricsnav--rightlastlist col--auto ">
                                     <a class="ricsnav__rightlink" href="javascript:void(0);" title="Search">
-                                        <i class="icon icon--search flt--rht mar-rht--0"></i>
+                                        <i class="icon icon--search flt--rht"></i>
                                         Search
                                     </a>
                                 </li>
@@ -73,10 +78,10 @@
         <div class="ricssubnav">
             <div class="container container--fluid">
                 <div class="container--content">
-                    <div class="rics--row col--auto">
+                    <div class="rics--row col--auto col--fst">
                         <nav class="ricssubnav__submenunav" id="modusMenu">
                             <ul class="ricssubnav__submenulistcont">
-                                <li class="ricssubnav__submenulist">
+                                <li class="ricssubnav__submenulist ">
                                     <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Technology">Technology</a>
                                     <ul class="ricssubnav__drpdwnlistcont">
                                         <li class="ricssubnav__drpdwnlist">
@@ -142,7 +147,7 @@
                         </nav>
                         <nav class="ricssubnav__submenunav" id="journalsMenu">
                             <ul class="ricssubnav__submenulistcont">
-                                <li class="ricssubnav__submenulist">
+                                <li class="ricssubnav__submenulist ">
                                     <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Property Journal">Property Journal</a>
                                 </li>
                                 <li class="ricssubnav__submenulist">
@@ -162,7 +167,7 @@
         </div>
         <div class="ricsbreadcrumb container container--fluid">
             <div class="container--content">
-                <div class="rics--row col--auto">
+                <div class="rics--row col--auto ">
                     <nav class="ricsbreadcrumb__nav">
                         <ul class="ricsbreadcrumb__navlistcont">
                             <li class="ricsbreadcrumb__navlist">
@@ -185,16 +190,16 @@
                     <div class="container--content">
                         <div class="ricsartbanner__container rics--row col--auto">
                             <div class="ricsartbanner__leftcol col--1"></div>
-                            <div class="ricsartbanner__midcol col--7">
+                            <div class="ricsartbanner__midcol col--7 col--fst">
                                 <h2 class="ricsartbanner__heading">Modus</h2>
-                                <h3 class="ricsartbanner__subheading">The Spectacular fall of WeWork</h3>
+                                <h3 class="ricsartbanner__subheading">The best policy for P11</h3>
                                 <h4 class="ricsartbanner__desc">How can we ensure that the Flexible office market keeps thriving and what went so wrong for WeWork?</h4>
                                 <div class="rics--row">
-                                    <p class="ricsartbanner__authorname col--4">
+                                    <p class="ricsartbanner__authorname col--3">
                                         <strong>Words:</strong>
                                         Adam Branson
                                     </p>
-                                    <p class="ricsartbanner__authordate col--4">
+                                    <p class="ricsartbanner__authordate col--3">
                                         <strong>18 April 2020</strong>
                                     </p>
                                 </div>
@@ -213,11 +218,11 @@
                 <div class="container container--fluid">
                     <div class="container--content">
                         <div class="ricsartimgntxt__container rics--row col--auto">
-                            <div class="ricsartimgntxt__midcol col--12">
+                            <div class="ricsartimgntxt__midcol col--12 col--fst col--lst">
                                 <img class="ricsartimgntxt__img" src="/dam/images/modus__article/artilcle__5.png" alt="WeWork Vancouver is one of the company’s 849 locations." />
                             </div>
                             <div class="ricsartimgntxt__midcol col--1"></div>
-                            <p class="ricsartimgntxt__txt col--11">WeWork Vancouver is one of the company’s 849 locations.</p>
+                            <p class="ricsartimgntxt__txt col--7 col--fst col--lst">WeWork Vancouver is one of the company’s 849 locations.</p>
                         </div>
                     </div>
                 </div>
@@ -225,9 +230,9 @@
             <div class="ricsartcf">
                 <div class="container container--fluid">
                     <div class="container--content">
-                        <div class="ricsartcf__container rics--row col--auto">
+                        <div class="ricsartcf__container rics--row col--auto  ">
                             <div class="ricsartcf__leftcol col--1"></div>
-                            <div class="ricsartcf__midcol col--7">
+                            <div class="ricsartcf__midcol col--7 col--fst">
                                 <h5 class="ricsartcf__heading">
                                     <span class="ricsartcf__bigfont">F</span>
                                     or a long time, it seemed as though the flexible office market could do no wrong, with rapid expansion and new companies entering the market, seemingly on a weekly basis. Then cracks began to show, and people began to question whether the market was becoming overheated.
@@ -243,7 +248,7 @@
                                 </p>
                             </div>
                             <div class="ricsartcf__leftcol col--1"></div>
-                            <div class="ricsartcf__rhtcol flx-alnsf--end col--3">
+                            <div class="ricsartcf__rhtcol flx-alnsf--end col--3 col--lst">
                                 <h6 class="ricsartcf__rhtcontent">
                                     Wework wasn’t the only flexible office operator suffering in late 2019. 
                                 </h6>
@@ -257,7 +262,7 @@
                     <div class="container--content">
                         <div class="ricsartimgntxt__container rics--row col--auto">
                             <div class="ricsartimgntxt__leftcol col--1"></div>
-                            <div class="ricsartimgntxt__midcol col--7">
+                            <div class="ricsartimgntxt__midcol col--7 col--fst col--lst">
                                 <video class="ricsartimgntxt__video" poster="/dam/images/modus__article/artilcle__2.png" controls="false">
                                     <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
                                     <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
@@ -267,7 +272,7 @@
                                 <p class="ricsartimgntxt__txt mar-bot--0 fnt-clr--chrgry">WeWork at Constellation in Los Angeles, California. Photography by The We Company.</p>
                             </div>
                             <div class="ricsartimgntxt__leftcol col--1"></div>
-                            <div class="ricsartimgntxt__rhtcol flx-alnsf--end col--3">
+                            <div class="ricsartimgntxt__rhtcol flx-alnsf--end col--3 ">
                                 <h6 class="ricsartimgntxt__advheading">ADVERTISEMENT</h6>
                                 <img class="ricsartimgntxt__advimage" src="/dam/images/advertisement__image.svg" alt="advertisement" />
                             </div>
@@ -280,7 +285,7 @@
                     <div class="container--content">
                         <div class="ricsartcf__container rics--row col--auto">
                             <div class="ricsartcf__leftcol col--1"></div>
-                            <div class="ricsartcf__midcol col--7">
+                            <div class="ricsartcf__midcol col--7 col--fst col--lst">
                                 <h5 class="ricsartcf__heading ricsartcf--fstltrnrml">
                                     <span class="ricsartcf__bigfont">“</span>
                                     Quote style clients would prefer to have a business backed by an asset, but actually it can preclude expansion because it is an expensive way to grow,”
@@ -299,7 +304,7 @@
                                 </p> -->
                             </div>
                             <div class="ricsartcf__leftcol col--1"></div>
-                            <div class="ricsartcf__rhtcol flx-alnsf--end col--3">
+                            <div class="ricsartcf__rhtcol flx-alnsf--end col--3 col--lst">
                                 <h6 class="ricsartcf__rhtcontent bor-tp--0 mar-bot--0 pad-bot--0">
                                     “Quote style clients would prefer to have a business backed by an asset, but actually it can preclude expansion because it is an expensive way to grow,” 
                                     <span class="ricsartcf__smalldesc mar-top--30">
@@ -316,7 +321,7 @@
                     <div class="container--content">
                         <div class="ricsartcf__container rics--row col--auto">
                             <div class="ricsartcf__leftcol col--1"></div>
-                            <div class="ricsartcf__midcol col--7">
+                            <div class="ricsartcf__midcol col--7 col--fst col--lst">
                                 <h5 class="ricsartcf__heading mar-top--30 ricsartcf--fstltrnrml">
                                     <span class="dis--blk">No. 6</span>
                                     Secondary Headline for listicle
@@ -332,31 +337,38 @@
             <div class="ricsinfographic mar-bot--50">
                 <div class="container container--fluid">
                     <div class="container--content">
-                        <div class="ricsinfographic__container rics--row col--auto">
-                            <div class="ricsinfographic__leftcol col--1"></div>
-                            <div class="ricsinfographic__midcol col--7">
-                                <h5 class="ricsinfographic__heading">
-                                    Secondary Headline reads like this style used for infographic headline here
-                                </h5>
+                        <div class="ricsinfographic__container col--auto">
+                            <div class="rics--row">
+                                <div class="ricsinfographic__leftcol col--1"></div>
+                                <div class="ricsinfographic__midcol col--7 col--fst col--lst">
+                                    <h5 class="ricsinfographic__heading">
+                                        Secondary Headline reads like this style used for infographic headline here
+                                    </h5>
+                                </div>
+                                <div class="col--4"></div>
                                 <div class="ricsinfographic__collist">
-                                    <div class="ricsinfographic__col col--3">
+                                    <div class="ricsinfographic__leftcol col--1"></div>
+                                    <div class="ricsinfographic__col col--2">
                                         <h6 class="ricsinfographic__colheading">219</h6>
                                         <p class="ricsinfographic__coldesc">Number of flats in the proposed Alexandra House development</p>
                                     </div>
-                                    <div class="ricsinfographic__col col--3">
+                                    <div class="ricsinfographic__col col--2">
                                         <h6 class="ricsinfographic__colheading">84</h6>
                                         <p class="ricsinfographic__coldesc">Number of complaints to Haringey Council about the scheme</p>
                                     </div>
-                                    <div class="ricsinfographic__col col--3">
+                                    <div class="ricsinfographic__col col--2">
                                         <h6 class="ricsinfographic__colheading">15m <sup class="ricsinfographic__super">2</sup></h6>
                                         <p class="ricsinfographic__coldesc">Size of the smallest flats proposed for Alexandra House</p>
                                     </div>
-                                    <div class="ricsinfographic__col col--3">
+                                    <div class="ricsinfographic__col col--2">
                                         <h6 class="ricsinfographic__colheading">46K</h6>
                                         <p class="ricsinfographic__coldesc">Number of new homes built using change of use policy up to March 2018</p>
                                     </div>
                                 </div>
-                                <p class="ricsinfographic__desc">Extending permitted development rights in England, go to rics.org/extendingpdr</p>
+                                <div class="ricsinfographic__leftcol col--1"></div>
+                                <div class="ricsinfographic__midcol col--7 col--fst col--lst">
+                                    <p class="ricsinfographic__desc">Extending permitted development rights in England, go to rics.org/extendingpdr</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -367,13 +379,13 @@
                     <div class="container--content">
                         <div class="ricsartcf__container rics--row col--auto">
                             <div class="ricsartcf__leftcol col--1"></div>
-                            <div class="ricsartcf__midcol col--7">
+                            <div class="ricsartcf__midcol col--7 col--fst col--lst">
                                 <div class="ricsartcf__slider slider">
-                                    <a class="slider__arrow slider--arrowleft" onclick="gotoSlide(-1)" href="javascript:void(0);" title="Previous Slide">Previous Slide</a>
                                     <img class="slider__img slider--fade" src="/dam/images/modus__article/artilcle__4.png" alt="Article"/>
                                     <img class="slider__img slider--fade" src="/dam/images/modus__article/artilcle__4.png" alt="Article"/>
                                     <img class="slider__img slider--fade" src="/dam/images/modus__article/artilcle__4.png" alt="Article"/>
                                     <img class="slider__img slider--fade" src="/dam/images/modus__article/artilcle__4.png" alt="Article"/>
+                                <a class="slider__arrow slider--arrowleft" onclick="gotoSlide(-1)" href="javascript:void(0);" title="Previous Slide">Previous Slide</a>
                                     <a class="slider__arrow slider--arrowright" onclick="gotoSlide(1)" href="javascript:void(0);" title="Next Slide">Next Slide</a>
                                 </div>
                             </div>
@@ -400,26 +412,21 @@
                 <div class="container container--fluid">
                     <div class="container--content">
                         <div class="ricsrltopics__container rics--row">
-                            <div class="col--6">
-                                <div class="col--10">
-                                    <h2 class="ricsrltopics__heading">Related Topics</h2>
-                                    <div class="ricsrltopics__tagcont rics--row col--auto">
-                                        <p class="ricsrltopics__tag">Tag example</p>
-                                        <p class="ricsrltopics__tag">Tag example</p>
-                                        <p class="ricsrltopics__tag">Tag example</p>
-                                        <p class="ricsrltopics__tag">Tag example</p>
-                                    </div>
+                            <div class="col--5">
+                                <h2 class="ricsrltopics__heading">Related Topics</h2>
+                                <div class="ricsrltopics__tagcont rics--row col--auto">
+                                    <p class="ricsrltopics__tag">Tag example</p>
+                                    <p class="ricsrltopics__tag">Tag example</p>
+                                    <p class="ricsrltopics__tag">Tag example</p>
+                                    <p class="ricsrltopics__tag">Tag example</p>
                                 </div>
                             </div>
-                            <div class="col--6 ricsrltopics__socialsharing">
-                                <div class="col--10">
-                                    <h2 class="ricsrltopics__heading">Social Sharing</h2>
-                                    <div class="ricsrltopics__tagcont rics--row col--auto">
-                                        <p class="ricsrltopics__tag">Tag example</p>
-                                        <p class="ricsrltopics__tag">Tag example</p>
-                                        <p class="ricsrltopics__tag">Tag example</p>
-                                        <p class="ricsrltopics__tag">Tag example</p>
-                                    </div>
+                            <div class="col--5">
+                                <h2 class="ricsrltopics__heading">Social Sharing</h2>
+                                <div class="ricsrltopics__tagcont rics--row col--auto col--fst">
+                                    <a class="ricsrltopics__socialsharinglink icon icon--fbicon" href="javascript:void(0);" title="Facebook">Facebook</a>
+                                    <a class="ricsrltopics__socialsharinglink icon icon--twtr" href="javascript:void(0);" title="Twitter">Twitter</a>
+                                    <a class="ricsrltopics__socialsharinglink icon icon--lkdln" href="javascript:void(0);" title="LinkeedIn">LinkeedIn</a>
                                 </div>
                             </div>
                         </div>
@@ -531,53 +538,52 @@
             <div class="container container--fluid">
                 <div class="container--content">
                     <div class="rics--row">
-                        <div class="ricsfooter__left col--6">
-                            <div class="rics--row">
-                                <h6 class="ricsfooter__heading col--auto">Modus</h6>
-                            </div>
-                            <div class="rics--row">
-                                <nav class="ricsfooter__nav col--auto">
-                                    <ul class="ricsfooter__navlistcont">
-                                        <li class="ricsfooter__navlist">
-                                            <a class="ricsfooter__navlink" href="javascript:void(0);" title="Contact Us">Contact Us</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
+                        <div class="ricsfooter__left col--4">
+                            <h6 class="ricsfooter__heading fnt-fmly--oswald col--9 col--fst">Modus</h6>
+                            <nav class="ricsfooter__nav col--9 col--fst">
+                                <ul class="ricsfooter__navlistcont">
+                                    <li class="ricsfooter__navlist">
+                                        <a class="ricsfooter__navlink" href="javascript:void(0);" title="Contact Us">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
-                        <div class="ricsfooter__right col--6">
-                            <div class="rics--row">
-                                <div class="col--auto">
-                                    <h1 class="ricsfooter__logo">
-                                        <a class="ricsfooter__logolink" href="javascript:void(0);" title="RICS">RICS</a>
-                                    </h1>
-                                </div>
+                        <div class="ricsfooter__ctr col--4">
+                            <h6 class="ricsfooter__heading col--9 col--fst">Journals</h6>
+                            <nav class="ricsfooter__nav col--9 col--fst">
+                                <ul class="ricsfooter__navlistcont">
+                                    <li class="ricsfooter__navlist">
+                                        <a class="ricsfooter__navlink" href="javascript:void(0);" title="Contact Us">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="ricsfooter__right col--4 col--lst">
+                            <div class="col--9 col--fst">
+                                <h1 class="ricsfooter__logo">
+                                    <a class="ricsfooter__logolink" href="javascript:void(0);" title="RICS">RICS</a>
+                                </h1>
                             </div>
+                            <nav class="ricsfooter__nav col--9 col--fst">
+                                <ul class="ricsfooter__navlistcont">
+                                    <li class="ricsfooter__navlist">
+                                        <a class="ricsfooter__navlink" href="javascript:void(0);" title="RICS.org">Visit <u>RICS.org</u></a>
+                                    </li>
+                                    <li class="ricsfooter__navlist">
+                                        <a class="ricsfooter__navlink" href="javascript:void(0);" title="About RICS">About RICS</a>
+                                    </li>
+                                    <li class="ricsfooter__navlist">
+                                        <a class="ricsfooter__navlink" href="javascript:void(0);" title="Privacy & Cookie Policy">Privacy & Cookie Policy</a>
+                                    </li>
+                                    <li class="ricsfooter__navlist">
+                                        <a class="ricsfooter__navlink" href="javascript:void(0);" title="Terms and Conditions">Terms and Conditions</a>
+                                    </li>
+                                </ul>
+                            </nav>
                             <div class="rics--row">
                                 <nav class="ricsfooter__nav col--auto">
                                     <ul class="ricsfooter__navlistcont">
-                                        <li class="ricsfooter__navlist">
-                                            <a class="ricsfooter__navlink" href="javascript:void(0);" title="Privacy">Privacy</a>
-                                        </li>
-                                        <li class="ricsfooter__navlist">
-                                            <a class="ricsfooter__navlink" href="javascript:void(0);" title="Terms">Terms</a>
-                                        </li>
-                                        <li class="ricsfooter__navlist">
-                                            <a class="ricsfooter__navlink" href="javascript:void(0);" title="Cookies">Cookies</a>
-                                        </li>
-                                        <li class="ricsfooter__navlist">
-                                            <a class="ricsfooter__navlink" href="javascript:void(0);" title="Sitemap">Sitemap</a>
-                                        </li>
-                                        <li class="ricsfooter__navlist">
-                                            <a class="ricsfooter__navlink" href="javascript:void(0);" title="FAQ">FAQ</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="rics--row">
-                                <nav class="ricsfooter__nav col--auto">
-                                    <ul class="ricsfooter__navlistcont">
-                                        <li class="ricsfooter__navlist mar-top--10">
+                                        <li class="ricsfooter__navlist mar-top--75 opct--50">
                                             Copyright 2020 RICS.org. All rights reserved
                                         </li>
                                     </ul>

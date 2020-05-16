@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="22px" viewBox="0 0 24 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>open</title>
+    <g id="symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Botton-visit-RICS" transform="translate(-161.000000, -9.000000)" stroke="#4B1963" stroke-width="2">
+            <g id="open" transform="translate(161.000000, 9.000000)">
+                <line x1="1" y1="3" x2="1" y2="21" id="Line-4"></line>
+                <line x1="13" y1="3" x2="1" y2="3" id="Line-6"></line>
+                <line x1="13.9174233" y1="11.4623538" x2="21.720221" y2="2.06737335" id="Line-9"></line>
+                <line x1="17" y1="1" x2="23" y2="1" id="Line-3"></line>
+                <line x1="23" y1="7" x2="23" y2="1" id="Line-8"></line>
+                <line x1="20" y1="20" x2="20" y2="11" id="Line-7"></line>
+                <line x1="1" y1="21" x2="20" y2="21" id="Line-5"></line>
+            </g>
+        </g>
+    </g>
+</svg>
