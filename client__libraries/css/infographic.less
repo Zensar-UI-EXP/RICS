@@ -6,8 +6,10 @@
 @import "./partials/typography.less"; // Declaring all typography
 
 .ricsinfographic{
-   background: @off--white;
-   padding: 36px 0;
+   &__container{
+      background: @off--white;
+      padding: 70px 0 40px;
+   }
    &__heading{
       .default--font();
       font-family: @Modus;
@@ -36,7 +38,7 @@
    &__desc{
       .default--font();
       float: left;
-      margin: 20px 0 10px;
+      margin: 25px 0 0;
    }
    &__super{
       font-size: 20px;

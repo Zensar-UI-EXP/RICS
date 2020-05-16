@@ -6,37 +6,45 @@
 @import "./partials/typography.less"; // Declaring all typography
 
 .ricsrltopics{
+   margin: 100px 0;
+   width: 100%;
+   display: inline-block;
    &__heading{
       .default--font();
-      font-size: 25px;
-      line-height: 2.8;
+      font-size: 21px;
+      line-height: 2;
+      font-family: Arial, Helvetica, sans-serif;
       border-bottom: solid 1px @ricsblack;
       width: 100%;
    }
    &__tagcont{
-      padding-top: 70px;
-      padding-bottom: 70px;
+      padding-top: 30px;
    }
    &__tag{
       background: @very--lightpink;
       .default--font();
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 2.14;
       letter-spacing: 0.58px;
       text-align: center;
-      padding: 0 20px;
-      margin: 0 13px 13px 0!important;
+      padding: 0 8px;
+      margin: 0 3px 10px 0!important;
    }
 }
 .ricsrlart{
+   margin: 90px 0;
+   width: 100%;
+   display: inline-block;
    &__heading{
       .default--font();
-      font-size: 25px;
-      line-height: 2.8;
+      font-size: 21px;
+      line-height: 2;
       border-bottom: solid 1px @ricsblack;
       width: 100%;
    }
    &__cardlist{
-      padding: 25px 0 50px;
+      padding: 25px 0 0;
    }
    &__card{
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
@@ -48,21 +56,19 @@
       max-height: 235px;
    }
    &__carddetail{
-      padding: 30px;
+      padding: 25px;
    }
    &__cardlabel{
       .default--font();
       font-size: 18px;
       font-weight: bold;
-      line-height: 1.67;
-      letter-spacing: 0.1px;
-      color: @ricsblack;
-      padding: 10px;
+      line-height: 0.78;
       display: inline-block;
    }
    &__articleheading{
       .default--font();
       font-size: 26px;
+      font-family: Arial, Helvetica, sans-serif;
       font-weight: 500;
       line-height: 1.38;
       margin: 20px 0;
@@ -70,6 +76,7 @@
    &__articledate{
       .default--font();
       font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.88;
       margin-bottom: 50px;
    }
@@ -81,7 +88,7 @@
       letter-spacing: 0.58px;
       text-align: center;
       padding: 0 10px;
-      margin: 0 7px 0px 0!important;
+      margin: 0 3px 0px 0!important;
       display: inline-block;
    }
    &--bluelabel{
@@ -95,5 +102,9 @@
       display: inline-block;
       position: relative;
       top: 22px;
+   }
+   &__socialsharing{
+      display: flex;
+      align-items: flex-end;
    }
 }

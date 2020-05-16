@@ -6,6 +6,8 @@
 @import "./partials/typography.less"; // Declaring all typography
 
 .ricsnav{
+   margin-bottom: 10px;
+   border-bottom: solid 1px @ricsblack;
    &__cont{
       width: 100%;
       display: flex;
@@ -20,7 +22,6 @@
       font-size: 20px;
       font-weight: 600;
       line-height: 0.79;
-      letter-spacing: normal;
       text-align: center;
       padding: 20px 0 5px;
       float: left;
@@ -29,16 +30,18 @@
    &--moduslink{
       .default--font();
       font-family: @Modus;
-      font-size: 26px;
+      font-size: 30px;
       font-weight: 600;
-      letter-spacing: 0.06px;
+      letter-spacing: 0.11px;
       text-transform: uppercase;
    }
    &--jornalslink{
       .default--font();
       font-family: @Journals--Bold;
       font-size: 26px;
-      letter-spacing: -0.35px;
+      line-height: 0.58;
+      letter-spacing: -0.7px;
+      margin-top: 16px;
    }
    &--leftlistactive{
       border-bottom: solid 4px @ricsblack;
@@ -51,7 +54,7 @@
    &__rightlist{
       display: flex;
       justify-content: flex-end;
-      padding-top: 17px;
+      padding-top: 27px;
       border-right: solid 1px @ricsblack;
    }
    &--rightlastlist{
