@@ -29,8 +29,8 @@ function gotoSlide(n) {
 }
 
 function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("slider__img");
+      let i;
+      let x = document.getElementsByClassName("slider__img");
       if (x.length) {
             if (n > x.length) {slideIndex = 1}
             if (n < 1) {slideIndex = x.length}
@@ -39,4 +39,11 @@ function showDivs(n) {
             }
             x[slideIndex-1].style.display = "block";  
       }
+}
+
+function openSearch() {
+      let searchLinkElement = document.getElementsByClassName("ricsnav--searchlink");
+      searchLinkElement[0].style.display = "none";
+      let searchInputElement = document.getElementsByClassName("ricsnav__rightsearchform");
+      searchInputElement[0].style.display = "block";
 }
