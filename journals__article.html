@@ -171,18 +171,18 @@
         </div>
         <div class="ricsbreadcrumb container container--fluid">
             <div class="container--content">
-                <div class="rics--row col--auto ">
+                <div class="rics--row col--auto">
                     <nav role="navigation" aria-label="Breadcrumb navigation" class="ricsbreadcrumb__nav">
                         <ul class="ricsbreadcrumb__navlistcont">
                             <li class="ricsbreadcrumb__navlist">
-                                <a class="ricsbreadcrumb__navlink" href="javascript:void(0);" title="Modus">Modus</a>
+                                <a class="ricsbreadcrumb__navlink" href="javascript:void(0);" title="Journals">Journals</a>
                             </li>
                             <li class="ricsbreadcrumb__navlist"> / </li>
                             <li class="ricsbreadcrumb__navlist">
-                                <a class="ricsbreadcrumb__navlink" href="javascript:void(0);" title="Built Environment">Built Environment</a>
+                                <a class="ricsbreadcrumb__navlink" href="javascript:void(0);" title="Land Journal">Land Journal</a>
                             </li>
                             <li class="ricsbreadcrumb__navlist"> / </li>
-                            <li class="ricsbreadcrumb__navlist ricsbreadcrumb--navlast"> Article Name </li>
+                            <li class="ricsbreadcrumb__navlist ricsbreadcrumb--navlast"> Article name goes here </li>
                         </ul>
                     </nav>
                 </div>
@@ -211,7 +211,8 @@
                                     <p class="ricsartbanner__tag">Tag example</p>
                                     <p class="ricsartbanner__tag">Tag example</p>
                                     <p class="ricsartbanner__tag">Tag example</p>
-                                    <a class="ricsartbanner__tagmore" href="javascript:void(0);" title="Click to see more tagging">...</a>
+                                    <p class="ricsartbanner__tag">Tag example</p>
+                                    <p class="ricsartbanner__tag">Tag example</p>
                                 </div>
                             </div>
                         </div>
@@ -309,7 +310,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ricsartcf mar-bot--30">
+            <div class="ricsartcf">
                 <div class="container container--fluid">
                     <div class="container--content">
                         <div class="ricsartcf__container rics--row col--auto">
@@ -326,13 +327,13 @@
                     </div>
                 </div>
             </div>
-            <div class="ricsartcf mar-bot--50">
+            <div class="ricsartcf">
                 <div class="container container--fluid">
                     <div class="container--content">
                         <div class="ricsartcf__container rics--row col--auto">
                             <div class="ricsartcf__leftcol col--1"></div>
                             <div class="ricsartcf__midcol col--7 col--fst col--lst">
-                                <h5 class="ricsartcf__heading mar-bot--100  ricsartcf--jrnlheading ricsartcf--headingwithbr">
+                                <h5 class="ricsartcf__heading ricsartcf--jrnlheading ricsartcf--headingwithbr">
                                     <span class="ricsartcf__bigfont">A</span>
                                     s RICS members, we should promote trust in the profession by applying consistent and transparent standards.
                                 </h5>
@@ -347,7 +348,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ricsartcf ricsartcf--scnclrlayout mar-bot--50">
+            <div class="ricsartcf ricsartcf--scnclrlayout">
                 <div class="container container--fluid">
                     <div class="container--content">
                         <div class="ricsartcf__container col--auto ricsartcf--scdrylayout">
@@ -393,7 +394,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ricsartcf mar-bot--50">
+            <div class="ricsartcf">
                 <div class="container container--fluid">
                     <div class="container--content">
                         <div class="ricsartcf__container col--auto">
@@ -416,7 +417,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ricsarttbl mar-bot--50">
+            <div class="ricsarttbl">
                 <div class="container container--fluid">
                     <div class="container--content">
                         <div class="ricsarttbl__container col--auto">
@@ -424,6 +425,7 @@
                                 <div class="ricsarttbl__leftcol col--1"></div>
                                 <div class="ricsarttbl__midcol col--7 col--fst col--lst">
                                     <div class="ricsarttbl__headingcont">
+                                        <a onclick="expandTable()" class="ricsarttbl__expndtbl icon icon--expndtbl" href="javascript:void(0);" title="Close">Close</a>
                                         <p class="ricsarttbl__tablename fnt-stl--itlc">
                                             Table 1.
                                         </p> 
@@ -472,13 +474,67 @@
                     </div>
                 </div>
             </div>
-            <div class="ricsartcf mar-bot--200">
+            <div id="ricsLighbox" class="ricslighbox">
+                <div class="ricsarttbl">
+                    <div class="container container--fluid">
+                        <div class="container--content">
+                            <div class="ricsarttbl__container col--auto">
+                                <a class="ricslighbox__closeicon icon icon--close" onclick="closeLightbox()" href="javascript:void(0);" title="Close">Close</a>
+                                <div class="ricsarttbl__headingcont">
+                                    <p class="ricsarttbl__tablename fnt-stl--itlc">
+                                        Table 1.
+                                    </p> 
+                                    <p class="ricsarttbl__tablename">
+                                        Freeze-thaw resistance rating of new bricks
+                                    </p>
+                                </div>
+                                <div class="tbl">
+                                    <span class="tbl__leftline"></span>
+                                    <span class="tbl__rightline"></span>
+                                    <span class="tbl__bottomline"></span>
+                                    <table class="ricsarttbl__tbl tbl__tbl">
+                                        <thead class="tbl__head">
+                                            <tr class="tbl__headrow">
+                                                <th class="tbl__headcol">Frost</th>
+                                                <th class="tbl__headcol">Description</th>
+                                                <th class="tbl__headcol">Description</th>
+                                                <th class="tbl__headcol">Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="tbl__body">
+                                            <tr class="tbl__bodyrow">
+                                                <td class="tbl__bodycol">F0</td>
+                                                <td class="tbl__bodycol">Suitable for passive exposure, such as internal use.</td>
+                                                <td class="tbl__bodycol">Suitable for passive exposure, such as internal use.</td>
+                                                <td class="tbl__bodycol">Suitable for passive exposure, such as internal use.</td>
+                                            </tr>
+                                            <tr class="tbl__bodyrow">
+                                                <td class="tbl__bodycol">F0</td>
+                                                <td class="tbl__bodycol">Suitable for passive exposure, such as internal use.</td>
+                                                <td class="tbl__bodycol">Suitable for passive exposure, such as internal use.</td>
+                                                <td class="tbl__bodycol">Suitable for passive exposure, such as internal use.</td>
+                                            </tr>
+                                            <tr class="tbl__bodyrow">
+                                                <td class="tbl__bodycol">F0</td>
+                                                <td class="tbl__bodycol">Suitable for passive exposure, such as internal use.</td>
+                                                <td class="tbl__bodycol">Suitable for passive exposure, such as internal use.</td>
+                                                <td class="tbl__bodycol">Suitable for passive exposure, such as internal use.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ricsartcf">
                 <div class="container container--fluid">
                     <div class="container--content">
                         <div class="ricsartcf__container rics--row col--auto">
                             <div class="ricsartcf__leftcol col--1"></div>
                             <div class="ricsartcf__midcol col--7 col--fst col--lst">
-                                <p class="ricsartcf__content col--auto fnt-stl--itlc fnt-clr--chrgry max-wdh--382 pad-lft--0">
+                                <p class="ricsartcf__content ricsartcf--txtlink">
                                     Tom Parker MRICS is assistant manager, valuation and advisory services, Colliers 
                                     <a class="ricsartcf__link" href="javascript:void(0);" title="rics.org/flexibleworkspace">tom.parker@colliers.com</a>
                                 </p>

@@ -109,7 +109,7 @@ a {
       margin-right: -5px;
    }
    &--play{
-      background: url(/dam/images/video__play.svg) no-repeat transparent;
+      background: url(/dam/images/icon__playvideo__2x.png) no-repeat transparent;
       background-size: contain;
       width: 189px;
       height: 189px;
@@ -118,7 +118,6 @@ a {
       top: 50%;
       margin-top: -94.5px;
       margin-left: -94.5px;
-      border-radius: 50%;
    }
    &--fbicon{
       .medium--icndimns();
@@ -137,6 +136,20 @@ a {
       background: url(/dam/images/icon__linkedin.svg) no-repeat transparent;
       background-size: cover;
       margin: 0 30px 0 15px;
+   }
+   &--close{
+      width: 67px;
+      height: 67px;
+      background: url(/dam/images/icon__close__2x.png) no-repeat transparent;
+      background-size: cover;
+      text-indent: -99999em;
+   }
+   &--expndtbl{
+      width: 67px;
+      height: 67px;
+      background: url(/dam/images/icon__expdtbl__2x.png) no-repeat transparent;
+      background-size: cover;
+      text-indent: -99999em;
    }
 }
 .clr{
@@ -357,17 +370,14 @@ a {
       text-indent: -99999em;
    }
    &--arrowleft{
-      background: url(/dam/images/icon__arrowleft.svg) transparent;
+      background: url(/dam/images/icon__arrowleft__2x.png) transparent;
       background-size: cover;
       left: 30px;
-      border-radius: 50%;
    }
    &--arrowright{
-      background: url(/dam/images/icon__arrowright.svg) transparent;
+      background: url(/dam/images/icon__arrowright__2x.png) transparent;
       background-size: 103%;
       right: 30px;
-      border-radius: 50%;
-      background-position: -1px -1px;
    }
 }
 @keyframes fading{
@@ -464,6 +474,30 @@ html {
 @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) { 
    .ricsnav--jornalslink {
       margin-top: 16px;
-      padding-bottom: 15px;
+      padding-bottom: 19px;
+   }
+}
+.ricslighbox{
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+   background: rgba(255, 255, 255, 0.7);
+   display: none;
+   .ricsarttbl{
+      width: 96%;
+      position: absolute;
+      left: 50%;
+      margin-left: -48%;
+      top: 110px;
+      &__headingcont{
+         margin-top: 0;
+      }
+   }
+   &__closeicon{
+      position: absolute;
+      right: 0;
+      top: -82px;
    }
 }

@@ -47,3 +47,25 @@ function openSearch() {
       let searchInputElement = document.getElementsByClassName("ricsnav__rightsearchform");
       searchInputElement[0].style.display = "block";
 }
+
+let ricsVideo = document.getElementById("ricsvideo");
+
+function playricsVideo() {
+      let playVideoButton = document.getElementById("playricsVideoBtn");
+      playVideoButton.style.display = "none";
+      ricsVideo.play();
+}
+
+function expandTable() {
+      let modalElement = document.getElementById("ricsLighbox");
+      let bodyElement = document.body;
+      modalElement.style.display = "block";
+      bodyElement.style.overflow = "hidden";
+}
+
+function closeLightbox() {
+      let modalElement = document.getElementById("ricsLighbox");
+      let bodyElement = document.body;
+      modalElement.style.display = "none";
+      bodyElement.style.overflow = "auto";
+}

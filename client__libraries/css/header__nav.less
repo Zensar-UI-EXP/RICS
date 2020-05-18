@@ -17,6 +17,11 @@
       display: flex;
       flex-direction: row;
    }
+   &__leftlist{
+      &:first-child{
+         padding-right: 45px;
+      }
+   }
    &--listfirst{
       padding-left: 0!important;
    }
@@ -32,6 +37,9 @@
       padding: 20px 0 5px;
       float: left;
       width: 100%;
+      &:hover{
+         border-bottom: solid 4px @ricsblack;
+      }
    }
    &--moduslink{
       .default--font();
@@ -63,12 +71,21 @@
       justify-content: flex-end;
       padding-top: 27px;
       border-right: solid 1px @ricsblack;
+      &:first-child{
+         padding-right: 45px;
+      }
+      &:last-child{
+         padding-left: 45px;
+      }
    }
    &--rightlastlist{
       border-right: 0;
    }
    &__rightlink{
       .default--font();
+      &:hover{
+         opacity: 0.7;
+      }
    }
    &__rightsearchform{
       display: none;
