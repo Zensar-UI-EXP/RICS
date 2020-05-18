@@ -4,18 +4,19 @@
         <meta charset="utf-8" />
         <title>RICS - Built Environment / Article Name</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=10" />
         <link rel="icon" type="image/x-icon" href="dam/images/rics__logo.ico" />
-        <link rel="stylesheet/less" type="text/css" href="client__libraries/css/header.less" />
-        <link rel="stylesheet/less" type="text/css" href="client__libraries/css/headernav.less" />
-        <link rel="stylesheet/less" type="text/css" href="client__libraries/css/headersubnav.less" />
-        <link rel="stylesheet/less" type="text/css" href="client__libraries/css/breadcrumb.less" />
-        <link rel="stylesheet/less" type="text/css" href="client__libraries/css/banner.less" />
-        <link rel="stylesheet/less" type="text/css" href="client__libraries/css/imagetext.less" />
-        <link rel="stylesheet/less" type="text/css" href="client__libraries/css/artcf.less" />
-        <link rel="stylesheet/less" type="text/css" href="client__libraries/css/infographic.less" />
-        <link rel="stylesheet/less" type="text/css" href="client__libraries/css/related.less" />
-        <link rel="stylesheet/less" type="text/css" href="client__libraries/css/newsletter.less" />
-        <link rel="stylesheet/less" type="text/css" href="client__libraries/css/footer.less" />
+        <link rel="stylesheet/less" type="text/x-less" href="client__libraries/css/header.less" />
+        <link rel="stylesheet/less" type="text/x-less" href="client__libraries/css/header__nav.less" />
+        <link rel="stylesheet/less" type="text/x-less" href="client__libraries/css/header__subnav.less" />
+        <link rel="stylesheet/less" type="text/x-less" href="client__libraries/css/breadcrumb.less" />
+        <link rel="stylesheet/less" type="text/x-less" href="client__libraries/css/banner.less" />
+        <link rel="stylesheet/less" type="text/x-less" href="client__libraries/css/image__text.less" />
+        <link rel="stylesheet/less" type="text/x-less" href="client__libraries/css/art__cf.less" />
+        <link rel="stylesheet/less" type="text/x-less" href="client__libraries/css/infographic.less" />
+        <link rel="stylesheet/less" type="text/x-less" href="client__libraries/css/related.less" />
+        <link rel="stylesheet/less" type="text/x-less" href="client__libraries/css/newsletter.less" />
+        <link rel="stylesheet/less" type="text/x-less" href="client__libraries/css/footer.less" />
         <style>
             #modusMenu{
                 display: none;
@@ -65,7 +66,7 @@
                                 </li>
                                 <li class="ricsnav__rightlist ricsnav--rightlastlist col--auto ">
                                     <a class="ricsnav__rightlink" href="javascript:void(0);" title="Search">
-                                        <i class="icon icon--search flt--rht"></i>
+                                        <span class="icon icon--search flt--rht"></span>
                                         Search
                                     </a>
                                 </li>
@@ -191,8 +192,8 @@
                         <div class="ricsartbanner__container rics--row col--auto">
                             <div class="ricsartbanner__leftcol col--1"></div>
                             <div class="ricsartbanner__midcol col--7 col--fst">
-                                <h2 class="ricsartbanner__heading fnt-fmly--jornal fnt-clr--blgrn">PROPERTY JOURNAL</h2>
-                                <h3 class="ricsartbanner__subheading fnt-fmly--jornal">Globally consistent measurement standards</h3>
+                                <h2 class="ricsartbanner__heading fnt-clr--blgrn ricsartbanner--jrnlheading">PROPERTY JOURNAL</h2>
+                                <h3 class="ricsartbanner__subheading ricsartbanner--jrnlsubheading">Globally consistent measurement standards</h3>
                                 <h4 class="ricsartbanner__desc">Widespread economic uncertainty, concerns over fire safety in the post-Grenfell era and a shrinking market.</h4>
                                 <div class="rics--row">
                                     <p class="ricsartbanner__authorname col--3">
@@ -221,7 +222,7 @@
                             <div class="ricsartimgntxt__midcol col--12 col--fst col--lst">
                                 <img class="ricsartimgntxt__img" src="/dam/images/modus__article/artilcle__5.png" alt="Image description WeWork Vancouver is one of the company’s 849 locations." />
                             </div>
-                            <div class="ricsartimgntxt__midcol col--1"></div>
+                            <div class="ricsartimgntxt__lefcol col--1"></div>
                             <p class="ricsartimgntxt__txt col--7 col--fst col--lst">Image description WeWork Vancouver is one of the company’s 849 locations.</p>
                         </div>
                     </div>
@@ -233,7 +234,7 @@
                         <div class="ricsartcf__container rics--row col--auto  ">
                             <div class="ricsartcf__leftcol col--1"></div>
                             <div class="ricsartcf__midcol col--7 col--fst">
-                                <h5 class="ricsartcf__heading fnt-fmly--jornal fnt-wt--smbld fnt-sz--24">
+                                <h5 class="ricsartcf__heading ricsartcf--jrnlheading">
                                     <span class="ricsartcf__bigfont">I</span>
                                     n real estate, size matters. With offices in particular, size affects every element of property decision-making, from assessing workspace layout and suitability to planning and predicting likely running costs, fit-out expenses and reinstatement values. It is also a crucial factor in determining the total amount of rent an occupier will pay.
                                 </h5>
@@ -249,7 +250,7 @@
                             </div>
                             <div class="ricsartcf__leftcol col--1"></div>
                             <div class="ricsartcf__rhtcol flx-alnsf--end col--3 col--lst">
-                                <h6 class="ricsartcf__rhtcontent">
+                                <h6 class="ricsartcf__rhtcontent ricsartcf--jrnlrhtcontent">
                                     As RICS members, we should promote trust in the profession by applying consistent and transparent standards.
                                 </h6>
                             </div>
@@ -295,11 +296,11 @@
                         <div class="ricsartimgntxt__container rics--row col--auto col--fst col--lst">
                             <div class="ricsartimgntxt__midcol col--6">
                                 <img class="ricsartimgntxt__img" src="/dam/images/journals__article/artilcle__2.png" alt="WeWork Vancouver is one of the company’s 849 locations." />
-                                <p class="ricsartimgntxt__txt fnt-clr--chrgry">WeWork at Constellation in Los Angeles, California. Photography by The We Company.</p>
+                                <p class="ricsartimgntxt__txt fnt-stl--itlc fnt-clr--chrgry">WeWork at Constellation in Los Angeles, California. Photography by The We Company.</p>
                             </div>
                             <div class="ricsartimgntxt__midcol col--6">
                                 <img class="ricsartimgntxt__img" src="/dam/images/journals__article/artilcle__3.png" alt="WeWork Vancouver is one of the company’s 849 locations." />
-                                <p class="ricsartimgntxt__txt fnt-clr--chrgry">WeWork at Constellation in Los Angeles, California. Photography by The We Company.</p>
+                                <p class="ricsartimgntxt__txt fnt-stl--itlc fnt-clr--chrgry">WeWork at Constellation in Los Angeles, California. Photography by The We Company.</p>
                             </div>
                         </div>
                     </div>
@@ -328,7 +329,7 @@
                         <div class="ricsartcf__container rics--row col--auto">
                             <div class="ricsartcf__leftcol col--1"></div>
                             <div class="ricsartcf__midcol col--7 col--fst col--lst">
-                                <h5 class="ricsartcf__heading fnt-fmly--jornal fnt-wt--smbld mar-bot--100 fnt-sz--24 ricsartcf--headingwithbr">
+                                <h5 class="ricsartcf__heading mar-bot--100  ricsartcf--jrnlheading ricsartcf--headingwithbr">
                                     <span class="ricsartcf__bigfont">A</span>
                                     s RICS members, we should promote trust in the profession by applying consistent and transparent standards.
                                 </h5>
@@ -343,7 +344,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ricsartcf mar-bot--50">
+            <div class="ricsartcf ricsartcf--scnclrlayout mar-bot--50">
                 <div class="container container--fluid">
                     <div class="container--content">
                         <div class="ricsartcf__container col--auto ricsartcf--scdrylayout">
@@ -513,51 +514,53 @@
                     <div class="container--content">
                         <div class="ricsrlart__container rics--row col--auto">
                             <h2 class="ricsrlart__heading">Related Articles</h2>
-                            <div class="ricsrlart__cardlist rics--row">
-                                <div class="col--4">
-                                    <div class="ricsrlart__card">
-                                        <img class="ricsrlart__cardimage" src="/dam/images/modus__article/artilcle__5.png" alt="Time for a change of use" />
-                                        <div class="ricsrlart__carddetail">
-                                            <h3 class="ricsrlart__cardlabel fnt-clr--trgrn">LAND JOURNAL</h3>
-                                            <h4 class="ricsrlart__articleheading">Time for a change of use</h4>
-                                            <p class="ricsrlart__articledate">Adam Branson  <strong>17 April 2020</strong></p>
-                                            <div class="ricsrlart__tagcont">
-                                                <p class="ricsrlart__tag">Tag example</p>
-                                                <p class="ricsrlart__tag">Tag example</p>
-                                                <p class="ricsrlart__tag mar-rht--0">Tag example</p>
-                                                <a class="ricsrlart__tagmore" href="javascript:void(0);" title="Click to see more tagging">Click to see more tagging</a>
+                            <div class="col--12">
+                                <div class="ricsrlart__cardlist rics--row">
+                                    <div class="col--4 col--fst">
+                                        <div class="ricsrlart__card">
+                                            <img class="ricsrlart__cardimage" src="/dam/images/modus__article/artilcle__5.png" alt="Time for a change of use" />
+                                            <div class="ricsrlart__carddetail">
+                                                <h3 class="ricsrlart__cardlabel fnt-clr--trgrn">LAND JOURNAL</h3>
+                                                <h4 class="ricsrlart__articleheading">Time for a change of use</h4>
+                                                <p class="ricsrlart__articledate">Adam Branson  <strong>17 April 2020</strong></p>
+                                                <div class="ricsrlart__tagcont">
+                                                    <p class="ricsrlart__tag">Tag example</p>
+                                                    <p class="ricsrlart__tag">Tag example</p>
+                                                    <p class="ricsrlart__tag mar-rht--0">Tag example</p>
+                                                    <a class="ricsrlart__tagmore" href="javascript:void(0);" title="Click to see more tagging">Click to see more tagging</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col--4">
-                                    <div class="ricsrlart__card">
-                                        <img class="ricsrlart__cardimage" src="/dam/images/modus__article/artilcle__5.png" alt="Time for a change of use" />
-                                        <div class="ricsrlart__carddetail">
-                                            <h3 class="ricsrlart__cardlabel fnt-fmly--oswald">MODUS </h3>
-                                            <h4 class="ricsrlart__articleheading">One Dutch company has taken the innovative step of creating a sustainable floating farm </h4>
-                                            <p class="ricsrlart__articledate">Adam Branson  <strong>17 April 2020</strong></p>
-                                            <div class="ricsrlart__tagcont">
-                                                <p class="ricsrlart__tag">Tag example</p>
-                                                <p class="ricsrlart__tag">Tag example</p>
-                                                <p class="ricsrlart__tag mar-rht--0">Tag example</p>
-                                                <a class="ricsrlart__tagmore" href="javascript:void(0);" title="Click to see more tagging">Click to see more tagging</a>
+                                    <div class="col--4">
+                                        <div class="ricsrlart__card">
+                                            <img class="ricsrlart__cardimage" src="/dam/images/modus__article/artilcle__5.png" alt="Time for a change of use" />
+                                            <div class="ricsrlart__carddetail">
+                                                <h3 class="ricsrlart__cardlabel fnt-fmly--oswald">MODUS </h3>
+                                                <h4 class="ricsrlart__articleheading">Jenny Lynch talks about best practice</h4>
+                                                <p class="ricsrlart__articledate">Adam Branson  <strong>17 April 2020</strong></p>
+                                                <div class="ricsrlart__tagcont">
+                                                    <p class="ricsrlart__tag">Tag example</p>
+                                                    <p class="ricsrlart__tag">Tag example</p>
+                                                    <p class="ricsrlart__tag mar-rht--0">Tag example</p>
+                                                    <a class="ricsrlart__tagmore" href="javascript:void(0);" title="Click to see more tagging">Click to see more tagging</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col--4">
-                                    <div class="ricsrlart__card">
-                                        <img class="ricsrlart__cardimage" src="/dam/images/modus__article/artilcle__5.png" alt="Time for a change of use" />
-                                        <div class="ricsrlart__carddetail">
-                                            <h3 class="ricsrlart__cardlabel fnt-clr--trgrn">LAND JOURNAL</h3>
-                                            <h4 class="ricsrlart__articleheading">The spectacular fall of WeWork</h4>
-                                            <p class="ricsrlart__articledate">Adam Branson  <strong>17 April 2020</strong></p>
-                                            <div class="ricsrlart__tagcont">
-                                                <p class="ricsrlart__tag">Tag example</p>
-                                                <p class="ricsrlart__tag">Tag example</p>
-                                                <p class="ricsrlart__tag mar-rht--0">Tag example</p>
-                                                <a class="ricsrlart__tagmore" href="javascript:void(0);" title="Click to see more tagging">Click to see more tagging</a>
+                                    <div class="col--4 col--lst">
+                                        <div class="ricsrlart__card">
+                                            <img class="ricsrlart__cardimage" src="/dam/images/modus__article/artilcle__5.png" alt="Time for a change of use" />
+                                            <div class="ricsrlart__carddetail">
+                                                <h3 class="ricsrlart__cardlabel fnt-clr--trgrn">LAND JOURNAL</h3>
+                                                <h4 class="ricsrlart__articleheading">The spectacular fall of WeWork</h4>
+                                                <p class="ricsrlart__articledate">Adam Branson  <strong>17 April 2020</strong></p>
+                                                <div class="ricsrlart__tagcont">
+                                                    <p class="ricsrlart__tag">Tag example</p>
+                                                    <p class="ricsrlart__tag">Tag example</p>
+                                                    <p class="ricsrlart__tag mar-rht--0">Tag example</p>
+                                                    <a class="ricsrlart__tagmore" href="javascript:void(0);" title="Click to see more tagging">Click to see more tagging</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -573,12 +576,14 @@
                         <div class="ricsnewsltr__container rics--row col--auto">
                             <div class="ricsnewsltr__inner col--4">
                                 <form action="#">
-                                    <h2 class="ricsnewsltr__heading">Never miss a story</h2>
+                                    <h5 class="ricsnewsltr__heading">Never miss a story</h5>
                                     <p class="ricsnewsltr__desc">
                                         Sign up to the Newsletter to keep up with what’s emerging in the industry.
                                     </p>
-                                    <input class="ricsnewsltr__email input" type="email" value="" placeholder="Name" />
-                                    <input class="ricsnewsltr__email input" type="email" value="" placeholder="E-mail" />
+                                    <label for="ricsNewslettername" class="dis--none">Name</label>
+                                    <input class="ricsnewsltr__email input" id="ricsNewslettername" type="text" value="" placeholder="Name" />
+                                    <label for="ricsNewsletteremail" class="dis--none">E-mail</label>
+                                    <input class="ricsnewsltr__email input" id="ricsNewsletteremail" type="email" value="" placeholder="E-mail" />
                                     <button class="ricsnewsltr__btn btn" type="submit">Sign Up</button>
                                 </form>
                             </div>
@@ -586,28 +591,6 @@
                     </div>
                 </div>
             </div>
-            <!--
-            <div class="ricsbanner container container--fluid">
-                <div class="container--content">
-                    <div class="rics--row col--auto">
-                        <div class="ricsbanner__container ricsbanner--nobannerimage">
-                            <img class="ricsbanner__image" src="" alt="Author Image" />
-                            <div class="ricsbanner__content">
-                                <h2 class="ricsbanner__contentitle">The Spectacular Fall of WeWork</h2>
-                                <h3 class="ricsbanner__contentheading">Modus</h3>
-                                <p class="ricsbanner__contentdesc">It was widely hailed as the future of flexible workspace, but a disastrous IPO has left some people questioning whether or not the model itself is fundamentally flawed.</p>
-                                <div class="ricsbanner__contentauthorinfo">
-                                    <div class="ricsbanner__contentauthorimgcont">
-                                        <img class="ricsbanner__contentauthorimg" src="/dam/images/rics__authorimage.svg" alt="Author Image" />
-                                    </div>
-                                    <p class="ricsbanner__contentauthorname">Adam Branson  <strong>April 2020</strong></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            -->
         </section>
         <footer class="ricsfooter">
             <div class="container container--fluid">
@@ -670,6 +653,6 @@
             </div>
         </footer>
         <script data-env="development" src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.js"></script>
-        <script type="text/javascript" src="/client__libraries/js/rics.js"></script>
+        <script src="/client__libraries/js/rics.js"></script>
     </body>
 </html>

@@ -25,7 +25,6 @@
    &__content{
       margin-bottom: 35px;
       .default--font();
-      font-family: Arial, Helvetica, sans-serif;
       font-size: 21px;
       line-height: 34px;
    }
@@ -40,7 +39,6 @@
    }
    &__smalldesc{
       .default--font();
-      font-family: Arial, Helvetica, sans-serif;
       font-style: italic;
       line-height: 1.69;
       color: @charcoal--grey;
@@ -69,7 +67,6 @@
       max-width: 521px;
       .default--font();
       font-size: 21px;
-      font-family: Arial, Helvetica, sans-serif;
       font-style: italic;
       color: @charcoal--grey;
    }
@@ -85,7 +82,7 @@
    &__lsttitle{
       display: inline-block;
       .default--font();
-      font-family: @Journals--Bold;
+      font-family: @RICS--Bold;
       color: @blue--green;
    }
    &__lstdesc{
@@ -122,6 +119,19 @@
             width: auto;
          }
       }
+   }
+   &--jrnlheading{
+      font-family: @Journals;
+      font-weight: @semi--bold;
+      font-size: 24px;
+      .ricsartcf__bigfont{
+         font-size: 24px;
+         width: auto;
+         line-height: 24px;
+      }
+   }
+   &--jrnlrhtcontent{
+      font-family: @Journals;
    }
 }
 .ricsarttbl{
