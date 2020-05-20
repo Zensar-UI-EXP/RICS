@@ -9,64 +9,68 @@
    .component--default();
    &__heading{
       .default--font();
-      font-size: 32px;
-      line-height: 1.31;
+      font-size: 26px;
+      line-height: 34px;
       font-family: @Modus;
       margin-bottom: 30px;
    }
    &__bigfont{
-      font-size: 116px;
+      font-size: 100px;
       float: left;
-      line-height: 116px;
+      line-height: 100px;
       width: 60px;
    }
    &__content{
       margin-bottom: 30px;
       .default--font();
-      font-size: 21px;
-      line-height: 34px;
+      font-size: 18px;
+      line-height: 30px;
    }
    &__rhtcontent{
       .default--font();
       font-family: @Modus;
-      font-size: 32px;
-      line-height: 1.31;
-      border-top: solid 1px @ricsblack;
+      font-size: 24px;
+      line-height: 38px;
+      border-top: solid 1px @blue--green;
       padding: 12px 0 0;
       margin-bottom: 30px;
    }
    &__smalldesc{
       .default--font();
+      font-size: 14px;
       font-style: italic;
-      line-height: 1.69;
+      line-height: 20px;
       color: @charcoal--grey;
       display: inline-block;
    }
    &__link{
       text-decoration: underline;
       .default--font();
-      font-size: 21px;
-      line-height: 1.62;
+      font-size: 18px;
+      line-height: 30px;
       word-break: break-all;
    }
    &__slider{
       position: relative;
    }
    &--fstltrnrml{
+      font-size: 24px;
+      line-height: 38px;
       .ricsartcf{
          &__bigfont{
-            font-size: 32px;
-            line-height: 1;
+            font-size: 24px;
+            line-height: 38px;
             width: auto;
          }
       }
    }
    &--txtlink{
-      width: 386px;
+      width: 445px;
       .default--font();
-      font-size: 21px;
+      font-size: 18px;
       font-style: italic;
       color: @charcoal--grey;
+      line-height: 30px;
    }
    &__lstcont{
       padding-left: 20px;
@@ -82,6 +86,7 @@
       .default--font();
       font-family: @RICS--Bold;
       color: @blue--green;
+      font-weight: bold;
    }
    &__lstdesc{
       margin-left: 23px;
@@ -90,48 +95,51 @@
    }
    &--headingwithbr{
       border-top: solid 1px @blue--green;
-      padding-top: 20px;
+      padding-top: 30px;
    }
    &--scdrylayout{
       background: rgba(2, 131, 124, 0.1);
       padding: 50px 0;
    }
    &__scndlistcont{
+      padding-left: 15px;
       margin-top: 20px;
-      padding-left: 20px;
    }
    &__scndlist{
       list-style: disc inside;
       .default--font();
-      font-size: 21px;
-      line-height: 34px;
+      font-size: 18px;
+      line-height: 30px;
    }
    &--scndheading{
       .default--font();
-      font-size: 25px;
+      font-family: @Journals--SemiBold;
+      font-size: 20px;
       color: @blue--green;
+      line-height: 30px;
+      margin-bottom: 10px;
       .ricsartcf{
          &__bigfont{
-            font-size: 25px!important;
-            line-height: 35px;
+            font-size: 20px!important;
+            line-height: 30px;
             width: auto;
          }
       }
    }
    &--jrnlheading{
-      font-family: @Journals;
-      font-weight: @semi--bold;
-      font-size: 24px;
+      font-family: @Journals--SemiBold;
+      font-size: 20px;
+      line-height: 32px;
       .ricsartcf__bigfont{
-         font-size: 24px;
          width: auto;
-         line-height: 31px;
-         position: relative;
-         top: 1px;
+         font-size: 20px;
+         line-height: 32px;
       }
    }
    &--jrnlrhtcontent{
-      font-family: @Journals;
+      font-family: @Journals--SemiBold;
+      font-size: 20px;
+      line-height: 32px;
    }
 }
 .ricsarttbl{
@@ -145,7 +153,7 @@
    }
    &__expndtbl{
       position: absolute;
-      right: -33px;
-      top: -33px;
+      right: -25px;
+      top: -25px;
    }
 }

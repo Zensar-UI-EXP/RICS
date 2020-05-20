@@ -76,37 +76,38 @@
 }
 .ricsartbanner{
    .component--default();
+   margin: 50px 0 40px;
    &__heading{
       .default--font();
-      font-family: @Modus;
+      font-family: @Modus--SemiBold;
       font-size: 22px;
-      font-weight: @semi--bold;
-      line-height: 0.64;
+      line-height: 14px;
       display: inline-block;
       text-transform: uppercase;
+      font-weight: normal;
    }
    &__subheading{
       margin: 30px 0 20px;
       .default--font();
-      font-family: @Modus;
+      font-family: @Modus--Medium;
       font-size: 65px;
-      line-height: 1.23;
+      line-height: 80px;
    }
    &__desc{
       .default--font();
-      font-size: 25px;
-      line-height: 1.48;
+      font-size: 22px;
+      line-height: 35px;
    }
    &__authorname, &__authordate{
       margin: 35px 0 25px;
       .default--font();
-      line-height: 2.25;
+      line-height: 36px;
+      white-space: nowrap;
    }
    &__tag{
       background: @very--lightpink;
       .default--font();
       font-size: 14px;
-      letter-spacing: 0.58px;
       text-align: center;
       padding: 7px 8px;
       margin: 10px 3px 0px 0!important;
@@ -120,11 +121,12 @@
    }
    &--jrnlheading{
       font-family: @Journals--Bold;
+      font-size: 16px;
+      line-height: 14px;
    }
    &--jrnlsubheading{
-      font-family: @Journals;
-      font-weight: @semi--bold;
-      font-size: 60px;
-      line-height: 65px;
+      font-family: @Journals--SemiBold;
+      font-size: 42px;
+      line-height: 54px;
    }
 }

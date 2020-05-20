@@ -38,8 +38,7 @@
                                 <a class="ricsheader__logolink" href="javascript:void(0);" title="RICS">RICS</a>
                             </h1>
                         </div>
-                        <div class="ricsheader__ricslinkcont col--auto">
-                            Visit
+                        <div class="ricsheader__ricslinkcont col--auto hide--mobile">
                             <a href="https://www.rics.org/uk/" class="ricsheader__ricslink" target="_blank" title="rics.org">rics.org</a>
                         </div>
                     </div>
@@ -50,13 +49,13 @@
             <div class="container container--fluid">
                 <div class="container--content">
                     <div class="rics--row">
-                        <nav role="navigation" aria-label="Header navigation" class="ricsnav__cont" id="headerNav">
+                        <nav role="navigation" aria-label="Header navigation" class="ricsnav__cont">
                             <ul class="ricsnav__leftlistcont col--6 col--fst">
-                                <li class="ricsnav__leftlist col--auto ">
-                                    <a class="ricsnav__leftlink ricsnav--moduslink" href="javascript:void(0);" title="Modus">Modus</a>
+                                <li class="ricsnav__leftlist col--auto">
+                                    <a class="ricsnav__leftlink ricsnav--moduslink ricsnav--leftlistactive" onclick="toggleMenu(this, 'modusMenu')" href="javascript:void(0);" title="Modus">Modus</a>
                                 </li>
-                                <li class="ricsnav__leftlist col--auto ">
-                                    <a class="ricsnav__leftlink ricsnav--jornalslink ricsnav--leftlistactive" href="javascript:void(0);" title="Journals">Journals</a>
+                                <li class="ricsnav__leftlist col--auto">
+                                    <a class="ricsnav__leftlink ricsnav--jornalslink" href="javascript:void(0);" onclick="toggleMenu(this, 'journalsMenu')" title="Journals">Journals</a>
                                 </li>
                             </ul>
                             <ul class="ricsnav__rightlistcont col--6 col--lst">
@@ -86,7 +85,7 @@
                         <nav role="navigation" aria-label="Modus navigation" class="ricssubnav__submenunav" id="modusMenu">
                             <ul class="ricssubnav__submenulistcont">
                                 <li class="ricssubnav__submenulist ">
-                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Technology">Technology</a>
+                                    <a class="ricssubnav__submenulink ricssubnav--linkfirst" href="javascript:void(0);" title="Technology">Technology</a>
                                     <ul class="ricssubnav__drpdwnlistcont">
                                         <li class="ricssubnav__drpdwnlist">
                                             <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Surveying Tools">Surveying Tools</a>
@@ -155,13 +154,13 @@
                                     <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Property Journal">Property Journal</a>
                                 </li>
                                 <li class="ricssubnav__submenulist">
-                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Construction Journal">Construction Journal</a>
+                                    <a class="ricssubnav__submenulink ricssubnav--submenulinkactive" href="javascript:void(0);" title="Construction Journal">Construction Journal</a>
                                 </li>
                                 <li class="ricssubnav__submenulist">
                                     <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Built Environment Journal">Built Environment Journal</a>
                                 </li>
                                 <li class="ricssubnav__submenulist">
-                                    <a class="ricssubnav__submenulink ricssubnav--submenulinkactive" href="javascript:void(0);" title="Land Journal">Land Journal</a>
+                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Land Journal">Land Journal</a>
                                 </li>
                             </ul>
                         </nav>
@@ -355,7 +354,7 @@
                             <div class="rics--row">
                                 <div class="ricsartcf__leftcol col--1"></div>
                                 <div class="ricsartcf__midcol col--7 col--fst col--lst">
-                                    <h5 class="ricsartcf__heading fnt-fmly--jornal ricsartcf--scndheading">
+                                    <h5 class="ricsartcf__heading ricsartcf--scndheading">
                                         <span class="ricsartcf__bigfont">S</span>
                                         econdary headline of the section
                                     </h5>
@@ -401,7 +400,7 @@
                             <div class="rics--row">
                                 <div class="ricsartcf__leftcol col--1"></div>
                                 <div class="ricsartcf__midcol col--7 col--fst col--lst">
-                                    <h5 class="ricsartcf__heading fnt-fmly--jornal ricsartcf--scndheading">
+                                    <h5 class="ricsartcf__heading ricsartcf--scndheading">
                                         <span class="ricsartcf__bigfont">S</span>
                                         econdary headline of the section
                                     </h5>
@@ -639,11 +638,11 @@
                                     <p class="ricsnewsltr__desc">
                                         Sign up to the Newsletter to keep up with what’s emerging in the industry.
                                     </p>
-                                    <label for="ricsNewslettername" class="dis--none">Name</label>
-                                    <input class="ricsnewsltr__email input" id="ricsNewslettername" type="text" value="" placeholder="Name" />
+                                    <label for="ricsNewslettername" class="dis--none">Full Name</label>
+                                    <input class="ricsnewsltr__email input" id="ricsNewslettername" type="text" value="" placeholder="Full Name" />
                                     <label for="ricsNewsletteremail" class="dis--none">E-mail</label>
                                     <input class="ricsnewsltr__email input" id="ricsNewsletteremail" type="email" value="" placeholder="E-mail" />
-                                    <button class="ricsnewsltr__btn btn" type="submit">Sign Up</button>
+                                    <button class="ricsnewsltr__btn btn" type="submit">Subscribe</button>
                                 </form>
                             </div>
                         </div>
@@ -656,7 +655,7 @@
                 <div class="container--content">
                     <div class="rics--row">
                         <div class="ricsfooter__left col--4">
-                            <h6 class="ricsfooter__heading fnt-fmly--oswald col--9 col--fst">Modus</h6>
+                            <h6 class="ricsfooter__heading ricsfooter--modus col--9 col--fst">Modus</h6>
                             <nav role="navigation" aria-label="Modus footer navigation" class="ricsfooter__nav col--9 col--fst">
                                 <ul class="ricsfooter__navlistcont">
                                     <li class="ricsfooter__navlist">
@@ -666,7 +665,7 @@
                             </nav>
                         </div>
                         <div class="ricsfooter__ctr col--4">
-                            <h6 class="ricsfooter__heading col--9 col--fst">Journals</h6>
+                            <h6 class="ricsfooter__heading ricsfooter--journal col--9 col--fst">Journals</h6>
                             <nav role="navigation" aria-label="Journals footer navigation" class="ricsfooter__nav col--9 col--fst">
                                 <ul class="ricsfooter__navlistcont">
                                     <li class="ricsfooter__navlist">
@@ -676,12 +675,17 @@
                             </nav>
                         </div>
                         <div class="ricsfooter__right col--4 col--lst">
-                            <div class="col--9 col--fst">
-                                <h1 class="ricsfooter__logo">
+                            <div class="col--12 col--fst">
+                                <h1 class="ricsfooter__heading">
                                     <a class="ricsfooter__logolink" href="javascript:void(0);" title="RICS">RICS</a>
+                                    <div class="ricsfooter__scllinks rics--row col--auto col--fst">
+                                        <a class="ricsfooter__socialsharinglink icon icon-wht--fbicon" href="javascript:void(0);" title="Facebook">Facebook</a>
+                                        <a class="ricsfooter__socialsharinglink icon icon-wht--twtr" href="javascript:void(0);" title="Twitter">Twitter</a>
+                                        <a class="ricsfooter__socialsharinglink icon icon-wht--lkdln" href="javascript:void(0);" title="LinkeedIn">LinkeedIn</a>
+                                    </div>
                                 </h1>
                             </div>
-                            <nav role="navigation" aria-label="Footer navigation" class="ricsfooter__nav col--9 col--fst">
+                            <nav role="navigation" aria-label="Footer navigation" class="ricsfooter__nav col--12 col--fst">
                                 <ul class="ricsfooter__navlistcont">
                                     <li class="ricsfooter__navlist">
                                         <a class="ricsfooter__navlink" href="javascript:void(0);" title="RICS.org">Visit <u>RICS.org</u></a>
@@ -699,8 +703,8 @@
                             </nav>
                             <div class="rics--row">
                                 <nav role="navigation" aria-label="Copyrights information" class="ricsfooter__nav col--auto">
-                                    <ul class="ricsfooter__navlistcont">
-                                        <li class="ricsfooter__navlist mar-top--75 opct--50">
+                                    <ul class="ricsfooter__navlistcont ricsfooter--copyright">
+                                        <li class="ricsfooter__navlist">
                                             Copyright 2020 RICS.org. All rights reserved
                                         </li>
                                     </ul>

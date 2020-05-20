@@ -29,34 +29,28 @@
       padding-right: 0!important;
    }
    &__leftlink{
-      .default--font();
-      font-size: 20px;
-      font-weight: 600;
-      line-height: 0.79;
-      text-align: center;
-      padding: 20px 0 5px;
+      padding: 0;
+      margin-top: 35px;
       float: left;
       width: 100%;
+      text-indent: -99999em;
       &:hover{
          border-bottom: solid 4px @ricsblack;
       }
    }
    &--moduslink{
       .default--font();
-      font-family: @Modus;
-      font-size: 30px;
-      font-weight: 600;
-      letter-spacing: 0.11px;
-      text-transform: uppercase;
+      background: url(/dam/images/logo__modus__4x.png) no-repeat transparent;
+      width: 93px;
+      height: 45px;
+      background-size: contain;
    }
    &--jornalslink{
-      .default--font();
-      font-family: @Journals--Bold;
-      font-size: 26px;
-      line-height: 0.58;
-      letter-spacing: -0.7px;
-      margin-top: 10px;
-      padding-bottom: 10px;
+      background: url(/dam/images/logo__journals__4x.png) no-repeat transparent;
+      width: 112px;
+      height: 29px;
+      background-size: contain;
+      padding-bottom: 41px;
    }
    &--leftlistactive{
       border-bottom: solid 4px @ricsblack;
@@ -106,5 +100,6 @@
       top: -8px;
       .default--font();
       font-size: 18px;
+      color: @ricsblack!important;
    }
 }

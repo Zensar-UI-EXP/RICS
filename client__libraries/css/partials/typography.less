@@ -137,16 +137,36 @@ a {
       background-size: cover;
       margin: 0 30px 0 15px;
    }
+   &-wht{
+      &--fbicon{
+         .medium--icndimns();
+         background: url(/dam/images/icon__wht__fb.svg) no-repeat transparent;
+         background-size: cover;
+         margin: 0 30px 0 15px;
+      }
+      &--twtr{
+         .medium--icndimns();
+         background: url(/dam/images/icon__wht__twitter.svg) no-repeat transparent;
+         background-size: cover;
+         margin: 0 30px 0 15px;
+      }
+      &--lkdln{
+         .medium--icndimns();
+         background: url(/dam/images/icon__wht__linkedin.svg) no-repeat transparent;
+         background-size: cover;
+         margin: 0 30px 0 15px;
+      }
+   }
    &--close{
-      width: 67px;
-      height: 67px;
+      width: 50px;
+      height: 50px;
       background: url(/dam/images/icon__close__2x.png) no-repeat transparent;
       background-size: cover;
       text-indent: -99999em;
    }
    &--expndtbl{
-      width: 67px;
-      height: 67px;
+      width: 50px;
+      height: 50px;
       background: url(/dam/images/icon__expdtbl__2x.png) no-repeat transparent;
       background-size: cover;
       text-indent: -99999em;
@@ -243,10 +263,16 @@ a {
    }
    &-fmly{
       &--oswald{
-         font-family: @Modus;
+         font-family: @Modus!important;
+      }
+      &--oswaldsemibold{
+         font-family: @Modus--SemiBold!important;
       }
       &--jornal{
-         font-family: @Journals;
+         font-family: @Journals!important;
+      }
+      &--jornalsemibold{
+         font-family: @Journals--SemiBold!important;
       }
    }
    &-sz{
@@ -300,25 +326,17 @@ a {
 }
 .input{
    border: 0;
-   border-bottom: solid 1px @brown--grey;
-   font-size: 17px;
-   font-weight: normal;
-   font-stretch: normal;
-   font-style: normal;
-   line-height: 1.65;
-   letter-spacing: normal;
+   border-bottom: solid 1px rgba(0, 0, 0, 0.5);
+   .default--font();
+   line-height: 28px;
    color: @cool--greytwo;
    padding: 10px 0;
    margin: 0 auto;
 }
 .btn{
    background: @ricsblack;
-   font-size: 16px;
-   font-weight: normal;
-   font-stretch: normal;
-   font-style: normal;
-   line-height: 2.06;
-   letter-spacing: normal;
+   .default--font();
+   line-height: 36px;
    text-align: center;
    color: @ricswhite;
    border: none;
@@ -376,7 +394,7 @@ a {
    }
    &--arrowright{
       background: url(/dam/images/icon__arrowright__2x.png) transparent;
-      background-size: 103%;
+      background-size: cover;
       right: 30px;
    }
 }
@@ -435,6 +453,85 @@ a {
    }
 }
 
+.ricslighbox{
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+   background: rgba(255, 255, 255, 0.7);
+   display: none;
+   .ricsarttbl{
+      width: 96%;
+      position: absolute;
+      left: 50%;
+      margin-left: -48%;
+      top: 110px;
+      &__headingcont{
+         margin-top: 0;
+      }
+   }
+   &__closeicon{
+      position: absolute;
+      right: 0;
+      top: -82px;
+   }
+}
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+   .col{
+      &--1, &--2, &--3, &--4, &--5, &--6, &--7, &--8, &--9, &--10, &--11, &--12, &--auto{
+         padding-left: 0!important;
+         padding-right: 0!important;
+      }
+   }
+   .rics{
+      &--row{
+         margin-left: 0!important;
+         margin-right: 0!important;
+      }
+   }
+   .container{
+      &--fluid{
+         padding-left: 0!important;
+         padding-right: 0!important;
+      }
+   }
+   .icon--fbicon{
+      margin-left: 0;
+   }
+   .input{
+      font-size: 11px;
+   }
+   .btn{
+      font-size: 9px;
+   }
+   .tbl{
+      position: relative;
+      overflow: auto;
+      &__tbl{
+         width: 100%;
+      }
+      &:before{
+         position: absolute;
+         right: 0;
+         top: 0;
+         background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, @ricswhite 84%);
+         width: 62px;
+         content: "";
+         height: 100%;
+      }
+      &__headcol, &__bodycol{
+         font-size: 11px;
+         padding: 10px 15px;
+         width: 30%;
+         &:first-child{
+            width: 15%;
+         }
+      }
+   }
+}
+
 @offset: 2rem;
 @max_width: @content--width;
 @columns: 12;
@@ -471,33 +568,651 @@ html {
    z-index: 1000;
    pointer-events: none;
 }
-@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) { 
-   .ricsnav--jornalslink {
-      margin-top: 16px;
-      padding-bottom: 19px;
-   }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+   
 }
-.ricslighbox{
-   position: fixed;
-   width: 100%;
-   height: 100%;
-   left: 0;
-   top: 0;
-   background: rgba(255, 255, 255, 0.7);
-   display: none;
-   .ricsarttbl{
-      width: 96%;
-      position: absolute;
-      left: 50%;
-      margin-left: -48%;
-      top: 110px;
-      &__headingcont{
-         margin-top: 0;
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+   
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+   
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+   
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+   .ricsheader{
+      &__logo{
+         width: 85px;
+         height: 29px;
       }
    }
-   &__closeicon{
-      position: absolute;
-      right: 0;
-      top: -82px;
+   .ricsnav{
+      margin-bottom: 0;
+      .container{
+         max-width: 100%;
+      }
+      &__cont{
+         flex-direction: column;
+      }
+      &__leftlistcont{
+         width: 100%;
+         max-width: 100%;
+         margin: 10px auto 0px;
+      }
+      &__leftlist, &__rightlist{
+         width: 50%;
+      }
+      &__leftlink{
+         padding: 0px 0 3px;
+         font-size: 20px;
+      }
+      &__rightlistcont{
+         max-width: 70%!important;
+         position: absolute;
+         top: 35px;
+         right: 0;
+      }
+      &__rightlist{
+         justify-content: center;
+         width: auto;
+         max-width: 70%;
+         padding: 7px 0;
+      }
+      &--jornalslink{
+         padding-bottom: 10px;
+         margin-top: 8px;
+      }
+      &__rightlink{
+         font-size: 12px;
+         margin: 0 10px;
+      }
+      &__rightsearchform {
+         .icon--search {
+            position: absolute;
+            right: 5%;
+            top: 24px;
+         }
+      }
+      &__rightsearchform{
+         position: absolute;
+         top: 110px;
+         right: 0;
+         width: 100vw;
+         background: #fff;
+         z-index: 1;
+         padding: 20px 0 10px;
+      }
+      &__rightsearch{
+         width: 90vw;
+         margin: 0 auto;
+         display: block;
+      }
+   }
+   .ricssubnav{
+      .container{
+         max-width: 100%;
+      }
+      &__submenulistcont{
+         flex-direction: column;
+         margin-top: 10px;
+      }
+      &__submenulist{
+         padding: 10px 0 10px;
+      }
+      &__submenulink{
+         max-width: 90%;
+         margin: 0 auto;
+         display: block;
+         font-size: 14px;
+      }
+      &__drpdwnlistcont{
+         position: relative;
+         top: 0;
+         margin-top: 10px;
+         padding: 10px 0;
+      }
+      &__drpdwnlink{
+         max-width: 90%;
+         margin: 0 auto;
+         display: block;
+         padding: 0;
+         font-size: 12px;
+      }
+   }
+   .ricsbreadcrumb{
+      margin-bottom: 25px;
+      &__navlink{
+         font-size: 10px;
+      }
+      &__navlist{
+         font-size: 10px;
+      }
+   }
+   .ricsartbanner{
+      padding: 25px 0;
+      &__heading{
+         font-size: 12px;
+      }
+      &__subheading{
+         font-size: 30px;
+         margin: 10px 0 15px;
+      }
+      &__desc{
+         font-size: 15px;
+      }
+      &__authorname, &__authordate{
+         font-size: 12px;
+         margin: 10px 0;
+      }
+      &__tag{
+         font-size: 9px;
+      }
+      &--jrnlheading{
+         font-size: 10px;
+         line-height: 14px;
+      }
+      &--jrnlsubheading{
+         font-size: 22px;
+         line-height: 29px;
+         margin-top: 15px;
+      }
+      &__container{
+         flex-direction: column;   
+      }
+      &__midcol{
+         width: 100%;
+         max-width: 100%;
+      }
+      &__authorname, &__authordate{
+         width: 50%;
+         max-width: 50%;
+         flex: 0 0 50%;
+      }
+   }
+   .ricsartcf{
+      padding: 25px 0;
+      &__container{
+         flex-direction: column;
+      }
+      &__midcol, &__rhtcol{
+         width: 100%;
+         max-width: 100%;
+      }
+      &__rhtcol{
+         align-self: flex-start!important;
+         padding-left: 0;
+         padding-right: 15px!important;
+      }
+      &--jrnlheading{
+         font-size: 19px;
+         .ricsartcf__bigfont{
+            font-size: 19px;
+         }
+      }
+      &--jrnlrhtcontent{
+         font-size: 16px;
+         line-height: 23px;
+         font-weight: @semi--bold;
+      }
+      &__lsttitle, &__lstdesc{
+         font-size: 14px;
+      }
+      &--scndheading{
+         font-size: 16px;
+         .ricsartcf__bigfont{
+            font-size: 16px!important;
+            line-height: 24px;
+         }
+      }
+      &__scndlist{
+         font-size: 16px;
+         list-style: outside;
+         line-height: 24px;
+      }
+      &--scdrylayout, &__container{
+         background: transparent;
+         .rics--row{
+            flex-direction: column;
+         }
+      }
+      &--scnclrlayout{
+         background: rgba(2, 131, 124, 0.1);
+      }
+      &__scndlistcont{
+         padding-left: 30px;
+      }
+      &--txtlink{
+         width: 100%;
+      }
+      &__heading{
+         font-size: 16px;
+      }
+      &__bigfont {
+         font-size: 58px;
+         float: left;
+         line-height: 58px;
+         width: 30px;
+      }
+      &__content, &__link{
+         font-size: 15px;
+         line-height: 21px;
+      }
+      &__rhtcontent{
+         font-size: 16px;
+         margin: 25px 0 0px;
+      }
+      &__smalldesc{
+         font-size: 12px;
+         margin-top: 0!important;
+      }
+      .mar-bot--200{
+         margin-bottom: 50px!important;
+      }
+      &--fstltrnrml{
+         .ricsartcf__bigfont{
+            font-size: 19px;
+         }
+      }
+   }
+   .ricsartimgntxt{
+      padding: 25px 0;
+      &__container{
+         flex-direction: column;
+      }
+      &__txt, &__midcol, &__rhtcol{
+         width: 100%;
+         max-width: 100%;
+      }
+      &__rhtcol{
+         align-self: flex-start!important;
+         padding-left: 0;
+         padding-right: 15px!important;
+         margin-bottom: 25px;
+         border-top: solid 1px @brown--grey;
+         border-bottom: solid 1px @brown--grey;
+         padding-bottom: 25px;
+         margin-bottom: 25px;
+      }
+      &__txt{
+         font-size: 12px;
+         margin-top: 5px!important;
+      }
+      &__container{
+         flex-direction: column-reverse;
+      }
+      &__advheading{
+         font-size: 10px;
+         padding: 10px 0;
+      }
+      &__video{
+         height: 230px;
+      }
+   }
+   .ricsinfographic{
+      background: @off--white;
+      padding: 25px 0;
+      &__container{
+         padding: 30px 0;
+         .rics--row{
+            flex-direction: column;
+         }
+      }
+      &__leftcol{
+         display: none;
+      }
+      &__col{
+         width: 100%;
+         max-width: 100%;
+         margin-bottom: 35px;
+         &:last-child{
+            margin-bottom: 0px;
+         }
+         &.col--2{
+            padding-left: 15px!important;
+         }
+      }
+      &__midcol{
+         width: 100%;
+         max-width: 100%;
+         flex: 0 0 100%;
+      }
+      &__collist{
+         flex-direction: column;
+         margin-top: 40px;
+      }
+      &__desc{
+         margin-top: 0;
+      }
+      &__heading{
+         font-size: 16px;
+      }
+      &__colheading{
+         font-size: 33px;
+         margin-top: 5px;
+      }
+      &__coldesc{
+         font-size: 15px;
+         padding-top: 10px;
+         margin-bottom: 5px!important;
+      }
+      &__desc{
+         font-size: 12px;
+      }
+      &__midcol{
+         &:first-child{
+            margin-bottom: 30px;
+         }
+      }
+   }
+   .ricsrltopics{
+      padding: 25px 0;
+      &__container{
+         flex-direction: column;
+      }
+      .col--5{
+         width: 100%;
+         max-width: 100%;
+         flex: 0 0 100%;
+         &:first-child{
+            margin-bottom: 25px;
+         }
+      }
+      &__heading{
+         font-size: 14px;
+      }
+      &__tag{
+         font-size: 9px;
+      }
+   }
+   .ricsrlart{
+      padding: 25px 0;
+      &__card{
+         display: flex;
+         flex-direction: row;
+         position: relative;
+      }
+      &__cardimage{
+         width: 50%;
+         max-height: 100%;
+      }
+      &__cardlist{
+         flex-direction: column;
+         padding-top: 5px;
+      }
+      .col--4{
+         width: 100%;
+         max-width: 100%;
+         flex: 0 0 100%;
+         margin-bottom: 10px;
+         &:last-child{
+            margin-bottom: 0;
+         }
+      }
+      &__heading{
+         font-size: 14px;
+      }
+      &__cardlabel{
+         font-size: 10px;
+         position: absolute;
+         padding: 7px;
+         background: @ricswhite;
+         left: 0;
+         bottom: 0;
+         margin-bottom: 0;
+      }
+      &__carddetail{
+         padding: 7px;
+      }
+      &__articleheading{
+         font-size: 12px;
+         margin: 0 0 10px;
+      }
+      &__articledate{
+         font-size: 10px;
+         margin-bottom: 15px;
+      }
+      &__tag{
+         font-size: 9px;
+         padding: 0 3px;
+      }
+      &__tagcont{
+         width: 100%;
+         overflow: hidden;
+         height: 26px;
+      }
+   }
+   .ricsnewsltr{
+      padding: 25px 0;
+      &__inner{
+         width: 80%;
+         max-width: 80%;
+         flex: 0 0 80%;
+      }
+      &__heading{
+         font-size: 22px;
+         margin-bottom: 10px;
+      }
+      &__desc{
+         font-size: 14px;
+      }
+      &__btn {
+         width: 120px;
+         margin-top: 15px;
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+      }
+      &__email{
+         margin-bottom: 10px!important;
+         padding: 5px 0!important;
+      }
+   }
+   .ricsfooter{
+      margin-top: 25px;
+      padding: 50px 0;
+      &__left, &__ctr, &__right, &__nav, .col--9{
+         width: 100%;
+         max-width: 100%;
+         flex: 0 0 100%;
+      }
+      &__heading{
+         font-size: 15px!important;
+         padding: 10px 0 15px!important;
+         margin-bottom: 10px!important;
+         margin-top: 15px;
+      }
+      &__left{
+         .ricsfooter__heading{
+            margin-top: 0;
+            padding-top: 0!important;
+         }
+      }
+      &__navlink, &__navlist{
+         font-size: 8px!important;
+         &.mar-top--75{
+            margin-top: 15px!important;
+         }
+      }
+      &__logo{
+         margin-bottom: 10px!important;
+         margin-top: 15px;
+         padding-bottom: 20px!important;
+         height: auto!important;
+      }
+      &__logolink{
+         width: 71px!important;
+         height: 25px!important;
+      }
+   }
+   .col{
+      &--1, &--2, &--3, &--4, &--5, &--6, &--7, &--8, &--9, &--10, &--11, &--12, &--auto{
+         padding-left: 0!important;
+         padding-right: 0!important;
+      }
+   }
+   .rics{
+      &--row{
+         margin-left: 0!important;
+         margin-right: 0!important;
+      }
+   }
+   .container{
+      &--fluid{
+         padding-left: 0!important;
+         padding-right: 0!important;
+      }
+   }
+   .icon{
+      &--fbicon{
+         margin-left: 0;
+      }
+      &--search {
+         width: 20px;
+         background-size: contain;
+         height: 20px;
+         margin-top: -5px;
+         margin-right: 0px;
+         margin-left: 8px;
+      }
+      &--play{
+         width: 66px;
+         height: 66px;
+         margin-left: -33px;
+         top: 0;
+         margin-top: 88px;
+      }
+   }
+   .input{
+      font-size: 14px;
+   }
+   .btn{
+      font-size: 15px;
+   }
+   .ricsarttbl{
+      &__container{
+         .rics--row{
+            flex-direction: column;
+         }
+      }
+      &__midcol{
+         width: 100%;
+         max-width: 100%;
+      }
+      &__tablename{
+         font-size: 11px;
+      }
+      &__headingcont{
+         position: relative;
+         &:before{
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, @ricswhite 84%);
+            width: 62px;
+            content: "";
+            height: 100%;
+         }
+      }
+   }
+   .tbl{
+      position: relative;
+      overflow: auto;
+      &__tbl{
+         width: 100%;
+      }
+      &:before{
+         position: absolute;
+         right: 0;
+         top: 0;
+         background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, @ricswhite 84%);
+         width: 62px;
+         content: "";
+         height: 100%;
+      }
+      &__headcol, &__bodycol{
+         font-size: 11px;
+         padding: 10px 15px;
+         width: 30%;
+         &:first-child{
+            width: 15%;
+         }
+      }
+   }
+   .hide{
+      &--mobile{
+         display: none!important;
+      }
+   }
+   .slider{
+      &__arrow{
+         width: 34px;
+         height: 34px;
+      }
+      &--arrowleft{
+         left: 14px;
+      }
+      &--arrowright{
+         right: 14px;
+      }
+   }
+   .mob{
+      &-no{
+         &--pad{
+            padding: 0;
+         }
+      }
+      &-mxwdh{
+         &--100{
+            max-width: 100%;
+         }
+      }
+   }
+   .search{
+      &--open{
+         .ricsnav__rightlist:first-child{
+            border-right: 0;
+         }
+      }
    }
 }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+   
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+   
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+   
+}
+
+// // Extra small devices (portrait phones, less than 576px)
+// @media (max-width: 575.98px) { ... }
+
+// // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+// // Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }

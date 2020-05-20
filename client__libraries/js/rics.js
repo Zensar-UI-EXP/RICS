@@ -46,6 +46,20 @@ function openSearch() {
       searchLinkElement[0].style.display = "none";
       let searchInputElement = document.getElementsByClassName("ricsnav__rightsearchform");
       searchInputElement[0].style.display = "block";
+      let rightNavElement = document.getElementsByClassName("ricsnav__rightlistcont");
+      rightNavElement[0].classList.add("search--open");
+      if (window.innerWidth <= 576) {
+            hidenav();
+      }
+}
+
+function hideSearch() {
+      let searchLinkElement = document.getElementsByClassName("ricsnav--searchlink");
+      searchLinkElement[0].style.display = "block";
+      let searchInputElement = document.getElementsByClassName("ricsnav__rightsearchform");
+      searchInputElement[0].style.display = "none";
+      let rightNavElement = document.getElementsByClassName("ricsnav__rightlistcont");
+      rightNavElement[0].classList.remove("search--open");
 }
 
 let ricsVideo = document.getElementById("ricsvideo");
@@ -68,4 +82,25 @@ function closeLightbox() {
       let bodyElement = document.body;
       modalElement.style.display = "none";
       bodyElement.style.overflow = "auto";
+}
+
+function toggleMenu(thisElement, elementId) {
+      let showElement = document.getElementById(elementId);
+      if (!showElement.offsetWidth) {
+            hidenav();
+            showElement.style.display = "block";
+            thisElement.classList.add("ricsnav--leftlistactive");
+      } else {
+            hidenav();
+      }
+      hideSearch();
+}
+
+function hidenav() {
+      let navElements = document.getElementsByClassName("ricssubnav__submenunav");
+      navElements[0].style.display = "none";
+      navElements[1].style.display = "none";
+      let menuLinkElements = document.getElementsByClassName("ricsnav__leftlink");
+      menuLinkElements[0].classList.remove("ricsnav--leftlistactive");
+      menuLinkElements[1].classList.remove("ricsnav--leftlistactive");
 }
