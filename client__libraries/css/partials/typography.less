@@ -354,6 +354,7 @@ a {
 .input{
    border: 0;
    border-bottom: solid 1px rgba(0, 0, 0, 0.5);
+   border-radius: 0;
    .default--font();
    line-height: 28px;
    color: @cool--greytwo;
@@ -1007,7 +1008,9 @@ html {
       }
       &__cardimage{
          max-width: 50%;
-         height: auto;
+         height: auto!important;
+         width: auto!important;
+         flex-grow: 2;
       }
       &__cardlist{
          flex-direction: column;
