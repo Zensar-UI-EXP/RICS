@@ -31,10 +31,6 @@
       width: 100%;
       object-fit: cover;
       height: 350px;
-      &::-webkit-media-controls, &::-webkit-media-controls-play-button, &::-webkit-media-controls-volume-slider, &::-webkit-media-controls-mute-button, &::-webkit-media-controls-timeline, &::-webkit-media-controls-current-time-display, &::-webkit-media-controls-panel, &::-webkit-media-controls-start-playback-button {
-         display: none!important;
-         -webkit-appearance: none;
-      }
    }
    &__rhtcol{
       text-align: center;
@@ -44,26 +40,32 @@
       max-width: 100%;
    }
 }
-::-webkit-media-controls-overlay-play-button {
+*::-webkit-media-controls-overlay-play-button {
    display: none!important;
+   -webkit-appearance: none!important;
 }
 *::-webkit-media-controls-panel {
    display: none!important;
-  -webkit-appearance: none;
- }
+  -webkit-appearance: none!important;
+}
  
- /* Old shadow dom for play button */
+/* Old shadow dom for play button */
  
- *::--webkit-media-controls-play-button {
+*::--webkit-media-controls-play-button {
    display: none!important;
-   -webkit-appearance: none;
- }
+   -webkit-appearance: none!important;
+}
  
- /* New shadow dom for play button */
+/* New shadow dom for play button */
  
- /* This one works */
+/* This one works */
  
- *::-webkit-media-controls-start-playback-button {
+*::-webkit-media-controls-start-playback-button {
    display: none!important;
-   -webkit-appearance: none;
- }
+   -webkit-appearance: none!important;
+}
+
+*::-webkit-media-controls, *::-webkit-media-controls-play-button, *::-webkit-media-controls-volume-slider, *::-webkit-media-controls-mute-button, *::-webkit-media-controls-timeline, *::-webkit-media-controls-current-time-display, *::-webkit-media-controls-panel, *::-webkit-media-controls-start-playback-button {
+   display: none!important;
+   -webkit-appearance: none!important;
+}
