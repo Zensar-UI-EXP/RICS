@@ -86,12 +86,15 @@ function closeLightbox() {
 
 function toggleMenu(thisElement, elementId) {
       let showElement = document.getElementById(elementId);
+      let breadcrumbElement = document.getElementsByClassName("ricsbreadcrumb");
       if (!showElement.offsetWidth) {
             hidenav();
             showElement.style.display = "block";
             thisElement.classList.add("ricsnav--leftlistactive");
+            breadcrumbElement[0].classList.remove("hide--submenu");
       } else {
             hidenav();
+            breadcrumbElement[0].classList.add("hide--submenu");
       }
       hideSearch();
 }
@@ -103,4 +106,9 @@ function hidenav() {
       let menuLinkElements = document.getElementsByClassName("ricsnav__leftlink");
       menuLinkElements[0].classList.remove("ricsnav--leftlistactive");
       menuLinkElements[1].classList.remove("ricsnav--leftlistactive");
+}
+
+function viewFullBreadcrumb() {
+      let breadcrumbElement = document.getElementsByClassName("ricsbreadcrumb__navlistcont");
+      breadcrumbElement[0].classList.add("remove-ovrflw--hdn");
 }

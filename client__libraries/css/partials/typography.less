@@ -182,6 +182,9 @@ a {
       &--10{
          margin-top: 10px!important;
       }
+      &--20{
+         margin-top: 20px!important;
+      }
       &--30{
          margin-top: 30px!important;
       }
@@ -227,6 +230,24 @@ a {
       &--30{
          margin-top: 30px!important;
          margin-bottom: 30px!important;
+      }
+   }
+   &-lftrht{
+      &--0{
+         margin: 0;
+      }
+   }
+}
+.pad{
+   &-tpbt{
+      &--30{
+         padding: 30px 0;
+      }
+      &--50{
+         padding: 30px 0;
+      }
+      &--70{
+         padding: 30px 0;
       }
    }
 }
@@ -323,6 +344,12 @@ a {
          padding-bottom: 0!important;
       }
    }
+   &-tpbt{
+      &--0{
+         padding-top: 0;
+         padding-bottom: 0;
+      }
+   }
 }
 .input{
    border: 0;
@@ -345,6 +372,11 @@ a {
    &-trns{
       &--uppercase{
          text-transform: uppercase;
+      }
+   }
+   &-aln{
+      &--ctr{
+         text-align: center;
       }
    }
 }
@@ -404,6 +436,12 @@ a {
 }
 .bg{
    &--blgrnwithopct{
+      background: rgba(2, 131, 124, 0.1);
+   }
+   &--offwhite{
+      background: @off--white;
+   }
+   &--sclyt{
       background: rgba(2, 131, 124, 0.1);
    }
 }
@@ -477,60 +515,6 @@ a {
       top: -82px;
    }
 }
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
-   .col{
-      &--1, &--2, &--3, &--4, &--5, &--6, &--7, &--8, &--9, &--10, &--11, &--12, &--auto{
-         padding-left: 0!important;
-         padding-right: 0!important;
-      }
-   }
-   .rics{
-      &--row{
-         margin-left: 0!important;
-         margin-right: 0!important;
-      }
-   }
-   .container{
-      &--fluid{
-         padding-left: 0!important;
-         padding-right: 0!important;
-      }
-   }
-   .icon--fbicon{
-      margin-left: 0;
-   }
-   .input{
-      font-size: 11px;
-   }
-   .btn{
-      font-size: 9px;
-   }
-   .tbl{
-      position: relative;
-      overflow: auto;
-      &__tbl{
-         width: 100%;
-      }
-      &:before{
-         position: absolute;
-         right: 0;
-         top: 0;
-         background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, @ricswhite 84%);
-         width: 62px;
-         content: "";
-         height: 100%;
-      }
-      &__headcol, &__bodycol{
-         font-size: 11px;
-         padding: 10px 15px;
-         width: 30%;
-         &:first-child{
-            width: 15%;
-         }
-      }
-   }
-}
 
 @offset: 2rem;
 @max_width: @content--width;
@@ -591,14 +575,36 @@ html {
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
    .ricsheader{
+      position: fixed;
+      width: 100%;
+      z-index: 1;
       &__logo{
          width: 85px;
          height: 29px;
       }
    }
    .ricsnav{
+      position: fixed;
+      width: 100%;
+      top: 97px;
       margin-bottom: 0;
+      z-index: 2;
+      background: @ricswhite;
+      &::after{
+         position: absolute;
+         width: 100%;
+         content: "";
+         left: 0;
+         top: -12px;
+         height: 10px;
+         background: @ricswhite;
+         box-shadow: 0 4px 4px 0 rgba(212, 209, 209, 0.2);
+      }
       .container{
          max-width: 100%;
       }
@@ -608,19 +614,19 @@ html {
       &__leftlistcont{
          width: 100%;
          max-width: 100%;
-         margin: 10px auto 0px;
+         margin: 0 auto;
       }
       &__leftlist, &__rightlist{
          width: 50%;
       }
       &__leftlink{
          padding: 0px 0 3px;
-         font-size: 20px;
+         margin-top: 25px;
       }
       &__rightlistcont{
          max-width: 70%!important;
          position: absolute;
-         top: 35px;
+         top: -60px;
          right: 0;
       }
       &__rightlist{
@@ -629,29 +635,34 @@ html {
          max-width: 70%;
          padding: 7px 0;
       }
+      &--moduslink{
+         width: 100%;
+         background-size: 93px;
+         background-position: top center;
+      }
       &--jornalslink{
-         padding-bottom: 10px;
-         margin-top: 8px;
+         width: 100%;
+         background-size: 112px;
+         height: 45px;
+         background-position: top center;
       }
       &__rightlink{
          font-size: 12px;
          margin: 0 10px;
       }
-      &__rightsearchform {
-         .icon--search {
-            position: absolute;
-            right: 5%;
-            top: 24px;
-         }
-      }
       &__rightsearchform{
          position: absolute;
-         top: 110px;
+         top: 133px;
          right: 0;
          width: 100vw;
          background: #fff;
          z-index: 1;
          padding: 20px 0 10px;
+         .icon--search {
+            position: absolute;
+            right: 5%;
+            top: 24px;
+         }
       }
       &__rightsearch{
          width: 90vw;
@@ -665,7 +676,7 @@ html {
       }
       &__submenulistcont{
          flex-direction: column;
-         margin-top: 10px;
+         margin-top: 168px;
       }
       &__submenulist{
          padding: 10px 0 10px;
@@ -675,6 +686,12 @@ html {
          margin: 0 auto;
          display: block;
          font-size: 14px;
+         &:hover{
+            font-family: @Journals;
+         }
+      }
+      &--submenulinkactive{
+         font-family: @Journals;
       }
       &__drpdwnlistcont{
          position: relative;
@@ -690,8 +707,24 @@ html {
          font-size: 12px;
       }
    }
+   #journalsMenu{
+      .ricssubnav{
+         &__submenulistcont{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+         }
+         &__submenulist{
+            width: 50%;
+         }
+      }
+   }
    .ricsbreadcrumb{
       margin-bottom: 25px;
+      &.hide--submenu{
+         margin-top: 168px;
+      }
       &__navlink{
          font-size: 10px;
       }
@@ -700,20 +733,22 @@ html {
       }
    }
    .ricsartbanner{
-      padding: 25px 0;
       &__heading{
          font-size: 12px;
       }
       &__subheading{
          font-size: 30px;
-         margin: 10px 0 15px;
+         margin: 10px 0 10px;
+         line-height: 38px;
       }
       &__desc{
          font-size: 15px;
+         line-height: 22px;
       }
       &__authorname, &__authordate{
-         font-size: 12px;
-         margin: 10px 0;
+         font-size: 10px;
+         line-height: 36px;
+         margin: 20px 0 0;
       }
       &__tag{
          font-size: 9px;
@@ -741,7 +776,6 @@ html {
       }
    }
    .ricsartcf{
-      padding: 25px 0;
       &__container{
          flex-direction: column;
       }
@@ -755,14 +789,16 @@ html {
          padding-right: 15px!important;
       }
       &--jrnlheading{
-         font-size: 19px;
+         font-size: 16px!important;
+         line-height: 24px!important;
          .ricsartcf__bigfont{
-            font-size: 19px;
+            font-size: 16px!important;
+            line-height: 24px!important;
          }
       }
       &--jrnlrhtcontent{
-         font-size: 16px;
-         line-height: 23px;
+         font-size: 16px!important;
+         line-height: 24px!important;
          font-weight: @semi--bold;
       }
       &__lsttitle, &__lstdesc{
@@ -797,6 +833,7 @@ html {
       }
       &__heading{
          font-size: 16px;
+         line-height: 22px;
       }
       &__bigfont {
          font-size: 58px;
@@ -822,11 +859,30 @@ html {
       &--fstltrnrml{
          .ricsartcf__bigfont{
             font-size: 19px;
+            line-height: 22px;
          }
       }
    }
+   .mob-bor--tpbt{
+      border-top: solid 1px @blue--green;
+      border-bottom: solid 1px @blue--green;
+      margin-top: 25px;
+      padding-bottom: 25px;
+   }
+   .mar{
+      &-bot{
+         &--25mob{
+            margin-bottom: 25px;
+         }
+      }
+   }
+   .ricsartrightcnt{
+      &__rhtcontent{
+         font-size: 16px;
+         line-height: 22px;
+      }
+   }
    .ricsartimgntxt{
-      padding: 25px 0;
       &__container{
          flex-direction: column;
       }
@@ -847,9 +903,7 @@ html {
       &__txt{
          font-size: 12px;
          margin-top: 5px!important;
-      }
-      &__container{
-         flex-direction: column-reverse;
+         line-height: 17px;
       }
       &__advheading{
          font-size: 10px;
@@ -859,9 +913,16 @@ html {
          height: 230px;
       }
    }
+   .ricsartrightcnt{
+      &__rhtcontent{
+         margin-bottom: 0;
+         margin-top: 25px;
+      }
+   }
    .ricsinfographic{
-      background: @off--white;
-      padding: 25px 0;
+      margin: 0 15px;
+      width: 90%;
+      padding-bottom: 25px;
       &__container{
          padding: 30px 0;
          .rics--row{
@@ -875,10 +936,11 @@ html {
          width: 100%;
          max-width: 100%;
          margin-bottom: 35px;
+         width: auto;
          &:last-child{
             margin-bottom: 0px;
          }
-         &.col--2{
+         &.col--3{
             padding-left: 15px!important;
          }
       }
@@ -900,14 +962,17 @@ html {
       &__colheading{
          font-size: 33px;
          margin-top: 5px;
+         line-height: 48px;
       }
       &__coldesc{
          font-size: 15px;
          padding-top: 10px;
          margin-bottom: 5px!important;
+         line-height: 22px;
       }
       &__desc{
          font-size: 12px;
+         line-height: 17px;
       }
       &__midcol{
          &:first-child{
@@ -916,7 +981,6 @@ html {
       }
    }
    .ricsrltopics{
-      padding: 25px 0;
       &__container{
          flex-direction: column;
       }
@@ -936,7 +1000,6 @@ html {
       }
    }
    .ricsrlart{
-      padding: 25px 0;
       &__card{
          display: flex;
          flex-direction: row;
@@ -981,6 +1044,7 @@ html {
       &__articledate{
          font-size: 10px;
          margin-bottom: 15px;
+         display: none;
       }
       &__tag{
          font-size: 9px;
@@ -993,7 +1057,6 @@ html {
       }
    }
    .ricsnewsltr{
-      padding: 25px 0;
       &__inner{
          width: 80%;
          max-width: 80%;
@@ -1005,6 +1068,7 @@ html {
       }
       &__desc{
          font-size: 14px;
+         line-height: 20px;
       }
       &__btn {
          width: 120px;
@@ -1054,6 +1118,19 @@ html {
          width: 71px!important;
          height: 25px!important;
       }
+      &__right{
+         .ricsfooter__navlistcont{
+            margin-top: 25px;
+         }
+      }
+      &__navlistcont{
+         padding-top: 20px!important;
+         padding-bottom: 20px!important;
+      }
+      &__scllinks {
+         position: relative;
+         top: -30px;
+     }
    }
    .col{
       &--1, &--2, &--3, &--4, &--5, &--6, &--7, &--8, &--9, &--10, &--11, &--12, &--auto{
@@ -1071,6 +1148,31 @@ html {
       &--fluid{
          padding-left: 0!important;
          padding-right: 0!important;
+      }
+      &-mdm--spacing{
+         margin: 25px auto!important;
+      }
+      &-lrg--spacing{
+         margin: 40px auto!important;
+      }
+      &-exlrg--spacing{
+         margin: 50px auto!important;
+      }
+   }
+   .full{
+      &-wdh{
+         &--mob{
+            max-width: 100%;
+            .container--content{
+               margin-left: 15px;
+               margin-right: 15px;
+            }
+            .ricsartcf{
+               margin-left: 15px;
+               margin-right: 15px;
+               width: 90%;
+            }
+         }
       }
    }
    .icon{
@@ -1185,11 +1287,40 @@ html {
          }
       }
    }
-}
-
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {
-   
+   .flx{
+      &-dir{
+         &--mobclm{
+            flex-direction: column;
+            &>{
+               .col{
+                  &--1, &--2, &--3, &--4, &--5, &--6, &--7, &--8, &--9, &--10, &--11, &--12, &--auto{
+                     width: 100%;
+                     max-width: 100%;
+                  }
+               }
+            }
+         }
+      }
+   }
+   .ricsrlart__tagmore {
+      width: 2px;
+      height: 2px;
+      top: 20px;
+      right: 4px;
+      &::before {
+         width: 2px;
+         height: 2px;
+         left: 4px;
+      }
+      &::after {
+         width: 2px;
+         height: 2px;
+         right: 4px;
+      }
+   }
+   .ricsbreadcrumb__morelink{
+      top: -5px;
+   }
 }
 
 // Medium devices (tablets, less than 992px)
@@ -1216,3 +1347,13 @@ html {
 
 // // Extra large devices (large desktops, 1200px and up)
 // @media (min-width: 1200px) { ... }
+.remove{
+   &-ovrflw{
+      &--hdn{
+         overflow: visible;
+         .ricsbreadcrumb__morelink{
+            display: none;
+         }
+      }
+   }
+}

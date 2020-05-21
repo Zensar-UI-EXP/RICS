@@ -52,10 +52,10 @@
                         <nav role="navigation" aria-label="Header navigation" class="ricsnav__cont">
                             <ul class="ricsnav__leftlistcont col--6 col--fst">
                                 <li class="ricsnav__leftlist col--auto">
-                                    <a class="ricsnav__leftlink ricsnav--moduslink ricsnav--leftlistactive" onclick="toggleMenu(this, 'modusMenu')" href="javascript:void(0);" title="Modus">Modus</a>
+                                    <a class="ricsnav__leftlink ricsnav--moduslink" onclick="toggleMenu(this, 'modusMenu')" href="javascript:void(0);" title="Modus">Modus</a>
                                 </li>
                                 <li class="ricsnav__leftlist col--auto">
-                                    <a class="ricsnav__leftlink ricsnav--jornalslink" href="javascript:void(0);" onclick="toggleMenu(this, 'journalsMenu')" title="Journals">Journals</a>
+                                    <a class="ricsnav__leftlink ricsnav--jornalslink ricsnav--leftlistactive" href="javascript:void(0);" onclick="toggleMenu(this, 'journalsMenu')" title="Journals">Journals</a>
                                 </li>
                             </ul>
                             <ul class="ricsnav__rightlistcont col--6 col--lst">
@@ -182,178 +182,246 @@
                             </li>
                             <li class="ricsbreadcrumb__navlist"> / </li>
                             <li class="ricsbreadcrumb__navlist ricsbreadcrumb--navlast"> Article name goes here </li>
+                            <a onclick="viewFullBreadcrumb()" class="ricsbreadcrumb__morelink" href="javascript:void(0);" title="more">...</a>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
         <section id="rics-content">
-            <div class="ricsartbanner">
-                <div class="container container--fluid">
-                    <div class="container--content">
-                        <div class="ricsartbanner__container rics--row col--auto">
-                            <div class="ricsartbanner__leftcol col--1"></div>
-                            <div class="ricsartbanner__midcol col--7 col--fst">
-                                <h2 class="ricsartbanner__heading fnt-clr--blgrn ricsartbanner--jrnlheading">PROPERTY JOURNAL</h2>
-                                <h3 class="ricsartbanner__subheading ricsartbanner--jrnlsubheading">Globally consistent measurement standards</h3>
-                                <h4 class="ricsartbanner__desc">Widespread economic uncertainty, concerns over fire safety in the post-Grenfell era and a shrinking market.</h4>
-                                <div class="rics--row">
-                                    <p class="ricsartbanner__authorname col--3">
-                                        <strong>Words:</strong>
-                                        Adam Branson
+            <!--Banner content with text Start-->
+            <div class="container container--fluid">
+                <div class="container--content container-lrg--spacing">
+                    <div class="rics--row flx-dir--mobclm col--auto">
+                        <div class="col--1"></div>
+                        <div class="col--7 col--fst">
+                            <div class="ricsartbanner">
+                                <div class="ricsartbanner__container">
+                                    <div class="ricsartbanner__midcol">
+                                        <h2 class="ricsartbanner__heading fnt-clr--blgrn ricsartbanner--jrnlheading">PROPERTY JOURNAL</h2>
+                                        <h3 class="ricsartbanner__subheading ricsartbanner--jrnlsubheading">Globally consistent measurement standards</h3>
+                                        <h4 class="ricsartbanner__desc">Widespread economic uncertainty, concerns over fire safety in the post-Grenfell era and a shrinking market.</h4>
+                                        <div class="rics--row">
+                                            <p class="ricsartbanner__authorname col--3">
+                                                <strong>Words:</strong>
+                                                Adam Branson
+                                            </p>
+                                            <p class="ricsartbanner__authordate col--3">
+                                                <strong>18 April 2020</strong>
+                                            </p>
+                                        </div>
+                                        <div class="ricsartbanner__tagcont rics--row col--auto">
+                                            <p class="ricsartbanner__tag">Tag example</p>
+                                            <p class="ricsartbanner__tag">Tag example</p>
+                                            <p class="ricsartbanner__tag">Tag example</p>
+                                            <p class="ricsartbanner__tag">Tag example</p>
+                                            <p class="ricsartbanner__tag">Tag example</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col--4"></div>
+                    </div>
+                </div>
+            </div>
+            <!--Banner content with text End-->
+            
+            <!--image with text Start-->
+            <div class="container container--fluid">
+                <div class="container--content container-mdm--spacing">
+                    <div class="rics--row flx-dir--mobclm col--auto">
+                        <div class="col--12 col--fst col--lst">
+                            <div class="ricsartimgntxt">
+                                <div class="ricsartimgntxt__container">
+                                    <div class="ricsartimgntxt__midcol">
+                                        <img class="ricsartimgntxt__img" src="/dam/images/modus__article/artilcle__5.png" alt="Article image" longdesc="Image description WeWork Vancouver is one of the company’s 849 locations." />
+                                    </div>
+                                    <div class="rics--row flx-dir--mobclm">
+                                        <div class="ricsartimgntxt__lefcol col--1"></div>
+                                        <p class="ricsartimgntxt__txt col--7 fnt-clr--chrgry">Image description WeWork Vancouver is one of the company’s 849 locations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--image with text End-->
+
+            <!--Content with righ side section Start-->
+            <div class="container container--fluid">
+                <div class="container--content container-mdm--spacing">
+                    <div class="rics--row flx-dir--mobclm col--auto">
+                        <div class="col--1"></div>
+                        <div class="col--7 col--fst">
+                            <div class="ricsartcf">
+                                <div class="ricsartcf__container">
+                                    <div class="ricsartcf__midcol">
+                                        <h5 class="ricsartcf__heading ricsartcf--jrnlheading">
+                                            <span class="ricsartcf__bigfont">I</span>
+                                            n real estate, size matters. With offices in particular, size affects every element of property decision-making, from assessing workspace layout and suitability to planning and predicting likely running costs, fit-out expenses and reinstatement values. It is also a crucial factor in determining the total amount of rent an occupier will pay.
+                                        </h5>
+                                        <p class="ricsartcf__content">
+                                            The big story, of course, was, and still is, WeWork. The flexible office behemoth had been lauded for its rapid growth and its charismatic leader, Adam Neumann. However, having filed the papers for its initial public offering (IPO), in August last year, the company abandoned its plans after failing to attract sufficient investor interest. It was a huge climbdown and led to Neumann’s resignation. Analysts suggested that the company was running out of cash, but at the end of October it was announced that Japanese investor Softbank had agreed to stump up $5bn in new financing in  exchange for an overall 80% stake in the business (it already owned a third). 
+                                        </p>
+                                        <p class="ricsartcf__content">
+                                            WeWork’s latest financials appear to justify investor hesitancy: in November last year, it revealed an unadjusted loss of $1.25bn in the third quarter of 2019, up from $497m in the same period in 2018. The figures also showed that its occupancy rate was 79% – the lowest since mid-2017. However, WeWork wasn’t the only flexible office operator suffering in late 2019. In October, Central Working fell into administration, joining The Clubhouse, which was bought up by Regus owner IWG. And there was Second Home, the company set up by Rohan Silva, a former adviser to David Cameron, which had to seek new funding after suffering cost overruns on its first US development.
+                                        </p>
+                                        <p class="ricsartcf__content">
+                                            What this means for the flexible office sector divides opinion. At a glance, it might appear that the whole market is suffering growing pains, but Giles Fuchs, chief executive of Office Space in Town, thinks there is a pattern in the companies that have hit trouble: the leasehold model isn’t viable.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col--1"></div>
+                        <div class="flx-alnsf--ctr col--3 col--lst">
+                            <div class="ricsartrightcnt">
+                                <div class="ricsartrightcnt__container">
+                                    <div class="ricsartrightcnt__rhtcol">
+                                        <h6 class="ricsartcf__rhtcontent ricsartcf--jrnlrhtcontent">
+                                            As RICS members, we should promote trust in the profession by applying consistent and transparent standards.
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Content with righ side section End-->
+
+            <!--Content as list without righ side section Start-->
+            <div class="container container--fluid">
+                <div class="container--content container-mdm--spacing">
+                    <div class="rics--row flx-dir--mobclm col--auto">
+                        <div class="col--1"></div>
+                        <div class="col--7 col--fst">
+                            <div class="ricsartcf">
+                                <div class="ricsartcf__container">
+                                    <div class="ricsartcf__midcol">
+                                        <p class="ricsartcf__content">
+                                            In Hong Kong, there are four principal methods of measurement prescribed by the Hong Kong Institute of Surveyors (HKIS):
+                                        </p>
+                                        <ul class="ricsartcf__lstcont">
+                                            <li class="ricsartcf__lst">
+                                                <h6 class="ricsartcf__lsttitle">Gross floor area:</h6>
+                                                <p class="ricsartcf__lstdesc">Broadly similar to gross internal area, and equal to International Property Measurement Standard (IPMS) 1 plus B (external balcony).</p>
+                                            </li>
+                                            <li class="ricsartcf__lst">
+                                                <h6 class="ricsartcf__lsttitle">Saleable area: </h6>
+                                                <p class="ricsartcf__lstdesc">The area exclusively allocated to a unit, including balconies but excluding common areas; equal to IPMS 1 plus B (external balcony) minus common parts minus plant room. </p>
+                                            </li>
+                                            <li class="ricsartcf__lst">
+                                                <h6 class="ricsartcf__lsttitle">Lettable area: </h6>
+                                                <p class="ricsartcf__lstdesc">The area exclusively allocated, including toilets and lift lobbies but excluding common areas, except where the unit is one of several making up an entire floor; equal to IPMS 3 minus half the thickness of the common wall with adjoining occupier minus difference in area from internal dominant face.</p>
+                                            </li>
+                                            <li class="ricsartcf__lst">
+                                                <h6 class="ricsartcf__lsttitle">Internal floor area: </h6>
+                                                <p class="ricsartcf__lstdesc">The enclosed internal space of the unit for the exclusive use of the occupier; it is measured between the internal faces of the walls and includes internal partitions and columns, and it is equivalent to IPMS 3.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col--1"></div>
+                        <div class="flx-alnsf--end col--3 col--lst"> </div>
+                    </div>
+                </div>
+            </div>
+            <!--Content as list without righ side section End-->
+
+            <!--Half width image start-->
+            <div class="container container--fluid">
+                <div class="container--content container-mdm--spacing">
+                    <div class="rics--row flx-dir--mobclm col--auto">
+                        <div class="col--6 col--fst mar-bot--25mob">
+                            <div class="ricsartimgntxt">
+                                <div class="ricsartimgntxt__container">
+                                    <div class="ricsartimgntxt__midcol">
+                                        <img class="ricsartimgntxt__img" src="/dam/images/journals__article/artilcle__2.png" alt="WeWork Vancouver is one of the company’s 849 locations." />
+                                        <p class="ricsartimgntxt__txt fnt-stl--itlc fnt-clr--chrgry">WeWork at Constellation in Los Angeles, California. Photography by The We Company.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col--6 col--lst">
+                            <div class="ricsartimgntxt">
+                                <div class="ricsartimgntxt__container">
+                                    <div class="ricsartimgntxt__midcol">
+                                        <img class="ricsartimgntxt__img" src="/dam/images/journals__article/artilcle__3.png" alt="WeWork Vancouver is one of the company’s 849 locations." />
+                                        <p class="ricsartimgntxt__txt fnt-stl--itlc fnt-clr--chrgry">WeWork at Constellation in Los Angeles, California. Photography by The We Company.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Half width image end-->
+            
+            <!--Content without righ side section Start-->
+            <div class="container container--fluid">
+                <div class="container--content container-mdm--spacing">
+                    <div class="rics--row flx-dir--mobclm col--auto">
+                        <div class="col--1"></div>
+                        <div class="col--7 col--fst col--lst">
+                            <div class="ricsartcf">
+                                <div class="ricsartcf__container">
+                                    <p class="ricsartcf__content">
+                                        Landlords will then often quote an efficiency for the space, which will indicate what percentage of the quoted floor area is actually available exclusively for the use of the occupier. While there is a broadly accepted definition for each basis of measurement, the way it is applied can often be quite inconsistent. So with multiple methods and interpretations for measurement, comparing properties can often be challenging, and decision-making is then neither transparent nor quick. To give an example, one landlord may choose to measure their property on a net basis, that is 100 per cent efficiency, quoting HK$1,075/m2. Another landlord may also be quoting the same rate for the same quoted area, but they measure their property on a gross basis with a 60 per cent efficiency. Effectively, this means that while the unit rate and the quoted area are the same, the actual price you are paying for the useable space in the second property is around HK$1,795/m2. 
                                     </p>
-                                    <p class="ricsartbanner__authordate col--3">
-                                        <strong>18 April 2020</strong>
+                                    <p class="ricsartcf__content">
+                                        With different efficiencies being quoted for different buildings, you cannot compare properties using the unit rate without first having made a number of adjustments to the figures. Another example of where confusion may arise is when occupiers are looking at property options. Due to the different methods of measurement that have been applied, an occupier looking for cost savings may end up taking an office at a higher unit rate than they are currently paying, or an occupier looking for a larger office may actually end up in a space that quotes a smaller area than that of their existing premises, although in actual fact it is physically larger.
                                     </p>
                                 </div>
-                                <div class="ricsartbanner__tagcont rics--row col--auto">
-                                    <p class="ricsartbanner__tag">Tag example</p>
-                                    <p class="ricsartbanner__tag">Tag example</p>
-                                    <p class="ricsartbanner__tag">Tag example</p>
-                                    <p class="ricsartbanner__tag">Tag example</p>
-                                    <p class="ricsartbanner__tag">Tag example</p>
+                            </div>
+                        </div>
+                        <div class="col--1"></div>
+                        <div class="col--3"></div>
+                    </div>
+                </div>
+            </div>
+            <!--Content without righ side section End-->
+
+            <!--Content without righ side section Start-->
+            <div class="container container--fluid">
+                <div class="container--content container-mdm--spacing">
+                    <div class="rics--row flx-dir--mobclm col--auto">
+                        <div class="col--1"></div>
+                        <div class="col--7 col--fst col--lst">
+                            <div class="ricsartcf">
+                                <div class="ricsartcf__container">
+                                    <h5 class="ricsartcf__heading ricsartcf--jrnlheading ricsartcf--headingwithbr">
+                                        <span class="ricsartcf__bigfont">A</span>
+                                        s RICS members, we should promote trust in the profession by applying consistent and transparent standards.
+                                    </h5>
+                                    <p class="ricsartcf__content">
+                                        Landlords will then often quote an efficiency for the space, which will indicate what percentage of the quoted floor area is actually available exclusively for the use of the occupier. While there is a broadly accepted definition for each basis of measurement, the way it is applied can often be quite inconsistent. So with multiple methods and interpretations for measurement, comparing properties can often be challenging, and decision-making is then neither transparent nor quick. To give an example, one landlord may choose to measure their property on a net basis, that is 100 per cent efficiency, quoting HK$1,075/m2. Another landlord may also be quoting the same rate for the same quoted area, but they measure their property on a gross basis with a 60 per cent efficiency. Effectively, this means that while the unit rate and the quoted area are the same, the actual price you are paying for the useable space in the second property is around HK$1,795/m2. 
+                                    </p>
+                                    <p class="ricsartcf__content">
+                                        With different efficiencies being quoted for different buildings, you cannot compare properties using the unit rate without first having made a number of adjustments to the figures. Another example of where confusion may arise is when occupiers are looking at property options. Due to the different methods of measurement that have been applied, an occupier looking for cost savings may end up taking an office at a higher unit rate than they are currently paying, or an occupier looking for a larger office may actually end up in a space that quotes a smaller area than that of their existing premises, although in actual fact it is physically larger.
+                                    </p>
                                 </div>
                             </div>
                         </div>
+                        <div class="col--1"></div>
+                        <div class="col--3"></div>
                     </div>
                 </div>
             </div>
-            <div class="ricsartimgntxt">
-                <div class="container container--fluid">
-                    <div class="container--content">
-                        <div class="ricsartimgntxt__container rics--row col--auto">
-                            <div class="ricsartimgntxt__midcol col--12 col--fst col--lst">
-                                <img class="ricsartimgntxt__img" src="/dam/images/modus__article/artilcle__5.png" alt="Image description WeWork Vancouver is one of the company’s 849 locations." />
-                            </div>
-                            <div class="ricsartimgntxt__lefcol col--1"></div>
-                            <p class="ricsartimgntxt__txt col--7 col--fst col--lst">Image description WeWork Vancouver is one of the company’s 849 locations.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ricsartcf">
-                <div class="container container--fluid">
-                    <div class="container--content">
-                        <div class="ricsartcf__container rics--row col--auto  ">
-                            <div class="ricsartcf__leftcol col--1"></div>
-                            <div class="ricsartcf__midcol col--7 col--fst">
-                                <h5 class="ricsartcf__heading ricsartcf--jrnlheading">
-                                    <span class="ricsartcf__bigfont">I</span>
-                                    n real estate, size matters. With offices in particular, size affects every element of property decision-making, from assessing workspace layout and suitability to planning and predicting likely running costs, fit-out expenses and reinstatement values. It is also a crucial factor in determining the total amount of rent an occupier will pay.
-                                </h5>
-                                <p class="ricsartcf__content">
-                                    The big story, of course, was, and still is, WeWork. The flexible office behemoth had been lauded for its rapid growth and its charismatic leader, Adam Neumann. However, having filed the papers for its initial public offering (IPO), in August last year, the company abandoned its plans after failing to attract sufficient investor interest. It was a huge climbdown and led to Neumann’s resignation. Analysts suggested that the company was running out of cash, but at the end of October it was announced that Japanese investor Softbank had agreed to stump up $5bn in new financing in  exchange for an overall 80% stake in the business (it already owned a third). 
-                                </p>
-                                <p class="ricsartcf__content">
-                                    WeWork’s latest financials appear to justify investor hesitancy: in November last year, it revealed an unadjusted loss of $1.25bn in the third quarter of 2019, up from $497m in the same period in 2018. The figures also showed that its occupancy rate was 79% – the lowest since mid-2017. However, WeWork wasn’t the only flexible office operator suffering in late 2019. In October, Central Working fell into administration, joining The Clubhouse, which was bought up by Regus owner IWG. And there was Second Home, the company set up by Rohan Silva, a former adviser to David Cameron, which had to seek new funding after suffering cost overruns on its first US development.
-                                </p>
-                                <p class="ricsartcf__content">
-                                    What this means for the flexible office sector divides opinion. At a glance, it might appear that the whole market is suffering growing pains, but Giles Fuchs, chief executive of Office Space in Town, thinks there is a pattern in the companies that have hit trouble: the leasehold model isn’t viable.
-                                </p>
-                            </div>
-                            <div class="ricsartcf__leftcol col--1"></div>
-                            <div class="ricsartcf__rhtcol flx-alnsf--end col--3 col--lst">
-                                <h6 class="ricsartcf__rhtcontent ricsartcf--jrnlrhtcontent">
-                                    As RICS members, we should promote trust in the profession by applying consistent and transparent standards.
-                                </h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ricsartcf">
-                <div class="container container--fluid">
-                    <div class="container--content">
-                        <div class="ricsartcf__container rics--row col--auto  ">
-                            <div class="ricsartcf__leftcol col--1"></div>
-                            <div class="ricsartcf__midcol col--7 col--fst">
-                                <p class="ricsartcf__content">
-                                    In Hong Kong, there are four principal methods of measurement prescribed by the Hong Kong Institute of Surveyors (HKIS):
-                                </p>
-                                <ul class="ricsartcf__lstcont">
-                                    <li class="ricsartcf__lst">
-                                        <h6 class="ricsartcf__lsttitle">Gross floor area:</h6>
-                                        <p class="ricsartcf__lstdesc">Broadly similar to gross internal area, and equal to International Property Measurement Standard (IPMS) 1 plus B (external balcony).</p>
-                                    </li>
-                                    <li class="ricsartcf__lst">
-                                        <h6 class="ricsartcf__lsttitle">Saleable area: </h6>
-                                        <p class="ricsartcf__lstdesc">The area exclusively allocated to a unit, including balconies but excluding common areas; equal to IPMS 1 plus B (external balcony) minus common parts minus plant room. </p>
-                                    </li>
-                                    <li class="ricsartcf__lst">
-                                        <h6 class="ricsartcf__lsttitle">Lettable area: </h6>
-                                        <p class="ricsartcf__lstdesc">The area exclusively allocated, including toilets and lift lobbies but excluding common areas, except where the unit is one of several making up an entire floor; equal to IPMS 3 minus half the thickness of the common wall with adjoining occupier minus difference in area from internal dominant face.</p>
-                                    </li>
-                                    <li class="ricsartcf__lst">
-                                        <h6 class="ricsartcf__lsttitle">Internal floor area: </h6>
-                                        <p class="ricsartcf__lstdesc">The enclosed internal space of the unit for the exclusive use of the occupier; it is measured between the internal faces of the walls and includes internal partitions and columns, and it is equivalent to IPMS 3.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ricsartimgntxt">
-                <div class="container container--fluid">
-                    <div class="container--content">
-                        <div class="ricsartimgntxt__container rics--row col--auto col--fst col--lst">
-                            <div class="ricsartimgntxt__midcol col--6">
-                                <img class="ricsartimgntxt__img" src="/dam/images/journals__article/artilcle__2.png" alt="WeWork Vancouver is one of the company’s 849 locations." />
-                                <p class="ricsartimgntxt__txt fnt-stl--itlc fnt-clr--chrgry">WeWork at Constellation in Los Angeles, California. Photography by The We Company.</p>
-                            </div>
-                            <div class="ricsartimgntxt__midcol col--6">
-                                <img class="ricsartimgntxt__img" src="/dam/images/journals__article/artilcle__3.png" alt="WeWork Vancouver is one of the company’s 849 locations." />
-                                <p class="ricsartimgntxt__txt fnt-stl--itlc fnt-clr--chrgry">WeWork at Constellation in Los Angeles, California. Photography by The We Company.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ricsartcf">
-                <div class="container container--fluid">
-                    <div class="container--content">
-                        <div class="ricsartcf__container rics--row col--auto">
-                            <div class="ricsartcf__leftcol col--1"></div>
-                            <div class="ricsartcf__midcol col--7 col--fst col--lst">
-                                <p class="ricsartcf__content">
-                                    Landlords will then often quote an efficiency for the space, which will indicate what percentage of the quoted floor area is actually available exclusively for the use of the occupier. While there is a broadly accepted definition for each basis of measurement, the way it is applied can often be quite inconsistent. So with multiple methods and interpretations for measurement, comparing properties can often be challenging, and decision-making is then neither transparent nor quick. To give an example, one landlord may choose to measure their property on a net basis, that is 100 per cent efficiency, quoting HK$1,075/m2. Another landlord may also be quoting the same rate for the same quoted area, but they measure their property on a gross basis with a 60 per cent efficiency. Effectively, this means that while the unit rate and the quoted area are the same, the actual price you are paying for the useable space in the second property is around HK$1,795/m2. 
-                                </p>
-                                <p class="ricsartcf__content">
-                                    With different efficiencies being quoted for different buildings, you cannot compare properties using the unit rate without first having made a number of adjustments to the figures. Another example of where confusion may arise is when occupiers are looking at property options. Due to the different methods of measurement that have been applied, an occupier looking for cost savings may end up taking an office at a higher unit rate than they are currently paying, or an occupier looking for a larger office may actually end up in a space that quotes a smaller area than that of their existing premises, although in actual fact it is physically larger.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ricsartcf">
-                <div class="container container--fluid">
-                    <div class="container--content">
-                        <div class="ricsartcf__container rics--row col--auto">
-                            <div class="ricsartcf__leftcol col--1"></div>
-                            <div class="ricsartcf__midcol col--7 col--fst col--lst">
-                                <h5 class="ricsartcf__heading ricsartcf--jrnlheading ricsartcf--headingwithbr">
-                                    <span class="ricsartcf__bigfont">A</span>
-                                    s RICS members, we should promote trust in the profession by applying consistent and transparent standards.
-                                </h5>
-                                <p class="ricsartcf__content">
-                                    Landlords will then often quote an efficiency for the space, which will indicate what percentage of the quoted floor area is actually available exclusively for the use of the occupier. While there is a broadly accepted definition for each basis of measurement, the way it is applied can often be quite inconsistent. So with multiple methods and interpretations for measurement, comparing properties can often be challenging, and decision-making is then neither transparent nor quick. To give an example, one landlord may choose to measure their property on a net basis, that is 100 per cent efficiency, quoting HK$1,075/m2. Another landlord may also be quoting the same rate for the same quoted area, but they measure their property on a gross basis with a 60 per cent efficiency. Effectively, this means that while the unit rate and the quoted area are the same, the actual price you are paying for the useable space in the second property is around HK$1,795/m2. 
-                                </p>
-                                <p class="ricsartcf__content">
-                                    With different efficiencies being quoted for different buildings, you cannot compare properties using the unit rate without first having made a number of adjustments to the figures. Another example of where confusion may arise is when occupiers are looking at property options. Due to the different methods of measurement that have been applied, an occupier looking for cost savings may end up taking an office at a higher unit rate than they are currently paying, or an occupier looking for a larger office may actually end up in a space that quotes a smaller area than that of their existing premises, although in actual fact it is physically larger.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ricsartcf ricsartcf--scnclrlayout">
-                <div class="container container--fluid">
-                    <div class="container--content">
-                        <div class="ricsartcf__container col--auto ricsartcf--scdrylayout">
-                            <div class="rics--row">
-                                <div class="ricsartcf__leftcol col--1"></div>
-                                <div class="ricsartcf__midcol col--7 col--fst col--lst">
+            <!--Content without righ side section End-->
+
+            <!--Content as list without righ side section Start-->
+            <div class="container container--fluid full-wdh--mob">
+                <div class="container--content container-mdm--spacing">
+                    <div class="rics--row flx-dir--mobclm col--auto bg--sclyt container--innerspacing">
+                        <div class="col--1"></div>
+                        <div class="col--7 col--fst col--lst">
+                            <div class="ricsartcf">
+                                <div class="ricsartcf__container">
                                     <h5 class="ricsartcf__heading ricsartcf--scndheading">
                                         <span class="ricsartcf__bigfont">S</span>
                                         econdary headline of the section
@@ -390,16 +458,21 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col--1"></div>
+                        <div class="col--3"></div>
                     </div>
                 </div>
             </div>
-            <div class="ricsartcf">
-                <div class="container container--fluid">
-                    <div class="container--content">
-                        <div class="ricsartcf__container col--auto">
-                            <div class="rics--row">
-                                <div class="ricsartcf__leftcol col--1"></div>
-                                <div class="ricsartcf__midcol col--7 col--fst col--lst">
+            <!--Content as list without righ side section End-->
+
+            <!--Content without righ side section Start-->
+            <div class="container container--fluid">
+                <div class="container--content container-mdm--spacing">
+                    <div class="rics--row flx-dir--mobclm col--auto">
+                        <div class="col--1"></div>
+                        <div class="col--7 col--fst col--lst">
+                            <div class="ricsartcf">
+                                <div class="ricsartcf__container">
                                     <h5 class="ricsartcf__heading ricsartcf--scndheading">
                                         <span class="ricsartcf__bigfont">S</span>
                                         econdary headline of the section
@@ -413,16 +486,21 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col--1"></div>
+                        <div class="col--3"></div>
                     </div>
                 </div>
             </div>
-            <div class="ricsarttbl">
-                <div class="container container--fluid">
-                    <div class="container--content">
-                        <div class="ricsarttbl__container col--auto">
-                            <div class="rics--row">
-                                <div class="ricsarttbl__leftcol col--1"></div>
-                                <div class="ricsarttbl__midcol col--7 col--fst col--lst">
+            <!--Content without righ side section End-->
+
+            <!--Table content without righ side section Start-->
+            <div class="container container--fluid">
+                <div class="container--content container-mdm--spacing">
+                    <div class="rics--row flx-dir--mobclm col--auto">
+                        <div class="col--1"></div>
+                        <div class="col--7 col--fst col--lst">
+                            <div class="ricsarttbl">
+                                <div class="ricsarttbl__container">
                                     <div class="ricsarttbl__headingcont">
                                         <a onclick="expandTable()" class="ricsarttbl__expndtbl icon icon--expndtbl" href="javascript:void(0);" title="Close">Close</a>
                                         <p class="ricsarttbl__tablename fnt-stl--itlc">
@@ -470,9 +548,14 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col--1"></div>
+                        <div class="col--3"></div>
                     </div>
                 </div>
             </div>
+            <!--Table content without righ side section End-->
+
+            <!--Lightbox Table content without righ side section End-->
             <div id="ricsLighbox" class="ricslighbox">
                 <div class="ricsarttbl">
                     <div class="container container--fluid">
@@ -527,128 +610,158 @@
                     </div>
                 </div>
             </div>
-            <div class="ricsartcf">
-                <div class="container container--fluid">
-                    <div class="container--content">
-                        <div class="ricsartcf__container rics--row col--auto">
-                            <div class="ricsartcf__leftcol col--1"></div>
-                            <div class="ricsartcf__midcol col--7 col--fst col--lst">
-                                <p class="ricsartcf__content ricsartcf--txtlink">
-                                    Tom Parker MRICS is assistant manager, valuation and advisory services, Colliers 
-                                    <a class="ricsartcf__link" href="javascript:void(0);" title="rics.org/flexibleworkspace">tom.parker@colliers.com</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ricsrltopics">
-                <div class="container container--fluid">
-                    <div class="container--content">
-                        <div class="ricsrltopics__container rics--row">
-                            <div class="col--5">
-                                <h2 class="ricsrltopics__heading">Related Topics</h2>
-                                <div class="ricsrltopics__tagcont rics--row col--auto">
-                                    <p class="ricsrltopics__tag">Tag example</p>
-                                    <p class="ricsrltopics__tag">Tag example</p>
-                                    <p class="ricsrltopics__tag">Tag example</p>
-                                    <p class="ricsrltopics__tag">Tag example</p>
-                                </div>
-                            </div>
-                            <div class="col--5">
-                                <h2 class="ricsrltopics__heading">Social Sharing</h2>
-                                <div class="ricsrltopics__tagcont rics--row col--auto col--fst">
-                                    <a class="ricsrltopics__socialsharinglink icon icon--fbicon" href="javascript:void(0);" title="Facebook">Facebook</a>
-                                    <a class="ricsrltopics__socialsharinglink icon icon--twtr" href="javascript:void(0);" title="Twitter">Twitter</a>
-                                    <a class="ricsrltopics__socialsharinglink icon icon--lkdln" href="javascript:void(0);" title="LinkeedIn">LinkeedIn</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ricsrlart">
-                <div class="container container--fluid">
-                    <div class="container--content">
-                        <div class="ricsrlart__container rics--row col--auto">
-                            <h2 class="ricsrlart__heading">Related Articles</h2>
-                            <div class="col--12">
-                                <div class="ricsrlart__cardlist rics--row">
-                                    <div class="col--4 col--fst">
-                                        <div class="ricsrlart__card">
-                                            <img class="ricsrlart__cardimage" src="/dam/images/modus__article/artilcle__5.png" alt="Time for a change of use" />
-                                            <div class="ricsrlart__carddetail">
-                                                <h3 class="ricsrlart__cardlabel fnt-clr--trgrn">LAND JOURNAL</h3>
-                                                <h4 class="ricsrlart__articleheading">Time for a change of use</h4>
-                                                <p class="ricsrlart__articledate">Adam Branson  <strong>17 April 2020</strong></p>
-                                                <div class="ricsrlart__tagcont">
-                                                    <p class="ricsrlart__tag">Tag example</p>
-                                                    <p class="ricsrlart__tag">Tag example</p>
-                                                    <p class="ricsrlart__tag mar-rht--0">Tag example</p>
-                                                    <a class="ricsrlart__tagmore" href="javascript:void(0);" title="Click to see more tagging">Click to see more tagging</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col--4">
-                                        <div class="ricsrlart__card">
-                                            <img class="ricsrlart__cardimage" src="/dam/images/modus__article/artilcle__5.png" alt="Time for a change of use" />
-                                            <div class="ricsrlart__carddetail">
-                                                <h3 class="ricsrlart__cardlabel fnt-fmly--oswald">MODUS </h3>
-                                                <h4 class="ricsrlart__articleheading">Jenny Lynch talks about best practice</h4>
-                                                <p class="ricsrlart__articledate">Adam Branson  <strong>17 April 2020</strong></p>
-                                                <div class="ricsrlart__tagcont">
-                                                    <p class="ricsrlart__tag">Tag example</p>
-                                                    <p class="ricsrlart__tag">Tag example</p>
-                                                    <p class="ricsrlart__tag mar-rht--0">Tag example</p>
-                                                    <a class="ricsrlart__tagmore" href="javascript:void(0);" title="Click to see more tagging">Click to see more tagging</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col--4 col--lst">
-                                        <div class="ricsrlart__card">
-                                            <img class="ricsrlart__cardimage" src="/dam/images/modus__article/artilcle__5.png" alt="Time for a change of use" />
-                                            <div class="ricsrlart__carddetail">
-                                                <h3 class="ricsrlart__cardlabel fnt-clr--trgrn">LAND JOURNAL</h3>
-                                                <h4 class="ricsrlart__articleheading">The spectacular fall of WeWork</h4>
-                                                <p class="ricsrlart__articledate">Adam Branson  <strong>17 April 2020</strong></p>
-                                                <div class="ricsrlart__tagcont">
-                                                    <p class="ricsrlart__tag">Tag example</p>
-                                                    <p class="ricsrlart__tag">Tag example</p>
-                                                    <p class="ricsrlart__tag mar-rht--0">Tag example</p>
-                                                    <a class="ricsrlart__tagmore" href="javascript:void(0);" title="Click to see more tagging">Click to see more tagging</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ricsnewsltr">
-                <div class="container container--fluid">
-                    <div class="container--content">
-                        <div class="ricsnewsltr__container rics--row col--auto">
-                            <div class="ricsnewsltr__inner col--4">
-                                <form action="#">
-                                    <h5 class="ricsnewsltr__heading">Never miss a story</h5>
-                                    <p class="ricsnewsltr__desc">
-                                        Sign up to the Newsletter to keep up with what’s emerging in the industry.
+            <!--Lightbox Table content without righ side section End-->
+            
+            <!--Content without link Start-->
+            <div class="container container--fluid">
+                <div class="container--content container-mdm--spacing">
+                    <div class="rics--row flx-dir--mobclm col--auto">
+                        <div class="col--1"></div>
+                        <div class="col--7 col--fst col--lst">
+                            <div class="ricsartcf">
+                                <div class="ricsartcf__container">
+                                    <p class="ricsartcf__content ricsartcf--txtlink">
+                                        Tom Parker MRICS is assistant manager, valuation and advisory services, Colliers 
+                                        <a class="ricsartcf__link" href="javascript:void(0);" title="rics.org/flexibleworkspace">tom.parker@colliers.com</a>
                                     </p>
-                                    <label for="ricsNewslettername" class="dis--none">Full Name</label>
-                                    <input class="ricsnewsltr__email input" id="ricsNewslettername" type="text" value="" placeholder="Full Name" />
-                                    <label for="ricsNewsletteremail" class="dis--none">E-mail</label>
-                                    <input class="ricsnewsltr__email input" id="ricsNewsletteremail" type="email" value="" placeholder="E-mail" />
-                                    <button class="ricsnewsltr__btn btn" type="submit">Subscribe</button>
-                                </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col--1"></div>
+                        <div class="col--3"></div>
+                    </div>
+                </div>
+            </div>
+            <!--Content without link End-->
+            
+            <!--Related topics Start-->
+            <div class="container container--fluid">
+                <div class="container--content container-mdm--spacing">
+                    <div class="rics--row flx-dir--mobclm jus-cnt--spbtw">
+                        <div class="col--5 mar-bot--25mob">
+                            <div class="ricsrltopics">
+                                <div class="ricsrltopics__container">
+                                    <h2 class="ricsrltopics__heading">Related Topics</h2>
+                                    <div class="ricsrltopics__tagcont rics--row col--auto">
+                                        <p class="ricsrltopics__tag">Tag example</p>
+                                        <p class="ricsrltopics__tag">Tag example</p>
+                                        <p class="ricsrltopics__tag">Tag example</p>
+                                        <p class="ricsrltopics__tag">Tag example</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col--5">
+                            <div class="ricsrltopics">
+                                <div class="ricsrltopics__container">
+                                    <h2 class="ricsrltopics__heading">Social Sharing</h2>
+                                    <div class="ricsrltopics__tagcont rics--row col--auto col--fst">
+                                        <a class="ricsrltopics__socialsharinglink icon icon--fbicon" href="javascript:void(0);" title="Facebook">Facebook</a>
+                                        <a class="ricsrltopics__socialsharinglink icon icon--twtr" href="javascript:void(0);" title="Twitter">Twitter</a>
+                                        <a class="ricsrltopics__socialsharinglink icon icon--lkdln" href="javascript:void(0);" title="LinkeedIn">LinkeedIn</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!--Related topics End-->
+
+            <!--Related articles Start-->
+            <div class="container container--fluid">
+                <div class="container--content container-mdm--spacing">
+                    <div class="rics--row flx-dir--mobclm">
+                        <div class="ricsrlart">
+                            <div class="ricsrlart__container">
+                                <h2 class="ricsrlart__heading">Related Articles</h2>
+                                <div class="col--12">
+                                    <div class="ricsrlart__cardlist rics--row">
+                                        <div class="col--4 col--fst">
+                                            <div class="ricsrlart__card">
+                                                <a class="ricsrlart__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
+                                                <img class="ricsrlart__cardimage" src="/dam/images/modus__article/artilcle__5.png" alt="Article" longdesc="Time for a change of use" />
+                                                <div class="ricsrlart__carddetail">
+                                                    <h3 class="ricsrlart__cardlabel fnt-clr--trgrn">LAND JOURNAL</h3>
+                                                    <h4 class="ricsrlart__articleheading">Time for a change of use</h4>
+                                                    <p class="ricsrlart__articledate">Adam Branson  <strong>17 April 2020</strong></p>
+                                                    <div class="ricsrlart__tagcont">
+                                                        <p class="ricsrlart__tag">Tag example</p>
+                                                        <p class="ricsrlart__tag">Tag example</p>
+                                                        <p class="ricsrlart__tag mar-rht--0">Tag example</p>
+                                                        <a class="ricsrlart__tagmore" href="javascript:void(0);" title="Click to see more tagging">Click to see more tagging</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col--4">
+                                            <div class="ricsrlart__card">
+                                                <a class="ricsrlart__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
+                                                <img class="ricsrlart__cardimage" src="/dam/images/modus__article/artilcle__5.png" alt="Article" longdesc="Jenny Lynch talks about best practice" />
+                                                <div class="ricsrlart__carddetail">
+                                                    <h3 class="ricsrlart__cardlabel fnt-fmly--oswaldsemibold">MODUS </h3>
+                                                    <h4 class="ricsrlart__articleheading">Jenny Lynch talks about best practice</h4>
+                                                    <p class="ricsrlart__articledate">Adam Branson  <strong>17 April 2020</strong></p>
+                                                    <div class="ricsrlart__tagcont">
+                                                        <p class="ricsrlart__tag">Tag example</p>
+                                                        <p class="ricsrlart__tag">Tag example</p>
+                                                        <p class="ricsrlart__tag mar-rht--0">Tag example</p>
+                                                        <a class="ricsrlart__tagmore" href="javascript:void(0);" title="Click to see more tagging">Click to see more tagging</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col--4 col--lst">
+                                            <div class="ricsrlart__card">
+                                                <a class="ricsrlart__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
+                                                <img class="ricsrlart__cardimage" src="/dam/images/modus__article/artilcle__5.png"  alt="Article" longdesc="The spectacular fall of WeWork" />
+                                                <div class="ricsrlart__carddetail">
+                                                    <h3 class="ricsrlart__cardlabel fnt-clr--trgrn">LAND JOURNAL</h3>
+                                                    <h4 class="ricsrlart__articleheading">The spectacular fall of WeWork</h4>
+                                                    <p class="ricsrlart__articledate">Adam Branson  <strong>17 April 2020</strong></p>
+                                                    <div class="ricsrlart__tagcont">
+                                                        <p class="ricsrlart__tag">Tag example</p>
+                                                        <p class="ricsrlart__tag">Tag example</p>
+                                                        <p class="ricsrlart__tag mar-rht--0">Tag example</p>
+                                                        <a class="ricsrlart__tagmore" href="javascript:void(0);" title="Click to see more tagging">Click to see more tagging</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Related articles End-->
+
+            <!--Newsletter Start-->
+            <div class="container container--fluid">
+                <div class="container--content container-exlrg--spacing">
+                    <div class="rics--row flx-dir--mobclm">
+                        <div class="ricsnewsltr">
+                            <div class="ricsnewsltr__container">
+                                <div class="ricsnewsltr__inner col--4">
+                                    <form action="#">
+                                        <h5 class="ricsnewsltr__heading">Never miss a story</h5>
+                                        <p class="ricsnewsltr__desc">
+                                            Sign up to the Newsletter to keep up with what’s emerging in the industry.
+                                        </p>
+                                        <label for="ricsNewslettername" class="dis--none">Full Name</label>
+                                        <input class="ricsnewsltr__email input" id="ricsNewslettername" type="text" value="" placeholder="Full Name" />
+                                        <label for="ricsNewsletteremail" class="dis--none">E-mail</label>
+                                        <input class="ricsnewsltr__email input" id="ricsNewsletteremail" type="email" value="" placeholder="E-mail" />
+                                        <button class="ricsnewsltr__btn btn" type="submit">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Newsletter End-->
         </section>
         <footer class="ricsfooter">
             <div class="container container--fluid">
