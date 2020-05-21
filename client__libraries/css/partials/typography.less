@@ -171,6 +171,8 @@ a {
       background: url(/dam/images/icon__expdtbl__2x.png) no-repeat transparent;
       background-size: cover;
       text-indent: -99999em;
+      margin-left: 0;
+      margin-right: 0;
    }
 }
 .clr{
@@ -518,6 +520,18 @@ a {
       position: absolute;
       right: 0;
       top: -82px;
+      z-index: 9;
+      margin-left: 0;
+      margin-right: 0;
+   }
+   .container--fluid{
+      overflow: visible;
+   }
+   .tbl{
+      overflow: auto;
+   }
+   .ricsarttbl__headingcont::before, .tbl::before, .tbl__rightline{
+      display: none;
    }
 }
 
@@ -1234,7 +1248,7 @@ html {
    }
    .tbl{
       position: relative;
-      overflow: auto;
+      overflow: hidden;
       &__tbl{
          width: 100%;
       }
