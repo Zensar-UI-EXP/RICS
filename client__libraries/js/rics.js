@@ -67,6 +67,8 @@ let ricsVideo = document.getElementById("ricsvideo");
 function playricsVideo() {
       let playVideoButton = document.getElementById("playricsVideoBtn");
       playVideoButton.style.display = "none";
+      let posterElement = document.getElementsByClassName("ricsartimgntxt__videoposter");
+      posterElement[0].style.display = "none";
       ricsVideo.play();
 }
 
