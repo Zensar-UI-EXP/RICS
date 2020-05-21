@@ -75,8 +75,10 @@ function playricsVideo() {
 function expandTable() {
       let modalElement = document.getElementById("ricsLighbox");
       let bodyElement = document.body;
+      let htmlElement = document.getElementsByTagName("html");
       modalElement.style.display = "block";
       bodyElement.style.overflow = "hidden";
+      htmlElement.style.overflow = "hidden";
 }
 
 function closeLightbox() {
@@ -84,6 +86,7 @@ function closeLightbox() {
       let bodyElement = document.body;
       modalElement.style.display = "none";
       bodyElement.style.overflow = "auto";
+      htmlElement.style.overflow = "auto";
 }
 
 function toggleMenu(thisElement, elementId) {
