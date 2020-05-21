@@ -31,8 +31,9 @@
       width: 100%;
       object-fit: cover;
       height: 350px;
-      &::-webkit-media-controls, &::-webkit-media-controls-play-button, &::-webkit-media-controls-volume-slider, &::-webkit-media-controls-mute-button, &::-webkit-media-controls-timeline, &::-webkit-media-controls-current-time-display {
-         display: none;
+      &::-webkit-media-controls, &::-webkit-media-controls-play-button, &::-webkit-media-controls-volume-slider, &::-webkit-media-controls-mute-button, &::-webkit-media-controls-timeline, &::-webkit-media-controls-current-time-display, &::-webkit-media-controls-panel, &::-webkit-media-controls-start-playback-button {
+         display: none!important;
+         -webkit-appearance: none!important;
       }
    }
    &__rhtcol{
