@@ -116,3 +116,8 @@ function viewFullBreadcrumb() {
       let breadcrumbElement = document.getElementsByClassName("ricsbreadcrumb__navlistcont");
       breadcrumbElement[0].classList.add("remove-ovrflw--hdn");
 }
+
+function seemoreTag(tagContIndex) {
+      let tagContElement = document.getElementById("taginfo" + tagContIndex);
+      tagContElement.classList.add("ricsrlart--seemoretag");
+}

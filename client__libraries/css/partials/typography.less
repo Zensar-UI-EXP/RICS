@@ -526,8 +526,8 @@ a {
    }
    &__closeicon{
       position: absolute;
-      right: 0;
-      top: -82px;
+      right: 10%;
+      top: 30px;
       z-index: 9;
       margin-left: 0;
       margin-right: 0;
@@ -1076,6 +1076,7 @@ html {
       &__tag{
          font-size: 9px;
          padding: 0 3px;
+         margin-top: 3px;
       }
       &__tagcont{
          width: 100%;
@@ -1352,7 +1353,26 @@ html {
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) { 
-   
+   .ricsfooter{
+      &__scllinks{
+         padding-right: 0;
+      }
+      &__logolink{
+         width: 11vw!important;
+      }
+      &__navlist{
+         font-size: 12px!important;
+      }
+      &__socialsharinglink{
+         margin-left: 8px;
+         &:first-child{
+            margin-left: 0!important;
+         }
+         &:last-child{
+            margin-right: 0!important;
+         }
+      }
+   }
 }
 
 // Large devices (desktops, less than 1200px)
