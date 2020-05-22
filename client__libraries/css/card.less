@@ -1,0 +1,163 @@
+// All imported SCSS partials
+
+@import "./partials/reset.less";      // Normalize
+@import "./partials/grid.less";       // This is a modified version of the Bootstrap grid to account for MWF breakpoints and
+@import "./partials/fonts.less";      // Decalaring fonts per MWF guidelines
+@import "./partials/typography.less"; // Declaring all typography
+
+.cardlayout{
+   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+   border-bottom: solid 1px @ricsblack;
+   height: 100%;
+   position: relative;
+   &__link{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      text-indent: -99999em;
+   }
+   &__img{
+      width: 100%;
+   }
+   &__content{
+      display: flex;
+      padding: 60px 15px 45px;
+   }
+   &__imgcont{
+      position: relative;
+   }
+   &__heading{
+      position: absolute;
+      bottom: -40px;
+      left: 30px;
+   }
+   &__desc{
+      margin-bottom: 30px;
+      line-height: 22px!important;
+   }
+   &__subheading{
+      max-width: 220px;
+   }
+   &__authinfo{
+      strong{
+         margin-top: 7px;
+         display: block;
+      }
+   }
+}
+.pagelist{
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   &__heading{
+      width: 200px;
+   }
+   &__cont{
+      width: 24%;
+      background: @off--white3;
+      padding: 30px;
+      height: 100%;
+      min-height: 240px;
+      position: relative;
+      &::before{
+         position: absolute;
+         width: 35px;
+         height: 19px;
+         background: url(/dam/images/icon__arrow__3x.png) no-repeat transparent;
+         background-size: contain;
+         content: "";
+         transform: rotate(0deg);
+         bottom: 25px;
+         right: 30px;
+      }
+   }
+   &__desc{
+      margin: 15px 0 20px;
+      line-height: 22px!important;
+   }
+   &__link{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      text-indent: -99999em;
+   }
+}
+@media (max-width: 767.98px) {
+   .pagelist{
+      flex-direction: column;
+      &__cont{
+         width: 100%;
+         border: solid 7px @ricsblack;
+         margin-top: -7px;
+         display: flex;
+         padding: 10px;
+         justify-content: space-around;
+         min-height: 155px;
+         &:first-child{
+            margin-top: 0;
+         }
+         &::before{
+            bottom: 5px;
+            right: 10px;
+         }
+      }
+      &__heading{
+         font-size: 20px!important;
+         line-height: 28px!important;
+      }
+      &__desc{
+         margin: 0px 0;
+         width: 70%;
+      }
+   }
+   .cardlayout{
+      &__desc{
+         display: none;
+      }
+      &__img{
+         position: relative;
+      }
+      &__subheading{
+         min-height: 80px;
+      }
+      &__heading{
+         left: 0;
+         bottom: 0;
+         background: @ricswhite;
+         padding: 3px 10px;
+      }
+      &__content{
+         padding: 15px;
+         flex-direction: column;
+         .col--6{
+            width: 100%;
+            max-width: 100%;
+         }
+      }
+      &__authinfo{
+         font-size: 12px!important;
+         span{
+            display: none;
+         }
+         strong{
+            font-weight: normal;
+         }
+      }
+   }
+   .col--fst{
+      .cardlayout{
+         margin-right: 5px!important;
+      }
+   }
+   .col--lst{
+      .cardlayout{
+         margin-left: 5px!important;
+      }
+   }
+}

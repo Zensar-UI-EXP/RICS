@@ -119,5 +119,10 @@ function viewFullBreadcrumb() {
 
 function seemoreTag(tagContIndex) {
       let tagContElement = document.getElementById("taginfo" + tagContIndex);
-      tagContElement.classList.add("ricsrlart--seemoretag");
+      tagContElement.classList.add("seemore--tag");
+      for (var i = 0; i < tagContElement.childNodes.length; i++) {
+            if (tagContElement.childNodes[i].classList) {
+                  tagContElement.childNodes[i].classList.remove("dis--none");
+            }
+      }
 }

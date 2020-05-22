@@ -311,12 +311,6 @@
          }
       }
    }
-   .mob-bor--tpbt{
-      border-top: solid 1px @blue--green;
-      border-bottom: solid 1px @blue--green;
-      margin-top: 25px;
-      padding-bottom: 25px;
-   }
    .mar{
       &-bot{
          &--25mob{
@@ -724,8 +718,19 @@
          }
       }
       &-mxwdh{
+         &--96{
+            max-width: 96%;
+         }
          &--100{
             max-width: 100%;
+         }
+      }
+      &-bor{
+         &--tpbt{
+            border-top: solid 1px @blue--green;
+            border-bottom: solid 1px @blue--green;
+            margin-top: 25px;
+            padding-bottom: 25px;
          }
       }
    }
@@ -738,7 +743,7 @@
    }
    .flx{
       &-dir{
-         &--mobclm{
+         &--mobclm, &--mobclmrvrs{
             flex-direction: column;
             &>{
                .col{
@@ -748,6 +753,9 @@
                   }
                }
             }
+         }
+         &--mobclmrvrs{
+            flex-direction: column-reverse;
          }
       }
    }
@@ -769,6 +777,33 @@
    }
    .ricsbreadcrumb__morelink{
       top: -5px;
+   }
+   .title{
+      &-size{
+         &--sm{
+            font-size: 12px!important;
+         }
+         &--md{
+            font-size: 14px!important;
+            line-height: 20px!important;
+            font-family: @Modus!important;
+            &.pagelist__heading{
+               font-size: 26px!important;
+               line-height: 34px!important;
+            }
+         }
+         &--lrg{
+            font-size: 30px!important;
+            line-height: 40px!important;
+            font-family: @Modus!important;
+         }
+      }
+   }
+   .para{
+      font-size: 14px;
+   }
+   .grdoverlay{
+      height: 349px;
    }
 }
 
