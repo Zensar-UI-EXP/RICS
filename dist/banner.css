@@ -273,6 +273,7 @@
 }
 .banner__desc {
   line-height: 22px!important;
+  margin-bottom: 45px;
 }
 .banner__authinfo {
   position: absolute;

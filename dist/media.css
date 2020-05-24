@@ -14,7 +14,7 @@
   .ricsfooter__socialsharinglink:first-child {
     margin-left: 0!important;
   }
-  .ricsfooter__socialsharinglink:last-child {
+  .ricsfooter__socialsharinglink {
     margin-right: 0!important;
   }
 }
