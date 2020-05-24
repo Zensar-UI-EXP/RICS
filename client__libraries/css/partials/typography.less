@@ -301,6 +301,9 @@ a {
       &--jornalsemibold{
          font-family: @Journals--SemiBold!important;
       }
+      &--jornalbold{
+         font-family: @Journals--Bold!important;
+      }
    }
    &-sz{
       &--24{
@@ -591,10 +594,56 @@ html {
 }
 .title{
    .default-title--font();
+   &--smalldesc{
+      .default--font();
+      font-size: 14px;
+      font-style: italic;
+      line-height: 20px;
+      color: @charcoal--grey;
+      display: block;
+      margin-top: 15px;
+   }
+   &--rlt{
+      font-size: 21px;
+      line-height: 40px;
+      border-bottom: solid 1px @ricsblack;
+   }
    &-size{
+      &--xsm{
+         font-size: 16px;
+         line-height: 14px;
+      }
       &--sm{
          font-size: 18px;
          line-height: 18px;
+      }
+      &--xsmd{
+         font-size: 22px;
+      }
+      &--smd{
+         font-size: 24px;
+      }
+      &--lsmd{
+         font-size: 24px;
+         line-height: 38px;
+      }
+      &--dxsmd{
+         font-size: 26px;
+         line-height: 34px;
+      }
+      &--dxsmdfstbgfnt{
+         font-size: 26px;
+         line-height: 34px;
+         &::first-letter{
+            font-size: 100px;
+            float: left;
+            line-height: 100px;
+            padding-right: 15px;
+         }
+      }
+      &--pmd{
+         font-size: 28px;
+         line-height: 36px;
       }
       &--md{
          font-size: 30px;
@@ -616,6 +665,10 @@ html {
          font-size: 60px;
          line-height: 70px;
       }
+      &--xmlrg{
+         font-size: 65px;
+         line-height: 80px;
+      }
       &--xxlrg{
          font-size: 78px;
          line-height: normal;
@@ -633,7 +686,7 @@ html {
          font-size: 18px;
          line-height: 24px;
       }
-      &--lmd{
+      &--xmd{
          font-size: 20px;
          line-height: 26px;
       }
