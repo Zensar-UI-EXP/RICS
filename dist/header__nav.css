@@ -1,0 +1,121 @@
+.ricsnav {
+  margin-bottom: 10px;
+  border-bottom: solid 1px #000000;
+}
+.ricsnav__cont {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.ricsnav__leftlistcont {
+  display: flex;
+  flex-direction: row;
+}
+.ricsnav__leftlist {
+  list-style: insidec!important;
+}
+.ricsnav__leftlist:first-child {
+  padding-right: 45px;
+}
+.ricsnav--listfirst {
+  padding-left: 0!important;
+}
+.ricsnav--listlast {
+  padding-right: 0!important;
+}
+.ricsnav__leftlink {
+  padding: 0;
+  margin-top: 35px;
+  float: left;
+  width: 100%;
+  text-indent: -99999em;
+}
+.ricsnav__leftlink:hover {
+  border-bottom: solid 4px #000000;
+}
+.ricsnav--moduslink {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  background: url(/dam/images/logo__modus__4x.png) no-repeat transparent;
+  width: 93px;
+  height: 45px;
+  background-size: contain;
+}
+.ricsnav--jornalslink {
+  background: url(/dam/images/logo__journals__4x.png) no-repeat transparent;
+  width: 112px;
+  height: 29px;
+  background-size: contain;
+  padding-bottom: 41px;
+}
+.ricsnav--leftlistactive {
+  border-bottom: solid 4px #000000;
+}
+.ricsnav__rightlistcont {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+.ricsnav__rightlist {
+  list-style: insidec!important;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 27px;
+  border-right: solid 1px #000000;
+}
+.ricsnav__rightlist:first-child {
+  padding-right: 45px;
+}
+.ricsnav__rightlist:last-child {
+  padding-left: 45px;
+}
+.ricsnav--rightlastlist {
+  border-right: 0;
+}
+.ricsnav__rightlink {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+.ricsnav__rightlink:hover {
+  opacity: 0.7;
+}
+.ricsnav__rightsearchform {
+  display: none;
+  position: relative;
+  top: -7px;
+}
+.ricsnav__rightsearchform .icon--search {
+  position: absolute;
+  right: 0;
+  top: 6px;
+}
+.ricsnav__rightsearch {
+  width: 30vw;
+  padding-top: 0;
+  margin: 0 0px 0 25px;
+  position: relative;
+  line-height: 0.65 !important;
+  top: -8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-size: 18px;
+  color: #000000 !important;
+}

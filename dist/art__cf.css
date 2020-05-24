@@ -1,0 +1,258 @@
+.ricsartcf {
+  width: 100%;
+  display: inline-block;
+}
+.ricsartcf__heading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-size: 26px;
+  line-height: 34px;
+  font-family: 'Oswald-Regular';
+  margin-bottom: 30px;
+}
+.ricsartcf__bigfont {
+  font-size: 100px;
+  float: left;
+  line-height: 100px;
+  width: 60px;
+}
+.ricsartcf__content {
+  margin-bottom: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-size: 18px;
+  line-height: 30px;
+}
+.ricsartcf__rhtcontent {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-family: 'Oswald-Regular';
+  font-size: 24px;
+  line-height: 38px;
+  border-top: solid 1px #02837c;
+  padding: 12px 0 0;
+  margin-bottom: 30px;
+}
+.ricsartcf__smalldesc {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 20px;
+  color: #4c4d4d;
+  display: inline-block;
+}
+.ricsartcf__link {
+  text-decoration: underline;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-size: 18px;
+  line-height: 30px;
+  word-break: break-all;
+}
+.ricsartcf__slider {
+  position: relative;
+}
+.ricsartcf--fstltrnrml {
+  font-size: 24px;
+  line-height: 38px;
+}
+.ricsartcf--fstltrnrml .ricsartcf__bigfont {
+  font-size: 24px;
+  line-height: 38px;
+  width: auto;
+}
+.ricsartcf--txtlink {
+  width: 445px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-size: 18px;
+  font-style: italic;
+  color: #4c4d4d;
+  line-height: 30px;
+}
+.ricsartcf__lstcont {
+  padding-left: 20px;
+}
+.ricsartcf__lst {
+  list-style: disc inside;
+  color: #02837c;
+  line-height: 1.62;
+  margin-top: 20px;
+}
+.ricsartcf__lsttitle {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #02837c;
+  font-weight: bold;
+}
+.ricsartcf__lstdesc {
+  margin-left: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  margin-top: 5px;
+}
+.ricsartcf--headingwithbr {
+  border-top: solid 1px #02837c;
+  padding-top: 30px;
+}
+.ricsartcf--scdrylayout {
+  background: rgba(2, 131, 124, 0.1);
+  padding: 50px 0;
+}
+.ricsartcf__scndlistcont {
+  padding-left: 15px;
+  margin-top: 20px;
+}
+.ricsartcf__scndlist {
+  list-style: disc inside;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-size: 18px;
+  line-height: 30px;
+}
+.ricsartcf--scndheading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-family: 'OpenSans-SemiBold';
+  font-size: 20px;
+  color: #02837c;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.ricsartcf--scndheading .ricsartcf__bigfont {
+  font-size: 20px!important;
+  line-height: 30px;
+  width: auto;
+}
+.ricsartcf--jrnlheading {
+  font-family: 'OpenSans-SemiBold';
+  font-size: 20px;
+  line-height: 32px;
+}
+.ricsartcf--jrnlheading .ricsartcf__bigfont {
+  width: auto;
+  font-size: 20px;
+  line-height: 32px;
+}
+.ricsartcf--jrnlrhtcontent {
+  font-family: 'OpenSans-SemiBold';
+  font-size: 20px;
+  line-height: 32px;
+}
+.ricsarttbl__headingcont {
+  margin-top: 70px;
+  background: #02837c;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  color: #ffffff;
+  position: relative;
+}
+.ricsarttbl__expndtbl {
+  position: absolute;
+  right: 0px;
+  top: -25px;
+}
+.ricsarttbl__container {
+  width: 100%;
+  overflow: hidden;
+}
+.ricsartrightcnt__rhtcontent {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-family: 'Oswald-Regular';
+  font-size: 24px;
+  line-height: 38px;
+  border-top: solid 1px #02837c;
+  padding: 12px 0 0;
+  margin-bottom: 120px;
+}
+.ricsartrightcnt__smalldesc {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 20px;
+  color: #4c4d4d;
+  display: inline-block;
+}

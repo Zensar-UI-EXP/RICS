@@ -1,0 +1,139 @@
+.latestarticle__heading {
+  border-bottom: solid 1px #000000;
+  padding-bottom: 10px;
+}
+.latestarticle__card {
+  margin-top: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  display: flex;
+  position: relative;
+}
+.latestarticle__cardlink {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-indent: -99999em;
+}
+.latestarticle__cardimagecont {
+  width: 45%;
+}
+.latestarticle__cardimage {
+  width: 100%;
+  height: 100%;
+}
+.latestarticle__carddetail {
+  padding: 15px 30px;
+  width: 70%;
+}
+.latestarticle__articleheading {
+  margin: 15px 0 20px;
+  font-weight: 500 !important;
+  width: 90%;
+}
+.latestarticle__articledate {
+  margin-bottom: 30px;
+}
+.latestarticle__articledate strong {
+  margin-left: 30px;
+}
+.latestarticle__tag {
+  background: #e8e7e7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-size: 12px;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 7px 3px 0px 0!important;
+  display: inline-block;
+}
+.latestarticle__tagcont {
+  position: relative;
+}
+.latestarticle__tagmore {
+  text-indent: -99999em;
+  width: 3px;
+  height: 3px;
+  display: inline-block;
+  position: relative;
+  top: 21px;
+  left: 1px;
+  background: #4c4d4d;
+}
+.latestarticle__tagmore::after {
+  position: absolute;
+  top: 0;
+  content: "";
+  width: 3px;
+  height: 3px;
+  background: #4c4d4d;
+  right: 6px;
+}
+.latestarticle__tagmore::before {
+  position: absolute;
+  top: 0;
+  content: "";
+  width: 3px;
+  height: 3px;
+  background: #4c4d4d;
+  left: 6px;
+}
+.latestarticle__loadbtn {
+  display: block;
+  margin: 100px auto 35px;
+  width: 175px;
+}
+@media (max-width: 767.98px) {
+  .latestarticle__articledate {
+    display: none;
+  }
+  .latestarticle__cardimagecont {
+    width: 50%;
+  }
+  .latestarticle__cardlabel {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #ffffff;
+    padding: 3px 10px;
+    margin-bottom: 0;
+  }
+  .latestarticle__carddetail {
+    width: 50%;
+    padding: 5px 7px;
+  }
+  .latestarticle__articleheading {
+    font-size: 11px!important;
+    margin-top: 0;
+  }
+  .latestarticle__tag {
+    padding: 3px 5px!important;
+    font-size: 9px!important;
+  }
+  .latestarticle__tagmore {
+    top: 20px;
+    width: 2px;
+    height: 2px;
+  }
+  .latestarticle__tagmore::before {
+    width: 2px;
+    height: 2px;
+    left: 4px;
+  }
+  .latestarticle__tagmore::after {
+    width: 2px;
+    height: 2px;
+    right: 4px;
+  }
+  .latestarticle__loadbtn {
+    margin: 50px auto 5px;
+  }
+}

@@ -1,0 +1,77 @@
+.ricssubnav {
+  box-shadow: 0 4px 4px 0 rgba(212, 209, 209, 0.2);
+}
+.ricssubnav__submenunav {
+  width: 100%;
+  padding: 0 0;
+  flex-direction: row;
+  position: relative;
+}
+.ricssubnav__submenulistcont {
+  display: flex;
+}
+.ricssubnav__submenulist {
+  padding: 15px 17px 25px;
+  line-height: 1.38;
+  position: relative;
+  display: inline-block;
+}
+.ricssubnav__submenulist:hover .ricssubnav__submenulink {
+  font-weight: bold;
+}
+.ricssubnav__submenulist:hover .ricssubnav__drpdwnlistcont {
+  display: block;
+}
+.ricssubnav__submenulink {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-size: 18px;
+  color: #000000;
+  display: inline-block;
+}
+.ricssubnav__submenulink::before {
+  display: block;
+  content: attr(title);
+  font-weight: bold;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.ricssubnav--submenulinkactive {
+  font-family: 'OpenSans-Bold';
+  position: relative;
+  top: -2px;
+}
+.ricssubnav__drpdwnlistcont {
+  position: absolute;
+  box-shadow: 0 3px 4px 0 rgba(143, 143, 143, 0.5);
+  left: 0;
+  top: 65px;
+  display: none;
+  z-index: 1;
+  background: #f7f7f7;
+  min-width: 100%;
+}
+.ricssubnav__drpdwnlink {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-size: 14px;
+  white-space: nowrap;
+  display: inline-block;
+  padding: 10px;
+  min-width: 100%;
+}
+.ricssubnav__drpdwnlink:hover {
+  background: #ffffff;
+}

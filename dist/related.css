@@ -1,0 +1,197 @@
+.ricsrltopics {
+  width: 100%;
+  display: inline-block;
+}
+.ricsrltopics__container {
+  justify-content: space-between;
+}
+.ricsrltopics__heading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-size: 21px;
+  line-height: 2;
+  border-bottom: solid 1px #000000;
+  width: 100%;
+}
+.ricsrltopics__tagcont {
+  padding-top: 30px;
+}
+.ricsrltopics__tag {
+  background: #e8e7e7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 0.58px;
+  text-align: center;
+  padding: 0 8px;
+  margin: 0 3px 10px 0!important;
+}
+.ricsrltopics__socialsharing {
+  display: flex;
+  align-items: flex-end;
+}
+.ricsrltopics__socialsharinglink {
+  margin-right: 45px;
+  text-indent: -99999em;
+}
+.ricsrlart {
+  width: 100%;
+  display: inline-block;
+}
+.ricsrlart__heading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-size: 21px;
+  line-height: 2;
+  border-bottom: solid 1px #000000;
+  width: 100%;
+}
+.ricsrlart__cardlist {
+  padding: 25px 0 0;
+  justify-content: space-between;
+}
+.ricsrlart__cardlist .col--4 {
+  padding-left: 0!important;
+  padding-right: 0!important;
+  width: 32%;
+  max-width: 32%;
+}
+.ricsrlart__card {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  height: 100%;
+  position: relative;
+  border-bottom: solid 1px #02837c;
+}
+.ricsrlart__cardimagecont {
+  width: 100%;
+  max-height: 235px;
+}
+.ricsrlart__cardimage {
+  width: 100%;
+  max-height: 235px;
+}
+.ricsrlart__carddetail {
+  padding: 25px;
+}
+.ricsrlart__cardlabel {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 0.78;
+  display: inline-block;
+}
+.ricsrlart__articleheading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.38;
+  margin: 20px 0;
+}
+.ricsrlart__articledate {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.88;
+  margin-bottom: 50px;
+}
+.ricsrlart__articledate strong {
+  margin-left: 30px;
+}
+.ricsrlart__tag {
+  background: #e8e7e7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-size: 12px;
+  line-height: 2.14;
+  letter-spacing: 0.58px;
+  text-align: center;
+  padding: 0 10px;
+  margin: 7px 3px 0px 0!important;
+  display: inline-block;
+}
+.ricsrlart--bluelabel {
+  background: #0F4DBC;
+}
+.ricsrlart__tagcont {
+  width: 100%;
+}
+.ricsrlart__tagmore {
+  text-indent: -99999em;
+  width: 3px;
+  height: 3px;
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  background: #4c4d4d;
+}
+.ricsrlart__tagmore::after {
+  position: absolute;
+  top: 0;
+  content: "";
+  width: 3px;
+  height: 3px;
+  background: #4c4d4d;
+  right: 6px;
+}
+.ricsrlart__tagmore::before {
+  position: absolute;
+  top: 0;
+  content: "";
+  width: 3px;
+  height: 3px;
+  background: #4c4d4d;
+  left: 6px;
+}
+.ricsrlart__cardlink {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  text-indent: -99999em;
+}

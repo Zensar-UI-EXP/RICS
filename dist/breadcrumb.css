@@ -1,0 +1,63 @@
+.ricsbreadcrumb {
+  margin-bottom: 60px;
+}
+.ricsbreadcrumb__nav {
+  width: 100%;
+  padding: 14px 0 12px;
+  border-top-left-radius: 0;
+  flex-direction: row;
+}
+.ricsbreadcrumb__navlistcont {
+  display: flex;
+  width: 220px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+.ricsbreadcrumb__navlist {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-size: 15px;
+  padding: 0 3px;
+}
+.ricsbreadcrumb__navlink {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-size: 15px;
+  line-height: 1.38;
+}
+.ricsbreadcrumb__navlink:hover {
+  opacity: 0.7;
+}
+.ricsbreadcrumb__morelink {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-size: 15px;
+  color: #686969;
+  right: 0;
+  top: 0;
+  background: #ffffff;
+  cursor: pointer;
+}
+.ricsbreadcrumb--navlast {
+  color: #686969;
+}

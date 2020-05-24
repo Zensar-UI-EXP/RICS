@@ -1,0 +1,102 @@
+.ricsfooter {
+  background: #000000;
+  padding: 110px 0 60px;
+  margin: 50px 0 0;
+  display: inline-block;
+  width: 100%;
+}
+.ricsfooter__left {
+  flex-direction: column;
+}
+.ricsfooter__heading {
+  color: #ffffff;
+  text-indent: -99999em;
+  height: 24px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.ricsfooter--modus {
+  background: url(/dam/images/logo__wht__modus.png) no-repeat transparent;
+  background-size: contain;
+}
+.ricsfooter--journal {
+  background: url(/dam/images/logo__wht__journals.png) no-repeat transparent;
+  background-size: contain;
+}
+.ricsfooter__logo {
+  width: 100%;
+  padding-bottom: 42px;
+  margin: 25px 0 35px;
+}
+.ricsfooter__logolink {
+  width: 110px;
+  float: left;
+  height: 38px;
+  text-indent: -99999em;
+  background: url(/dam/images/footer__logo.svg) no-repeat transparent;
+  background-size: 100%;
+}
+.ricsfooter__navlistcont {
+  display: flex;
+  flex-direction: column;
+  border-top: solid 1px rgba(255, 255, 255, 0.5);
+  padding-top: 40px;
+}
+.ricsfooter__navlist {
+  padding: 0px 10px 0 0;
+  line-height: 30px!important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-size: 14px;
+  color: #ffffff;
+}
+.ricsfooter__navlist:first-child {
+  padding-left: 0;
+}
+.ricsfooter__navlist:last-child {
+  padding-right: 0;
+}
+.ricsfooter__navlink {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-size: 14px;
+  line-height: 30px!important;
+  color: rgba(255, 255, 255, 0.9);
+}
+.ricsfooter__navlink:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+.ricsfooter__scllinks {
+  justify-content: flex-end;
+  width: 20vw;
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+.ricsfooter__socialsharinglink {
+  text-indent: -99999em;
+  margin-right: 0;
+}
+.ricsfooter__socialsharinglink:first-child {
+  margin-left: 0;
+}
+.ricsfooter__socialsharinglink:last-child {
+  margin-right: 0;
+}
+.ricsfooter--copyright {
+  padding-top: 60px;
+  border-top: 0;
+  opacity: 0.5;
+}
