@@ -10,11 +10,13 @@
       flex-direction: row;
    }
    &__navlistcont{
-      display: flex;
       width: 220px;
       overflow: hidden;
       white-space: nowrap;
       position: relative;
+      .default--font();
+      font-size: 15px;
+      color: @slate--grey;
    }
    &__navlist{
       .default--font();
@@ -33,13 +35,13 @@
       position: absolute;
       .default--font();
       font-size: 15px;
-      color: #686969;
+      color: @slate--grey;
       right: 0;
       top: 0;
       background: @ricswhite;
       cursor: pointer;
    }
    &--navlast{
-      color: #686969;
+      color: @slate--grey;
    }
 }

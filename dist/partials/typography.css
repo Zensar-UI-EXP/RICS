@@ -505,6 +505,10 @@ a {
 .remove-ovrflw--hdn {
   overflow: visible;
 }
+.remove-ovrflw--hdn.ricsbreadcrumb__navlistcont{
+  width: 100%;
+  overflow: hidden;
+}
 .remove-ovrflw--hdn .ricsbreadcrumb__morelink {
   display: none;
 }

@@ -158,6 +158,9 @@
   .ricsbreadcrumb {
     margin-bottom: 25px;
   }
+  .ricsbreadcrumb__navlistcont{
+    font-size: 10px;
+  }
   .ricsbreadcrumb.hide--submenu {
     margin-top: 168px;
   }
