@@ -10,12 +10,22 @@
   }
   .ricsfooter__socialsharinglink {
     margin-left: 8px;
+    margin-right: 0!important;
   }
   .ricsfooter__socialsharinglink:first-child {
     margin-left: 0!important;
   }
-  .ricsfooter__socialsharinglink {
-    margin-right: 0!important;
+  .title-size--lmd {
+    font-size: 22px!important;
+    line-height: 30px!important;
+  }
+  .pagelist__heading {
+    word-wrap: break-word;
+    width: 100%;
+  }
+  .para-size--lmd {
+    font-size: 15px!important;
+    line-height: 20px!important;
   }
 }
 @media (max-width: 767.98px) {
@@ -158,8 +168,9 @@
   .ricsbreadcrumb {
     margin-bottom: 25px;
   }
-  .ricsbreadcrumb__navlistcont{
+  .ricsbreadcrumb__navlistcont {
     font-size: 10px;
+    width: 165px;
   }
   .ricsbreadcrumb.hide--submenu {
     margin-top: 168px;
