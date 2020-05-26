@@ -311,6 +311,11 @@
   border-bottom: solid 1px #000000;
   padding-bottom: 50px;
 }
+.container-pmdm--spacing {
+  margin: 25px auto!important;
+  display: inline-block;
+  width: 100%;
+}
 .container-mdm--spacing {
   margin: 30px auto!important;
   display: inline-block;

@@ -291,6 +291,12 @@ a {
 .fnt-clr--blgrn {
   color: #02837c !important;
 }
+.fnt-clr--cobalt {
+  color: #1b4693 !important;
+}
+.fnt-clr--mdgrn {
+  color: #6c3c14 !important;
+}
 .fnt-wt--smbld {
   font-weight: 600;
 }
@@ -408,6 +414,9 @@ a {
 }
 .bg--offwhite {
   background: #fffce2;
+}
+.bg--vrlghtpnk {
+  background: #f9f7f7 !important;
 }
 .bg--sclyt {
   background: rgba(2, 131, 124, 0.1);
@@ -629,7 +638,7 @@ html {
 }
 .title-size--xxlrg {
   font-size: 78px;
-  line-height: normal;
+  line-height: 72px;
 }
 .para {
   font-family: Arial, Helvetica, sans-serif;

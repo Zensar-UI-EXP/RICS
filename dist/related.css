@@ -47,6 +47,10 @@
   margin-right: 45px;
   text-indent: -99999em;
 }
+.ricsrltopics__taglink {
+  color: #000000;
+  font-weight: normal;
+}
 .ricsrlart {
   width: 100%;
   display: inline-block;
@@ -85,6 +89,7 @@
 .ricsrlart__cardimagecont {
   width: 100%;
   max-height: 235px;
+  position: relative;
 }
 .ricsrlart__cardimage {
   width: 100%;
@@ -120,6 +125,7 @@
   font-weight: 500;
   line-height: 1.38;
   margin: 20px 0;
+  position: relative;
 }
 .ricsrlart__articledate {
   font-family: Arial, Helvetica, sans-serif;
@@ -194,4 +200,8 @@
   left: 0;
   top: 0;
   text-indent: -99999em;
+}
+.ricsrlart__taglink {
+  color: #000000;
+  font-weight: normal;
 }

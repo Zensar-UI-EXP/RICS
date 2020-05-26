@@ -25,13 +25,13 @@
 }
 .ricsnav__leftlink {
   padding: 0;
-  margin-top: 35px;
+  margin-top: 40px;
   float: left;
   width: 100%;
   text-indent: -99999em;
 }
 .ricsnav__leftlink:hover {
-  border-bottom: solid 4px #000000;
+  opacity: 0.7;
 }
 .ricsnav--moduslink {
   font-family: Arial, Helvetica, sans-serif;
@@ -43,16 +43,16 @@
   letter-spacing: normal;
   color: #000000;
   background: url(../images/logo__modus__4x.png) no-repeat transparent;
-  width: 93px;
-  height: 45px;
+  width: 80px;
+  height: 37px;
   background-size: contain;
 }
 .ricsnav--jornalslink {
   background: url(../images/logo__journals__4x.png) no-repeat transparent;
-  width: 112px;
+  width: 100px;
   height: 29px;
   background-size: contain;
-  padding-bottom: 41px;
+  padding-bottom: 37px;
 }
 .ricsnav--leftlistactive {
   border-bottom: solid 4px #000000;

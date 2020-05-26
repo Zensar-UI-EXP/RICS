@@ -767,21 +767,25 @@
   .ricsbreadcrumb__morelink {
     top: -5px;
   }
-  .title-size--xsmd {
-    font-size: 12px!important;
-    line-height: 14px!important;
-  }
   .title--smalldesc {
     font-size: 12px;
     margin-top: 10px!important;
+  }
+  .title-size--xsmd {
+    font-size: 12px!important;
+    line-height: 14px!important;
   }
   .title-size--pmd {
     font-size: 16px;
     line-height: 22px;
   }
+  .title-size--lmd {
+    font-size: 19px!important;
+    line-height: 25px!important;
+  }
   .title-size--dxsmdfstbgfnt {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 19px!important;
+    line-height: 25px!important;
   }
   .title-size--dxsmdfstbgfnt::first-letter {
     font-size: 58px!important;
@@ -805,14 +809,14 @@
     font-size: 34px!important;
     line-height: 40px!important;
   }
-  .title-size--xmlrg {
-    font-size: 30px!important;
-    line-height: 38px!important;
-  }
   .title-size--xmd {
     font-size: 32px;
     line-height: 40px;
     font-family: 'Oswald-Regular' !important;
+  }
+  .title-size--xmlrg {
+    font-size: 30px!important;
+    line-height: 38px!important;
   }
   .para {
     font-size: 14px;
