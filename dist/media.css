@@ -801,6 +801,10 @@
     font-size: 34px!important;
     line-height: 40px!important;
   }
+  .title-size--xmlrg {
+    font-size: 30px!important;
+    line-height: 38px!important;
+  }
   .title-size--xmd {
     font-size: 32px;
     line-height: 40px;
