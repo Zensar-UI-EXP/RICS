@@ -48,6 +48,37 @@
    display: flex;
    justify-content: space-between;
    width: 100%;
+   &--withimg{
+      .pagelist__cont{
+         padding: 30px 30px 0;
+         background: transparent;
+      }
+      .pagelist__heading{
+         color: @ricswhite;
+         position: relative;
+      }
+      .pagelist__desc{
+         position: absolute;
+         padding: 30px;
+         margin: 0;
+         left: 0;
+         bottom: 0;
+         background: @blue--green;
+         color: @ricswhite;
+         height: 50%;
+      }
+      .pagelist__cont::before{
+         background: url(../images/icon__arrow__white__3x.png) no-repeat transparent;
+         background-size: contain;
+      }
+   }
+   &__img{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+   }
    &__heading{
       width: 200px;
    }
@@ -62,12 +93,13 @@
          position: absolute;
          width: 35px;
          height: 19px;
-         background: url(/dam/images/icon__arrow__3x.png) no-repeat transparent;
+         background: url(../images/icon__arrow__3x.png) no-repeat transparent;
          background-size: contain;
          content: "";
          transform: rotate(0deg);
          bottom: 25px;
          right: 30px;
+         z-index: 1;
       }
    }
    &__desc{
@@ -87,6 +119,30 @@
 @media (max-width: 767.98px) {
    .pagelist{
       flex-direction: column;
+      &--withimg{
+         .pagelist__img{
+            width: 169px;
+         }
+         .pagelist__cont{
+            padding: 10px;
+            background: transparent;
+            border: solid 7px @ricswhite;
+            display: block;
+         }
+         .pagelist__heading{
+            color: @ricswhite;
+            position: relative;
+            width: 159px;
+         }
+         .pagelist__desc{
+            position: absolute;
+            padding: 10px;
+            margin: 0;
+            left: 169px;
+            height: 100%;
+            width: calc(100% - 169px);
+         }
+      }
       &__cont{
          width: 100%;
          border: solid 7px @ricsblack;

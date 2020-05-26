@@ -59,7 +59,7 @@
   position: absolute;
   width: 35px;
   height: 19px;
-  background: url(/dam/images/icon__arrow__3x.png) no-repeat transparent;
+  background: url(../images/icon__arrow__3x.png) no-repeat transparent;
   background-size: contain;
   content: "";
   transform: rotate(0deg);
