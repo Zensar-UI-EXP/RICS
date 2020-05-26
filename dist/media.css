@@ -767,6 +767,10 @@
   .ricsbreadcrumb__morelink {
     top: -5px;
   }
+  .title-size--xsmd {
+    font-size: 12px!important;
+    line-height: 14px!important;
+  }
   .title--smalldesc {
     font-size: 12px;
     margin-top: 10px!important;
