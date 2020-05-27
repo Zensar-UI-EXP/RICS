@@ -19,6 +19,7 @@
   top: 0;
   left: 0;
   text-indent: -99999em;
+  z-index: 1;
 }
 .latestarticle__cardimagecont {
   width: 45%;
@@ -112,7 +113,7 @@
     left: 0;
     bottom: 0;
     background: #ffffff;
-    padding: 3px 10px;
+    padding: 5px 5px;
     margin-bottom: 0;
   }
   .latestarticle__carddetail {
@@ -122,6 +123,8 @@
   .latestarticle__articleheading {
     font-size: 11px!important;
     margin-top: 0;
+    margin-bottom: 10px;
+    width: 100%;
   }
   .latestarticle__tag {
     padding: 3px 5px!important;

@@ -200,6 +200,7 @@
   left: 0;
   top: 0;
   text-indent: -99999em;
+  z-index: 1;
 }
 .ricsrlart__taglink {
   color: #000000;

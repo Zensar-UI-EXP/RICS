@@ -19,11 +19,11 @@
     font-size: 22px!important;
     line-height: 30px!important;
   }
-  .pagelist__heading {
-    word-wrap: break-word;
-    width: 100%;
-  }
   .para-size--lmd {
+    font-size: 15px!important;
+    line-height: 20px!important;
+  }
+  .para-size--artdesc {
     font-size: 15px!important;
     line-height: 20px!important;
   }
@@ -91,6 +91,7 @@
     width: 100%;
     background-size: 93px;
     background-position: top center;
+    height: 45px;
   }
   .ricsnav--jornalslink {
     width: 100%;
@@ -588,6 +589,9 @@
     padding-left: 0!important;
     padding-right: 0!important;
   }
+  .container-pmdm--spacing {
+    margin: 10px auto!important;
+  }
   .container-mdm--spacing {
     margin: 25px auto!important;
   }
@@ -771,6 +775,9 @@
     font-size: 12px;
     margin-top: 10px!important;
   }
+  .title-size--xxlrg {
+    font-size: 39px;
+  }
   .title-size--xsmd {
     font-size: 12px!important;
     line-height: 14px!important;
@@ -795,6 +802,7 @@
   }
   .title-size--sm {
     font-size: 12px!important;
+    line-height: 14px;
   }
   .title-size--md {
     font-size: 16px!important;
@@ -818,6 +826,25 @@
     font-size: 30px!important;
     line-height: 38px!important;
   }
+  .title-size--jnlpghead {
+    font-size: 28px;
+  }
+  .title-size--jnlbrsbhead {
+    font-size: 23px;
+    line-height: 31px;
+  }
+  .title-size--jnlcrdhead {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .title-size--jnlcrdsbhead {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .title-size--jrnlcrd {
+    font-size: 18px!important;
+    line-height: 23px!important;
+  }
   .para {
     font-size: 14px;
   }
@@ -827,6 +854,18 @@
   }
   .para-size--lmd {
     line-height: 16px!important;
+  }
+  .para-size--artdesc {
+    font-size: 11px!important;
+    line-height: 15px!important;
+  }
+  .para-size--lrg {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .para-size--jnlpghead {
+    font-size: 17px;
+    line-height: 27px;
   }
   .grdoverlay {
     height: 349px;
