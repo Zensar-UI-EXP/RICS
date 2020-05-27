@@ -235,6 +235,7 @@
       .banner__leftcol{
          background: @ricswhite;
          height: 99.7%;
+         min-width: 420px;
       }
       .banner__subheading, .banner__desc, .banner__authinfo{
          color: @ricsblack!important;
@@ -244,7 +245,7 @@
 @media (max-width: 767.98px) {
    .infotxt{
       &__container{
-         padding: 40px 0;
+         padding: 30px 0 40px;
          flex-direction: column;
          align-items: flex-start;
       }
@@ -263,6 +264,11 @@
       }
    }
    .banner{
+      &--journal{
+         .banner__leftcol{
+            min-width: 10px;
+         }
+      }
       &__container{
          flex-direction: column-reverse;
       }
@@ -277,7 +283,7 @@
       }
       &__heading{
          background: @ricswhite;
-         padding: 3px 10px;
+         padding: 7px 10px;
          top: auto;
          bottom: 0;
          left: 0;

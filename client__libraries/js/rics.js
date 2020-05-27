@@ -62,14 +62,66 @@ function hideSearch() {
       rightNavElement[0].classList.remove("search--open");
 }
 
-let ricsVideo = document.getElementById("ricsvideo");
-
-function playricsVideo() {
-      let playVideoButton = document.getElementById("playricsVideoBtn");
+var ricsVideo, videoIndex, youtubeid, playerid;
+function playricsVideo(videoIndex, youtubeid) {
+      let playVideoButton = document.getElementById("playricsVideoBtn" + videoIndex);
       playVideoButton.style.display = "none";
-      let posterElement = document.getElementsByClassName("ricsartimgntxt__videoposter");
-      posterElement[0].style.display = "none";
-      ricsVideo.play();
+      let posterElement = document.getElementById("videoPoster" + videoIndex);
+      posterElement.style.display = "none";
+      if (youtubeid) {
+            playYTVideo(videoIndex, youtubeid);
+      } else {
+            ricsVideo = document.getElementById("ricsvideo" + videoIndex);
+            ricsVideo.play();
+      }
+}
+
+function playYTVideo(videoIndex, youtubeid) {
+      videoIndex = videoIndex;
+      youtubeid = youtubeid;
+      playerid = 'player' + videoIndex;
+      document.getElementById("ricsvideo" + videoIndex).innerHTML = "<div id='" + playerid + "' datasrc='" + youtubeid + "'></div>";
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+}
+
+function getVideoId(){
+      return document.getElementById(playerid).attributes.datasrc.nodeValue;
+};
+
+var player = {};
+function onYouTubeIframeAPIReady() {
+      player[videoIndex] = new YT.Player(playerid, {
+            videoId: getVideoId(),
+            playerVars: {
+                  controls: 1,
+                  showinfo: 0,
+                  rel: 0,
+                  showsearch: 0,
+                  iv_load_policy: 3
+              },
+            events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+            }
+      });
+}
+
+function onPlayerReady(event) {
+      event.target.playVideo();
+}
+
+var done = false;
+function onPlayerStateChange(event) {
+      if (event.data == YT.PlayerState.PLAYING && !done) {
+            done = true;
+      }
+}
+
+function stopVideo() {
+      player[videoIndex].stopVideo();
 }
 
 function expandTable() {

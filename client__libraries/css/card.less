@@ -50,7 +50,7 @@
    width: 100%;
    &--withimg{
       .pagelist__cont{
-         padding: 30px 30px 0;
+         padding: 20px 20px 0;
          background: transparent;
       }
       .pagelist__heading{
@@ -59,7 +59,7 @@
       }
       .pagelist__desc{
          position: absolute;
-         padding: 30px;
+         padding: 20px;
          margin: 0;
          left: 0;
          bottom: 0;
@@ -114,6 +114,14 @@
       top: 0;
       z-index: 1;
       text-indent: -99999em;
+   }
+}
+@media (max-width: 991.98px) {
+   .pagelist{
+      &__heading{
+         word-wrap: break-word;
+         width: 100%;
+      }
    }
 }
 @media (max-width: 767.98px) {
@@ -185,6 +193,10 @@
          bottom: 0;
          background: @ricswhite;
          padding: 3px 10px;
+         max-width: 90%;
+         white-space: nowrap;
+         text-overflow: ellipsis;
+         overflow: hidden;
       }
       &__content{
          padding: 15px;
