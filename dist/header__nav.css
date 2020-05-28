@@ -57,6 +57,9 @@
 .ricsnav--leftlistactive {
   border-bottom: solid 4px #000000;
 }
+.ricsnav--leftlistactive:hover{
+  opacity: 1;
+}
 .ricsnav__rightlistcont {
   display: flex;
   justify-content: flex-end;

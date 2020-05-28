@@ -49,7 +49,7 @@
 .ricssubnav__drpdwnlistcont {
   position: absolute;
   box-shadow: 0 3px 4px 0 rgba(143, 143, 143, 0.5);
-  left: 0;
+  left: 15px;
   top: 62px;
   display: none;
   z-index: 1;
