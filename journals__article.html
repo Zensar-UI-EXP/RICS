@@ -23,7 +23,7 @@
         <link rel="stylesheet/less" type="text/x-less" href="client__libraries/css/partials/typography.less" />
         <link rel="stylesheet/less" type="text/x-less" href="client__libraries/css/media.less" />
         <style>
-            #modusMenu{
+            #menu1{
                 display: none;
             }
             ul, li {
@@ -59,11 +59,15 @@
                     <div class="rics--row">
                         <nav role="navigation" aria-label="Header navigation" class="ricsnav__cont">
                             <ul class="ricsnav__leftlistcont col--6 col--fst">
-                                <li class="ricsnav__leftlist col--auto">
-                                    <a class="ricsnav__leftlink ricsnav--moduslink" onclick="toggleMenu(this, 'modusMenu')" href="javascript:void(0);" title="Modus">Modus</a>
+                                <li class="ricsnav__leftlist col--auto ricsnav--moduslist">
+                                    <a class="ricsnav__leftlink ricsnav--moduslink" href="javascript:void(0);" title="Modus">Modus</a>
                                 </li>
-                                <li class="ricsnav__leftlist col--auto">
-                                    <a class="ricsnav__leftlink ricsnav--jornalslink ricsnav--leftlistactive" href="javascript:void(0);" onclick="toggleMenu(this, 'journalsMenu')" title="Journals">Journals</a>
+                                <li class="ricsnav__leftlist col--auto ricsnav--jornalslist">
+                                    <a class="ricsnav__leftlink ricsnav--jornalslink ricsnav--leftlistactive" href="javascript:void(0);" title="Journals">
+                                        Journals
+                                        <span class="ricsnav__expdovly" onclick="toggleMenu(this, 2)"></span>
+                                        <span class="ricsnav__chevronicon icon icon--chevron"></span>
+                                    </a>
                                 </li>
                             </ul>
                             <ul class="ricsnav__rightlistcont col--6 col--lst">
@@ -90,79 +94,18 @@
             <div class="container container--fluid">
                 <div class="container--content">
                     <div class="rics--row col--auto col--fst">
-                        <nav role="navigation" aria-label="Modus navigation" class="ricssubnav__submenunav" id="modusMenu">
+                        <nav role="navigation" aria-label="Journals navigation" class="ricssubnav__submenunav" id="menu2">
                             <ul class="ricssubnav__submenulistcont">
-                                <li class="ricssubnav__submenulist ">
-                                    <a class="ricssubnav__submenulink ricssubnav--linkfirst" href="javascript:void(0);" title="Technology">Technology</a>
-                                    <ul class="ricssubnav__drpdwnlistcont">
-                                        <li class="ricssubnav__drpdwnlist">
-                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Surveying Tools">Surveying Tools</a>
-                                        </li>
-                                        <li class="ricssubnav__drpdwnlist">
-                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Data">Data</a>
-                                        </li>
-                                        <li class="ricssubnav__drpdwnlist">
-                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Smart Buildings">Smart Buildings</a>
-                                        </li>
-                                    </ul>
+                                <li class="ricssubnav__submenulist hide--desktop">
+                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Journals home">
+                                        Journals home
+                                    </a>
                                 </li>
-                                <li class="ricssubnav__submenulist">
-                                    <a class="ricssubnav__submenulink ricssubnav--submenulinkactive" href="javascript:void(0);" title="Built Environment">Built Environment</a>
-                                    <ul class="ricssubnav__drpdwnlistcont">
-                                        <li class="ricssubnav__drpdwnlist">
-                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Smart Cities">Smart Cities</a>
-                                        </li>
-                                        <li class="ricssubnav__drpdwnlist">
-                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Housing">Housing</a>
-                                        </li>
-                                        <li class="ricssubnav__drpdwnlist">
-                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Construction">Construction</a>
-                                        </li>
-                                        <li class="ricssubnav__drpdwnlist">
-                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Infrastructure">Infrastructure</a>
-                                        </li>
-                                        <li class="ricssubnav__drpdwnlist">
-                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Commercial Property">Commercial Property</a>
-                                        </li>
-                                        <li class="ricssubnav__drpdwnlist">
-                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Investment">Investment</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="ricssubnav__submenulist">
-                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Natural Environment">Natural Environment</a>
-                                    <ul class="ricssubnav__drpdwnlistcont">
-                                        <li class="ricssubnav__drpdwnlist">
-                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Sustainability">Sustainability</a>
-                                        </li>
-                                        <li class="ricssubnav__drpdwnlist">
-                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Climate Change">Climate Change</a>
-                                        </li>
-                                        <li class="ricssubnav__drpdwnlist">
-                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Rural">Rural</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="ricssubnav__submenulist">
-                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Business & Skills">Business & Skills</a>
-                                    <ul class="ricssubnav__drpdwnlistcont">
-                                        <li class="ricssubnav__drpdwnlist">
-                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Business Management">Business Management</a>
-                                        </li>
-                                        <li class="ricssubnav__drpdwnlist">
-                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Skills">Skills</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </nav>
-                        <nav role="navigation" aria-label="Journals navigation" class="ricssubnav__submenunav" id="journalsMenu">
-                            <ul class="ricssubnav__submenulistcont">
                                 <li class="ricssubnav__submenulist ">
                                     <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Property Journal">Property Journal</a>
                                 </li>
                                 <li class="ricssubnav__submenulist">
-                                    <a class="ricssubnav__submenulink ricssubnav--submenulinkactive" href="javascript:void(0);" title="Construction Journal">Construction Journal</a>
+                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Construction Journal">Construction Journal</a>
                                 </li>
                                 <li class="ricssubnav__submenulist">
                                     <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Built Environment Journal">Built Environment Journal</a>
@@ -259,7 +202,12 @@
                             <div class="ricsartimgntxt">
                                 <div class="ricsartimgntxt__container">
                                     <div class="ricsartimgntxt__midcol">
-                                        <img class="ricsartimgntxt__img" src="/client__libraries/images/j__article__fullwidth__image.svg" alt="Article image" />
+                                        <picture>
+                                            <source media="(min-width: 1200px)" srcset="/client__libraries/images/journals__article/article__3x.png">
+                                            <source media="(min-width: 960px)" srcset="/client__libraries/images/journals__article/article__2x.png">
+                                            <source media="(min-width: 560px)" srcset="/client__libraries/images/journals__article/article__1x.png">
+                                            <img class="ricsartimgntxt__img" src="/client__libraries/images/journals__article/article__1x.png" alt="Article image" longdesc="Image description WeWork Vancouver is one of the company’s 849 locations.">
+                                        </picture>
                                     </div>
                                     <div class="rics--row flx-dir--mobclm">
                                         <div class="ricsartimgntxt__lefcol col--1"></div>
@@ -364,7 +312,12 @@
                             <div class="ricsartimgntxt">
                                 <div class="ricsartimgntxt__container">
                                     <div class="ricsartimgntxt__midcol">
-                                        <img class="ricsartimgntxt__img" src="/client__libraries/images/journals__article/artilcle__2.png" alt="WeWork Vancouver is one of the company’s 849 locations." />
+                                        <picture>
+                                            <source media="(min-width: 1200px)" srcset="/client__libraries/images/journals__article/second__article__3x.png">
+                                            <source media="(min-width: 960px)" srcset="/client__libraries/images/journals__article/second__article__2x.png">
+                                            <source media="(min-width: 560px)" srcset="/client__libraries/images/journals__article/second__article__1x.png">
+                                            <img class="ricsartimgntxt__img" src="/client__libraries/images/journals__article/second__article__1x.png" alt="Article image" longdesc="WeWork at Constellation in Los Angeles, California. Photography by The We Company.">
+                                        </picture>
                                         <p class="ricsartimgntxt__txt fnt-stl--itlc fnt-clr--chrgry">WeWork at Constellation in Los Angeles, California. Photography by The We Company.</p>
                                     </div>
                                 </div>
@@ -374,7 +327,12 @@
                             <div class="ricsartimgntxt">
                                 <div class="ricsartimgntxt__container">
                                     <div class="ricsartimgntxt__midcol">
-                                        <img class="ricsartimgntxt__img" src="/client__libraries/images/journals__article/artilcle__3.png" alt="WeWork Vancouver is one of the company’s 849 locations." />
+                                        <picture>
+                                            <source media="(min-width: 1200px)" srcset="/client__libraries/images/journals__article/third__article__3x.png">
+                                            <source media="(min-width: 960px)" srcset="/client__libraries/images/journals__article/third__article__2x.png">
+                                            <source media="(min-width: 560px)" srcset="/client__libraries/images/journals__article/third__article__1x.png">
+                                            <img class="ricsartimgntxt__img" src="/client__libraries/images/journals__article/third__article__1x.png" alt="Article image" longdesc="WeWork at Constellation in Los Angeles, California. Photography by The We Company.">
+                                        </picture>
                                         <p class="ricsartimgntxt__txt fnt-stl--itlc fnt-clr--chrgry">WeWork at Constellation in Los Angeles, California. Photography by The We Company.</p>
                                     </div>
                                 </div>
@@ -551,13 +509,13 @@
                                                     <td class="tbl__bodycol">Suitable for passive exposure, such as internal use.</td>
                                                 </tr>
                                                 <tr class="tbl__bodyrow">
-                                                    <td class="tbl__bodycol">F0</td>
+                                                    <td class="tbl__bodycol">F1</td>
                                                     <td class="tbl__bodycol">Suitable for passive exposure, such as internal use.</td>
                                                     <td class="tbl__bodycol">Suitable for passive exposure, such as internal use.</td>
                                                     <td class="tbl__bodycol">Suitable for passive exposure, such as internal use.</td>
                                                 </tr>
                                                 <tr class="tbl__bodyrow">
-                                                    <td class="tbl__bodycol">F0</td>
+                                                    <td class="tbl__bodycol">F2</td>
                                                     <td class="tbl__bodycol">Suitable for passive exposure, such as internal use.</td>
                                                     <td class="tbl__bodycol">Suitable for passive exposure, such as internal use.</td>
                                                     <td class="tbl__bodycol">Suitable for passive exposure, such as internal use.</td>
@@ -611,13 +569,13 @@
                                                 <td class="tbl__bodycol">Suitable for passive exposure, such as internal use.</td>
                                             </tr>
                                             <tr class="tbl__bodyrow">
-                                                <td class="tbl__bodycol">F0</td>
+                                                <td class="tbl__bodycol">F1</td>
                                                 <td class="tbl__bodycol">Suitable for passive exposure, such as internal use.</td>
                                                 <td class="tbl__bodycol">Suitable for passive exposure, such as internal use.</td>
                                                 <td class="tbl__bodycol">Suitable for passive exposure, such as internal use.</td>
                                             </tr>
                                             <tr class="tbl__bodyrow">
-                                                <td class="tbl__bodycol">F0</td>
+                                                <td class="tbl__bodycol">F2</td>
                                                 <td class="tbl__bodycol">Suitable for passive exposure, such as internal use.</td>
                                                 <td class="tbl__bodycol">Suitable for passive exposure, such as internal use.</td>
                                                 <td class="tbl__bodycol">Suitable for passive exposure, such as internal use.</td>
@@ -657,7 +615,7 @@
             <!--Related topics Start-->
             <div class="container container--fluid">
                 <div class="container--content container-mdm--spacing">
-                    <div class="rics--row flx-dir--mobclm jus-cnt--spbtw">
+                    <div class="rics--row flx-dir--mobclmrvrs jus-cnt--spbtw">
                         <div class="col--5 mar-bot--25mob">
                             <div class="ricsrltopics">
                                 <div class="ricsrltopics__container">
@@ -722,7 +680,12 @@
                                             <div class="ricsrlart__card">
                                                 <div class="ricsrlart__cardimagecont">
                                                     <a class="ricsrlart__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                    <img class="ricsrlart__cardimage" src="/client__libraries/images/article__image.svg" alt="Article" longdesc="Time for a change of use" />
+                                                    <picture>
+                                                        <source media="(min-width: 1200px)" srcset="/client__libraries/images/modus__article/related__article__3x.png">
+                                                        <source media="(min-width: 960px)" srcset="/client__libraries/images/modus__article/related__article__3x.png">
+                                                        <source media="(min-width: 560px)" srcset="/client__libraries/images/modus__article/related__article__1x.png">
+                                                        <img class="ricsrlart__cardimage" src="/client__libraries/images/modus__article/related__article__1x.png" alt="Article" longdesc="Time for a change of use">
+                                                    </picture>
                                                 </div>
                                                 <div class="ricsrlart__carddetail">
                                                     <h3 class="ricsrlart__cardlabel fnt-clr--trgrn">LAND JOURNAL</h3>
@@ -766,7 +729,12 @@
                                             <div class="ricsrlart__card">
                                                 <div class="ricsrlart__cardimagecont">
                                                     <a class="ricsrlart__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                    <img class="ricsrlart__cardimage" src="/client__libraries/images/article__image.svg" alt="Article" longdesc="Time for a change of use" />
+                                                    <picture>
+                                                        <source media="(min-width: 1200px)" srcset="/client__libraries/images/modus__article/related__article__3x.png">
+                                                        <source media="(min-width: 960px)" srcset="/client__libraries/images/modus__article/related__article__3x.png">
+                                                        <source media="(min-width: 560px)" srcset="/client__libraries/images/modus__article/related__article__1x.png">
+                                                        <img class="ricsrlart__cardimage" src="/client__libraries/images/modus__article/related__article__1x.png" alt="Article" longdesc="Time for a change of use">
+                                                    </picture>
                                                 </div>
                                                 <div class="ricsrlart__carddetail">
                                                     <h3 class="ricsrlart__cardlabel fnt-fmly--oswaldsemibold">MODUS </h3>
@@ -810,7 +778,12 @@
                                             <div class="ricsrlart__card">
                                                 <div class="ricsrlart__cardimagecont">
                                                     <a class="ricsrlart__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                    <img class="ricsrlart__cardimage" src="/client__libraries/images/article__image.svg" alt="Article" longdesc="Time for a change of use" />
+                                                    <picture>
+                                                        <source media="(min-width: 1200px)" srcset="/client__libraries/images/modus__article/related__article__3x.png">
+                                                        <source media="(min-width: 960px)" srcset="/client__libraries/images/modus__article/related__article__3x.png">
+                                                        <source media="(min-width: 560px)" srcset="/client__libraries/images/modus__article/related__article__1x.png">
+                                                        <img class="ricsrlart__cardimage" src="/client__libraries/images/modus__article/related__article__1x.png" alt="Article" longdesc="Time for a change of use">
+                                                    </picture>
                                                 </div>
                                                 <div class="ricsrlart__carddetail">
                                                     <h3 class="ricsrlart__cardlabel fnt-clr--trgrn">LAND JOURNAL</h3>

@@ -21,7 +21,7 @@
         <link rel="stylesheet/less" type="text/x-less" href="client__libraries/css/partials/typography.less" />
         <link rel="stylesheet/less" type="text/x-less" href="client__libraries/css/media.less" />
         <style>
-            #journalsMenu{
+            #menu1, #menu2{
                 display: none;
             }
             ul, li {
@@ -57,11 +57,17 @@
                     <div class="rics--row">
                         <nav role="navigation" aria-label="Header navigation" class="ricsnav__cont">
                             <ul class="ricsnav__leftlistcont col--6 col--fst">
-                                <li class="ricsnav__leftlist col--auto">
-                                    <a class="ricsnav__leftlink ricsnav--moduslink ricsnav--leftlistactive" onclick="toggleMenu(this, 'modusMenu')" href="javascript:void(0);" title="Modus">Modus</a>
+                                <li class="ricsnav__leftlist col--auto ricsnav--moduslist">
+                                    <a class="ricsnav__leftlink ricsnav--moduslink ricsnav--leftlistactive" href="javascript:void(0);" title="Modus">
+                                        Modus
+                                    </a>
+                                    <span class="ricsnav__expdovly" onclick="toggleMenu(this, 1)"></span>
+                                    <span class="ricsnav__chevronicon icon icon--chevron"></span>
                                 </li>
-                                <li class="ricsnav__leftlist col--auto">
-                                    <a class="ricsnav__leftlink ricsnav--jornalslink" href="javascript:void(0);" onclick="toggleMenu(this, 'journalsMenu')" title="Journals">Journals</a>
+                                <li class="ricsnav__leftlist col--auto ricsnav--jornalslist">
+                                    <a class="ricsnav__leftlink ricsnav--jornalslink" href="javascript:void(0);" title="Journals">
+                                        Journals
+                                    </a>
                                 </li>
                             </ul>
                             <ul class="ricsnav__rightlistcont col--6 col--lst">
@@ -88,11 +94,19 @@
             <div class="container container--fluid">
                 <div class="container--content">
                     <div class="rics--row col--auto col--fst">
-                        <nav role="navigation" aria-label="Modus navigation" class="ricssubnav__submenunav" id="modusMenu">
+                        <nav role="navigation" aria-label="Modus navigation" class="ricssubnav__submenunav" id="menu1">
                             <ul class="ricssubnav__submenulistcont">
-                                <li class="ricssubnav__submenulist ">
-                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Technology">Technology</a>
-                                    <ul class="ricssubnav__drpdwnlistcont">
+                                <li class="ricssubnav__submenulist hide--desktop">
+                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Modus home">
+                                        Modus home
+                                    </a>
+                                </li>
+                                <li class="ricssubnav__submenulist">
+                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Technology">
+                                        Technology
+                                    </a>
+                                    <span class="ricssubnav__chevronicon icon icon--chevron" onclick="toggleSubMenu(this, 1, 1)"></span>
+                                    <ul class="ricssubnav__drpdwnlistcont" id="menu1drpdwn1">
                                         <li class="ricssubnav__drpdwnlist">
                                             <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Surveying Tools">Surveying Tools</a>
                                         </li>
@@ -105,8 +119,11 @@
                                     </ul>
                                 </li>
                                 <li class="ricssubnav__submenulist">
-                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Built Environment">Built Environment</a>
-                                    <ul class="ricssubnav__drpdwnlistcont">
+                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Built Environment">
+                                        Built Environment
+                                    </a>
+                                    <span class="ricssubnav__chevronicon icon icon--chevron" onclick="toggleSubMenu(this, 1, 2)"></span>
+                                    <ul class="ricssubnav__drpdwnlistcont" id="menu1drpdwn2">
                                         <li class="ricssubnav__drpdwnlist">
                                             <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Smart Cities">Smart Cities</a>
                                         </li>
@@ -128,8 +145,11 @@
                                     </ul>
                                 </li>
                                 <li class="ricssubnav__submenulist">
-                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Natural Environment">Natural Environment</a>
-                                    <ul class="ricssubnav__drpdwnlistcont">
+                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Natural Environment">
+                                        Natural Environment
+                                    </a>
+                                    <span class="ricssubnav__chevronicon icon icon--chevron" onclick="toggleSubMenu(this, 1, 3)"></span>
+                                    <ul class="ricssubnav__drpdwnlistcont" id="menu1drpdwn3">
                                         <li class="ricssubnav__drpdwnlist">
                                             <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Sustainability">Sustainability</a>
                                         </li>
@@ -142,8 +162,11 @@
                                     </ul>
                                 </li>
                                 <li class="ricssubnav__submenulist">
-                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Business & Skills">Business & Skills</a>
-                                    <ul class="ricssubnav__drpdwnlistcont">
+                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Business & Skills">
+                                        Business & Skills
+                                    </a>
+                                    <span class="ricssubnav__chevronicon icon icon--chevron" onclick="toggleSubMenu(this, 1, 4)"></span>
+                                    <ul class="ricssubnav__drpdwnlistcont" id="menu1drpdwn4">
                                         <li class="ricssubnav__drpdwnlist">
                                             <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Business Management">Business Management</a>
                                         </li>
@@ -151,22 +174,6 @@
                                             <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Skills">Skills</a>
                                         </li>
                                     </ul>
-                                </li>
-                            </ul>
-                        </nav>
-                        <nav role="navigation" aria-label="Journals navigation" class="ricssubnav__submenunav" id="journalsMenu">
-                            <ul class="ricssubnav__submenulistcont">
-                                <li class="ricssubnav__submenulist ">
-                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Property Journal">Property Journal</a>
-                                </li>
-                                <li class="ricssubnav__submenulist">
-                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Construction Journal">Construction Journal</a>
-                                </li>
-                                <li class="ricssubnav__submenulist">
-                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Built Environment Journal">Built Environment Journal</a>
-                                </li>
-                                <li class="ricssubnav__submenulist">
-                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Land Journal">Land Journal</a>
                                 </li>
                             </ul>
                         </nav>
@@ -204,7 +211,12 @@
                                 </div>
                                 <div class="col--8 col--fst col--lst banner__imgcont">
                                     <h3 class="banner__heading title title-size--sm fnt-fmly--oswaldsemibold">MODUS</h3>
-                                    <img class="banner__img" src="/client__libraries/images/modus/home__banner.png" alt="The spectacular fall of WeWork" />
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="/client__libraries/images/modus__article/article__3x.png">
+                                        <source media="(min-width: 960px)" srcset="/client__libraries/images/modus__article/article__2x.png">
+                                        <source media="(min-width: 560px)" srcset="/client__libraries/images/modus__article/article__1x.png">
+                                        <img class="banner__img" src="/client__libraries/images/modus__article/article__1x.png" alt="Banner image" longdesc="The spectacular fall of WeWork">
+                                    </picture>
                                 </div>
                             </div>
                         </div>
@@ -223,7 +235,12 @@
                                 <div class="cardlayout__container">
                                     <div class="cardlayout__col">
                                         <div class="col--12 col--fst col--lst cardlayout__imgcont">
-                                            <img class="cardlayout__img" src="/client__libraries/images/modus/card__image__3x.png" alt="The spectacular fall of WeWork" />
+                                            <picture>
+                                                <source media="(min-width: 1200px)" srcset="/client__libraries/images/modus/card__image__3x.png">
+                                                <source media="(min-width: 960px)" srcset="/client__libraries/images/modus/card__image__2x.png">
+                                                <source media="(min-width: 560px)" srcset="/client__libraries/images/modus/card__image__1x.png">
+                                                <img class="cardlayout__img" src="/client__libraries/images/modus/card__image__1x.png" alt="The spectacular fall of WeWork">
+                                            </picture>
                                             <h3 class="cardlayout__heading title title-size--sm fnt-fmly--oswaldsemibold">MODUS</h3>
                                         </div>
                                         <div class="cardlayout__content">
@@ -245,7 +262,12 @@
                                 <div class="cardlayout__container">
                                     <div class="cardlayout__col">
                                         <div class="col--12 col--fst col--lst cardlayout__imgcont">
-                                            <img class="cardlayout__img" src="/client__libraries/images/modus/card__image__3x.png" alt="The spectacular fall of WeWork" />
+                                            <picture>
+                                                <source media="(min-width: 1200px)" srcset="/client__libraries/images/modus/card__image__3x.png">
+                                                <source media="(min-width: 960px)" srcset="/client__libraries/images/modus/card__image__2x.png">
+                                                <source media="(min-width: 560px)" srcset="/client__libraries/images/modus/card__image__1x.png">
+                                                <img class="cardlayout__img" src="/client__libraries/images/modus/card__image__1x.png" alt="The spectacular fall of WeWork">
+                                            </picture>
                                             <h3 class="cardlayout__heading title title-size--sm fnt-fmly--oswaldsemibold">MODUS</h3>
                                         </div>
                                         <div class="cardlayout__content">
@@ -314,7 +336,12 @@
                                         <div class="latestarticle__card">
                                             <div class="latestarticle__cardimagecont">
                                                 <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                <img class="latestarticle__cardimage" src="/client__libraries/images/modus/card__image__3x.png" alt="Article" longdesc="Time for a change of use" />
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/client__libraries/images/related__article/article__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/client__libraries/images/related__article/article__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/client__libraries/images/related__article/article__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/client__libraries/images/related__article/article__1x.png" alt="Article">
+                                                </picture>
                                             </div>
                                             <div class="latestarticle__carddetail">
                                                 <h3 class="latestarticle__cardlabel title title-size--sm fnt-fmly--oswaldsemibold">MODUS</h3>
@@ -336,29 +363,12 @@
                                         <div class="latestarticle__card">
                                             <div class="latestarticle__cardimagecont">
                                                 <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                <img class="latestarticle__cardimage" src="/client__libraries/images/modus/card__image__3x.png" alt="Article" longdesc="Time for a change of use" />
-                                            </div>
-                                            <div class="latestarticle__carddetail">
-                                                <h3 class="latestarticle__cardlabel title title-size--sm fnt-fmly--oswaldsemibold">MODUS</h3>
-                                                <h4 class="latestarticle__articleheading para para-size--artdesc">
-                                                    <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                    One Dutch company has taken the innovative step of creating a sustainable floating farm 
-                                                </h4>
-                                                <p class="latestarticle__articledate para para-size--sm">Adam Branson  <strong>17 April 2020</strong></p>
-                                                <div class="latestarticle__tagcont" id="taginfo1">
-                                                    <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing"> Affordable Housing</a></p>
-                                                    <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Ethics</a></p>
-                                                    <a class="latestarticle__tagmore" onclick="seemoreTag(1)" href="javascript:void(0);" title="Click to see more tagging">Click to see more tagging</a>
-                                                    <p class="latestarticle__tag dis--none"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Data</a></p>
-                                                    <p class="latestarticle__tag dis--none"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Tag example</a></p>
-                                                    <p class="latestarticle__tag dis--none"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Tag example</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="latestarticle__card">
-                                            <div class="latestarticle__cardimagecont">
-                                                <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                <img class="latestarticle__cardimage" src="/client__libraries/images/modus/card__image__3x.png" alt="Article" longdesc="Time for a change of use" />
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/client__libraries/images/related__article/article__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/client__libraries/images/related__article/article__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/client__libraries/images/related__article/article__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/client__libraries/images/related__article/article__1x.png" alt="Article">
+                                                </picture>
                                             </div>
                                             <div class="latestarticle__carddetail">
                                                 <h3 class="latestarticle__cardlabel title title-size--sm fnt-fmly--oswaldsemibold">MODUS</h3>
@@ -380,7 +390,12 @@
                                         <div class="latestarticle__card">
                                             <div class="latestarticle__cardimagecont">
                                                 <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                <img class="latestarticle__cardimage" src="/client__libraries/images/modus/card__image__3x.png" alt="Article" longdesc="Time for a change of use" />
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/client__libraries/images/related__article/article__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/client__libraries/images/related__article/article__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/client__libraries/images/related__article/article__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/client__libraries/images/related__article/article__1x.png" alt="Article">
+                                                </picture>
                                             </div>
                                             <div class="latestarticle__carddetail">
                                                 <h3 class="latestarticle__cardlabel title title-size--sm fnt-fmly--oswaldsemibold">MODUS</h3>
@@ -402,7 +417,12 @@
                                         <div class="latestarticle__card">
                                             <div class="latestarticle__cardimagecont">
                                                 <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                <img class="latestarticle__cardimage" src="/client__libraries/images/modus/card__image__3x.png" alt="Article" longdesc="Time for a change of use" />
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/client__libraries/images/related__article/article__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/client__libraries/images/related__article/article__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/client__libraries/images/related__article/article__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/client__libraries/images/related__article/article__1x.png" alt="Article">
+                                                </picture>
                                             </div>
                                             <div class="latestarticle__carddetail">
                                                 <h3 class="latestarticle__cardlabel title title-size--sm fnt-fmly--oswaldsemibold">MODUS</h3>
@@ -424,7 +444,12 @@
                                         <div class="latestarticle__card">
                                             <div class="latestarticle__cardimagecont">
                                                 <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                <img class="latestarticle__cardimage" src="/client__libraries/images/modus/card__image__3x.png" alt="Article" longdesc="Time for a change of use" />
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/client__libraries/images/related__article/article__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/client__libraries/images/related__article/article__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/client__libraries/images/related__article/article__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/client__libraries/images/related__article/article__1x.png" alt="Article">
+                                                </picture>
                                             </div>
                                             <div class="latestarticle__carddetail">
                                                 <h3 class="latestarticle__cardlabel title title-size--sm fnt-fmly--oswaldsemibold">MODUS</h3>
@@ -446,7 +471,12 @@
                                         <div class="latestarticle__card">
                                             <div class="latestarticle__cardimagecont">
                                                 <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                <img class="latestarticle__cardimage" src="/client__libraries/images/modus/card__image__3x.png" alt="Article" longdesc="Time for a change of use" />
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/client__libraries/images/related__article/article__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/client__libraries/images/related__article/article__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/client__libraries/images/related__article/article__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/client__libraries/images/related__article/article__1x.png" alt="Article">
+                                                </picture>
                                             </div>
                                             <div class="latestarticle__carddetail">
                                                 <h3 class="latestarticle__cardlabel title title-size--sm fnt-fmly--oswaldsemibold">MODUS</h3>
@@ -468,7 +498,12 @@
                                         <div class="latestarticle__card">
                                             <div class="latestarticle__cardimagecont">
                                                 <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                <img class="latestarticle__cardimage" src="/client__libraries/images/modus/card__image__3x.png" alt="Article" longdesc="Time for a change of use" />
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/client__libraries/images/related__article/article__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/client__libraries/images/related__article/article__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/client__libraries/images/related__article/article__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/client__libraries/images/related__article/article__1x.png" alt="Article">
+                                                </picture>
                                             </div>
                                             <div class="latestarticle__carddetail">
                                                 <h3 class="latestarticle__cardlabel title title-size--sm fnt-fmly--oswaldsemibold">MODUS</h3>
@@ -490,7 +525,12 @@
                                         <div class="latestarticle__card">
                                             <div class="latestarticle__cardimagecont">
                                                 <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                <img class="latestarticle__cardimage" src="/client__libraries/images/modus/card__image__3x.png" alt="Article" longdesc="Time for a change of use" />
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/client__libraries/images/related__article/article__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/client__libraries/images/related__article/article__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/client__libraries/images/related__article/article__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/client__libraries/images/related__article/article__1x.png" alt="Article">
+                                                </picture>
                                             </div>
                                             <div class="latestarticle__carddetail">
                                                 <h3 class="latestarticle__cardlabel title title-size--sm fnt-fmly--oswaldsemibold">MODUS</h3>
@@ -512,7 +552,12 @@
                                         <div class="latestarticle__card">
                                             <div class="latestarticle__cardimagecont">
                                                 <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                <img class="latestarticle__cardimage" src="/client__libraries/images/modus/card__image__3x.png" alt="Article" longdesc="Time for a change of use" />
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/client__libraries/images/related__article/article__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/client__libraries/images/related__article/article__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/client__libraries/images/related__article/article__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/client__libraries/images/related__article/article__1x.png" alt="Article">
+                                                </picture>
                                             </div>
                                             <div class="latestarticle__carddetail">
                                                 <h3 class="latestarticle__cardlabel title title-size--sm fnt-fmly--oswaldsemibold">MODUS</h3>
@@ -534,7 +579,12 @@
                                         <div class="latestarticle__card">
                                             <div class="latestarticle__cardimagecont">
                                                 <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                <img class="latestarticle__cardimage" src="/client__libraries/images/modus/card__image__3x.png" alt="Article" longdesc="Time for a change of use" />
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/client__libraries/images/related__article/article__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/client__libraries/images/related__article/article__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/client__libraries/images/related__article/article__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/client__libraries/images/related__article/article__1x.png" alt="Article">
+                                                </picture>
                                             </div>
                                             <div class="latestarticle__carddetail">
                                                 <h3 class="latestarticle__cardlabel title title-size--sm fnt-fmly--oswaldsemibold">MODUS</h3>

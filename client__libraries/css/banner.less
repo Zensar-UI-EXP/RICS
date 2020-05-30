@@ -231,10 +231,18 @@
    }
    &--journal{
       border-top: solid 1px @ricscobalt;
-      border-bottom: solid 1px @ricscobalt;
+      position: relative;
+      &:after {
+         content: "";
+         position: absolute;
+         width: 100%;
+         height: 1px;
+         background: @ricscobalt;
+         left: 0;
+         bottom: 0;
+      }
       .banner__leftcol{
          background: @ricswhite;
-         height: 99.7%;
          min-width: 420px;
       }
       .banner__subheading, .banner__desc, .banner__authinfo{

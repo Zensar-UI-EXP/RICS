@@ -140,28 +140,62 @@ function closeLightbox() {
       bodyElement.classList.remove("fixed--body");
 }
 
-function toggleMenu(thisElement, elementId) {
-      let showElement = document.getElementById(elementId);
-      let breadcrumbElement = document.getElementsByClassName("ricsbreadcrumb");
+function toggleMenu(thisElement, menuIndex) {
+      let showElement = document.getElementById("menu" + menuIndex);
+      let chevronElement = document.getElementsByClassName("ricsnav__chevronicon");
       if (!showElement.offsetWidth) {
             hidenav();
+            hideDropdown();
             showElement.style.display = "block";
-            thisElement.classList.add("ricsnav--leftlistactive");
-            breadcrumbElement[0].classList.remove("hide--submenu");
+            chevronElement[0].classList.add("ricsnav--chevronactive");
+            // thisElement.parentNode.childNodes[1].classList.add("ricsnav--leftlistactive");
       } else {
             hidenav();
-            breadcrumbElement[0].classList.add("hide--submenu");
+            hideDropdown();
       }
       hideSearch();
 }
 
 function hidenav() {
       let navElements = document.getElementsByClassName("ricssubnav__submenunav");
-      navElements[0].style.display = "none";
-      navElements[1].style.display = "none";
-      let menuLinkElements = document.getElementsByClassName("ricsnav__leftlink");
-      menuLinkElements[0].classList.remove("ricsnav--leftlistactive");
-      menuLinkElements[1].classList.remove("ricsnav--leftlistactive");
+      for (var i = 0; i < navElements.length; i++) {
+            navElements[i].style.display = "none";
+      }
+      // let menuLinkElements = document.getElementsByClassName("ricsnav__leftlink");
+      // for (var i = 0; i < menuLinkElements.length; i++) {
+      //       menuLinkElements[i].classList.remove("ricsnav--leftlistactive");
+      // }
+      let chevronElement = document.getElementsByClassName("ricsnav__chevronicon");
+      for (var i = 0; i < chevronElement.length; i++) {
+            chevronElement[i].classList.remove("ricsnav--chevronactive");
+      }
+}
+
+function toggleSubMenu(thisElement, menuIndex, drpdwnIndex) {
+      let showElement = document.getElementById("menu" + menuIndex + "drpdwn" + drpdwnIndex);
+      if (!showElement.offsetWidth) {
+            hideDropdown();
+            showElement.style.display = "block";
+            thisElement.classList.add("ricssubnav--chevronactive");
+            thisElement.parentNode.childNodes[1].classList.add("ricssubnav--submenuactive");
+      } else {
+            hideDropdown();
+      }
+}
+
+function hideDropdown() {
+      let navElements = document.getElementsByClassName("ricssubnav__drpdwnlistcont");
+      for (var i = 0; i < navElements.length; i++) {
+            navElements[i].style.display = "none";
+      }
+      let menuLinkElements = document.getElementsByClassName("ricssubnav__submenulink");
+      for (var i = 0; i < menuLinkElements.length; i++) {
+            menuLinkElements[i].classList.remove("ricssubnav--submenuactive");
+      }
+      let chevronElement = document.getElementsByClassName("ricssubnav__chevronicon");
+      for (var i = 0; i < chevronElement.length; i++) {
+            chevronElement[i].classList.remove("ricssubnav--chevronactive");
+      }
 }
 
 function viewFullBreadcrumb() {

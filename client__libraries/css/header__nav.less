@@ -2,7 +2,6 @@
 @import "./partials/mixins.less";
 
 .ricsnav{
-   margin-bottom: 10px;
    border-bottom: solid 1px @ricsblack;
    &__cont{
       width: 100%;
@@ -31,10 +30,21 @@
       float: left;
       width: 100%;
       text-indent: -99999em;
+      position: relative;
       &:hover{
          // border-bottom: solid 4px @ricsblack;
          opacity: 0.7;
       }
+   }
+   &__chevronicon{
+      position: absolute;
+      top: 34px;
+      display: none;
+      z-index: 1;
+   }
+   &--chevronactive{
+      transform: rotate(180deg)!important;
+      top: 30px;
    }
    &--moduslink{
       .default--font();
@@ -103,5 +113,27 @@
       .default--font();
       font-size: 18px;
       color: @ricsblack!important;
+   }
+   &__expdovly{
+      position: absolute;
+      width: 100%;
+      height: 71px;
+      left: 0;
+      top: 0;
+      z-index: 3;
+      display: none;
+   }
+   &--moduslist{
+      .ricsnav__chevronicon{
+         left: calc(50% + 56px);
+         margin: 0;
+      }
+   }
+   &--jornalslist{
+      .ricsnav__chevronicon{
+         left: calc(50% + 66px);
+         margin: 0;
+         top: 8px;
+      }
    }
 }

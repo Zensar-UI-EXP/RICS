@@ -21,7 +21,7 @@
         <link rel="stylesheet/less" type="text/x-less" href="client__libraries/css/partials/typography.less" />
         <link rel="stylesheet/less" type="text/x-less" href="client__libraries/css/media.less" />
         <style>
-            #modusMenu{
+            #menu2{
                display: none;
             }
             ul, li {
@@ -57,11 +57,15 @@
                     <div class="rics--row">
                         <nav role="navigation" aria-label="Header navigation" class="ricsnav__cont">
                             <ul class="ricsnav__leftlistcont col--6 col--fst">
-                                <li class="ricsnav__leftlist col--auto">
-                                    <a class="ricsnav__leftlink ricsnav--moduslink ricsnav--leftlistactive" onclick="toggleMenu(this, 'modusMenu')" href="javascript:void(0);" title="Modus">Modus</a>
+                                <li class="ricsnav__leftlist col--auto ricsnav--moduslist">
+                                    <a class="ricsnav__leftlink ricsnav--moduslink" href="javascript:void(0);" title="Modus">Modus</a>
                                 </li>
-                                <li class="ricsnav__leftlist col--auto">
-                                    <a class="ricsnav__leftlink ricsnav--jornalslink" href="javascript:void(0);" onclick="toggleMenu(this, 'journalsMenu')" title="Journals">Journals</a>
+                                <li class="ricsnav__leftlist col--auto ricsnav--jornalslist">
+                                    <a class="ricsnav__leftlink ricsnav--jornalslink ricsnav--leftlistactive" href="javascript:void(0);" title="Journals">
+                                        Journals
+                                        <span class="ricsnav__expdovly" onclick="toggleMenu(this, 2)"></span>
+                                        <span class="ricsnav__chevronicon icon icon--chevron"></span>
+                                    </a>
                                 </li>
                             </ul>
                             <ul class="ricsnav__rightlistcont col--6 col--lst">
@@ -88,74 +92,13 @@
             <div class="container container--fluid">
                 <div class="container--content">
                     <div class="rics--row col--auto col--fst">
-                        <nav role="navigation" aria-label="Modus navigation" class="ricssubnav__submenunav" id="modusMenu">
+                        <nav role="navigation" aria-label="Journals navigation" class="ricssubnav__submenunav" id="menu2">
                             <ul class="ricssubnav__submenulistcont">
-                                <li class="ricssubnav__submenulist ">
-                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Technology">Technology</a>
-                                    <ul class="ricssubnav__drpdwnlistcont">
-                                        <li class="ricssubnav__drpdwnlist">
-                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Surveying Tools">Surveying Tools</a>
-                                        </li>
-                                        <li class="ricssubnav__drpdwnlist">
-                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Data">Data</a>
-                                        </li>
-                                        <li class="ricssubnav__drpdwnlist">
-                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Smart Buildings">Smart Buildings</a>
-                                        </li>
-                                    </ul>
+                                <li class="ricssubnav__submenulist hide--desktop">
+                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Journals home">
+                                        Journals home
+                                    </a>
                                 </li>
-                                <li class="ricssubnav__submenulist">
-                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Built Environment">Built Environment</a>
-                                    <ul class="ricssubnav__drpdwnlistcont">
-                                        <li class="ricssubnav__drpdwnlist">
-                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Smart Cities">Smart Cities</a>
-                                        </li>
-                                        <li class="ricssubnav__drpdwnlist">
-                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Housing">Housing</a>
-                                        </li>
-                                        <li class="ricssubnav__drpdwnlist">
-                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Construction">Construction</a>
-                                        </li>
-                                        <li class="ricssubnav__drpdwnlist">
-                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Infrastructure">Infrastructure</a>
-                                        </li>
-                                        <li class="ricssubnav__drpdwnlist">
-                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Commercial Property">Commercial Property</a>
-                                        </li>
-                                        <li class="ricssubnav__drpdwnlist">
-                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Investment">Investment</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="ricssubnav__submenulist">
-                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Natural Environment">Natural Environment</a>
-                                    <ul class="ricssubnav__drpdwnlistcont">
-                                        <li class="ricssubnav__drpdwnlist">
-                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Sustainability">Sustainability</a>
-                                        </li>
-                                        <li class="ricssubnav__drpdwnlist">
-                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Climate Change">Climate Change</a>
-                                        </li>
-                                        <li class="ricssubnav__drpdwnlist">
-                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Rural">Rural</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="ricssubnav__submenulist">
-                                    <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Business & Skills">Business & Skills</a>
-                                    <ul class="ricssubnav__drpdwnlistcont">
-                                        <li class="ricssubnav__drpdwnlist">
-                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Business Management">Business Management</a>
-                                        </li>
-                                        <li class="ricssubnav__drpdwnlist">
-                                            <a class="ricssubnav__drpdwnlink" href="javascript:void(0);" title="Skills">Skills</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </nav>
-                        <nav role="navigation" aria-label="Journals navigation" class="ricssubnav__submenunav" id="journalsMenu">
-                            <ul class="ricssubnav__submenulistcont">
                                 <li class="ricssubnav__submenulist ">
                                     <a class="ricssubnav__submenulink" href="javascript:void(0);" title="Property Journal">Property Journal</a>
                                 </li>
@@ -204,7 +147,12 @@
                                 </div>
                                 <div class="col--8 col--fst col--lst banner__imgcont">
                                     <h3 class="banner__heading title title-size--sm fnt-clr--cobalt fnt-fmly--jornalbold">CONSTRUCTION JOURNAL</h3>
-                                    <img class="banner__img" src="/client__libraries/images/modus/home__banner.png" alt="The spectacular fall of WeWork" />
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="/client__libraries/images/journals/banner__image__3x.png">
+                                        <source media="(min-width: 960px)" srcset="/client__libraries/images/journals/banner__image__2x.png">
+                                        <source media="(min-width: 560px)" srcset="/client__libraries/images/journals/banner__image__1x.png">
+                                        <img class="banner__img" src="/client__libraries/images/journals/banner__image__1x.png" alt="Banner image" longdesc="The spectacular fall of WeWork">
+                                    </picture>
                                 </div>
                             </div>
                         </div>
@@ -223,7 +171,12 @@
                                 <div class="cardlayout__container">
                                     <div class="cardlayout__col">
                                         <div class="col--12 col--fst col--lst cardlayout__imgcont">
-                                            <img class="cardlayout__img" src="/client__libraries/images/modus/card__image__3x.png" alt="Landscape designation" />
+                                            <picture>
+                                                <source media="(min-width: 1200px)" srcset="/client__libraries/images/journals/card__image1__3x.png">
+                                                <source media="(min-width: 960px)" srcset="/client__libraries/images/journals/card__image1__2x.png">
+                                                <source media="(min-width: 560px)" srcset="/client__libraries/images/journals/card__image1__1x.png">
+                                                <img class="cardlayout__img" src="/client__libraries/images/journals/card__image1__1x.png" alt="The spectacular fall of WeWork">
+                                            </picture>
                                             <h3 class="cardlayout__heading title title-size--jnlcrdhead fnt-clr--trgrn fnt-fmly--jornalbold">LAND JOURNAL</h3>
                                         </div>
                                         <div class="cardlayout__content">
@@ -245,7 +198,12 @@
                                 <div class="cardlayout__container">
                                     <div class="cardlayout__col">
                                         <div class="col--12 col--fst col--lst cardlayout__imgcont">
-                                            <img class="cardlayout__img" src="/client__libraries/images/modus/card__image__3x.png" alt="Ground rules for drone use" />
+                                            <picture>
+                                                <source media="(min-width: 1200px)" srcset="/client__libraries/images/journals/card__image2__3x.png">
+                                                <source media="(min-width: 960px)" srcset="/client__libraries/images/journals/card__image2__2x.png">
+                                                <source media="(min-width: 560px)" srcset="/client__libraries/images/journals/card__image2__1x.png">
+                                                <img class="cardlayout__img" src="/client__libraries/images/journals/card__image2__1x.png" alt="The spectacular fall of WeWork">
+                                            </picture>
                                             <h3 class="cardlayout__heading title title-size--jnlcrdhead fnt-clr--mdgrn fnt-fmly--jornalbold">BUILT ENVIRONMENT JOURNAL</h3>
                                         </div>
                                         <div class="cardlayout__content">
@@ -272,25 +230,45 @@
                     <div class="rics--row flx-dir--mobclmrvrs col--auto">
                         <div class="pagelist pagelist--withimg">
                            <div class="pagelist__cont">
-                              <img class="pagelist__img" src="/client__libraries/images/page__link__image__1.png" alt="PROPERTY JOURNAL" />
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="/client__libraries/images/journals/pagelink1__3x.png">
+                                    <source media="(min-width: 960px)" srcset="/client__libraries/images/journals/pagelink1__2x.png">
+                                    <source media="(min-width: 560px)" srcset="/client__libraries/images/journals/pagelink1__1x.png">
+                                    <img class="pagelist__img" src="/client__libraries/images/journals/pagelink1__1x.png" alt="PROPERTY JOURNAL">
+                                </picture>
                               <h4 class="pagelist__heading title title-size--jrnlcrd fnt-fmly--jornalbold">PROPERTY JOURNAL</h4>
                               <p class="pagelist__desc para">High quality technical material covering commercial, residential and arts</p>
                               <a class="pagelist__link" href="javascript:void(0);" title="PROPERTY JOURNAL">PROPERTY JOURNAL</a>
                            </div>
                            <div class="pagelist__cont">
-                              <img class="pagelist__img" src="/client__libraries/images/page__link__image__2.png" alt="PROPERTY JOURNAL" />
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="/client__libraries/images/journals/pagelink2__3x.png">
+                                <source media="(min-width: 960px)" srcset="/client__libraries/images/journals/pagelink2__2x.png">
+                                <source media="(min-width: 560px)" srcset="/client__libraries/images/journals/pagelink2__1x.png">
+                                <img class="pagelist__img" src="/client__libraries/images/journals/pagelink2__1x.png" alt="CONSTRUCTION JOURNAL">
+                            </picture>
                               <h4 class="pagelist__heading title title-size--jrnlcrd fnt-fmly--jornalbold">CONSTRUCTION JOURNAL</h4>
                               <p class="pagelist__desc para bg--cobalt">Essential reading for quantity surveyors and project managers</p>
                               <a class="pagelist__link" href="javascript:void(0);" title="CONSTRUCTION JOURNAL">CONSTRUCTION JOURNAL</a>
                            </div>
                            <div class="pagelist__cont">
-                              <img class="pagelist__img" src="/client__libraries/images/page__link__image__3.png" alt="PROPERTY JOURNAL" />
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="/client__libraries/images/journals/pagelink3__3x.png">
+                                <source media="(min-width: 960px)" srcset="/client__libraries/images/journals/pagelink3__2x.png">
+                                <source media="(min-width: 560px)" srcset="/client__libraries/images/journals/pagelink3__1x.png">
+                                <img class="pagelist__img" src="/client__libraries/images/journals/pagelink3__1x.png" alt="BUILT ENVIRONMENT JOURNAL">
+                            </picture>
                               <h4 class="pagelist__heading title title-size--jrnlcrd fnt-fmly--jornalbold">BUILT ENVIRONMENT JOURNAL</h4>
                               <p class="pagelist__desc para bg--mdgrn">Latest developments in building surveying, control and conservation disciplines</p>
                               <a class="pagelist__link" href="javascript:void(0);" title="BUILT ENVIRONMENT JOURNAL">BUILT ENVIRONMENT JOURNAL</a>
                            </div>
                            <div class="pagelist__cont">
-                              <img class="pagelist__img" src="/client__libraries/images/page__link__image__4.png" alt="PROPERTY JOURNAL" />
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="/client__libraries/images/journals/pagelink4__3x.png">
+                                <source media="(min-width: 960px)" srcset="/client__libraries/images/journals/pagelink4__2x.png">
+                                <source media="(min-width: 560px)" srcset="/client__libraries/images/journals/pagelink4__1x.png">
+                                <img class="pagelist__img" src="/client__libraries/images/journals/pagelink4__1x.png" alt="LAND JOURNAL">
+                            </picture>
                               <h4 class="pagelist__heading title title-size--jrnlcrd fnt-fmly--jornalbold">LAND JOURNAL</h4>
                               <p class="pagelist__desc para bg--trgrn">Rural, geomatics, minerals and waste, environment and planning and development coverage</p>
                               <a class="pagelist__link" href="javascript:void(0);" title="LAND JOURNAL">LAND JOURNAL</a>
@@ -318,7 +296,12 @@
                                         <div class="latestarticle__card">
                                             <div class="latestarticle__cardimagecont">
                                                 <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                <img class="latestarticle__cardimage" src="/client__libraries/images/modus/card__image__3x.png" alt="Article" longdesc="Time for a change of use" />
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/client__libraries/images/related__article/latest__article1__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/client__libraries/images/related__article/latest__article1__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/client__libraries/images/related__article/latest__article1__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/client__libraries/images/related__article/latest__article1__1x.png" alt="Article" longdesc="Time for a change of use">
+                                                </picture>
                                             </div>
                                             <div class="latestarticle__carddetail">
                                                 <h3 class="latestarticle__cardlabel title title-size--sm fnt-clr--blgrn fnt-fmly--jornalbold">PROPERTY JOURNAL</h3>
@@ -340,13 +323,18 @@
                                         <div class="latestarticle__card">
                                             <div class="latestarticle__cardimagecont">
                                                 <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                <img class="latestarticle__cardimage" src="/client__libraries/images/modus/card__image__3x.png" alt="Article" longdesc="Time for a change of use" />
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/client__libraries/images/related__article/latest__article2__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/client__libraries/images/related__article/latest__article2__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/client__libraries/images/related__article/latest__article2__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/client__libraries/images/related__article/latest__article2__1x.png" alt="Article" longdesc="Time for a change of use">
+                                                </picture>
                                             </div>
                                             <div class="latestarticle__carddetail">
                                                 <h3 class="latestarticle__cardlabel title title-size--sm fnt-clr--trgrn fnt-fmly--jornalbold">LAND JOURNAL</h3>
                                                 <h4 class="latestarticle__articleheading para para-size--lmd">
                                                    <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                   One Dutch company has taken the innovative step of creating a sustainable floating farm 
+                                                   Those responsible for land are obliged to deal with any ash trees suffering from dieback, but can rely on an increasing
                                                 </h4>
                                                 <p class="latestarticle__articledate para para-size--sm">Adam Branson  <strong>17 April 2020</strong></p>
                                                 <div class="latestarticle__tagcont" id="taginfo2">
@@ -362,13 +350,18 @@
                                         <div class="latestarticle__card">
                                             <div class="latestarticle__cardimagecont">
                                                 <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                <img class="latestarticle__cardimage" src="/client__libraries/images/modus/card__image__3x.png" alt="Article" longdesc="Time for a change of use" />
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/client__libraries/images/related__article/latest__article3__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/client__libraries/images/related__article/latest__article3__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/client__libraries/images/related__article/latest__article3__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/client__libraries/images/related__article/latest__article3__1x.png" alt="Article" longdesc="Time for a change of use">
+                                                </picture>
                                             </div>
                                             <div class="latestarticle__carddetail">
                                                 <h3 class="latestarticle__cardlabel title title-size--sm fnt-clr--cobalt fnt-fmly--jornalbold">CONSTRUCTION JOURNAL</h3>
                                                 <h4 class="latestarticle__articleheading para para-size--lmd">
                                                    <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                   One Dutch company has taken the innovative step of creating a sustainable floating farm 
+                                                   The challenges created by the UK construction industry’s current payment practices
                                                 </h4>
                                                 <p class="latestarticle__articledate para para-size--sm">Adam Branson  <strong>17 April 2020</strong></p>
                                                 <div class="latestarticle__tagcont" id="taginfo3">
@@ -384,13 +377,18 @@
                                         <div class="latestarticle__card">
                                             <div class="latestarticle__cardimagecont">
                                                 <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                <img class="latestarticle__cardimage" src="/client__libraries/images/modus/card__image__3x.png" alt="Article" longdesc="Time for a change of use" />
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/client__libraries/images/related__article/latest__article4__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/client__libraries/images/related__article/latest__article4__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/client__libraries/images/related__article/latest__article4__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/client__libraries/images/related__article/latest__article4__1x.png" alt="Article" longdesc="Time for a change of use">
+                                                </picture>
                                             </div>
                                             <div class="latestarticle__carddetail">
                                                 <h3 class="latestarticle__cardlabel title title-size--sm fnt-clr--mdgrn fnt-fmly--jornalbold">BUILT ENVIRONMENT JOURNAL</h3>
                                                 <h4 class="latestarticle__articleheading para para-size--lmd">
                                                    <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                   One Dutch company has taken the innovative step of creating a sustainable floating farm 
+                                                   With investors seeking more sustainable options, digital technologies are making wooden buildings competitive
                                                 </h4>
                                                 <p class="latestarticle__articledate para para-size--sm">Adam Branson  <strong>17 April 2020</strong></p>
                                                 <div class="latestarticle__tagcont" id="taginfo4">
@@ -406,7 +404,12 @@
                                         <div class="latestarticle__card">
                                             <div class="latestarticle__cardimagecont">
                                                 <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                <img class="latestarticle__cardimage" src="/client__libraries/images/modus/card__image__3x.png" alt="Article" longdesc="Time for a change of use" />
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/client__libraries/images/related__article/latest__article1__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/client__libraries/images/related__article/latest__article1__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/client__libraries/images/related__article/latest__article1__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/client__libraries/images/related__article/latest__article1__1x.png" alt="Article" longdesc="Time for a change of use">
+                                                </picture>
                                             </div>
                                             <div class="latestarticle__carddetail">
                                                 <h3 class="latestarticle__cardlabel title title-size--sm fnt-clr--blgrn fnt-fmly--jornalbold">PROPERTY JOURNAL</h3>
@@ -428,13 +431,18 @@
                                         <div class="latestarticle__card">
                                             <div class="latestarticle__cardimagecont">
                                                 <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                <img class="latestarticle__cardimage" src="/client__libraries/images/modus/card__image__3x.png" alt="Article" longdesc="Time for a change of use" />
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/client__libraries/images/related__article/latest__article2__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/client__libraries/images/related__article/latest__article2__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/client__libraries/images/related__article/latest__article2__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/client__libraries/images/related__article/latest__article2__1x.png" alt="Article" longdesc="Time for a change of use">
+                                                </picture>
                                             </div>
                                             <div class="latestarticle__carddetail">
                                                 <h3 class="latestarticle__cardlabel title title-size--sm fnt-clr--trgrn fnt-fmly--jornalbold">LAND JOURNAL</h3>
                                                 <h4 class="latestarticle__articleheading para para-size--lmd">
                                                    <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                   One Dutch company has taken the innovative step of creating a sustainable floating farm 
+                                                   Those responsible for land are obliged to deal with any ash trees suffering from dieback, but can rely on an increasing
                                                 </h4>
                                                 <p class="latestarticle__articledate para para-size--sm">Adam Branson  <strong>17 April 2020</strong></p>
                                                 <div class="latestarticle__tagcont" id="taginfo6">
@@ -450,13 +458,18 @@
                                         <div class="latestarticle__card">
                                             <div class="latestarticle__cardimagecont">
                                                 <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                <img class="latestarticle__cardimage" src="/client__libraries/images/modus/card__image__3x.png" alt="Article" longdesc="Time for a change of use" />
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/client__libraries/images/related__article/latest__article3__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/client__libraries/images/related__article/latest__article3__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/client__libraries/images/related__article/latest__article3__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/client__libraries/images/related__article/latest__article3__1x.png" alt="Article" longdesc="Time for a change of use">
+                                                </picture>
                                             </div>
                                             <div class="latestarticle__carddetail">
                                                 <h3 class="latestarticle__cardlabel title title-size--sm fnt-clr--cobalt fnt-fmly--jornalbold">CONSTRUCTION JOURNAL</h3>
                                                 <h4 class="latestarticle__articleheading para para-size--lmd">
                                                    <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                   One Dutch company has taken the innovative step of creating a sustainable floating farm 
+                                                   The challenges created by the UK construction industry’s current payment practices
                                                 </h4>
                                                 <p class="latestarticle__articledate para para-size--sm">Adam Branson  <strong>17 April 2020</strong></p>
                                                 <div class="latestarticle__tagcont" id="taginfo7">
@@ -472,13 +485,18 @@
                                         <div class="latestarticle__card">
                                             <div class="latestarticle__cardimagecont">
                                                 <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                <img class="latestarticle__cardimage" src="/client__libraries/images/modus/card__image__3x.png" alt="Article" longdesc="Time for a change of use" />
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/client__libraries/images/related__article/latest__article4__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/client__libraries/images/related__article/latest__article4__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/client__libraries/images/related__article/latest__article4__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/client__libraries/images/related__article/latest__article4__1x.png" alt="Article" longdesc="Time for a change of use">
+                                                </picture>
                                             </div>
                                             <div class="latestarticle__carddetail">
                                                 <h3 class="latestarticle__cardlabel title title-size--sm fnt-clr--mdgrn fnt-fmly--jornalbold">BUILT ENVIRONMENT JOURNAL</h3>
                                                 <h4 class="latestarticle__articleheading para para-size--lmd">
                                                    <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                   One Dutch company has taken the innovative step of creating a sustainable floating farm 
+                                                   With investors seeking more sustainable options, digital technologies are making wooden buildings competitive
                                                 </h4>
                                                 <p class="latestarticle__articledate para para-size--sm">Adam Branson  <strong>17 April 2020</strong></p>
                                                 <div class="latestarticle__tagcont" id="taginfo8">
@@ -494,7 +512,12 @@
                                         <div class="latestarticle__card">
                                             <div class="latestarticle__cardimagecont">
                                                 <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                <img class="latestarticle__cardimage" src="/client__libraries/images/modus/card__image__3x.png" alt="Article" longdesc="Time for a change of use" />
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/client__libraries/images/related__article/latest__article1__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/client__libraries/images/related__article/latest__article1__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/client__libraries/images/related__article/latest__article1__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/client__libraries/images/related__article/latest__article1__1x.png" alt="Article" longdesc="Time for a change of use">
+                                                </picture>
                                             </div>
                                             <div class="latestarticle__carddetail">
                                                 <h3 class="latestarticle__cardlabel title title-size--sm fnt-clr--blgrn fnt-fmly--jornalbold">PROPERTY JOURNAL</h3>
@@ -516,13 +539,18 @@
                                         <div class="latestarticle__card">
                                             <div class="latestarticle__cardimagecont">
                                                 <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                <img class="latestarticle__cardimage" src="/client__libraries/images/modus/card__image__3x.png" alt="Article" longdesc="Time for a change of use" />
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/client__libraries/images/related__article/latest__article2__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/client__libraries/images/related__article/latest__article2__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/client__libraries/images/related__article/latest__article2__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/client__libraries/images/related__article/latest__article2__1x.png" alt="Article" longdesc="Time for a change of use">
+                                                </picture>
                                             </div>
                                             <div class="latestarticle__carddetail">
                                                 <h3 class="latestarticle__cardlabel title title-size--sm fnt-clr--trgrn fnt-fmly--jornalbold">LAND JOURNAL</h3>
                                                 <h4 class="latestarticle__articleheading para para-size--lmd">
                                                    <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
-                                                   One Dutch company has taken the innovative step of creating a sustainable floating farm 
+                                                   Those responsible for land are obliged to deal with any ash trees suffering from dieback, but can rely on an increasing
                                                 </h4>
                                                 <p class="latestarticle__articledate para para-size--sm">Adam Branson  <strong>17 April 2020</strong></p>
                                                 <div class="latestarticle__tagcont" id="taginfo10">

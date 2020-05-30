@@ -69,10 +69,14 @@
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
+   body{
+      padding-top: 168px;
+   }
    .ricsheader{
       position: fixed;
       width: 100%;
       z-index: 7;
+      top: 0;
       &__logo{
          width: 85px;
          height: 29px;
@@ -160,25 +164,52 @@
          margin: 0 auto;
          display: block;
       }
+      &__chevronicon{
+         display: block;
+         left: calc(50% + 55px);
+      }
+      &__expdovly{
+         display: block;
+      }
    }
    .ricssubnav{
+      position: relative;
+      &__submenunav{
+         border-bottom: solid 1px @ricsblack;
+         display: none;
+      }
       .container{
          max-width: 100%;
       }
       &__submenulistcont{
          flex-direction: column;
-         margin-top: 168px;
       }
       &__submenulist{
-         padding: 10px 0 10px;
+         padding: 25px 0 0px;
+         &:last-child{
+            padding-bottom: 25px;
+         }
+         &:hover{
+            .ricssubnav__submenulink{
+               font-weight: normal;
+            }
+            .ricssubnav__drpdwnlistcont{
+               display: none;
+            }
+         }
+         &::before {
+            display: none;
+         }
+         
       }
       &__submenulink{
          max-width: 90%;
          margin: 0 auto;
          display: block;
-         font-size: 14px;
+         font-size: 16px;
          &:hover{
-            font-family: @Journals;
+            // font-family: @Journals;
+            font-weight: normal;
          }
       }
       &--submenulinkactive{
@@ -187,30 +218,51 @@
       &__drpdwnlistcont{
          position: relative;
          top: 0;
-         margin-top: 10px;
-         padding: 10px 0;
+         margin: 10px 0 0 50px;
+         padding: 10px 0 0;
+         background: @ricswhite;
+         box-shadow: 0 3px 4px 0 rgba(143, 143, 143, 0);
+         min-width: 85%;
+         max-width: 85%;
+         float: left;
+         left: 0;
+      }
+      &__drpdwnlist{
+         padding: 0 0 25px;
+         float: left;
+         width: 100%;
+         &:last-child{
+            padding-bottom: 0;
+         }
       }
       &__drpdwnlink{
          max-width: 90%;
          margin: 0 auto;
          display: block;
          padding: 0;
-         font-size: 12px;
+         font-size: 16px;
+         float: left;
+      }
+      &__chevronicon{
+         display: block;
+      }
+      &--chevronactive{
+         transform: rotate(180deg)!important;
       }
    }
-   #journalsMenu{
-      .ricssubnav{
-         &__submenulistcont{
-            width: 100%;
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
-         }
-         &__submenulist{
-            width: 50%;
-         }
-      }
-   }
+   // #journalsMenu{
+   //    .ricssubnav{
+   //       &__submenulistcont{
+   //          width: 100%;
+   //          display: flex;
+   //          justify-content: flex-end;
+   //          align-items: flex-end;
+   //       }
+   //       &__submenulist{
+   //          width: 50%;
+   //       }
+   //    }
+   // }
    .ricsbreadcrumb{
       margin-bottom: 25px;
       &__navlistcont{
@@ -525,6 +577,7 @@
          margin-bottom: 0;
       }
       &__carddetail{
+         width: 50%;
          padding: 7px;
       }
       &__articleheading{
@@ -544,7 +597,7 @@
       &__tagcont{
          width: 100%;
          overflow: hidden;
-         height: 22px;
+         height: 28px;
       }
    }
    .ricsnewsltr{
@@ -748,6 +801,9 @@
    .hide{
       &--mobile{
          display: none!important;
+      }
+      &--desktop{
+         display: block!important;
       }
    }
    .slider{
