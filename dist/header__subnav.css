@@ -11,7 +11,7 @@
   display: flex;
 }
 .ricssubnav__submenulist {
-  padding: 15px 15px 25px;
+  padding: 25px 15px;
   line-height: 22px;
   position: relative;
   display: inline-block;
@@ -32,6 +32,7 @@
   letter-spacing: normal;
   color: #000000;
   display: inline-block;
+  position: relative;
 }
 .ricssubnav__submenulink::before {
   display: block;
@@ -40,6 +41,15 @@
   height: 0;
   overflow: hidden;
   visibility: hidden;
+}
+.ricssubnav__chevronicon {
+  width: 20px!important;
+  right: 30px;
+  top: 32px;
+  position: absolute;
+  margin: 0!important;
+  z-index: 1;
+  display: none;
 }
 .ricssubnav--submenulinkactive {
   font-family: 'OpenSans-Bold';
@@ -50,7 +60,7 @@
   position: absolute;
   box-shadow: 0 3px 4px 0 rgba(143, 143, 143, 0.5);
   left: 15px;
-  top: 62px;
+  top: 72px;
   display: none;
   z-index: 1;
   background: #f7f7f7;

@@ -299,11 +299,19 @@
 }
 .banner--journal {
   border-top: solid 1px #1b4693;
-  border-bottom: solid 1px #1b4693;
+  position: relative;
+}
+.banner--journal:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #1b4693;
+  left: 0;
+  bottom: 0;
 }
 .banner--journal .banner__leftcol {
   background: #ffffff;
-  height: 99.7%;
   min-width: 420px;
 }
 .banner--journal .banner__subheading,

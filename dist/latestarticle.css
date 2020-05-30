@@ -99,7 +99,31 @@
 .latestarticle__loadbtn {
   display: block;
   margin: 100px auto 35px;
-  width: 175px;
+  width: 160px;
+  padding: 3px 0;
+}
+.special__list {
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+.special__list:last-child {
+  margin-bottom: 0;
+}
+.special__link {
+  font-size: 21px;
+  font-weight: normal;
+  color: #000000;
+}
+.special__heading {
+  margin: 15px 0 55px;
+}
+@media (max-width: 991.98px) {
+  .latestarticle__articleheading {
+    margin-bottom: 10px!important;
+  }
+  .latestarticle__articledate {
+    margin-bottom: 10px!important;
+  }
 }
 @media (max-width: 767.98px) {
   .latestarticle__articledate {
@@ -147,5 +171,8 @@
   }
   .latestarticle__loadbtn {
     margin: 50px auto 5px;
+  }
+  .special__heading .dis--blk {
+    display: inline;
   }
 }

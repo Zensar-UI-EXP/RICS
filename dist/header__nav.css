@@ -1,5 +1,4 @@
 .ricsnav {
-  margin-bottom: 10px;
   border-bottom: solid 1px #000000;
 }
 .ricsnav__cont {
@@ -29,9 +28,20 @@
   float: left;
   width: 100%;
   text-indent: -99999em;
+  position: relative;
 }
 .ricsnav__leftlink:hover {
   opacity: 0.7;
+}
+.ricsnav__chevronicon {
+  position: absolute;
+  top: 34px;
+  display: none;
+  z-index: 1;
+}
+.ricsnav--chevronactive {
+  transform: rotate(180deg) !important;
+  top: 30px;
 }
 .ricsnav--moduslink {
   font-family: Arial, Helvetica, sans-serif;
@@ -57,7 +67,7 @@
 .ricsnav--leftlistactive {
   border-bottom: solid 4px #000000;
 }
-.ricsnav--leftlistactive:hover{
+.ricsnav--leftlistactive:hover {
   opacity: 1;
 }
 .ricsnav__rightlistcont {
@@ -121,4 +131,22 @@
   color: #000000;
   font-size: 18px;
   color: #000000 !important;
+}
+.ricsnav__expdovly {
+  position: absolute;
+  width: 100%;
+  height: 71px;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  display: none;
+}
+.ricsnav--moduslist .ricsnav__chevronicon {
+  left: calc(50% + 56px);
+  margin: 0;
+}
+.ricsnav--jornalslist .ricsnav__chevronicon {
+  left: calc(50% + 66px);
+  margin: 0;
+  top: 8px;
 }

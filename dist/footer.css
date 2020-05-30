@@ -88,6 +88,7 @@
 .ricsfooter__socialsharinglink {
   text-indent: -99999em;
   margin-right: 0;
+  margin-left: 0!important;
 }
 .ricsfooter__socialsharinglink:first-child {
   margin-left: 0;

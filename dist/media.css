@@ -9,7 +9,7 @@
     font-size: 12px!important;
   }
   .ricsfooter__socialsharinglink {
-    margin-left: 8px;
+    margin-left: 8px!important;
     margin-right: 0!important;
   }
   .ricsfooter__socialsharinglink:first-child {
@@ -29,10 +29,14 @@
   }
 }
 @media (max-width: 767.98px) {
+  body {
+    padding-top: 168px;
+  }
   .ricsheader {
     position: fixed;
     width: 100%;
     z-index: 7;
+    top: 0;
   }
   .ricsheader__logo {
     width: 85px;
@@ -122,24 +126,49 @@
     margin: 0 auto;
     display: block;
   }
+  .ricsnav__chevronicon {
+    display: block;
+    left: calc(50% + 55px);
+  }
+  .ricsnav__expdovly {
+    display: block;
+  }
+  .ricssubnav {
+    position: relative;
+  }
+  .ricssubnav__submenunav {
+    border-bottom: solid 1px #000000;
+    display: none;
+  }
   .ricssubnav .container {
     max-width: 100%;
   }
   .ricssubnav__submenulistcont {
     flex-direction: column;
-    margin-top: 168px;
   }
   .ricssubnav__submenulist {
-    padding: 10px 0 10px;
+    padding: 25px 0 0px;
+  }
+  .ricssubnav__submenulist:last-child {
+    padding-bottom: 25px;
+  }
+  .ricssubnav__submenulist:hover .ricssubnav__submenulink {
+    font-weight: normal;
+  }
+  .ricssubnav__submenulist:hover .ricssubnav__drpdwnlistcont {
+    display: none;
+  }
+  .ricssubnav__submenulist::before {
+    display: none;
   }
   .ricssubnav__submenulink {
     max-width: 90%;
     margin: 0 auto;
     display: block;
-    font-size: 14px;
+    font-size: 16px;
   }
   .ricssubnav__submenulink:hover {
-    font-family: 'OpenSans-Regular';
+    font-weight: normal;
   }
   .ricssubnav--submenulinkactive {
     font-family: 'OpenSans-Regular';
@@ -147,24 +176,36 @@
   .ricssubnav__drpdwnlistcont {
     position: relative;
     top: 0;
-    margin-top: 10px;
-    padding: 10px 0;
+    margin: 10px 0 0 50px;
+    padding: 10px 0 0;
+    background: #ffffff;
+    box-shadow: 0 3px 4px 0 rgba(143, 143, 143, 0);
+    min-width: 85%;
+    max-width: 85%;
+    float: left;
+    left: 0;
+  }
+  .ricssubnav__drpdwnlist {
+    padding: 0 0 25px;
+    float: left;
+    width: 100%;
+  }
+  .ricssubnav__drpdwnlist:last-child {
+    padding-bottom: 0;
   }
   .ricssubnav__drpdwnlink {
     max-width: 90%;
     margin: 0 auto;
     display: block;
     padding: 0;
-    font-size: 12px;
+    font-size: 16px;
+    float: left;
   }
-  #journalsMenu .ricssubnav__submenulistcont {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+  .ricssubnav__chevronicon {
+    display: block;
   }
-  #journalsMenu .ricssubnav__submenulist {
-    width: 50%;
+  .ricssubnav--chevronactive {
+    transform: rotate(180deg) !important;
   }
   .ricsbreadcrumb {
     margin-bottom: 25px;
@@ -350,7 +391,7 @@
   }
   .ricsartimgntxt__video,
   .ricsartimgntxt__videoposter {
-    height: 230px;
+    height: 45vw;
   }
   .ricsartrightcnt__rhtcontent {
     margin-bottom: 0;
@@ -468,6 +509,7 @@
     margin-bottom: 0;
   }
   .ricsrlart__carddetail {
+    width: 50%;
     padding: 7px;
   }
   .ricsrlart__articleheading {
@@ -487,7 +529,7 @@
   .ricsrlart__tagcont {
     width: 100%;
     overflow: hidden;
-    height: 22px;
+    height: 28px;
   }
   .ricsnewsltr__inner {
     width: 80%;
@@ -688,6 +730,9 @@
   .hide--mobile {
     display: none!important;
   }
+  .hide--desktop {
+    display: block!important;
+  }
   .slider__arrow {
     width: 34px;
     height: 34px;
@@ -844,6 +889,10 @@
   .title-size--jrnlcrd {
     font-size: 18px!important;
     line-height: 23px!important;
+  }
+  .title-size--special {
+    font-size: 24px;
+    line-height: 38px;
   }
   .para {
     font-size: 14px;

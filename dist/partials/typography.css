@@ -176,6 +176,13 @@ a {
   margin-left: 0;
   margin-right: 0;
 }
+.icon--chevron {
+  width: 30px;
+  height: 15px;
+  background: url(../../images/icon__chevron.svg) no-repeat transparent;
+  background-size: 100%;
+  text-indent: -99999em;
+}
 .clr--both {
   clear: both!important;
 }
@@ -672,6 +679,10 @@ html {
 .title-size--jrnlrla {
   font-size: 18px;
 }
+.title-size--special {
+  font-size: 36px;
+  line-height: 46px;
+}
 .para {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -713,6 +724,8 @@ html {
 .para-size--artdesc {
   font-size: 22px;
   line-height: 28px;
+  height: 55px;
+  overflow: hidden;
 }
 .para-size--jnlpghead {
   font-size: 25px;
@@ -741,4 +754,10 @@ html {
 }
 .seemore--tag .latestarticle__tagmore {
   display: none;
+}
+.seemore--tag .ricsrlart__tagmore {
+  display: none;
+}
+.hide--desktop {
+  display: none!important;
 }

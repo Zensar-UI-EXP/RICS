@@ -296,6 +296,7 @@
   padding-right: 15px !important;
   padding-left: 15px !important;
   width: 100%;
+  text-align: center;
 }
 .container--fluid {
   margin-right: auto;
@@ -313,25 +314,26 @@
 }
 .container-pmdm--spacing {
   margin: 25px auto!important;
-  display: inline-block;
   width: 100%;
+  display: inline-block;
 }
 .container-mdm--spacing {
   margin: 30px auto!important;
-  display: inline-block;
   width: 100%;
+  display: inline-block;
 }
 .container-lrg--spacing {
   margin: 50px auto!important;
-  display: inline-block;
   width: 100%;
+  display: inline-block;
 }
 .container-exlrg--spacing {
   margin: 70px auto!important;
-  display: inline-block;
   width: 100%;
+  display: inline-block;
 }
 .container--content {
   max-width: 1600px;
   margin: 0 auto;
+  text-align: left;
 }
