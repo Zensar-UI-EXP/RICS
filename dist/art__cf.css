@@ -79,6 +79,10 @@
   font-size: 18px;
   line-height: 30px;
   word-break: break-all;
+  color: #02837c;
+}
+.ricsartcf__link:hover {
+  color: #000000;
 }
 .ricsartcf__slider {
   position: relative;

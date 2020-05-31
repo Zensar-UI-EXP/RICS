@@ -515,6 +515,13 @@
   .ricsrlart__articleheading {
     font-size: 12px;
     margin: 0 0 10px;
+    max-height: 50px;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .ricsrlart__articledate {
     font-size: 10px;

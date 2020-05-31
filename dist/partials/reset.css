@@ -163,6 +163,12 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   text-decoration: none;
+  color: #02837c;
+  font-weight: normal;
+}
+a:hover {
+  color: #000000;
+  text-decoration: underline;
 }
 a:active,
 a:hover {

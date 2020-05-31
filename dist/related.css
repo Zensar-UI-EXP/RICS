@@ -39,6 +39,10 @@
   padding: 0 8px;
   margin: 0 3px 10px 0!important;
 }
+.ricsrltopics__tag:hover {
+  background: #ffffff;
+  text-decoration: underline;
+}
 .ricsrltopics__socialsharing {
   display: flex;
   align-items: flex-end;
@@ -90,6 +94,18 @@
   width: 100%;
   max-height: 235px;
   position: relative;
+}
+.ricsrlart__cardimagecont::before {
+  background: #4c4d4d;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+.ricsrlart__cardimagecont:hover:before {
+  content: "";
 }
 .ricsrlart__cardimage {
   width: 100%;
@@ -159,6 +175,10 @@
   padding: 0 10px;
   margin: 7px 3px 0px 0!important;
   display: inline-block;
+}
+.ricsrlart__tag:hover {
+  background: #ffffff;
+  text-decoration: underline;
 }
 .ricsrlart--bluelabel {
   background: #0F4DBC;
