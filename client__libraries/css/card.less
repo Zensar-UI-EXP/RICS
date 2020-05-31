@@ -6,6 +6,11 @@
    border-bottom: solid 1px @ricsblack;
    height: 100%;
    position: relative;
+   &:hover{
+      .cardlayout__imgcont::before{
+         content: "";
+      }
+   }
    &__link{
       position: absolute;
       width: 100%;
@@ -24,6 +29,15 @@
    }
    &__imgcont{
       position: relative;
+      &::before{
+         background: @charcoal--grey;
+         width: 100%;
+         height: 100%;
+         opacity: 0.5;
+         left: 0;
+         top: 0;
+         position: absolute;
+      }
    }
    &__heading{
       position: absolute;
@@ -52,6 +66,20 @@
       .pagelist__cont{
          padding: 20px 20px 0;
          background: transparent;
+         &::before{
+            background: url(../images/icon__arrow__white__3x.png) no-repeat transparent;
+            background-size: contain;
+         }
+         &:hover{
+            .pagelist__desc{
+               background: @ricswhite!important;
+               color: @ricsblack;
+            }
+            &:before{
+               background: url(../images/icon__arrow__3x.png) no-repeat transparent;
+               background-size: contain;
+            }
+         }
       }
       .pagelist__heading{
          color: @ricswhite;
@@ -64,12 +92,18 @@
          left: 0;
          bottom: 0;
          background: @blue--green;
+         border-bottom: solid 1px @blue--green;
          color: @ricswhite;
          height: 50%;
-      }
-      .pagelist__cont::before{
-         background: url(../images/icon__arrow__white__3x.png) no-repeat transparent;
-         background-size: contain;
+         &.bg--cobalt{
+            border-bottom-color: @ricscobalt!important;
+         }
+         &.bg--mdgrn{
+            border-bottom-color: @mud--green!important;
+         }
+         &.bg--trgrn{
+            border-bottom-color: @true--green!important;
+         }
       }
    }
    &__img{
@@ -89,6 +123,9 @@
       height: 100%;
       min-height: 260px;
       position: relative;
+      &:hover{
+         background: @off--white4;
+      }
       &::before{
          position: absolute;
          width: 35px;

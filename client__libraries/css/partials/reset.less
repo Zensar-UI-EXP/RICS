@@ -1,3 +1,4 @@
+@import "./variables.less";
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -83,6 +84,12 @@ a {
 	background-color: transparent;
 	-webkit-text-decoration-skip: objects;
 	text-decoration: none;
+	color: @blue--green;
+	font-weight: normal;
+	&:hover{
+		color: @ricsblack;
+		text-decoration: underline;
+	}
 }
 
 a:active, a:hover {

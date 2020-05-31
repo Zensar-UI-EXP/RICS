@@ -56,8 +56,7 @@ strong {
 }
 a {
    font-family: @RICS--SemiBold;
-   font-weight: @semi--bold;
-   font-size: 1em;
+   font-weight: normal;
 }
 // Custom highlight state
 ::selection {
@@ -392,6 +391,12 @@ a {
    text-align: center;
    color: @ricswhite;
    border: none;
+   cursor: pointer;
+   border: solid 1px @ricsblack;
+   &:hover{
+      background: @ricswhite;
+      color: @ricsblack;
+   }
 }
 .txt{
    &-trns{
@@ -737,6 +742,11 @@ html {
 .para{
    .default--font();
    &-size{
+      &--cf{
+         font-size: 18px;
+         line-height: 30px;
+         margin-bottom: 30px;
+      }
       &--sm{
          font-size: 12px;
          line-height: 14px;
@@ -795,6 +805,7 @@ html {
       width: auto!important;
       overflow: visible!important;
       height: auto!important;
+      max-height: max-content;
       .latestarticle__tagmore{
          display: none;
       }
