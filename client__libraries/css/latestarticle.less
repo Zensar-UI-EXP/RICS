@@ -2,6 +2,8 @@
 @import "./partials/mixins.less";
 
 .latestarticle{
+   display: inline-block;
+   width: 100%;
    &__heading{
       border-bottom: solid 1px @ricsblack;
       padding-bottom: 10px;
@@ -92,6 +94,7 @@
       position: relative;
       max-height: 38px;
       overflow: hidden;
+      display: block;
    }
    &__tagmore{
       text-indent: -99999em;
@@ -114,12 +117,15 @@
    }
    &__loadbtn{
       display: block;
-      margin: 100px auto 35px;
+      margin: 100px auto 100px;
       width: 170px;
       padding: 7px 0;
    }
 }
 .special{
+   &__listcont{
+      margin-top: 50px;
+   }
    &__list{
       line-height: 40px;
       margin-bottom: 10px;
@@ -133,7 +139,7 @@
      color: @ricsblack;
    }
    &__heading{
-      margin: 15px 0 55px;
+      margin: 15px 0 0px;
    }
 }
 @media (max-width: 991.98px) {
@@ -149,6 +155,10 @@
 }
 @media (max-width: 767.98px) {
    .latestarticle{
+      max-width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+      border-bottom: solid 1px @ricsblack;
       &__articledate{
          display: none;
       }
@@ -196,7 +206,7 @@
          }
       }
       &__loadbtn{
-         margin: 50px auto 5px;
+         margin: 50px auto 50px;
       }
       &__tagcont{
          max-height: 30px;
@@ -205,9 +215,19 @@
    }
    .special{
       &__heading{
+         width: 90%;
+         max-width: 90%;
+         margin-left: auto;
+         margin-right: auto;
          .dis--blk{
             display: inline;
          }
+      }
+      &__listcont{
+         width: 90%;
+         max-width: 90%;
+         margin-left: auto;
+         margin-right: auto;
       }
    }
 }

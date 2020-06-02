@@ -30,14 +30,21 @@ function gotoSlide(n) {
 
 function showDivs(n) {
       let i;
-      let x = document.getElementsByClassName("slider__img");
-      if (x.length) {
-            if (n > x.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = x.length}
-            for (i = 0; i < x.length; i++) {
-                  x[i].style.display = "none";  
+      let x = document.getElementsByClassName("slider").length ? document.getElementsByClassName("slider")[0].childNodes : [];
+      let y = [];
+      for (i = 0; i < x.length; i++) {
+            if (x[i].nodeName.toLowerCase() === "picture"){
+                  y.push(x[i]);
             }
-            x[slideIndex-1].style.display = "block";  
+      }
+      
+      if (y.length) {
+            if (n > y.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = y.length}
+            for (i = 0; i < y.length; i++) {
+                  y[i].style.display = "none";  
+            }
+            y[slideIndex-1].style.display = "block";  
       }
 }
 
@@ -212,3 +219,39 @@ function seemoreTag(tagContIndex) {
             }
       }
 }
+
+function appendCustomClass(elementClassName, checkClass, addClass) {
+      var elements = document.getElementsByClassName(elementClassName);
+      if (elements.length) {
+            var parentNode = elements[0].parentNode;
+            checkClassName(parentNode, checkClass, addClass);
+      }
+}
+
+function checkClassName(parentNode, checkClass, addClass) {
+      if (parentNode.classList.contains(checkClass)) {
+            parentNode.classList.add(addClass);
+      } else {
+            parentNode = parentNode.parentNode;
+            checkClassName(parentNode, checkClass, addClass);
+      }
+}
+
+function checkNAddBGClass(elementClassName, checkClass, addClass, removeClass) {
+      var elements = document.getElementsByClassName(elementClassName);
+      if (elements.length) {
+            for (var i = 0; i < elements.length; i++) {
+                  if (elements[i].classList.contains(addClass)) {
+                        checkClassName(elements[i], checkClass, addClass);
+                        if (removeClass) {
+                              elements[i].classList.remove(addClass);
+                        }
+                  }
+            }
+      }
+}
+
+appendCustomClass("cardlayout", "container--spacing", "mob-flxdir--row");
+appendCustomClass("latestarticle", "container--spacing", "container-brdr--bot");
+checkNAddBGClass("ricsinfographic", "container--spacing", "bg--offwhite");
+checkNAddBGClass("ricsartcf--scndry", "container--spacing", "bg--sclyt", true);

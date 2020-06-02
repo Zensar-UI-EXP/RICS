@@ -3,6 +3,7 @@
 
 .ricsartimgntxt{
    .component--default();
+   margin: 5px auto;
    &__img{
       width: 100%;
    }
@@ -11,6 +12,13 @@
       .default--font();
       font-size: 14px;
       line-height: 20px;
+   }
+   &--txtwithleftspace .ricsartimgntxt__txt{
+      margin-left: 8.33333%!important;
+      padding-left: 15px;
+   }
+   &__lefcol{
+      margin-left: 15px;
    }
    &__advheading{
       .default--font();
@@ -48,6 +56,7 @@
       max-width: 100%;
    }
 }
+
 *::-webkit-media-controls-panel {
    display: none!important;
   -webkit-appearance: none;

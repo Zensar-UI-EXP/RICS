@@ -373,7 +373,7 @@
          background: rgba(2, 131, 124, 0.1);
       }
       &__scndlistcont{
-         padding-left: 30px;
+         padding-left: 25px;
       }
       &--txtlink{
          width: 100%;
@@ -413,7 +413,7 @@
    .mar{
       &-bot{
          &--25mob{
-            margin-bottom: 25px;
+            margin-bottom: 25px!important;
          }
       }
    }
@@ -430,6 +430,9 @@
       &__txt, &__midcol, &__rhtcol{
          width: 100%;
          max-width: 100%;
+      }
+      &--txtwithleftspace .ricsartimgntxt__txt{
+         margin-left: 0!important;
       }
       &__rhtcol{
          align-self: flex-start!important;
@@ -455,6 +458,11 @@
       }
    }
    .ricsartrightcnt{
+      position: static;
+      &__container{
+         margin-right: 0;
+         width: 100%;
+      }
       &__rhtcontent{
          margin-bottom: 0;
          margin-top: 25px;
@@ -462,11 +470,13 @@
    }
    .ricsinfographic{
       margin: 0 auto;
-      width: 90%;
+      width: 100%;
       padding-bottom: 5px;
       display: block;
       &__container{
          padding: 30px 0;
+         width: 90%;
+         margin: 0 auto;
          .rics--row{
             flex-direction: column;
          }
@@ -523,6 +533,7 @@
       }
    }
    .ricsrltopics{
+      margin: 0 auto;
       &__container{
          flex-direction: column;
       }
@@ -542,10 +553,14 @@
       }
    }
    .ricsrlart{
+      &__cardlist{
+         padding-right: 0;
+      }
       &__card{
          display: flex;
          flex-direction: row;
          position: relative;
+         border-bottom: 0;
       }
       &__cardimagecont{
          height: auto;
@@ -699,6 +714,21 @@
       &--fluid{
          padding-left: 0!important;
          padding-right: 0!important;
+         max-width: 100%;
+      }
+      &-brdr{
+         &--bot{
+            border-bottom: 0;
+         }
+      }
+      &--spacing{
+         .rics--row{
+            flex-direction: column;
+            [class^="col--"]{
+               width: 100%;
+               max-width: 100%;
+            }
+         }
       }
       &-pmdm--spacing{
          margin: 10px auto!important;
@@ -712,6 +742,29 @@
       &-exlrg--spacing{
          margin: 50px auto!important;
       }
+   }
+   .ricsheader, .ricsfooter{
+      .container{
+         &--fluid{
+            max-width: 90%;
+         }
+      }
+   }
+   .ricsbreadcrumb{
+      &.container{
+         &--fluid{
+            max-width: 90%;
+         }
+      }
+   }
+   .ricsartbanner, .ricsartimgntxt, .ricsartcf, .ricsartrightcnt, .ricsrltopics, .ricsrlart, .ricsarttbl{
+      max-width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+   }
+   .ricsartimgntxt, .ricsartcf{
+      margin-top: 0;
+      margin-bottom: 0;
    }
    .full{
       &-wdh{
@@ -781,12 +834,20 @@
          }
       }
    }
+   table{
+      width: 100%;
+   }
+   th, td{
+      font-size: 11px;
+      padding: 10px 15px;
+      width: 30%;
+      &:first-child{
+         width: 15%;
+      }
+   }
    .tbl{
       position: relative;
       overflow: hidden;
-      &__tbl{
-         width: 100%;
-      }
       &:before{
          position: absolute;
          right: 0;
@@ -795,14 +856,6 @@
          width: 62px;
          content: "";
          height: 100%;
-      }
-      &__headcol, &__bodycol{
-         font-size: 11px;
-         padding: 10px 15px;
-         width: 30%;
-         &:first-child{
-            width: 15%;
-         }
       }
    }
    .hide{
@@ -826,6 +879,40 @@
       }
    }
    .mob{
+      &-flxdir{
+         &--row{
+            margin-top: -10px!important;
+            .rics--row{
+               flex-direction: row!important;
+               padding-left: 15px!important;
+               padding-right: 15px!important;
+               justify-content: space-between;
+               > [class^="col--"]{
+                  width: 49%;
+                  max-width: 49%;
+               }
+            }
+         }
+      }
+      &-full{
+         &--wdh{
+            margin-left: 0;
+            margin-right: 0;
+            max-width: 100%;
+         }
+         &--wdhflx{
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            margin-left: 0!important;
+            margin-right: 0!important;
+            width: 100%!important;
+            .ricsartcf__container{
+               width: 90%;
+               margin: 0 auto;
+            }
+         }
+      }
       &-no{
          &--pad{
             padding: 0;
@@ -977,9 +1064,13 @@
    .para{
       font-size: 14px;
       &-size{
+         &--cf{
+            font-size: 15px;
+            line-height: 21px;
+         }
          &--md{
-            font-size: 18px!important;
-            line-height: 26px!important;
+            font-size: 14px!important;
+            line-height: 20px!important;
          }
          &--lmd{
             line-height: 16px!important;
@@ -1000,6 +1091,11 @@
    }
    .grdoverlay{
       height: 349px;
+   }
+   .ricslighbox{
+      &__closeicon{
+         right: 3%;
+      }
    }
 }
 

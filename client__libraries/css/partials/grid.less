@@ -279,7 +279,19 @@
    &-brdr{
       &--bot{
          border-bottom: solid 1px @ricsblack;
-         padding-bottom: 50px;
+      }
+   }
+   &--spacing{
+      margin: 25px auto!important;
+      display: inline-block;
+      width: 100%;
+      [class^="col--"]{
+         &:first-child{
+            padding-left: 0;
+         }
+         &:last-child{
+            padding-right: 0;
+         }
       }
    }
    &-pmdm{

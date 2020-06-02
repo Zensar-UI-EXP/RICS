@@ -396,6 +396,7 @@ a {
    &:hover{
       background: @ricswhite;
       color: @ricsblack;
+      text-decoration: none;
    }
 }
 .txt{
@@ -435,11 +436,13 @@ a {
    }
 }
 .slider{
-   &__img{
+   img{
       width: 100%;
    }
    &--fade{
-      animation: fading 5s;
+      img {
+         animation: fading 5s;
+      }
    }
    &__arrow{
       position: absolute;
@@ -495,21 +498,22 @@ a {
       background: @true--green!important;
    }
 }
+table{
+   background: @verylight--pinktwo;
+   border-collapse: collapse;
+   border-top: solid 3px @ricsblack;
+   width: 100%;
+}
+th, td{
+   padding: 20px;
+   border: solid 1px @ricsblack;
+   .default--font();
+}
+th{
+   font-weight: bold;
+}
 .tbl{
    position: relative;
-   &__tbl{
-      background: @verylight--pinktwo;
-      border-collapse: collapse;
-      border-top: solid 3px @ricsblack;
-   }
-   &__headcol, &__bodycol{
-      padding: 20px;
-      border: solid 1px @ricsblack;
-      .default--font();
-   }
-   &__headcol{
-      font-weight: bold;
-   }
    &__leftline{
       width: 1px;
       position: absolute;
@@ -555,6 +559,8 @@ a {
       left: 50%;
       margin-left: -48%;
       top: 110px;
+      margin-right: 0;
+      max-width: 96%;
       &__headingcont{
          margin-top: 0;
       }
