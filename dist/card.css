@@ -200,6 +200,9 @@
     margin: 0px 0;
     width: 70%;
   }
+  .cardlayout {
+    border-bottom: solid 1px #02837c;
+  }
   .cardlayout__desc {
     display: none;
   }

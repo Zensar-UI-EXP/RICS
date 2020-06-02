@@ -41,7 +41,7 @@
   background-size: contain;
 }
 .advertise {
-  margin: 150px auto 100px;
+  margin: 100px auto 100px;
   width: 100%;
 }
 .advertise__heading {
@@ -69,7 +69,7 @@
     border-top: solid 1px #979797;
     border-bottom: solid 1px #979797;
     padding: 15px 0 30px;
-    margin: 30px auto 45px;
+    margin: 30px auto 0;
     width: 90%;
   }
   .advertise__heading {

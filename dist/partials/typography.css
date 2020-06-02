@@ -358,6 +358,7 @@ a {
 .btn:hover {
   background: #ffffff;
   color: #000000;
+  text-decoration: none;
 }
 .txt-trns--uppercase {
   text-transform: uppercase;
@@ -383,10 +384,10 @@ a {
 .dis--none {
   display: none;
 }
-.slider__img {
+.slider img {
   width: 100%;
 }
-.slider--fade {
+.slider--fade img {
   animation: fading 5s;
 }
 .slider__arrow {
@@ -442,16 +443,14 @@ a {
 .bg--trgrn {
   background: #008000 !important;
 }
-.tbl {
-  position: relative;
-}
-.tbl__tbl {
+table {
   background: #f9f7f7;
   border-collapse: collapse;
   border-top: solid 3px #000000;
+  width: 100%;
 }
-.tbl__headcol,
-.tbl__bodycol {
+th,
+td {
   padding: 20px;
   border: solid 1px #000000;
   font-family: Arial, Helvetica, sans-serif;
@@ -463,8 +462,11 @@ a {
   letter-spacing: normal;
   color: #000000;
 }
-.tbl__headcol {
+th {
   font-weight: bold;
+}
+.tbl {
+  position: relative;
 }
 .tbl__leftline {
   width: 1px;
@@ -509,6 +511,8 @@ a {
   left: 50%;
   margin-left: -48%;
   top: 110px;
+  margin-right: 0;
+  max-width: 96%;
 }
 .ricslighbox .ricsarttbl__headingcont {
   margin-top: 0;

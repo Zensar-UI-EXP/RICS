@@ -310,7 +310,17 @@
 }
 .container-brdr--bot {
   border-bottom: solid 1px #000000;
-  padding-bottom: 50px;
+}
+.container--spacing {
+  margin: 25px auto!important;
+  display: inline-block;
+  width: 100%;
+}
+.container--spacing [class^="col--"]:first-child {
+  padding-left: 0;
+}
+.container--spacing [class^="col--"]:last-child {
+  padding-right: 0;
 }
 .container-pmdm--spacing {
   margin: 25px auto!important;

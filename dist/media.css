@@ -320,7 +320,7 @@
     background: rgba(2, 131, 124, 0.1);
   }
   .ricsartcf__scndlistcont {
-    padding-left: 30px;
+    padding-left: 25px;
   }
   .ricsartcf--txtlink {
     width: 100%;
@@ -356,7 +356,7 @@
     line-height: 22px;
   }
   .mar-bot--25mob {
-    margin-bottom: 25px;
+    margin-bottom: 25px!important;
   }
   .ricsartrightcnt__rhtcontent {
     font-size: 16px;
@@ -370,6 +370,9 @@
   .ricsartimgntxt__rhtcol {
     width: 100%;
     max-width: 100%;
+  }
+  .ricsartimgntxt--txtwithleftspace .ricsartimgntxt__txt {
+    margin-left: 0!important;
   }
   .ricsartimgntxt__rhtcol {
     align-self: flex-start !important;
@@ -393,18 +396,27 @@
   .ricsartimgntxt__videoposter {
     height: 45vw;
   }
+  .ricsartrightcnt {
+    position: static;
+  }
+  .ricsartrightcnt__container {
+    margin-right: 0;
+    width: 100%;
+  }
   .ricsartrightcnt__rhtcontent {
     margin-bottom: 0;
     margin-top: 25px;
   }
   .ricsinfographic {
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     padding-bottom: 5px;
     display: block;
   }
   .ricsinfographic__container {
     padding: 30px 0;
+    width: 90%;
+    margin: 0 auto;
   }
   .ricsinfographic__container .rics--row {
     flex-direction: column;
@@ -457,6 +469,9 @@
   .ricsinfographic__midcol:first-child {
     margin-bottom: 30px;
   }
+  .ricsrltopics {
+    margin: 0 auto;
+  }
   .ricsrltopics__container {
     flex-direction: column;
   }
@@ -474,10 +489,14 @@
   .ricsrltopics__tag {
     font-size: 9px;
   }
+  .ricsrlart__cardlist {
+    padding-right: 0;
+  }
   .ricsrlart__card {
     display: flex;
     flex-direction: row;
     position: relative;
+    border-bottom: 0;
   }
   .ricsrlart__cardimagecont {
     height: auto;
@@ -637,6 +656,17 @@
   .container--fluid {
     padding-left: 0!important;
     padding-right: 0!important;
+    max-width: 100%;
+  }
+  .container-brdr--bot {
+    border-bottom: 0;
+  }
+  .container--spacing .rics--row {
+    flex-direction: column;
+  }
+  .container--spacing .rics--row [class^="col--"] {
+    width: 100%;
+    max-width: 100%;
   }
   .container-pmdm--spacing {
     margin: 10px auto!important;
@@ -649,6 +679,29 @@
   }
   .container-exlrg--spacing {
     margin: 50px auto!important;
+  }
+  .ricsheader .container--fluid,
+  .ricsfooter .container--fluid {
+    max-width: 90%;
+  }
+  .ricsbreadcrumb.container--fluid {
+    max-width: 90%;
+  }
+  .ricsartbanner,
+  .ricsartimgntxt,
+  .ricsartcf,
+  .ricsartrightcnt,
+  .ricsrltopics,
+  .ricsrlart,
+  .ricsarttbl {
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .ricsartimgntxt,
+  .ricsartcf {
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .full-wdh--mob {
     max-width: 100%;
@@ -708,12 +761,22 @@
     content: "";
     height: 100%;
   }
+  table {
+    width: 100%;
+  }
+  th,
+  td {
+    font-size: 11px;
+    padding: 10px 15px;
+    width: 30%;
+  }
+  th:first-child,
+  td:first-child {
+    width: 15%;
+  }
   .tbl {
     position: relative;
     overflow: hidden;
-  }
-  .tbl__tbl {
-    width: 100%;
   }
   .tbl:before {
     position: absolute;
@@ -723,16 +786,6 @@
     width: 62px;
     content: "";
     height: 100%;
-  }
-  .tbl__headcol,
-  .tbl__bodycol {
-    font-size: 11px;
-    padding: 10px 15px;
-    width: 30%;
-  }
-  .tbl__headcol:first-child,
-  .tbl__bodycol:first-child {
-    width: 15%;
   }
   .hide--mobile {
     display: none!important;
@@ -749,6 +802,36 @@
   }
   .slider--arrowright {
     right: 14px;
+  }
+  .mob-flxdir--row {
+    margin-top: -10px !important;
+  }
+  .mob-flxdir--row .rics--row {
+    flex-direction: row!important;
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+    justify-content: space-between;
+  }
+  .mob-flxdir--row .rics--row > [class^="col--"] {
+    width: 49%;
+    max-width: 49%;
+  }
+  .mob-full--wdh {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+  }
+  .mob-full--wdhflx {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-left: 0!important;
+    margin-right: 0!important;
+    width: 100%!important;
+  }
+  .mob-full--wdhflx .ricsartcf__container {
+    width: 90%;
+    margin: 0 auto;
   }
   .mob-no--pad {
     padding: 0;
@@ -904,9 +987,13 @@
   .para {
     font-size: 14px;
   }
+  .para-size--cf {
+    font-size: 15px;
+    line-height: 21px;
+  }
   .para-size--md {
-    font-size: 18px!important;
-    line-height: 26px!important;
+    font-size: 14px!important;
+    line-height: 20px!important;
   }
   .para-size--lmd {
     line-height: 16px!important;
@@ -925,5 +1012,8 @@
   }
   .grdoverlay {
     height: 349px;
+  }
+  .ricslighbox__closeicon {
+    right: 3%;
   }
 }
