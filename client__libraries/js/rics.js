@@ -69,28 +69,55 @@ function hideSearch() {
       rightNavElement[0].classList.remove("search--open");
 }
 
-var ricsVideo, videoIndex, youtubeid, playerid;
-function playricsVideo(videoIndex, youtubeid) {
-      let playVideoButton = document.getElementById("playricsVideoBtn" + videoIndex);
-      playVideoButton.style.display = "none";
-      let posterElement = document.getElementById("videoPoster" + videoIndex);
-      posterElement.style.display = "none";
-      if (youtubeid) {
-            playYTVideo(videoIndex, youtubeid);
-      } else {
-            ricsVideo = document.getElementById("ricsvideo" + videoIndex);
-            ricsVideo.play();
+var videoElement, playerid;
+function playricsVideo(thisElement, youtubePlayer) {
+      checkNPlay(thisElement.parentNode, youtubePlayer)
+}
+
+function checkNPlay(parentNode, youtubePlayer){
+      var classnameList = [];
+      var localNameList = [];
+      if (parentNode) {
+            for (var i = 0; i < parentNode.childNodes.length; i++) {
+                  if (parentNode.childNodes[i].classList && parentNode.childNodes[i].classList.length) {
+                        classnameList.push(parentNode.childNodes[i].classList.toString());
+                  } else {
+                        classnameList.push("");
+                  }
+                  localNameList.push(parentNode.childNodes[i].localName);
+            }
+            var videoIndex = classnameList.indexOf("ricsartimgntxt__video");
+            var videoPosterIndex = localNameList.indexOf("picture");
+            var playIconIndex = classnameList.indexOf("icon icon--play");
+            if (videoPosterIndex > -1) {
+                  parentNode.childNodes[videoPosterIndex].style.display = "none";
+            }
+            if (playIconIndex > -1) {
+                  parentNode.childNodes[playIconIndex].style.display = "none";
+            }
+            if (videoIndex > -1) {
+                  if (youtubePlayer) {
+                        playYTVideo(parentNode.childNodes[videoIndex]);
+                  } else {
+                        parentNode.childNodes[videoIndex].play();
+                  }
+            } else {
+                  parentNode = parentNode.parentNode;
+                  checkNPlay(parentNode, youtubePlayer);
+            }
       }
 }
 
-function playYTVideo(videoIndex, youtubeid) {
-      videoIndex = videoIndex;
-      youtubeid = youtubeid;
-      playerid = 'player' + videoIndex;
-      document.getElementById("ricsvideo" + videoIndex).innerHTML = "<div id='" + playerid + "' datasrc='" + youtubeid + "'></div>";
+var player = {};
+var ytPlayerIndex = 0;
+function playYTVideo(videoElement) {
+      videoElement = videoElement;
+      playerid = 'player' + ytPlayerIndex;
+      var videoURL = videoElement.attributes.datasrc.nodeValue.split('v=')[1];
+      videoElement.innerHTML = "<div id='" + playerid + "' datasrc='" + videoURL + "'></div>";
       var tag = document.createElement('script');
       tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
+      var firstScriptTag = document.getElementsByTagName('script')[ytPlayerIndex];
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 }
 
@@ -98,9 +125,8 @@ function getVideoId(){
       return document.getElementById(playerid).attributes.datasrc.nodeValue;
 };
 
-var player = {};
 function onYouTubeIframeAPIReady() {
-      player[videoIndex] = new YT.Player(playerid, {
+      player[ytPlayerIndex] = new YT.Player(playerid, {
             videoId: getVideoId(),
             playerVars: {
                   controls: 1,
@@ -114,6 +140,7 @@ function onYouTubeIframeAPIReady() {
             'onStateChange': onPlayerStateChange
             }
       });
+      ytPlayerIndex++;
 }
 
 function onPlayerReady(event) {
