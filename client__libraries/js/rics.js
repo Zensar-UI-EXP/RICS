@@ -247,9 +247,11 @@ function seemoreTag(tagContIndex) {
       }
 }
 
-function appendCustomClass(elementClassName, checkClass, addClass) {
+function appendCustomClass(elementClassName) {
       var elements = document.getElementsByClassName(elementClassName);
       if (elements.length) {
+            var checkClass = elements[0].attributes.datacheckclass ? elements[0].attributes.datacheckclass.nodeValue : "container--spacing";
+            var addClass = elements[0].attributes.dataaddclass ? elements[0].attributes.dataaddclass.nodeValue : "mob-flxdir--row";
             var parentNode = elements[0].parentNode;
             checkClassName(parentNode, checkClass, addClass);
       }
@@ -278,7 +280,7 @@ function checkNAddBGClass(elementClassName, checkClass, addClass, removeClass) {
       }
 }
 
-appendCustomClass("cardlayout", "container--spacing", "mob-flxdir--row");
-appendCustomClass("latestarticle", "container--spacing", "container-brdr--bot");
-checkNAddBGClass("ricsinfographic", "container--spacing", "bg--offwhite");
-checkNAddBGClass("ricsartcf--scndry", "container--spacing", "bg--sclyt", true);
+appendCustomClass("cardlayout");
+// appendCustomClass("latestarticle", "container--spacing", "container-brdr--bot");
+// checkNAddBGClass("ricsinfographic", "container--spacing", "bg--offwhite");
+// checkNAddBGClass("ricsartcf--scndry", "container--spacing", "bg--sclyt", true);
