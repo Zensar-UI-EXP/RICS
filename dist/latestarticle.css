@@ -1,6 +1,7 @@
 .latestarticle {
   display: inline-block;
   width: 100%;
+  border-bottom: solid 1px #000000;
 }
 .latestarticle__heading {
   border-bottom: solid 1px #000000;

@@ -227,6 +227,9 @@
 .banner {
   width: 100%;
 }
+.banner__pageinfo {
+  text-transform: uppercase;
+}
 .banner__container {
   display: flex;
   position: relative;
@@ -285,6 +288,33 @@
 .banner__imgcont:hover:before {
   content: "";
 }
+.banner--bluegreen {
+  border-top-color: #02837c !important;
+}
+.banner--bluegreen::after {
+  background: #02837c !important;
+}
+.banner--bluegreen .banner__heading {
+  color: #02837c !important;
+}
+.banner--mdgrn {
+  border-top-color: #6c3c14 !important;
+}
+.banner--mdgrn::after {
+  background: #6c3c14 !important;
+}
+.banner--mdgrn .banner__heading {
+  color: #6c3c14 !important;
+}
+.banner--trgrn {
+  border-top-color: #008000 !important;
+}
+.banner--trgrn::after {
+  background: #008000 !important;
+}
+.banner--trgrn .banner__heading {
+  color: #008000 !important;
+}
 .banner__heading,
 .banner__subheading,
 .banner__desc {
@@ -293,7 +323,7 @@
 }
 .banner__heading {
   position: absolute;
-  left: 15px;
+  left: 0;
   top: 30px;
   z-index: 1;
 }
@@ -385,6 +415,10 @@
   .banner {
     max-width: calc(100% - 30px);
     margin: 0 15px;
+  }
+  .banner__pageinfo {
+    margin: 20px 10px 10px;
+    display: block;
   }
   .banner--journal {
     border-top: 0;

@@ -18,6 +18,7 @@
 }
 .ricssubnav__submenulist:hover .ricssubnav__submenulink {
   font-weight: bold;
+  text-decoration: none;
 }
 .ricssubnav__submenulist:hover .ricssubnav__drpdwnlistcont {
   display: block;
@@ -83,4 +84,5 @@
 }
 .ricssubnav__drpdwnlink:hover {
   background: #ffffff;
+  text-decoration: none;
 }

@@ -291,6 +291,9 @@ a {
 .fnt-clr--chrgry {
   color: #4c4d4d !important;
 }
+.fnt-clr--chrgry70 {
+  color: rgba(76, 77, 77, 0.7) !important;
+}
 .fnt-clr--trgrn {
   color: #008000 !important;
 }
@@ -302,6 +305,9 @@ a {
 }
 .fnt-clr--mdgrn {
   color: #6c3c14 !important;
+}
+.fnt-clr--wht70 {
+  color: rgba(255, 255, 255, 0.7) !important;
 }
 .fnt-wt--smbld {
   font-weight: 600;
@@ -580,6 +586,12 @@ html {
   letter-spacing: normal;
   color: #000000;
 }
+.title--pageinfo {
+  font-size: 45px;
+  line-height: 61px;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
 .title--smalldesc {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -701,6 +713,10 @@ html {
   line-height: normal;
   letter-spacing: normal;
   color: #000000;
+}
+.para--txtwithleftcol1space {
+  margin-left: 8.33333% !important;
+  padding-left: 20px;
 }
 .para-size--cf {
   font-size: 18px;

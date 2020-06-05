@@ -815,6 +815,8 @@
   .mob-flxdir--row .rics--row > [class^="col--"] {
     width: 49%;
     max-width: 49%;
+    flex: 0 0 49%;
+    margin-bottom: 10px;
   }
   .mob-full--wdh {
     margin-left: 0;
@@ -906,6 +908,12 @@
   .ricsbreadcrumb__morelink {
     top: -5px;
   }
+  .title--pageinfo {
+    font-size: 24px;
+    line-height: 0px;
+    margin-top: 15px;
+    margin-left: 15px;
+  }
   .title--smalldesc {
     font-size: 12px;
     margin-top: 10px!important;
@@ -986,6 +994,17 @@
   }
   .para {
     font-size: 14px;
+  }
+  .para--txtwithleftcol1space {
+    margin-left: 0!important;
+    padding-left: 0px;
+  }
+  .para--imgbtm {
+    margin-left: 5%!important;
+    margin-right: 5%;
+    margin-top: 15px;
+    width: 90%;
+    max-width: 90%;
   }
   .para-size--cf {
     font-size: 15px;
