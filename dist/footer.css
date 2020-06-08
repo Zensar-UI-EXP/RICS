@@ -112,3 +112,56 @@
   border-top: 0;
   opacity: 0.5;
 }
+.ricscookies {
+  background: #000000;
+  padding: 30px 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 5;
+}
+.ricscookies__content {
+  color: #ffffff !important;
+}
+.ricscookies__link {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+.ricscookies__link:hover {
+  opacity: 0.7;
+}
+.ricscookies__btn {
+  float: right;
+  background: #ffffff !important;
+  color: #000000 !important;
+  min-width: 165px;
+  border: solid 1px #ffffff !important;
+}
+.ricscookies__btn:hover {
+  background: #000000 !important;
+  color: #ffffff !important;
+}
+.ricscookies__left {
+  padding-left: 0!important;
+}
+.ricscookies__right {
+  padding-right: 0!important;
+}
+@media (max-width: 767.98px) {
+  .ricscookies .container--content {
+    width: calc(100% - 60px);
+  }
+  .ricscookies__left,
+  .ricscookies__right {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .ricscookies__right {
+    display: flex;
+  }
+  .ricscookies__btn {
+    margin: 30px auto 0;
+  }
+}
