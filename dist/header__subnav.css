@@ -7,6 +7,9 @@
   flex-direction: row;
   position: relative;
 }
+.ricssubnav__inner {
+  padding-left: 0!important;
+}
 .ricssubnav__submenulistcont {
   display: flex;
 }

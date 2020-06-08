@@ -9,6 +9,7 @@
 .ricsnav__leftlistcont {
   display: flex;
   flex-direction: row;
+  padding-left: 0!important;
 }
 .ricsnav__leftlist {
   list-style: insidec!important;
@@ -74,6 +75,7 @@
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
+  padding-right: 0!important;
 }
 .ricsnav__rightlist {
   list-style: insidec!important;
