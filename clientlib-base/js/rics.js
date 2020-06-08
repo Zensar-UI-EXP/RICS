@@ -284,3 +284,33 @@ appendCustomClass("cardlayout");
 // appendCustomClass("latestarticle", "container--spacing", "container-brdr--bot");
 // checkNAddBGClass("ricsinfographic", "container--spacing", "bg--offwhite");
 // checkNAddBGClass("ricsartcf--scndry", "container--spacing", "bg--sclyt", true);
+
+function hidecookieElement () {
+      var cookieElement = document.getElementsByClassName("ricscookies");
+      if (cookieElement.length) {
+            cookieElement[0].style.display = "none";
+      }
+}
+
+function getCookies(){
+      var pairs = document.cookie.split(";");
+      var cookies = {};
+      for (var i=0; i<pairs.length; i++){
+        var pair = pairs[i].split("=");
+        cookies[(pair[0]+'').trim()] = unescape(pair.slice(1).join('='));
+      }
+      if (cookies["AcceptRICSCookie"]) {
+            hidecookieElement();
+      }
+      // return cookies;
+}
+
+function checkNSetCookies() {
+      var myDate = new Date();
+      myDate.setMonth(myDate.getMonth() + 12);
+      console.log(myDate);
+      document.cookie = "AcceptRICSCookie=1; expires= "+ myDate +"; path=/";
+      hidecookieElement();
+}
+
+getCookies();

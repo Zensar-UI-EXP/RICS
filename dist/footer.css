@@ -26,11 +26,11 @@
   padding-left: 0!important;
 }
 .ricsfooter--modus {
-  background: url(../images/logo__wht__modus.png) no-repeat transparent;
+  background: url(../resources/images/logo__wht__modus.png) no-repeat transparent;
   background-size: contain;
 }
 .ricsfooter--journal {
-  background: url(../images/logo__wht__journals.png) no-repeat transparent;
+  background: url(../resources/images/logo__wht__journals.png) no-repeat transparent;
   background-size: contain;
 }
 .ricsfooter__logo {
@@ -43,7 +43,7 @@
   float: left;
   height: 38px;
   text-indent: -99999em;
-  background: url(../images/footer__logo.svg) no-repeat transparent;
+  background: url(../resources/images/footer__logo.svg) no-repeat transparent;
   background-size: 100%;
 }
 .ricsfooter__navlistcont {
