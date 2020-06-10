@@ -27,7 +27,7 @@
   display: block;
 }
 .ricssubnav__submenulink {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -71,7 +71,7 @@
   min-width: 100%;
 }
 .ricssubnav__drpdwnlink {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;

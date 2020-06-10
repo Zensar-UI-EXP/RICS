@@ -658,6 +658,9 @@
     padding-right: 0!important;
     max-width: 100%;
   }
+  .container--content {
+    max-width: 100%;
+  }
   .container-brdr--bot {
     border-bottom: 0;
   }

@@ -45,7 +45,7 @@
   top: 30px;
 }
 .ricsnav--moduslink {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -94,7 +94,7 @@
   border-right: 0;
 }
 .ricsnav__rightlink {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -123,7 +123,7 @@
   position: relative;
   line-height: 0.65 !important;
   top: -8px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -148,7 +148,7 @@
   margin: 0;
 }
 .ricsnav--jornalslist .ricsnav__chevronicon {
-  left: calc(50% + 66px);
+  left: calc(50% + 60px);
   margin: 0;
   top: 8px;
 }

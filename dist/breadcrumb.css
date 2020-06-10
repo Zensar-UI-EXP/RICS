@@ -12,7 +12,7 @@
   overflow: hidden;
   white-space: nowrap;
   position: relative;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -24,7 +24,7 @@
   color: #686969;
 }
 .ricsbreadcrumb__navlist {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -36,7 +36,7 @@
   padding: 0 3px;
 }
 .ricsbreadcrumb__navlink {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -52,7 +52,7 @@
 }
 .ricsbreadcrumb__morelink {
   position: absolute;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;

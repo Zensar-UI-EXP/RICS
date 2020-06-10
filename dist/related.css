@@ -7,7 +7,7 @@
   justify-content: space-between;
 }
 .ricsrltopics__heading {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -26,7 +26,7 @@
 }
 .ricsrltopics__tag {
   background: #e8e7e7;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -64,7 +64,7 @@
   margin: 5px auto;
 }
 .ricsrlart__heading {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -120,7 +120,7 @@
   padding: 25px;
 }
 .ricsrlart__cardlabel {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -134,7 +134,7 @@
   display: inline-block;
 }
 .ricsrlart__articleheading {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -149,7 +149,7 @@
   position: relative;
 }
 .ricsrlart__articledate {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -165,7 +165,7 @@
 }
 .ricsrlart__tag {
   background: #e8e7e7;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;

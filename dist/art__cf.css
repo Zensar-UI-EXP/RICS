@@ -5,7 +5,7 @@
   display: flex;
 }
 .ricsartcf__heading {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -26,7 +26,7 @@
 }
 .ricsartcf__content {
   margin-bottom: 30px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -38,7 +38,7 @@
   line-height: 30px;
 }
 .ricsartcf__rhtcontent {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -54,7 +54,7 @@
   margin-bottom: 30px;
 }
 .ricsartcf__smalldesc {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -70,7 +70,7 @@
 }
 .ricsartcf__link {
   text-decoration: underline;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -100,7 +100,7 @@
 }
 .ricsartcf--txtlink {
   width: 445px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -124,6 +124,7 @@
 }
 .ricsartcf__lsttitle {
   display: inline-block;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -131,13 +132,13 @@
   line-height: normal;
   letter-spacing: normal;
   color: #000000;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Bold';
   color: #02837c;
   font-weight: bold;
 }
 .ricsartcf__lstdesc {
   margin-left: 23px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -161,7 +162,7 @@
 }
 .ricsartcf__scndlist {
   list-style: disc inside;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -173,7 +174,7 @@
   line-height: 30px;
 }
 .ricsartcf--scndheading {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -211,7 +212,7 @@
   margin-top: 70px;
   background: #02837c;
   padding: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -241,7 +242,7 @@
   margin-right: 15px;
 }
 .ricsartrightcnt__rhtcontent {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -257,7 +258,7 @@
   margin-bottom: 120px;
 }
 .ricsartrightcnt__smalldesc {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
