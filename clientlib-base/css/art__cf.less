@@ -67,7 +67,7 @@
       }
    }
    &--txtlink{
-      width: 445px;
+      width: 515px;
       .default--font();
       font-size: 18px;
       font-style: italic;
@@ -80,20 +80,25 @@
    &__lst{
       list-style: disc inside;
       color: @blue--green;
-      line-height: 1.62;
+      font-size: 21px;
+      line-height: 34px;
       margin-top: 20px;
    }
    &__lsttitle{
       display: inline-block;
       .default--font();
+      font-size: 21px;
+      line-height: 34px;
       font-family: @RICS--Bold;
       color: @blue--green;
       font-weight: bold;
    }
    &__lstdesc{
-      margin-left: 23px;
+      margin-left: 30px;
       .default--font();
       margin-top: 5px;
+      font-size: 21px;
+      line-height: 34px;
    }
    &--headingwithbr{
       border-top: solid 1px @blue--green;
@@ -110,15 +115,15 @@
    &__scndlist{
       list-style: disc inside;
       .default--font();
-      font-size: 18px;
-      line-height: 30px;
+      font-size: 21px;
+      line-height: 34px;
    }
    &--scndheading{
       .default--font();
       font-family: @Journals--SemiBold;
-      font-size: 20px;
+      font-size: 25px;
       color: @blue--green;
-      line-height: 30px;
+      line-height: 38px;
       margin-bottom: 10px;
       .ricsartcf{
          &__bigfont{
@@ -130,8 +135,8 @@
    }
    &--jrnlheading{
       font-family: @Journals--SemiBold;
-      font-size: 20px;
-      line-height: 32px;
+      font-size: 25px;
+      line-height: 38px;
       .ricsartcf__bigfont{
          width: auto;
          font-size: 20px;
@@ -140,8 +145,8 @@
    }
    &--jrnlrhtcontent{
       font-family: @Journals--SemiBold;
-      font-size: 20px;
-      line-height: 32px;
+      font-size: 25px;
+      line-height: 38px;
    }
 }
 .ricsarttbl{
@@ -161,6 +166,16 @@
    &__container{
       width: 100%;
       overflow: hidden;
+   }
+   &__tablename{
+      .default--font();
+      font-size: 21px;
+      line-height: 29px;
+      font-family: @RICS--Medium;
+      color: @ricswhite;
+      &.fnt-stl--itlc{
+         font-family: @RICS--Italic;
+      }
    }
 }
 .ricsartrightcnt{

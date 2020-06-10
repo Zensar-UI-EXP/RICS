@@ -10,7 +10,7 @@
       flex-direction: row;
    }
    &__navlistcont{
-      width: 220px;
+      width: 250px;
       overflow: hidden;
       white-space: nowrap;
       position: relative;
@@ -26,9 +26,9 @@
    &__navlink{
       .default--font();
       font-size: 15px;
-      line-height: 1.38;
       &:hover{
          opacity: 0.7;
+         text-decoration: none;
       }
    }
    &__morelink{
@@ -40,6 +40,9 @@
       top: 0;
       background: @ricswhite;
       cursor: pointer;
+      &:hover{
+         text-decoration: none;
+      }
    }
    &--navlast{
       color: @slate--grey;

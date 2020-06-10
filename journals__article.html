@@ -821,25 +821,48 @@
             <div class="container container--fluid">
                 <div class="container--content container--spacing">
                     <div class="rics--row col--auto">
-                        <div class="col--12">
+                        <div class="col--4"></div>
+                        <div class="col--4">
                             <div class="ricsnewsltr">
                                 <div class="ricsnewsltr__container">
-                                    <div class="ricsnewsltr__inner col--4">
-                                        <form action="#">
+                                    <div class="ricsnewsltr__inner">
+                                        <form class="ricsnewsltr__form" action="#">
                                             <h5 class="ricsnewsltr__heading title title-size--lmd">Never miss a story</h5>
                                             <p class="ricsnewsltr__desc para para-size--md">
                                                 Sign up to the Newsletter to keep up with what’s emerging in the industry.
                                             </p>
                                             <label for="ricsNewslettername" class="dis--none">Full Name</label>
-                                            <input class="ricsnewsltr__email input" id="ricsNewslettername" type="text" value="" placeholder="Full Name" />
+                                            <input class="ricsnewsltr__email input" autocomplete="off" onkeypress="removedisable();return onlyAlphabets(event,this);"  id="ricsNewslettername" type="text" value="" placeholder="Full Name" />
                                             <label for="ricsNewsletteremail" class="dis--none">E-mail</label>
-                                            <input class="ricsnewsltr__email input" id="ricsNewsletteremail" type="email" value="" placeholder="E-mail" />
-                                            <button class="ricsnewsltr__btn btn" type="submit">Subscribe</button>
+                                            <input class="ricsnewsltr__email input" autocomplete="off"onkeypress="removedisable();" id="ricsNewsletteremail" type="email" value="" placeholder="E-mail" />
+                                            <p class="ricsnewsltr__messagecontainer error error--namenemail">Please enter name and email address</p>
+                                            <p class="ricsnewsltr__messagecontainer error error--name">Please enter a name</p>
+                                            <p class="ricsnewsltr__messagecontainer error error--email">Please enter an email address</p>
+                                            <p class="ricsnewsltr__messagecontainer error error--validemail">Please enter a valid email address</p>
+                                            <p class="ricsnewsltr__messagecontainer info">Looks like you are already subscribed</p>
+                                            <button class="ricsnewsltr__btn btn" onclick="validateNameEmail(event, this)" type="submit">Subscribe</button>
                                         </form>
+                                        <div class="ricsnewsltr__subscribsuccess">
+                                            <h6 class="ricsnewsltr__logo">
+                                                <a class="ricsnewsltr__logolink" href="javascript:void(0);" title="RICS">RICS</a>
+                                            </h6>
+                                            <p class="ricsnewsltr__desc para para-size--md">
+                                                <span class="dis--blk">Thanks for signing up to our newsletter. </span>
+                                                You can keep up to date here too:
+                                            </p>
+                                            <div class="ricsnewsltr__socail">
+                                                <a class="ricsnewsltr__socialsharinglink icon icon-black--fbicon" href="javascript:void(0);" title="Facebook">Facebook</a>
+                                                <a class="ricsnewsltr__socialsharinglink icon icon-black--youtube" href="javascript:void(0);" title="Youtube">Youtube</a>
+                                                <a class="ricsnewsltr__socialsharinglink icon icon-black--twtr" href="javascript:void(0);" title="Twitter">Twitter</a>
+                                                <a class="ricsnewsltr__socialsharinglink icon icon-black--lkdln" href="javascript:void(0);" title="LinkeedIn">LinkeedIn</a>
+                                                <a class="ricsnewsltr__socialsharinglink icon icon-black--instagrm" href="javascript:void(0);" title="Twitter">Instagram</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="col--4"></div>
                     </div>
                 </div>
             </div>

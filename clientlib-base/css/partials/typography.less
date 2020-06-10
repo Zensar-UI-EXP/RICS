@@ -157,6 +157,38 @@ a {
          margin: 0 30px 0 15px;
       }
    }
+   &-black{
+      &--fbicon{
+         .medium--icndimns();
+         background: url(../../resources/images/icon__black__fb.png) no-repeat transparent;
+         background-size: cover;
+         margin: 0 30px 0 0px;
+      }
+      &--twtr{
+         .medium--icndimns();
+         background: url(../../resources/images/icon__black__twitter.png) no-repeat transparent;
+         background-size: cover;
+         margin: 0 30px 0 15px;
+      }
+      &--lkdln{
+         .medium--icndimns();
+         background: url(../../resources/images/icon__black__linkedin.png) no-repeat transparent;
+         background-size: cover;
+         margin: 0 30px 0 15px;
+      }
+      &--youtube{
+         .medium--icndimns();
+         background: url(../../resources/images/icon__black__youtube.png) no-repeat transparent;
+         background-size: cover;
+         margin: 0 30px 0 15px;
+      }
+      &--instagrm{
+         .medium--icndimns();
+         background: url(../../resources/images/icon__black__instagram.png) no-repeat transparent;
+         background-size: cover;
+         margin: 0 30px 0 15px;
+      }
+   }
    &--close{
       width: 50px;
       height: 50px;
@@ -388,15 +420,16 @@ a {
    -webkit-appearance: none;
    -webkit-border-radius: 0px;
    .default--font();
+   font-size: 20px;
    line-height: 28px;
    color: @cool--greytwo;
-   padding: 10px 0;
+   padding: 10px 15px;
    margin: 0 auto;
 }
 .btn{
    background: @ricsblack;
    .default--font();
-   line-height: 36px;
+   line-height: 33px;
    text-align: center;
    color: @ricswhite;
    border: none;
@@ -406,6 +439,10 @@ a {
       background: @ricswhite;
       color: @ricsblack;
       text-decoration: none;
+   }
+   &[disabled="true"]{
+      background: @verylight--pinkfour;
+      border-color: @verylight--pinkfour;
    }
 }
 .txt{
@@ -526,9 +563,11 @@ th, td{
    padding: 20px;
    border: solid 1px @ricsblack;
    .default--font();
+   font-size: 21px;
+   line-height: 29px;
 }
 th{
-   font-weight: bold;
+   font-family: @RICS--Medium;
 }
 .tbl{
    position: relative;
@@ -656,17 +695,17 @@ html {
 .title{
    .default-title--font();
    &--pageinfo{
-      font-size: 45px;
-      line-height: 61px;
+      font-size: 42px;
+      line-height: 58px;
       margin-bottom: 0;
       margin-top: 20px;
+      font-family: @RICS--Medium;
    }
    &--smalldesc{
       .default--font();
-      font-size: 14px;
-      font-style: italic;
-      line-height: 20px;
+      line-height: 24px;
       color: @charcoal--grey;
+      font-family: @RICS--Italic;
       display: block;
       margin-top: 15px;
    }
@@ -691,16 +730,16 @@ html {
          font-size: 24px;
       }
       &--lsmd{
-         font-size: 24px;
-         line-height: 38px;
+         font-size: 30px;
+         line-height: 40px;
       }
       &--dxsmd{
          font-size: 26px;
          line-height: 34px;
       }
       &--dxsmdfstbgfnt{
-         font-size: 26px;
-         line-height: 34px;
+         font-size: 30px;
+         line-height: 40px;
          &::first-letter{
             font-size: 100px;
             float: left;
@@ -709,8 +748,8 @@ html {
          }
       }
       &--pmd{
-         font-size: 28px;
-         line-height: 36px;
+         font-size: 30px;
+         line-height: 40px;
       }
       &--md{
          font-size: 30px;
@@ -777,8 +816,8 @@ html {
    }
    &-size{
       &--cf{
-         font-size: 18px;
-         line-height: 30px;
+         font-size: 21px;
+         line-height: 34px;
          margin-bottom: 30px;
       }
       &--sm{
@@ -786,8 +825,8 @@ html {
          line-height: 14px;
       }
       &--md{
-         font-size: 18px;
-         line-height: 24px;
+         font-size: 21px;
+         line-height: 30px;
       }
       &--xmd{
          font-size: 20px;
@@ -811,8 +850,9 @@ html {
       }
       &--artdesc{
          font-size: 22px;
-         line-height: 28px;
-         height: 55px;
+         line-height: 32px;
+         font-family: @RICS--Medium;
+         height: 65px;
          overflow: hidden;
       }
       &--jnlpghead{
@@ -852,4 +892,7 @@ html {
    &--desktop{
       display: none!important;
    }
+}
+.error{
+   color: @deep--red!important;
 }

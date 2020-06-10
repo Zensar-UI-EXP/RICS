@@ -325,3 +325,82 @@ function calculateWidth() {
 }
 
 calculateWidth();
+
+function validateEmail (emailAddress) {
+      var emailRegex = /\S+@\S+\.\S+/;
+      return emailRegex.test(emailAddress);
+}
+
+function validateNameEmail(e, thisElement){
+      var nameElement = document.getElementById("ricsNewslettername");
+      var emailElement = document.getElementById("ricsNewsletteremail");
+      var elementClassname = "info";
+      var msgElements = document.getElementsByClassName("ricsnewsltr__messagecontainer");
+      var subscrbeSuccessElement = document.getElementsByClassName("ricsnewsltr__subscribsuccess");
+      var formEelment = document.getElementsByClassName("ricsnewsltr__form");
+      var validate = true;
+      for (var i = 0; i < msgElements.length; i++) {
+            msgElements[i].style.display = "none";
+      }
+      if (!nameElement.value && !emailElement.value){
+            elementClassname = "error--namenemail";
+            nameElement.focus();
+            validate = false;
+      } else if (!nameElement.value) {
+            elementClassname = "error--name";
+            nameElement.focus();
+            validate = false;
+      } else if (!emailElement.value) {
+            elementClassname = "error--email";
+            emailElement.focus();
+            validate = false;
+      } else if (!validateEmail(emailElement.value)) {
+            elementClassname = "error--validemail";
+            emailElement.focus();
+            validate = false;
+      }
+      if (!validate) {
+            var displayMsgElement = document.getElementsByClassName(elementClassname);
+            displayMsgElement[0].style.display = "block";
+            thisElement.setAttribute("disabled", true);
+            e.preventDefault();
+      } else {
+            formEelment[0].style.display = "none";
+            subscrbeSuccessElement[0].style.display = "block";
+            e.preventDefault();
+      }
+}
+
+function unsubscribe(e) {
+      var subscrbeSuccessElement = document.getElementsByClassName("ricsnewsltr__unsubscribsuccess");
+      var formEelment = document.getElementsByClassName("ricsnewsltr__form");
+      formEelment[0].style.display = "none";
+      subscrbeSuccessElement[0].style.display = "block";
+      e.preventDefault();
+}
+
+function removedisable () {
+      var newsletterButtonElement = document.getElementsByClassName("ricsnewsltr__btn");
+      if (newsletterButtonElement.length) {
+            newsletterButtonElement[0].removeAttribute("disabled");
+      }
+}
+
+function onlyAlphabets(e, t) {
+      try {
+            if (window.event) {
+                  var charCode = window.event.keyCode;
+            }
+            else if (e) {
+                  var charCode = e.which;
+            }
+            else { return true; }
+            if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123))
+                  return true;
+            else
+                  return false;
+      }
+      catch (err) {
+          console.log(err.Description);
+      }
+  }

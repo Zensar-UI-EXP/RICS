@@ -10,12 +10,15 @@
    }
    &__inner{
       margin: 0 auto;
+      padding-left: 0;
+      padding-right: 0;
    }
    &__heading{
       .default--font();
-      font-size: 32px;
-      font-weight: 500;
-      line-height: 50px;
+      font-size: 36px!important;
+      line-height: 50px!important;
+      font-family: @RICS--Medium!important;
+      margin-bottom: 20px;
    }
    &__desc{
       font-size: 18px;
@@ -26,11 +29,55 @@
    &__email{
       width: 80%;
       margin-bottom: 25px!important;
+      display: block;
    }
    &__btn{
       width: 160px;
       padding: 7px 0;
       margin-top: 15px;
       display: inline-block;
+   }
+   &__messagecontainer{
+      font-family: @RICS--Medium;
+      font-size: 21px;
+      text-align: center;
+      line-height: 30px;
+      margin: 40px auto 50px;
+      color: @deep--green;
+      display: none;
+   }
+   &__logo{
+      width: 142px;
+      height: 46px;
+      margin: 0 auto 35px;
+   }
+   &__logolink{
+      width: 100%;
+      float: left;
+      height: 100%;
+      text-indent: -99999em;
+      background: url(../resources/images/logo__prpl__RICS__2x.png) no-repeat transparent;
+      background-size: contain;
+   }
+   &__socail{
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+   }
+   &__socialsharinglink{
+      margin-right: 30px!important;
+      text-indent: -99999em;
+      &:first-child{
+         margin-left: 0;
+      }
+      &:last-child{
+         margin-right: 0;
+      }
+      &:hover{
+         opacity: 0.7;
+      }
+   }
+   &__subscribsuccess, &__unsubscribsuccess{
+      display: none;
    }
 }

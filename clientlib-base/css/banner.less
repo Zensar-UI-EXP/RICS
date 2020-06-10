@@ -98,14 +98,17 @@
    }
    &__desc{
       .default--font();
-      font-size: 22px;
-      line-height: 35px;
+      font-size: 25px;
+      line-height: 37px;
    }
    &__authorname, &__authordate{
       margin: 35px 0 25px;
       .default--font();
       line-height: 36px;
       white-space: nowrap;
+      strong{
+         font-family: @RICS--Medium;
+      }
    }
    &__tag{
       background: @very--lightpink;
@@ -140,6 +143,7 @@
    &__taglink{
       color: @ricsblack;
       font-weight: normal;
+      font-family: @RICS;
    }
 }
 .infotxt{
@@ -285,8 +289,9 @@
       }
    }
    &__desc{
-      line-height: 22px!important;
+      line-height: 34px!important;
       margin-bottom: 45px;
+      font-size: 23px!important;
    }
    &__authinfo{
       position: absolute;
@@ -294,6 +299,8 @@
       left: 20px;
       z-index: 1;
       color: @ricswhite!important;
+      font-size: 18px!important;
+      line-height: 30px!important;
       strong{
          margin-left: 30px;
       }
