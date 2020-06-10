@@ -314,3 +314,14 @@ function checkNSetCookies() {
 }
 
 getCookies();
+
+function calculateWidth() {
+      var propertyElementList = document.getElementsByClassName("propertylist__cont");
+      var applyStyleElement = document.getElementsByClassName("propertylist__inner");
+      var calculateWidth = propertyElementList.length * 265;
+      if (calculateWidth && applyStyleElement.length && window.innerWidth <= 768) {
+            applyStyleElement[0].style.width = calculateWidth + "px";
+      } 
+}
+
+calculateWidth();

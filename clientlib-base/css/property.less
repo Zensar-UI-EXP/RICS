@@ -1,0 +1,130 @@
+@import "./partials/variables.less";  
+@import "./partials/mixins.less";
+
+.propertylist{
+   margin: 75px auto;
+   &__title{
+      margin-bottom: 50px;
+      font-family: @RICS;
+   }
+   &__inner{
+      display: flex;
+   }
+   &__cont{
+      border-left: solid 1px @blue--green;
+      padding: 0 20px;
+   }
+   &__heading{
+      margin-bottom: 20px;
+      color: @blue--green!important;
+   }
+   &__label{
+      width: 220px;
+      margin-right: 30px;
+      font-size: 16px;
+      font-family: @RICS--Medium;
+      display: inline-block;
+      line-height: 34px;
+   }
+   &__value{
+      width: 230px;
+      margin-right: 10px;
+      font-family: @RICS;
+      font-size: 16px;
+      display: inline-block;
+      line-height: 34px;
+   }
+}
+.bg{
+   &--cobaltwithopct{
+      .propertylist{
+         &__cont{
+            border-left: solid 1px @ricscobalt;
+         }
+         &__heading{
+            color: @ricscobalt!important;
+         }
+      }
+   }
+   &--mdgrnwithopct{
+      .propertylist{
+         &__cont{
+            border-left: solid 1px @mud--green;
+         }
+         &__heading{
+            color: @mud--green!important;
+         }
+      }
+   }
+   &--trgrnwithopct{
+      .propertylist{
+         &__cont{
+            border-left: solid 1px @true--green;
+         }
+         &__heading{
+            color: @true--green!important;
+         }
+      }
+   }
+}
+@media (max-width: 767.98px) {
+   .propertylist{
+      width: calc(100% - 30px);
+      margin: 10px auto;
+      &__content{
+         width: 100%;
+         overflow: auto;
+         display: block;
+      }
+      &__heading{
+         border-bottom: solid 1px @blue--green;
+         padding-bottom: 10px;
+         margin-bottom: 10px;
+      }
+      &__cont{
+         border-left: 0!important;
+         padding-left: 0!important;
+         width: 265px;
+         padding-right: 10px!important;
+         display: inline-block;
+      }
+      &__title{
+         margin-bottom: 20px;
+      }
+      &__label{
+         width: 115px;
+         margin-right: 10px;
+         font-size: 14px;
+         line-height: 27px;
+      }
+      &__value{
+         width: 115px;
+         margin-right: 10px;
+         font-size: 14px;
+         line-height: 27px;
+      }
+   }
+   .bg{
+      &--cobaltwithopct{
+         .propertylist{
+            &__heading{
+               border-bottom: solid 1px @ricscobalt!important;
+            }
+         }
+      }
+      &--mdgrnwithopct{
+         .propertylist{
+            &__heading{
+               border-bottom: solid 1px @mud--green!important;
+            }
+         }
+      }
+      &--trgrnwithopct{
+         .propertylist{
+            &__heading{
+               border-bottom: solid 1px @true--green!important;
+            }
+         }
+      }
+   }
+}

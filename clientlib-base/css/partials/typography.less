@@ -17,7 +17,7 @@ h1 {
    padding: 0;
 }
 h2 {
-   font-family: @RICS--SemiBold;
+   font-family: @RICS--Medium;
    font-weight: @semi--bold;
    font-size: 2.75em;
    line-height: 1.2em;
@@ -25,7 +25,7 @@ h2 {
    padding: 0;
 }
 h3 {
-   font-family: @RICS--SemiBold;
+   font-family: @RICS--Medium;
    font-weight: @semi--bold;
    font-size: 2em;
    line-height: 1.2em;
@@ -33,7 +33,7 @@ h3 {
    padding: 0;
 }
 h4 {
-   font-family: @RICS--SemiBold;
+   font-family: @RICS--Medium;
    font-weight: @semi--bold;
    font-size: 1.5em;
    line-height: 1.2em;
@@ -51,11 +51,11 @@ p {
    }
 }
 strong {
-   font-family: @RICS--SemiBold;
+   font-family: @RICS--Bold;
    font-weight: @semi--bold;
 }
 a {
-   font-family: @RICS--SemiBold;
+   font-family: @RICS--Medium;
    font-weight: normal;
 }
 // Custom highlight state
@@ -188,6 +188,9 @@ a {
 }
 .mar{
    &-top{
+      &--0{
+         margin-top: 0px!important;
+      }
       &--10{
          margin-top: 10px!important;
       }
@@ -483,7 +486,16 @@ a {
 }
 .bg{
    &--blgrnwithopct{
-      background: rgba(2, 131, 124, 0.1);
+      background: @blue--green10;
+   }
+   &--cobaltwithopct{
+      background: @ricscobalt--10;
+   }
+   &--mdgrnwithopct{
+      background: @mud--brown10;
+   }
+   &--trgrnwithopct{
+      background: @true--green10;
    }
    &--offwhite{
       background: @off--white;
@@ -492,7 +504,7 @@ a {
       background: @verylight--pinktwo!important;
    }
    &--sclyt{
-      background: rgba(2, 131, 124, 0.1);
+      background: @blue--green10;
    }
    &--cobalt{
       background: @ricscobalt!important;
