@@ -99,7 +99,7 @@
   width: auto;
 }
 .ricsartcf--txtlink {
-  width: 445px;
+  width: 515px;
   font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
@@ -119,7 +119,8 @@
 .ricsartcf__lst {
   list-style: disc inside;
   color: #02837c;
-  line-height: 1.62;
+  font-size: 21px;
+  line-height: 34px;
   margin-top: 20px;
 }
 .ricsartcf__lsttitle {
@@ -132,12 +133,14 @@
   line-height: normal;
   letter-spacing: normal;
   color: #000000;
+  font-size: 21px;
+  line-height: 34px;
   font-family: 'HelveticaNeueLTPro-Bold';
   color: #02837c;
   font-weight: bold;
 }
 .ricsartcf__lstdesc {
-  margin-left: 23px;
+  margin-left: 30px;
   font-family: 'HelveticaNeueLTPro-Regular';
   font-size: 16px;
   font-weight: normal;
@@ -147,6 +150,8 @@
   letter-spacing: normal;
   color: #000000;
   margin-top: 5px;
+  font-size: 21px;
+  line-height: 34px;
 }
 .ricsartcf--headingwithbr {
   border-top: solid 1px #02837c;
@@ -170,8 +175,8 @@
   line-height: normal;
   letter-spacing: normal;
   color: #000000;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 21px;
+  line-height: 34px;
 }
 .ricsartcf--scndheading {
   font-family: 'HelveticaNeueLTPro-Regular';
@@ -183,9 +188,9 @@
   letter-spacing: normal;
   color: #000000;
   font-family: 'OpenSans-SemiBold';
-  font-size: 20px;
+  font-size: 25px;
   color: #02837c;
-  line-height: 30px;
+  line-height: 38px;
   margin-bottom: 10px;
 }
 .ricsartcf--scndheading .ricsartcf__bigfont {
@@ -195,8 +200,8 @@
 }
 .ricsartcf--jrnlheading {
   font-family: 'OpenSans-SemiBold';
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 25px;
+  line-height: 38px;
 }
 .ricsartcf--jrnlheading .ricsartcf__bigfont {
   width: auto;
@@ -205,8 +210,8 @@
 }
 .ricsartcf--jrnlrhtcontent {
   font-family: 'OpenSans-SemiBold';
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 25px;
+  line-height: 38px;
 }
 .ricsarttbl__headingcont {
   margin-top: 70px;
@@ -231,6 +236,23 @@
 .ricsarttbl__container {
   width: 100%;
   overflow: hidden;
+}
+.ricsarttbl__tablename {
+  font-family: 'HelveticaNeueLTPro-Regular';
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-size: 21px;
+  line-height: 29px;
+  font-family: 'HelveticaNeueLTPro-Medium';
+  color: #ffffff;
+}
+.ricsarttbl__tablename.fnt-stl--itlc {
+  font-family: 'HelveticaNeueLTPro-Italic';
 }
 .ricsartrightcnt {
   display: flex;

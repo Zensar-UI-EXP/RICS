@@ -97,12 +97,17 @@
 .cardlayout__desc {
   margin-bottom: 30px;
   line-height: 22px!important;
+  font-size: 18px!important;
+  line-height: 27px!important;
 }
 .cardlayout__subheading {
   max-width: 235px;
 }
+.cardlayout__authinfo {
+  font-size: 16px!important;
+  line-height: 27px!important;
+}
 .cardlayout__authinfo strong {
-  margin-top: 7px;
   display: block;
 }
 .mob-flxdir--row .rics--row {
@@ -177,7 +182,6 @@
   width: 24%;
   background: #fffded;
   padding: 30px;
-  height: 100%;
   min-height: 260px;
   position: relative;
 }
@@ -198,7 +202,8 @@
 }
 .pagelist__desc {
   margin: 15px 0 20px;
-  line-height: 22px!important;
+  line-height: 30px!important;
+  font-size: 21px!important;
 }
 .pagelist__link {
   position: absolute;

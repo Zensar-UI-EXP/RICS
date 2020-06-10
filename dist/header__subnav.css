@@ -34,14 +34,18 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
+  font-size: 18px;
   color: #000000;
   display: inline-block;
   position: relative;
 }
+.ricssubnav__submenulink:hover {
+  text-decoration: none;
+}
 .ricssubnav__submenulink::before {
   display: block;
   content: attr(title);
-  font-weight: bold;
+  font-family: 'HelveticaNeueLTPro-Bold';
   height: 0;
   overflow: hidden;
   visibility: hidden;
@@ -64,7 +68,7 @@
   position: absolute;
   box-shadow: 0 3px 4px 0 rgba(143, 143, 143, 0.5);
   left: 15px;
-  top: 72px;
+  top: 73px;
   display: none;
   z-index: 1;
   background: #f7f7f7;
@@ -79,7 +83,6 @@
   line-height: normal;
   letter-spacing: normal;
   color: #000000;
-  font-size: 14px;
   white-space: nowrap;
   display: inline-block;
   padding: 10px 15px;

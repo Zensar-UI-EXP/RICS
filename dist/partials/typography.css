@@ -159,6 +159,41 @@ a {
   background-size: cover;
   margin: 0 30px 0 15px;
 }
+.icon-black--fbicon {
+  width: 31px;
+  height: 31px;
+  background: url(../../resources/images/icon__black__fb.png) no-repeat transparent;
+  background-size: cover;
+  margin: 0 30px 0 0px;
+}
+.icon-black--twtr {
+  width: 31px;
+  height: 31px;
+  background: url(../../resources/images/icon__black__twitter.png) no-repeat transparent;
+  background-size: cover;
+  margin: 0 30px 0 15px;
+}
+.icon-black--lkdln {
+  width: 31px;
+  height: 31px;
+  background: url(../../resources/images/icon__black__linkedin.png) no-repeat transparent;
+  background-size: cover;
+  margin: 0 30px 0 15px;
+}
+.icon-black--youtube {
+  width: 31px;
+  height: 31px;
+  background: url(../../resources/images/icon__black__youtube.png) no-repeat transparent;
+  background-size: cover;
+  margin: 0 30px 0 15px;
+}
+.icon-black--instagrm {
+  width: 31px;
+  height: 31px;
+  background: url(../../resources/images/icon__black__instagram.png) no-repeat transparent;
+  background-size: cover;
+  margin: 0 30px 0 15px;
+}
 .icon--close {
   width: 50px;
   height: 50px;
@@ -342,9 +377,10 @@ a {
   line-height: normal;
   letter-spacing: normal;
   color: #000000;
+  font-size: 20px;
   line-height: 28px;
   color: #9a9b9c;
-  padding: 10px 0;
+  padding: 10px 15px;
   margin: 0 auto;
 }
 .btn {
@@ -357,7 +393,7 @@ a {
   line-height: normal;
   letter-spacing: normal;
   color: #000000;
-  line-height: 36px;
+  line-height: 33px;
   text-align: center;
   color: #ffffff;
   border: none;
@@ -368,6 +404,10 @@ a {
   background: #ffffff;
   color: #000000;
   text-decoration: none;
+}
+.btn[disabled="true"] {
+  background: #dbdbdb;
+  border-color: #dbdbdb;
 }
 .txt-trns--uppercase {
   text-transform: uppercase;
@@ -479,9 +519,11 @@ td {
   line-height: normal;
   letter-spacing: normal;
   color: #000000;
+  font-size: 21px;
+  line-height: 29px;
 }
 th {
-  font-weight: bold;
+  font-family: 'HelveticaNeueLTPro-Medium';
 }
 .tbl {
   position: relative;
@@ -599,10 +641,11 @@ html {
   color: #000000;
 }
 .title--pageinfo {
-  font-size: 45px;
-  line-height: 61px;
+  font-size: 42px;
+  line-height: 58px;
   margin-bottom: 0;
   margin-top: 20px;
+  font-family: 'HelveticaNeueLTPro-Medium';
 }
 .title--smalldesc {
   font-family: 'HelveticaNeueLTPro-Regular';
@@ -613,10 +656,9 @@ html {
   line-height: normal;
   letter-spacing: normal;
   color: #000000;
-  font-size: 14px;
-  font-style: italic;
-  line-height: 20px;
+  line-height: 24px;
   color: #4c4d4d;
+  font-family: 'HelveticaNeueLTPro-Italic';
   display: block;
   margin-top: 15px;
 }
@@ -640,16 +682,16 @@ html {
   font-size: 24px;
 }
 .title-size--lsmd {
-  font-size: 24px;
-  line-height: 38px;
+  font-size: 30px;
+  line-height: 40px;
 }
 .title-size--dxsmd {
   font-size: 26px;
   line-height: 34px;
 }
 .title-size--dxsmdfstbgfnt {
-  font-size: 26px;
-  line-height: 34px;
+  font-size: 30px;
+  line-height: 40px;
 }
 .title-size--dxsmdfstbgfnt::first-letter {
   font-size: 100px;
@@ -658,8 +700,8 @@ html {
   padding-right: 15px;
 }
 .title-size--pmd {
-  font-size: 28px;
-  line-height: 36px;
+  font-size: 30px;
+  line-height: 40px;
 }
 .title-size--md {
   font-size: 30px;
@@ -731,8 +773,8 @@ html {
   padding-left: 20px;
 }
 .para-size--cf {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 21px;
+  line-height: 34px;
   margin-bottom: 30px;
 }
 .para-size--sm {
@@ -740,8 +782,8 @@ html {
   line-height: 14px;
 }
 .para-size--md {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 21px;
+  line-height: 30px;
 }
 .para-size--xmd {
   font-size: 20px;
@@ -765,8 +807,9 @@ html {
 }
 .para-size--artdesc {
   font-size: 22px;
-  line-height: 28px;
-  height: 55px;
+  line-height: 32px;
+  font-family: 'HelveticaNeueLTPro-Medium';
+  height: 65px;
   overflow: hidden;
 }
 .para-size--jnlpghead {
@@ -803,4 +846,7 @@ html {
 }
 .hide--desktop {
   display: none!important;
+}
+.error {
+  color: #a30000 !important;
 }

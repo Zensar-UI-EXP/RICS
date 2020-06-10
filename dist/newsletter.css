@@ -9,6 +9,8 @@
 }
 .ricsnewsltr__inner {
   margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 .ricsnewsltr__heading {
   font-family: 'HelveticaNeueLTPro-Regular';
@@ -19,9 +21,10 @@
   line-height: normal;
   letter-spacing: normal;
   color: #000000;
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 50px;
+  font-size: 36px!important;
+  line-height: 50px!important;
+  font-family: 'HelveticaNeueLTPro-Medium' !important;
+  margin-bottom: 20px;
 }
 .ricsnewsltr__desc {
   font-size: 18px;
@@ -32,10 +35,55 @@
 .ricsnewsltr__email {
   width: 80%;
   margin-bottom: 25px!important;
+  display: block;
 }
 .ricsnewsltr__btn {
   width: 160px;
   padding: 7px 0;
   margin-top: 15px;
   display: inline-block;
+}
+.ricsnewsltr__messagecontainer {
+  font-family: 'HelveticaNeueLTPro-Medium';
+  font-size: 21px;
+  text-align: center;
+  line-height: 30px;
+  margin: 40px auto 50px;
+  color: #016813;
+  display: none;
+}
+.ricsnewsltr__logo {
+  width: 142px;
+  height: 46px;
+  margin: 0 auto 35px;
+}
+.ricsnewsltr__logolink {
+  width: 100%;
+  float: left;
+  height: 100%;
+  text-indent: -99999em;
+  background: url(../resources/images/logo__prpl__RICS__2x.png) no-repeat transparent;
+  background-size: contain;
+}
+.ricsnewsltr__socail {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.ricsnewsltr__socialsharinglink {
+  margin-right: 30px!important;
+  text-indent: -99999em;
+}
+.ricsnewsltr__socialsharinglink:first-child {
+  margin-left: 0;
+}
+.ricsnewsltr__socialsharinglink:last-child {
+  margin-right: 0;
+}
+.ricsnewsltr__socialsharinglink:hover {
+  opacity: 0.7;
+}
+.ricsnewsltr__subscribsuccess,
+.ricsnewsltr__unsubscribsuccess {
+  display: none;
 }
