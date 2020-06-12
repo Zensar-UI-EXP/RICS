@@ -70,6 +70,7 @@
 }
 .cardlayout__img {
   width: 100%;
+  display: block;
 }
 .cardlayout__content {
   display: flex;
@@ -224,6 +225,10 @@
   .pagelist {
     flex-direction: column;
   }
+  .pagelist__desc {
+    font-size: 15px!important;
+    line-height: 21px!important;
+  }
   .pagelist--withimg .pagelist__img {
     width: 169px;
   }
@@ -237,6 +242,7 @@
     color: #ffffff;
     position: relative;
     width: 159px;
+    z-index: 1;
   }
   .pagelist--withimg .pagelist__desc {
     position: absolute;
@@ -246,6 +252,25 @@
     height: 100%;
     width: calc(100% - 169px);
   }
+  .pagelist--withimg .pagelist__desc::after {
+    position: absolute;
+    width: 169px;
+    height: 100%;
+    right: 100%;
+    content: "";
+    top: 0px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    background: rgba(2, 131, 124, 0.4);
+  }
+  .pagelist--withimg .pagelist__desc.bg--cobalt::after {
+    background: rgba(27, 70, 147, 0.6);
+  }
+  .pagelist--withimg .pagelist__desc.bg--mdgrn::after {
+    background: rgba(108, 60, 20, 0.6);
+  }
+  .pagelist--withimg .pagelist__desc.bg--trgrn::after {
+    background: rgba(0, 128, 0, 0.6);
+  }
   .pagelist__cont {
     width: 100%;
     border: solid 7px #000000;
@@ -253,7 +278,7 @@
     display: flex;
     padding: 10px;
     justify-content: space-around;
-    min-height: 155px;
+    min-height: 150px;
   }
   .pagelist__cont:first-child {
     margin-top: 0;
@@ -324,12 +349,13 @@
   }
   .cardlayout__authinfo {
     font-size: 12px!important;
+    line-height: 14px!important;
   }
   .cardlayout__authinfo span {
     display: none;
   }
   .cardlayout__authinfo strong {
-    font-weight: normal;
+    font-family: 'HelveticaNeueLTPro-Regular';
   }
   .col--fst .cardlayout {
     margin-right: 5px!important;

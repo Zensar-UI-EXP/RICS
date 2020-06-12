@@ -139,18 +139,118 @@
 .ricsnav__expdovly {
   position: absolute;
   width: 100%;
-  height: 71px;
+  height: 60px;
   left: 0;
   top: 0;
   z-index: 3;
   display: none;
 }
 .ricsnav--moduslist .ricsnav__chevronicon {
-  left: calc(50% + 56px);
+  left: calc(50% + 40px);
   margin: 0;
 }
+.ricsnav--moduslist .ricsnav__chevronicon .ricsnav--chevronactive {
+  top: 23px;
+}
 .ricsnav--jornalslist .ricsnav__chevronicon {
-  left: calc(50% + 60px);
+  left: calc(50% + 45px);
   margin: 0;
-  top: 8px;
+  top: 4px;
+}
+.ricsnav--jornalslist .ricsnav__chevronicon.ricsnav--chevronactive {
+  top: 2px;
+}
+@media (max-width: 767.98px) {
+  .ricsnav {
+    position: fixed;
+    width: 100%;
+    top: 97px;
+    margin-bottom: 0;
+    z-index: 8;
+    background: #ffffff;
+  }
+  .ricsnav::after {
+    position: absolute;
+    width: 100%;
+    content: "";
+    left: 0;
+    top: -12px;
+    height: 10px;
+    background: #ffffff;
+    box-shadow: 0 4px 4px 0 rgba(212, 209, 209, 0.2);
+  }
+  .ricsnav .container {
+    max-width: 100%;
+  }
+  .ricsnav__cont {
+    flex-direction: column;
+  }
+  .ricsnav__leftlistcont {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .ricsnav__leftlist,
+  .ricsnav__rightlist {
+    width: 50%;
+  }
+  .ricsnav__leftlink {
+    padding: 0px 0 3px;
+    margin-top: 20px;
+  }
+  .ricsnav__rightlistcont {
+    max-width: 70%!important;
+    position: absolute;
+    top: -60px;
+    right: 0;
+  }
+  .ricsnav__rightlist {
+    justify-content: center;
+    width: auto;
+    max-width: 70%;
+    padding: 7px 0;
+  }
+  .ricsnav--moduslink {
+    width: 100%;
+    background-size: 70px;
+    background-position: top center;
+    height: 40px;
+  }
+  .ricsnav--jornalslink {
+    width: 100%;
+    background-size: 80px;
+    height: 40px;
+    background-position: top center;
+  }
+  .ricsnav__rightlink {
+    font-size: 12px;
+    margin: 0 10px;
+  }
+  .ricsnav__rightsearchform {
+    position: absolute;
+    top: 131px;
+    right: 0;
+    width: 100vw;
+    background: #fff;
+    z-index: 1;
+    padding: 20px 0 10px;
+  }
+  .ricsnav__rightsearchform .icon--search {
+    position: absolute;
+    right: 5%;
+    top: 24px;
+  }
+  .ricsnav__rightsearch {
+    width: 90vw;
+    margin: 0 auto;
+    display: block;
+  }
+  .ricsnav__chevronicon {
+    display: block;
+    left: calc(50% + 55px);
+    top: 25px;
+  }
+  .ricsnav__expdovly {
+    display: block;
+  }
 }

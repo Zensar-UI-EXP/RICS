@@ -73,3 +73,24 @@
 .ricsbreadcrumb--navlast {
   color: #686969;
 }
+@media (max-width: 767.98px) {
+  .ricsbreadcrumb {
+    margin-bottom: 25px;
+  }
+  .ricsbreadcrumb__navlistcont {
+    font-size: 10px;
+    width: 165px;
+  }
+  .ricsbreadcrumb.hide--submenu {
+    margin-top: 168px;
+  }
+  .ricsbreadcrumb__navlink {
+    font-size: 10px;
+  }
+  .ricsbreadcrumb__navlist {
+    font-size: 10px;
+  }
+  .ricsbreadcrumb__morelink {
+    top: -5px;
+  }
+}

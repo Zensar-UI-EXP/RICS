@@ -5,7 +5,10 @@
 }
 .latestarticle__heading {
   border-bottom: solid 1px #000000;
-  padding-bottom: 10px;
+}
+.latestarticle__heading .fnt-stl--itlc {
+  font-family: 'HelveticaNeueLTPro-Italic';
+  font-style: normal!important;
 }
 .latestarticle__card {
   margin-top: 20px;
@@ -45,6 +48,7 @@
 .latestarticle__cardimage {
   width: 100%;
   height: 100%;
+  display: block;
 }
 .latestarticle__carddetail {
   padding: 15px 30px;
@@ -96,6 +100,7 @@
 .latestarticle__taglink {
   color: #000000;
   font-weight: normal;
+  font-family: 'HelveticaNeueLTPro-Regular';
 }
 .latestarticle__tagcont {
   position: relative;
@@ -148,9 +153,15 @@
   margin-bottom: 0;
 }
 .special__link {
-  font-size: 21px;
-  font-weight: normal;
   color: #000000;
+  font-size: 26px;
+  font-weight: normal;
+  line-height: 40px;
+  font-family: 'HelveticaNeueLTPro-Regular';
+}
+.special__link:hover {
+  opacity: 0.7;
+  text-decoration: none;
 }
 .special__heading {
   margin: 15px 0 0px;
@@ -170,6 +181,12 @@
     margin-left: 5%;
     margin-right: 5%;
     border-bottom: solid 1px #000000;
+  }
+  .latestarticle__heading .fnt-stl--itlc {
+    display: none;
+  }
+  .latestarticle__card {
+    margin-top: 7px;
   }
   .latestarticle__articledate {
     display: none;
@@ -206,6 +223,10 @@
     top: 20px;
     width: 2px;
     height: 2px;
+    right: 7px;
+    position: absolute;
+    left: auto;
+    z-index: 1;
   }
   .latestarticle__tagmore::before {
     width: 2px;
@@ -224,6 +245,15 @@
     max-height: 30px;
     overflow: hidden;
   }
+  .latestarticle__tagcont::after {
+    position: absolute;
+    content: "";
+    right: 7px;
+    width: 14px;
+    height: 100%;
+    background: #ffffff;
+    top: 0;
+  }
   .special__heading {
     width: 90%;
     max-width: 90%;
@@ -238,5 +268,13 @@
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 30px;
+  }
+  .special__link {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .seemore--tag.ricsrlart__tagcont:after {
+    display: none;
   }
 }

@@ -38,7 +38,7 @@
   display: block;
 }
 .ricsnewsltr__btn {
-  width: 160px;
+  min-width: 160px;
   padding: 7px 0;
   margin-top: 15px;
   display: inline-block;
@@ -86,4 +86,35 @@
 .ricsnewsltr__subscribsuccess,
 .ricsnewsltr__unsubscribsuccess {
   display: none;
+}
+@media (max-width: 767.98px) {
+  .ricsnewsltr__inner {
+    width: 80%;
+    max-width: 80%;
+    flex: 0 0 80%;
+  }
+  .ricsnewsltr__heading {
+    font-size: 22px!important;
+    font-family: 'HelveticaNeueLTPro-Bold' !important;
+    margin-bottom: 10px;
+  }
+  .ricsnewsltr__desc {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .ricsnewsltr__btn {
+    min-width: 120px;
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7px 15px;
+  }
+  .ricsnewsltr__email {
+    margin-bottom: 10px!important;
+    padding: 5px 0!important;
+  }
+  .ricsnewsltr__socialsharinglink {
+    margin-right: 14px!important;
+  }
 }

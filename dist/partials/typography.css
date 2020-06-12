@@ -667,6 +667,10 @@ html {
   line-height: 40px;
   border-bottom: solid 1px #000000;
 }
+.title--artlistheading {
+  font-size: 25px;
+  line-height: 70px;
+}
 .title-size--xsm {
   font-size: 16px;
   line-height: 14px;
@@ -757,6 +761,9 @@ html {
 .title-size--special {
   font-size: 36px;
   line-height: 46px;
+}
+.title-size--special strong {
+  font-family: 'HelveticaNeueLTPro-Medium';
 }
 .para {
   font-family: 'HelveticaNeueLTPro-Regular';

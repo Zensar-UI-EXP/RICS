@@ -1,20 +1,4 @@
 @media (max-width: 991.98px) {
-  .ricsfooter__scllinks {
-    padding-right: 0;
-  }
-  .ricsfooter__logolink {
-    width: 11vw!important;
-  }
-  .ricsfooter__navlist {
-    font-size: 12px!important;
-  }
-  .ricsfooter__socialsharinglink {
-    margin-left: 8px!important;
-    margin-right: 0!important;
-  }
-  .ricsfooter__socialsharinglink:first-child {
-    margin-left: 0!important;
-  }
   .title-size--lmd {
     font-size: 22px!important;
     line-height: 30px!important;
@@ -30,611 +14,10 @@
 }
 @media (max-width: 767.98px) {
   body {
-    padding-top: 168px;
-  }
-  .ricsheader {
-    position: fixed;
-    width: 100%;
-    z-index: 7;
-    top: 0;
-  }
-  .ricsheader__logo {
-    width: 85px;
-    height: 29px;
-  }
-  .ricsnav {
-    position: fixed;
-    width: 100%;
-    top: 97px;
-    margin-bottom: 0;
-    z-index: 8;
-    background: #ffffff;
-  }
-  .ricsnav::after {
-    position: absolute;
-    width: 100%;
-    content: "";
-    left: 0;
-    top: -12px;
-    height: 10px;
-    background: #ffffff;
-    box-shadow: 0 4px 4px 0 rgba(212, 209, 209, 0.2);
-  }
-  .ricsnav .container {
-    max-width: 100%;
-  }
-  .ricsnav__cont {
-    flex-direction: column;
-  }
-  .ricsnav__leftlistcont {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-  .ricsnav__leftlist,
-  .ricsnav__rightlist {
-    width: 50%;
-  }
-  .ricsnav__leftlink {
-    padding: 0px 0 3px;
-    margin-top: 25px;
-  }
-  .ricsnav__rightlistcont {
-    max-width: 70%!important;
-    position: absolute;
-    top: -60px;
-    right: 0;
-  }
-  .ricsnav__rightlist {
-    justify-content: center;
-    width: auto;
-    max-width: 70%;
-    padding: 7px 0;
-  }
-  .ricsnav--moduslink {
-    width: 100%;
-    background-size: 93px;
-    background-position: top center;
-    height: 45px;
-  }
-  .ricsnav--jornalslink {
-    width: 100%;
-    background-size: 112px;
-    height: 45px;
-    background-position: top center;
-  }
-  .ricsnav__rightlink {
-    font-size: 12px;
-    margin: 0 10px;
-  }
-  .ricsnav__rightsearchform {
-    position: absolute;
-    top: 131px;
-    right: 0;
-    width: 100vw;
-    background: #fff;
-    z-index: 1;
-    padding: 20px 0 10px;
-  }
-  .ricsnav__rightsearchform .icon--search {
-    position: absolute;
-    right: 5%;
-    top: 24px;
-  }
-  .ricsnav__rightsearch {
-    width: 90vw;
-    margin: 0 auto;
-    display: block;
-  }
-  .ricsnav__chevronicon {
-    display: block;
-    left: calc(50% + 55px);
-  }
-  .ricsnav__expdovly {
-    display: block;
-  }
-  .ricssubnav {
-    position: relative;
-  }
-  .ricssubnav__submenunav {
-    border-bottom: solid 1px #000000;
-    display: none;
-  }
-  .ricssubnav .container {
-    max-width: 100%;
-  }
-  .ricssubnav__submenulistcont {
-    flex-direction: column;
-  }
-  .ricssubnav__submenulist {
-    padding: 25px 0 0px;
-  }
-  .ricssubnav__submenulist:last-child {
-    padding-bottom: 25px;
-  }
-  .ricssubnav__submenulist:hover .ricssubnav__submenulink {
-    font-weight: normal;
-  }
-  .ricssubnav__submenulist:hover .ricssubnav__drpdwnlistcont {
-    display: none;
-  }
-  .ricssubnav__submenulist::before {
-    display: none;
-  }
-  .ricssubnav__submenulink {
-    max-width: 90%;
-    margin: 0 auto;
-    display: block;
-    font-size: 16px;
-  }
-  .ricssubnav__submenulink:hover {
-    font-weight: normal;
-  }
-  .ricssubnav--submenulinkactive {
-    font-family: 'OpenSans-Regular';
-  }
-  .ricssubnav__drpdwnlistcont {
-    position: relative;
-    top: 0;
-    margin: 10px 0 0 50px;
-    padding: 10px 0 0;
-    background: #ffffff;
-    box-shadow: 0 3px 4px 0 rgba(143, 143, 143, 0);
-    min-width: 85%;
-    max-width: 85%;
-    float: left;
-    left: 0;
-  }
-  .ricssubnav__drpdwnlist {
-    padding: 0 0 25px;
-    float: left;
-    width: 100%;
-  }
-  .ricssubnav__drpdwnlist:last-child {
-    padding-bottom: 0;
-  }
-  .ricssubnav__drpdwnlink {
-    max-width: 90%;
-    margin: 0 auto;
-    display: block;
-    padding: 0;
-    font-size: 16px;
-    float: left;
-  }
-  .ricssubnav__chevronicon {
-    display: block;
-  }
-  .ricssubnav--chevronactive {
-    transform: rotate(180deg) !important;
-  }
-  .ricsbreadcrumb {
-    margin-bottom: 25px;
-  }
-  .ricsbreadcrumb__navlistcont {
-    font-size: 10px;
-    width: 165px;
-  }
-  .ricsbreadcrumb.hide--submenu {
-    margin-top: 168px;
-  }
-  .ricsbreadcrumb__navlink {
-    font-size: 10px;
-  }
-  .ricsbreadcrumb__navlist {
-    font-size: 10px;
-  }
-  .ricsartbanner__heading {
-    font-size: 12px;
-  }
-  .ricsartbanner__subheading {
-    font-size: 30px;
-    margin: 10px 0 10px;
-    line-height: 38px;
-  }
-  .ricsartbanner__desc {
-    font-size: 15px;
-    line-height: 22px;
-  }
-  .ricsartbanner__authorname,
-  .ricsartbanner__authordate {
-    font-size: 10px;
-    line-height: 36px;
-    margin: 20px 0 0;
-  }
-  .ricsartbanner__tag {
-    font-size: 9px;
-  }
-  .ricsartbanner--jrnlheading {
-    font-size: 10px;
-    line-height: 14px;
-  }
-  .ricsartbanner--jrnlsubheading {
-    font-size: 22px;
-    line-height: 29px;
-    margin-top: 15px;
-  }
-  .ricsartbanner__container {
-    flex-direction: column;
-  }
-  .ricsartbanner__midcol {
-    width: 100%;
-    max-width: 100%;
-  }
-  .ricsartbanner__authorname,
-  .ricsartbanner__authordate {
-    width: 50%;
-    max-width: 50%;
-    flex: 0 0 50%;
-  }
-  .ricsartcf__container {
-    flex-direction: column;
-  }
-  .ricsartcf__midcol,
-  .ricsartcf__rhtcol {
-    width: 100%;
-    max-width: 100%;
-  }
-  .ricsartcf__rhtcol {
-    align-self: flex-start !important;
-    padding-left: 0;
-    padding-right: 15px!important;
-  }
-  .ricsartcf--jrnlheading {
-    font-size: 16px!important;
-    line-height: 24px!important;
-  }
-  .ricsartcf--jrnlheading .ricsartcf__bigfont {
-    font-size: 16px!important;
-    line-height: 24px!important;
-  }
-  .ricsartcf--jrnlrhtcontent {
-    font-size: 16px!important;
-    line-height: 24px!important;
-    font-weight: 600;
-  }
-  .ricsartcf__lsttitle,
-  .ricsartcf__lstdesc {
-    font-size: 14px;
-  }
-  .ricsartcf--scndheading {
-    font-size: 16px;
-  }
-  .ricsartcf--scndheading .ricsartcf__bigfont {
-    font-size: 16px!important;
-    line-height: 24px;
-  }
-  .ricsartcf__scndlist {
-    font-size: 16px;
-    list-style: outside;
-    line-height: 24px;
-  }
-  .ricsartcf--scdrylayout,
-  .ricsartcf__container {
-    background: transparent;
-  }
-  .ricsartcf--scdrylayout .rics--row,
-  .ricsartcf__container .rics--row {
-    flex-direction: column;
-  }
-  .ricsartcf--scnclrlayout {
-    background: rgba(2, 131, 124, 0.1);
-  }
-  .ricsartcf__scndlistcont {
-    padding-left: 25px;
-  }
-  .ricsartcf--txtlink {
-    width: 100%;
-  }
-  .ricsartcf__heading {
-    font-size: 16px;
-    line-height: 22px;
-  }
-  .ricsartcf__bigfont {
-    font-size: 58px;
-    float: left;
-    line-height: 58px;
-    width: 30px;
-  }
-  .ricsartcf__content,
-  .ricsartcf__link {
-    font-size: 15px;
-    line-height: 21px;
-  }
-  .ricsartcf__rhtcontent {
-    font-size: 16px;
-    margin: 25px 0 0px;
-  }
-  .ricsartcf__smalldesc {
-    font-size: 12px;
-    margin-top: 0!important;
-  }
-  .ricsartcf .mar-bot--200 {
-    margin-bottom: 50px!important;
-  }
-  .ricsartcf--fstltrnrml .ricsartcf__bigfont {
-    font-size: 19px;
-    line-height: 22px;
+    padding-top: 158px;
   }
   .mar-bot--25mob {
     margin-bottom: 25px!important;
-  }
-  .ricsartrightcnt__rhtcontent {
-    font-size: 16px;
-    line-height: 22px;
-  }
-  .ricsartimgntxt__container {
-    flex-direction: column;
-  }
-  .ricsartimgntxt__txt,
-  .ricsartimgntxt__midcol,
-  .ricsartimgntxt__rhtcol {
-    width: 100%;
-    max-width: 100%;
-  }
-  .ricsartimgntxt--txtwithleftspace .ricsartimgntxt__txt {
-    margin-left: 0!important;
-  }
-  .ricsartimgntxt__rhtcol {
-    align-self: flex-start !important;
-    padding-left: 0;
-    padding-right: 15px!important;
-    border-top: solid 1px #979797;
-    border-bottom: solid 1px #979797;
-    padding-bottom: 25px;
-    margin-bottom: 25px;
-  }
-  .ricsartimgntxt__txt {
-    font-size: 12px;
-    margin-top: 5px!important;
-    line-height: 17px;
-  }
-  .ricsartimgntxt__advheading {
-    font-size: 10px;
-    padding: 10px 0;
-  }
-  .ricsartimgntxt__video,
-  .ricsartimgntxt__videoposter {
-    height: 45vw;
-  }
-  .ricsartrightcnt {
-    position: static;
-  }
-  .ricsartrightcnt__container {
-    margin-right: 0;
-    width: 100%;
-  }
-  .ricsartrightcnt__rhtcontent {
-    margin-bottom: 0;
-    margin-top: 25px;
-  }
-  .ricsinfographic {
-    margin: 0 auto;
-    width: 100%;
-    padding-bottom: 5px;
-    display: block;
-  }
-  .ricsinfographic__container {
-    padding: 30px 0;
-    width: 90%;
-    margin: 0 auto;
-  }
-  .ricsinfographic__container .rics--row {
-    flex-direction: column;
-  }
-  .ricsinfographic__leftcol {
-    display: none;
-  }
-  .ricsinfographic__col {
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 35px;
-    width: auto;
-  }
-  .ricsinfographic__col:last-child {
-    margin-bottom: 0px;
-  }
-  .ricsinfographic__col.col--3 {
-    padding-left: 15px!important;
-  }
-  .ricsinfographic__midcol {
-    width: 100%;
-    max-width: 100%;
-    flex: 0 0 100%;
-  }
-  .ricsinfographic__collist {
-    flex-direction: column;
-    margin-top: 40px;
-  }
-  .ricsinfographic__desc {
-    margin-top: 0;
-  }
-  .ricsinfographic__heading {
-    font-size: 16px;
-  }
-  .ricsinfographic__colheading {
-    font-size: 33px;
-    margin-top: 5px;
-    line-height: 48px;
-  }
-  .ricsinfographic__coldesc {
-    font-size: 15px;
-    padding-top: 10px;
-    margin-bottom: 5px!important;
-    line-height: 22px;
-  }
-  .ricsinfographic__desc {
-    font-size: 12px;
-    line-height: 17px;
-  }
-  .ricsinfographic__midcol:first-child {
-    margin-bottom: 30px;
-  }
-  .ricsrltopics {
-    margin: 0 auto;
-  }
-  .ricsrltopics__container {
-    flex-direction: column;
-  }
-  .ricsrltopics .col--5 {
-    width: 100%;
-    max-width: 100%;
-    flex: 0 0 100%;
-  }
-  .ricsrltopics .col--5:first-child {
-    margin-bottom: 25px;
-  }
-  .ricsrltopics__heading {
-    font-size: 14px;
-  }
-  .ricsrltopics__tag {
-    font-size: 9px;
-  }
-  .ricsrlart__cardlist {
-    padding-right: 0;
-  }
-  .ricsrlart__card {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    border-bottom: 0;
-  }
-  .ricsrlart__cardimagecont {
-    height: auto;
-    width: 50%;
-  }
-  .ricsrlart__cardlist {
-    flex-direction: column;
-    padding-top: 5px;
-  }
-  .ricsrlart .col--4 {
-    width: 100%;
-    max-width: 100%;
-    flex: 0 0 100%;
-    margin-bottom: 10px;
-  }
-  .ricsrlart .col--4:last-child {
-    margin-bottom: 0;
-  }
-  .ricsrlart__heading {
-    font-size: 14px;
-  }
-  .ricsrlart__cardlabel {
-    font-size: 10px;
-    position: absolute;
-    padding: 7px;
-    background: #ffffff;
-    left: 0;
-    bottom: 0;
-    margin-bottom: 0;
-  }
-  .ricsrlart__carddetail {
-    width: 50%;
-    padding: 7px;
-  }
-  .ricsrlart__articleheading {
-    font-size: 12px;
-    margin: 0 0 10px;
-    max-height: 50px;
-    display: block;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .ricsrlart__articledate {
-    font-size: 10px;
-    margin-bottom: 15px;
-    display: none;
-  }
-  .ricsrlart__tag {
-    font-size: 9px;
-    padding: 0 3px;
-    margin-top: 3px;
-  }
-  .ricsrlart__tagcont {
-    width: 100%;
-    overflow: hidden;
-    height: 28px;
-  }
-  .ricsnewsltr__inner {
-    width: 80%;
-    max-width: 80%;
-    flex: 0 0 80%;
-  }
-  .ricsnewsltr__heading {
-    font-size: 22px;
-    margin-bottom: 10px;
-  }
-  .ricsnewsltr__desc {
-    font-size: 14px;
-    line-height: 20px;
-  }
-  .ricsnewsltr__btn {
-    width: 120px;
-    margin-top: 15px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .ricsnewsltr__email {
-    margin-bottom: 10px!important;
-    padding: 5px 0!important;
-  }
-  .ricsnewsltr__socialsharinglink {
-    margin-right: 14px!important;
-  }
-  .ricsfooter {
-    margin-top: 25px;
-    padding: 50px 0;
-  }
-  .ricsfooter__left,
-  .ricsfooter__ctr,
-  .ricsfooter__right,
-  .ricsfooter__nav,
-  .ricsfooter .col--9 {
-    width: 100%;
-    max-width: 100%;
-    flex: 0 0 100%;
-  }
-  .ricsfooter__heading {
-    font-size: 15px!important;
-    padding: 10px 0 15px!important;
-    margin-bottom: 10px!important;
-    margin-top: 15px;
-  }
-  .ricsfooter__left .ricsfooter__heading {
-    margin-top: 0;
-    padding-top: 0!important;
-  }
-  .ricsfooter__navlink,
-  .ricsfooter__navlist {
-    font-size: 8px!important;
-  }
-  .ricsfooter__navlink.mar-top--75,
-  .ricsfooter__navlist.mar-top--75 {
-    margin-top: 15px!important;
-  }
-  .ricsfooter__logo {
-    margin-bottom: 10px!important;
-    margin-top: 15px;
-    padding-bottom: 20px!important;
-    height: auto!important;
-  }
-  .ricsfooter__logolink {
-    width: 90px!important;
-    height: 45px!important;
-    margin-top: -10px;
-  }
-  .ricsfooter__right .ricsfooter__navlistcont {
-    margin-top: 25px;
-  }
-  .ricsfooter__navlistcont {
-    padding-top: 20px!important;
-    padding-bottom: 20px!important;
-  }
-  .ricsfooter__scllinks {
-    top: 0px!important;
   }
   .col--1,
   .col--2,
@@ -666,6 +49,9 @@
   }
   .container-brdr--bot {
     border-bottom: 0;
+  }
+  .container--spacing {
+    margin: 15px auto!important;
   }
   .container--spacing .rics--row {
     flex-direction: column;
@@ -728,7 +114,7 @@
     width: 20px;
     background-size: contain;
     height: 20px;
-    margin-top: -5px;
+    margin-top: -2px;
     margin-right: 0px;
     margin-left: 8px;
   }
@@ -754,6 +140,7 @@
   }
   .ricsarttbl__tablename {
     font-size: 11px;
+    line-height: 15px;
   }
   .ricsarttbl__headingcont {
     position: relative;
@@ -768,13 +155,14 @@
     height: 100%;
   }
   table {
-    width: 100%;
+    width: 150%;
   }
   th,
   td {
     font-size: 11px;
     padding: 10px 15px;
     width: 30%;
+    line-height: 17px;
   }
   th:first-child,
   td:first-child {
@@ -895,37 +283,25 @@
   .flx-dir--mobclmrvrs {
     flex-direction: column-reverse;
   }
-  .ricsrlart__tagmore {
-    width: 2px;
-    height: 2px;
-    top: 20px;
-    right: 4px;
-  }
-  .ricsrlart__tagmore::before {
-    width: 2px;
-    height: 2px;
-    left: 4px;
-  }
-  .ricsrlart__tagmore::after {
-    width: 2px;
-    height: 2px;
-    right: 4px;
-  }
-  .ricsbreadcrumb__morelink {
-    top: -5px;
-  }
   .title--pageinfo {
     font-size: 24px;
-    line-height: 0px;
-    margin-top: 15px;
+    line-height: 38px;
+    margin-top: 10px;
     margin-left: 15px;
   }
   .title--smalldesc {
     font-size: 12px;
     margin-top: 10px!important;
+    line-height: 18px;
+  }
+  .title--artlistheading {
+    font-size: 14px;
+    line-height: 42px;
   }
   .title-size--xxlrg {
     font-size: 39px;
+    line-height: normal;
+    margin-bottom: 15px;
   }
   .title-size--xsmd {
     font-size: 12px!important;
@@ -939,9 +315,18 @@
     font-size: 19px!important;
     line-height: 25px!important;
   }
+  .title-size--lmd.ricsnewsltr__heading {
+    font-size: 22px!important;
+    line-height: 28px!important;
+    font-family: 'HelveticaNeueLTPro-Bold' !important;
+  }
+  .title-size--lsmd {
+    font-size: 16px;
+    line-height: 22px;
+  }
   .title-size--dxsmdfstbgfnt {
-    font-size: 19px!important;
-    line-height: 25px!important;
+    font-size: 16px!important;
+    line-height: 22px!important;
   }
   .title-size--dxsmdfstbgfnt::first-letter {
     font-size: 58px!important;
@@ -967,8 +352,8 @@
     line-height: 40px!important;
   }
   .title-size--xmd {
-    font-size: 30px;
-    line-height: 38px;
+    font-size: 32px;
+    line-height: 40px;
     font-family: 'Oswald-Regular' !important;
   }
   .title-size--xmlrg {
@@ -1000,21 +385,25 @@
   }
   .para {
     font-size: 14px;
+    line-height: 21px;
   }
   .para--txtwithleftcol1space {
     margin-left: 0!important;
     padding-left: 0px;
   }
   .para--imgbtm {
-    margin-left: 5%!important;
-    margin-right: 5%;
-    margin-top: 15px;
+    margin-left: auto!important;
+    margin-right: auto;
+    margin-top: 10px;
     width: 90%;
     max-width: 90%;
+    font-size: 12px;
+    line-height: 18px;
   }
   .para-size--cf {
     font-size: 15px;
-    line-height: 21px;
+    line-height: 22px;
+    margin-bottom: 15px;
   }
   .para-size--md {
     font-size: 14px!important;
@@ -1026,6 +415,7 @@
   .para-size--artdesc {
     font-size: 11px!important;
     line-height: 15px!important;
+    font-family: 'HelveticaNeueLTPro-Regular';
   }
   .para-size--lrg {
     font-size: 20px;
