@@ -70,9 +70,12 @@
       width: 515px;
       .default--font();
       font-size: 18px;
-      font-style: italic;
+      font-family: @RICS--Italic;
       color: @charcoal--grey;
       line-height: 30px;
+      a{
+         font-family: @RICS--Italic;   
+      }
    }
    &__lstcont{
       padding-left: 20px;
@@ -175,6 +178,7 @@
       color: @ricswhite;
       &.fnt-stl--itlc{
          font-family: @RICS--Italic;
+         font-style: normal!important;
       }
    }
 }
@@ -202,5 +206,164 @@
       line-height: 20px;
       color: @charcoal--grey;
       display: inline-block;
+   }
+}
+@media (max-width: 767.98px) {
+   .ricsartcf{
+      &__container{
+         flex-direction: column;
+      }
+      &__midcol, &__rhtcol{
+         width: 100%;
+         max-width: 100%;
+      }
+      &__rhtcol{
+         align-self: flex-start!important;
+         padding-left: 0;
+         padding-right: 15px!important;
+      }
+      &--jrnlheading{
+         font-size: 16px!important;
+         line-height: 24px!important;
+         .ricsartcf__bigfont{
+            font-size: 16px!important;
+            line-height: 24px!important;
+         }
+      }
+      &__lstcont{
+         padding-left: 10px;
+      }
+      &--jrnlrhtcontent{
+         font-size: 16px!important;
+         line-height: 24px!important;
+         font-weight: @semi--bold;
+      }
+      &__lsttitle, &__lstdesc{
+         font-size: 14px;
+         line-height: 21px;
+      }
+      &__lstdesc{
+         margin-left: 20px;
+         margin-top: 0;
+      }
+      &--headingwithbr{
+         padding-top: 15px;
+      }
+      &--scndheading{
+         font-size: 16px;
+         .ricsartcf__bigfont{
+            font-size: 16px!important;
+            line-height: 24px;
+         }
+      }
+      &__scndlist{
+         font-size: 14px;
+         list-style: outside;
+         line-height: 21px;
+      }
+      &--scdrylayout, &__container{
+         background: transparent;
+         .rics--row{
+            flex-direction: column;
+         }
+      }
+      &__lst{
+         font-size: 14px;
+         line-height: 21px;
+      }
+      &--scnclrlayout{
+         background: rgba(2, 131, 124, 0.1);
+      }
+      &__scndlistcont{
+         padding-left: 15px;
+         margin-top: 10px;
+      }
+      &--txtlink{
+         width: 100%;
+         font-size: 12px;
+         line-height: 18px;
+      }
+      &__heading{
+         font-size: 16px;
+         line-height: 22px;
+      }
+      &__bigfont {
+         font-size: 58px;
+         float: left;
+         line-height: 58px;
+         width: 30px;
+      }
+      &__content, &__link{
+         font-size: 15px;
+         line-height: 21px;
+      }
+      &__rhtcontent{
+         font-size: 16px;
+         margin: 25px 0 0px;
+      }
+      &__smalldesc{
+         font-size: 12px;
+         margin-top: 0!important;
+      }
+      .mar-bot--200{
+         margin-bottom: 50px!important;
+      }
+      &--fstltrnrml{
+         .ricsartcf__bigfont{
+            font-size: 19px;
+            line-height: 22px;
+         }
+      }
+   }
+   .ricsartrightcnt{
+      &__rhtcontent{
+         font-size: 16px;
+         line-height: 22px;
+      }
+   }
+   .ricsartimgntxt{
+      &__container{
+         flex-direction: column;
+      }
+      &__txt, &__midcol, &__rhtcol{
+         width: 100%;
+         max-width: 100%;
+      }
+      &--txtwithleftspace .ricsartimgntxt__txt{
+         margin-left: 0!important;
+      }
+      &__rhtcol{
+         align-self: flex-start!important;
+         padding-left: 0;
+         padding-right: 15px!important;
+         margin-bottom: 25px;
+         border-top: solid 1px @brown--grey;
+         border-bottom: solid 1px @brown--grey;
+         padding-bottom: 25px;
+         margin-bottom: 25px;
+      }
+      &__txt{
+         font-size: 12px;
+         margin-top: 5px!important;
+         line-height: 17px;
+      }
+      &__advheading{
+         font-size: 10px;
+         padding: 10px 0;
+      }
+      &__video, &__videoposter{
+         height: 45vw;
+      }
+   }
+   .ricsartrightcnt{
+      position: static;
+      &__container{
+         margin-right: 0;
+         width: 100%;
+      }
+      &__rhtcontent{
+         margin-bottom: 0;
+         margin-top: 25px;
+      }
    }
 }

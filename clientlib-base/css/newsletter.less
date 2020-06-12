@@ -32,7 +32,7 @@
       display: block;
    }
    &__btn{
-      width: 160px;
+      min-width: 160px;
       padding: 7px 0;
       margin-top: 15px;
       display: inline-block;
@@ -79,5 +79,38 @@
    }
    &__subscribsuccess, &__unsubscribsuccess{
       display: none;
+   }
+}
+@media (max-width: 767.98px) {
+   .ricsnewsltr{
+      &__inner{
+         width: 80%;
+         max-width: 80%;
+         flex: 0 0 80%;
+      }
+      &__heading{
+         font-size: 22px!important;
+         font-family: @RICS--Bold!important;
+         margin-bottom: 10px;
+      }
+      &__desc{
+         font-size: 14px;
+         line-height: 20px;
+      }
+      &__btn {
+         min-width: 120px;
+         margin-top: 40px;
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         padding: 7px 15px;
+      }
+      &__email{
+         margin-bottom: 10px!important;
+         padding: 5px 0!important;
+      }
+      &__socialsharinglink{
+         margin-right: 14px!important;
+      }
    }
 }

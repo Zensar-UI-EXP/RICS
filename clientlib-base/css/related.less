@@ -99,6 +99,7 @@
       width: 100%;
       max-height: 235px;
       height: 100%;
+      display: block;
    }
    &__carddetail{
       padding: 25px;
@@ -180,5 +181,139 @@
       color: @ricsblack;
       font-weight: normal;
       font-family: @RICS;
+   }
+}
+@media (max-width: 767.98px) {
+   .ricsrltopics{
+      margin: 0 auto;
+      &__container{
+         flex-direction: column;
+      }
+      .col--5{
+         width: 100%;
+         max-width: 100%;
+         flex: 0 0 100%;
+         &:first-child{
+            margin-bottom: 25px;
+         }
+      }
+      &__heading{
+         font-size: 14px;
+         line-height: 42px;
+      }
+      &__tagcont{
+         padding-top: 25px;
+      }
+      &__tag{
+         font-size: 9px;
+      }
+   }
+   .ricsrlart{
+      border-bottom: solid 1px @ricsblackopct60;
+      padding-bottom: 7px;
+      &__cardlist{
+         padding-right: 0;
+      }
+      &__card{
+         display: flex;
+         flex-direction: row;
+         position: relative;
+         border-bottom: 0;
+      }
+      &__cardimagecont{
+         height: auto;
+         width: 50%;
+      }
+      &__cardlist{
+         flex-direction: column;
+         padding-top: 5px;
+      }
+      .col--4{
+         width: 100%;
+         max-width: 100%;
+         flex: 0 0 100%;
+         margin-bottom: 10px;
+         &:last-child{
+            margin-bottom: 0;
+         }
+      }
+      &__heading{
+         font-size: 14px;
+         line-height: 42px;
+      }
+      &__cardlabel{
+         font-size: 10px;
+         position: absolute;
+         padding: 7px;
+         background: @ricswhite;
+         left: 0;
+         bottom: 0;
+         margin-bottom: 0;
+      }
+      &__carddetail{
+         width: 50%;
+         padding: 7px;
+      }
+      &__articleheading{
+         font-size: 11px;
+         line-height: 15px;
+         margin: 0 0 10px;
+         max-height: 50px;
+         display: block;
+         display: -webkit-box;
+         -webkit-line-clamp: 3;
+         -webkit-box-orient: vertical;
+         overflow: hidden;
+         text-overflow: ellipsis;
+      }
+      &__articledate{
+         font-size: 10px;
+         margin-bottom: 15px;
+         display: none;
+      }
+      &__tag{
+         font-size: 9px;
+         padding: 5px;
+         margin-top: 3px;
+      }
+      &__tagcont{
+         width: 100%;
+         overflow: hidden;
+         height: 28px;
+         position: relative;
+         &::after {
+            position: absolute;
+            content: "";
+            right: 0;
+            width: 14px;
+            height: 100%;
+            background: #ffffff;
+            top: 0;
+         }
+      }
+      &__tagmore {
+         width: 2px;
+         height: 2px;
+         top: 24px;
+         right: 4px;
+         position: absolute;
+         left: auto;
+         z-index: 1;
+         &::before {
+            width: 2px;
+            height: 2px;
+            left: 4px;
+         }
+         &::after {
+            width: 2px;
+            height: 2px;
+            right: 4px;
+         }
+      }
+   }
+   .seemore--tag{
+      &.ricsrlart__tagcont:after{
+         display: none;
+      }
    }
 }

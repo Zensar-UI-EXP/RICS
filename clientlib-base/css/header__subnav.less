@@ -95,3 +95,84 @@
       }
    }
 }
+@media (max-width: 767.98px) {
+   .ricssubnav{
+      position: relative;
+      &__submenunav{
+         border-bottom: solid 1px @ricsblack;
+         display: none;
+      }
+      .container{
+         max-width: 100%;
+      }
+      &__submenulistcont{
+         flex-direction: column;
+      }
+      &__submenulist{
+         padding: 25px 0 0px;
+         &:last-child{
+            padding-bottom: 25px;
+         }
+         &:hover{
+            .ricssubnav__submenulink{
+               font-weight: normal;
+            }
+            .ricssubnav__drpdwnlistcont{
+               display: none;
+            }
+         }
+         &::before {
+            display: none;
+         }
+         
+      }
+      &__submenulink{
+         max-width: 90%;
+         margin: 0 auto;
+         display: block;
+         font-size: 13px;
+         &:hover{
+            // font-family: @Journals;
+            font-weight: normal;
+         }
+      }
+      &--submenulinkactive{
+         font-family: @Journals;
+      }
+      &__drpdwnlistcont{
+         position: relative;
+         top: 0;
+         margin: 10px 0 0 50px;
+         padding: 10px 0 0;
+         background: @ricswhite;
+         box-shadow: 0 3px 4px 0 rgba(143, 143, 143, 0);
+         min-width: 85%;
+         max-width: 85%;
+         float: left;
+         left: 0;
+      }
+      &__drpdwnlist{
+         padding: 0 0 25px;
+         float: left;
+         width: 100%;
+         &:last-child{
+            padding-bottom: 0;
+         }
+      }
+      &__drpdwnlink{
+         max-width: 90%;
+         margin: 0 auto;
+         display: block;
+         padding: 0;
+         font-size: 16px;
+         float: left;
+      }
+      &__chevronicon{
+         display: block;
+      }
+      &--chevronactive{
+         transform: rotate(180deg)!important;
+         top: 30px;
+      }
+   }
+}

@@ -76,6 +76,7 @@
    }
    &__img{
       width: 100%;
+      display: block;
    }
    &__content{
       display: flex;
@@ -238,6 +239,10 @@
 @media (max-width: 767.98px) {
    .pagelist{
       flex-direction: column;
+      &__desc{
+         font-size: 15px!important;
+         line-height: 21px!important;
+      }
       &--withimg{
          .pagelist__img{
             width: 169px;
@@ -252,6 +257,7 @@
             color: @ricswhite;
             position: relative;
             width: 159px;
+            z-index: 1;
          }
          .pagelist__desc{
             position: absolute;
@@ -260,6 +266,31 @@
             left: 169px;
             height: 100%;
             width: calc(100% - 169px);
+            &::after {
+               position: absolute;
+               width: 169px;
+               height: 100%;
+               right: 100%;
+               content: "";
+               top: 0px;
+               box-shadow: @pageboxshadow;
+               background: @blue--green40;
+            }
+            &.bg--cobalt{
+               &::after {
+                  background: @ricscobalt60;
+               }
+            }
+            &.bg--mdgrn{
+               &::after {
+                  background: @mud--green60;
+               }
+            }
+            &.bg--trgrn{
+               &::after {
+                  background: @true--green60;
+               }
+            }
          }
       }
       &__cont{
@@ -269,7 +300,7 @@
          display: flex;
          padding: 10px;
          justify-content: space-around;
-         min-height: 155px;
+         min-height: 150px;
          &:first-child{
             margin-top: 0;
          }
@@ -342,11 +373,12 @@
       }
       &__authinfo{
          font-size: 12px!important;
+         line-height: 14px!important;
          span{
             display: none;
          }
          strong{
-            font-weight: normal;
+            font-family: @RICS;
          }
       }
    }

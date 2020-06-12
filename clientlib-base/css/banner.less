@@ -331,10 +331,57 @@
    }
 }
 @media (max-width: 767.98px) {
+   .ricsartbanner{
+      &__heading{
+         font-size: 12px;
+      }
+      &__subheading{
+         font-size: 30px;
+         margin: 10px 0 10px;
+         line-height: 38px;
+      }
+      &__desc{
+         font-size: 15px;
+         line-height: 22px;
+      }
+      &__authorname, &__authordate{
+         font-size: 10px;
+         line-height: 36px;
+         margin: 20px 0 0;
+      }
+      &__tag{
+         font-size: 9px;
+      }
+      &--jrnlheading{
+         font-size: 10px;
+         line-height: 14px;
+      }
+      &--jrnlsubheading{
+         font-size: 22px;
+         line-height: 29px;
+         margin-top: 15px;
+      }
+      &__container{
+         flex-direction: column;   
+      }
+      &__midcol{
+         width: 100%;
+         max-width: 100%;
+         .rics--row{
+            flex-direction: row!important;
+         }
+      }
+      &__authorname, &__authordate{
+         width: 50%!important;
+         max-width: 50%!important;
+         flex: 0 0 50%!important;
+      }
+   }
    .infotxt{
       max-width: 90%;
       margin-left: 5%;
       margin-right: 5%;
+      margin: 15px auto;
       &__container{
          padding: 5px 0 0px;
          flex-direction: column;
@@ -364,11 +411,27 @@
       &--journal{
          border-top: 0;
          &:after {
-            background: @blue--green;
+            background: @ricscobalt;
             bottom: -1px;
          }
          .banner__leftcol{
             min-width: 10px;
+            border-top: solid 1px @ricscobalt;
+         }
+      }
+      &--bluegreen{
+         .banner__leftcol{
+            border-top: solid 1px @blue--green;
+         }
+      }
+      &--mdgrn{
+         .banner__leftcol{
+            border-top: solid 1px @mud--green;
+         }
+      }
+      &--trgrn{
+         .banner__leftcol{
+            border-top: solid 1px @true--green;
          }
       }
       &__container{
@@ -403,6 +466,8 @@
       }
       &__desc{
          margin-bottom: 30px;
+         font-size: 14px!important;
+         line-height: 21px!important;
       }
       &__authinfo{
          position: static;
