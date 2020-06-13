@@ -1,0 +1,42 @@
+@import "./partials/variables.less";  
+@import "./partials/mixins.less";
+
+.searchcontainer{
+   padding: 20px;
+   background: @verylight--pinktwo;
+   position: relative;
+   margin-bottom: 35px;
+   &__search{
+      background: transparent;
+      width: 100%;
+      font-size: 30px!important;
+      color: @ricsblack!important;
+      border-bottom-color: @ricsblack!important;
+      padding-left: 0!important;
+   }
+   &__searchicon{
+      background: url(http://localhost:5500/clientlib-base/resources/images/icon__search2__2x.png) no-repeat transparent !important;
+      position: absolute;
+      width: 35px!important;
+      height: 40px!important;
+      right: 23px;
+      background-size: 100%!important;
+      top: 47px;
+   }
+}
+@media (max-width: 767.98px) {
+   .searchcontainer{
+      padding: 0;
+      width: calc(100% - 30px);
+      margin: 0 auto;
+      &__search{
+         font-size: 14px!important;
+         padding-left: 10px!important;
+         border-bottom: 0!important;
+      }
+      &__searchicon{
+         right: 10px;
+         top: 9px;
+      }
+   }
+}

@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>RICS - Search results</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="icon" type="image/x-icon" href="clientlib-base/resources/images/rics__logo.ico" />
+        <link rel="stylesheet/less" type="text/x-less" href="clientlib-base/css/partials/reset.less" />
+        <link rel="stylesheet/less" type="text/x-less" href="clientlib-base/css/partials/fonts.less" />
+        <link rel="stylesheet/less" type="text/x-less" href="clientlib-base/css/partials/grid.less" />
+        <link rel="stylesheet/less" type="text/x-less" href="clientlib-base/css/header.less" />
+        <link rel="stylesheet/less" type="text/x-less" href="clientlib-base/css/header__nav.less" />
+        <link rel="stylesheet/less" type="text/x-less" href="clientlib-base/css/filter.less" />
+        <link rel="stylesheet/less" type="text/x-less" href="clientlib-base/css/search.less" />
+        <link rel="stylesheet/less" type="text/x-less" href="clientlib-base/css/latestarticle.less" />
+        <link rel="stylesheet/less" type="text/x-less" href="clientlib-base/css/footer.less" />
+        <link rel="stylesheet/less" type="text/x-less" href="clientlib-base/css/partials/typography.less" />
+        <link rel="stylesheet/less" type="text/x-less" href="clientlib-base/css/media.less" />
+        <style>
+            ul, li {
+                list-style: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="ricsskip" id="ricsskiplink-container">
+            <div class="ricsskip__inner">
+              <a class="ricsskip__link" href="#rics-content">Skip to main content</a>
+            </div>
+        </div>
+        <header class="ricsheader">
+            <div class="container container--fluid">
+                <div class="container--content">
+                    <div class="rics--row jus-cnt--spbtw">
+                        <div class="ricsheader__logocont col--auto ">
+                            <h1 class="ricsheader__logo">
+                                <a class="ricsheader__logolink" href="javascript:void(0);" title="RICS">RICS</a>
+                            </h1>
+                        </div>
+                        <div class="ricsheader__ricslinkcont col--auto hide--mobile">
+                            <a href="https://www.rics.org/uk/" class="ricsheader__ricslink" target="_blank" title="rics.org">rics.org</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="ricsnav">
+            <div class="container container--fluid">
+                <div class="container--content">
+                    <div class="rics--row">
+                        <nav role="navigation" aria-label="Header navigation" class="ricsnav__cont">
+                            <ul class="ricsnav__leftlistcont col--6">
+                                <li class="ricsnav__leftlist col--auto">
+                                    <a class="ricsnav__leftlink ricsnav--moduslink" href="javascript:void(0);" title="Modus">Modus</a>
+                                </li>
+                                <li class="ricsnav__leftlist col--auto">
+                                    <a class="ricsnav__leftlink ricsnav--jornalslink" href="javascript:void(0);" title="Journals">Journals</a>
+                                </li>
+                            </ul>
+                            <ul class="ricsnav__rightlistcont col--6">
+                                <li class="ricsnav__rightlist col--auto">
+                                    <a class="ricsnav__rightlink" href="javascript:void(0);" title="Browse by Specialism">Browse by Specialism</a>
+                                </li>
+                                <li class="ricsnav__rightlist ricsnav--rightlastlist col--auto ">
+                                    <form class="ricsnav__rightsearchform" action="#">
+                                        <input class="ricsnav__rightsearch input" type="search" placeholder="Search for something..." value="" autocomplete="off" />
+                                        <a class="icon icon--search flt--rht" href="javascript:void(0); title="Search"></a>
+                                    </form>
+                                    <a class="ricsnav__rightlink ricsnav--searchlink" onclick="openSearch()" href="javascript:void(0);" title="Search">
+                                        <span class="icon icon--search flt--rht"></span>
+                                        Search
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="rics-content">
+            <div class="container container--fluid">
+                <div class="container--content container--spacing">
+                    <div class="rics--row col--auto">
+                        <div class="col--12">
+                            <div class="searchcontainer hide--desktop">
+                                <form class="searchcontainer__searchform" action="#">
+                                    <input class="searchcontainer__search input" type="search" placeholder="Search for something..." value="Affordable Housing" autocomplete="off">
+                                    <a class="searchcontainer__searchicon icon icon--search" href="javascript:void(0); title=" search"=""></a>
+                                </form>
+                            </div>
+                            <div class="special">
+                                <h2 class="special__heading title title-size--special">
+                                    <strong>Search:</strong>
+                                    <span class="hide--desktop">Showing results for <strong>Affordable Housing</strong></span>
+                                </h2>
+                                <div class="special__refine" onclick="openFilter(this)">Refine by:</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container container--fluid">
+                <div class="container--content container--spacing">
+                    <div class="rics--row col--auto">
+                        <div class="col--3">
+                            <div class="filtersection">
+                                <h3 class="filtersection__title title title-size--sm fnt-clr--chrgry">
+                                    Filter By:
+                                    <a href="javascript:void(0);" title="Clear All" onclick="clearAllFilter()" class="filtersection__clearall">Clear All</a>
+                                </h3>
+                                <h3 class="filtersection__closecont">
+                                    <a href="javascript:void(0);" title="Apply & Close" onclick="closeFilter()" class="filtersection__close filtersection--applyclose">Apply & Close</a>
+                                    <a href="javascript:void(0);" title="Close" onclick="closeFilter()" class="filtersection__close filtersection--onlyclose">Close</a>
+                                </h3>
+                                <ul class="filtersection__appliedfilter filtersection--appliedfilterdesktop"></ul>
+                                <ul class="filtersection__options">
+                                    <h4 class="filtersection__optionheading title title-size--sm fnt-fmly--ricsbold fnt-clr--chrgry">
+                                        Publication
+                                        <span class="filtersection__expand" onclick="expandCollapse(this)"></span>
+                                    </h4>
+                                    <form class="filtersection__form" action="#">
+                                        <li class="filtersection__optionlist" onclick="selectFilter(this)">
+                                            <input class="checkbox filtersection__checkbox" type="checkbox" value="" name="publication" />
+                                            <label class="filtersection__label">Modus Only</label>
+                                        </li>
+                                        <li class="filtersection__optionlist" onclick="selectFilter(this)">
+                                            <input class="checkbox filtersection__checkbox" type="checkbox" value="" name="publication" />
+                                            <label class="filtersection__label">Journals Only</label>
+                                        </li>
+                                    </form>
+                                </ul>
+                                <ul class="filtersection__options">
+                                    <h4 class="filtersection__optionheading title title-size--sm fnt-fmly--ricsbold fnt-clr--chrgry">
+                                        Specialism
+                                        <span class="filtersection__expand" onclick="expandCollapse(this)"></span>
+                                    </h4>
+                                    <form class="filtersection__form" action="#">
+                                        <li class="filtersection__optionlist" onclick="selectFilter(this)">
+                                            <input class="checkbox filtersection__checkbox" type="checkbox" value="" name="specialism" />
+                                            <label class="filtersection__label">Building Control</label>
+                                        </li>
+                                        <li class="filtersection__optionlist" onclick="selectFilter(this)">
+                                            <input class="checkbox filtersection__checkbox" type="checkbox" value="" name="specialism" />
+                                            <label class="filtersection__label">Building Surveying </label>
+                                        </li>
+                                        <li class="filtersection__optionlist" onclick="selectFilter(this)">
+                                            <input class="checkbox filtersection__checkbox" type="checkbox" value="" name="specialism" />
+                                            <label class="filtersection__label">Commercial Property</label>
+                                        </li>
+                                        <li class="filtersection__optionlist" onclick="selectFilter(this)">
+                                            <input class="checkbox filtersection__checkbox" type="checkbox" value="" name="specialism" />
+                                            <label class="filtersection__label">Corporate Real Estate </label>
+                                        </li>
+                                        <li class="filtersection__optionlist" onclick="selectFilter(this)">
+                                            <input class="checkbox filtersection__checkbox" type="checkbox" value="" name="specialism" />
+                                            <label class="filtersection__label">Dispute Resolution</label>
+                                        </li>
+                                        <li class="filtersection__optionlist" onclick="selectFilter(this)">
+                                            <input class="checkbox filtersection__checkbox" type="checkbox" value="" name="specialism" />
+                                            <label class="filtersection__label">Environmental Management </label>
+                                        </li>
+                                        <li class="filtersection__optionlist" onclick="selectFilter(this)">
+                                            <input class="checkbox filtersection__checkbox" type="checkbox" value="" name="specialism" />
+                                            <label class="filtersection__label">Facilities Management</label>
+                                        </li>
+                                        <li class="filtersection__optionlist" onclick="selectFilter(this)">
+                                            <input class="checkbox filtersection__checkbox" type="checkbox" value="" name="specialism" />
+                                            <label class="filtersection__label">Geomatics </label>
+                                        </li>
+                                        <li class="filtersection__optionlist" onclick="selectFilter(this)">
+                                            <input class="checkbox filtersection__checkbox" type="checkbox" value="" name="specialism" />
+                                            <label class="filtersection__label">Infrastructure</label>
+                                        </li>
+                                        <li class="filtersection__optionlist" onclick="selectFilter(this)">
+                                            <input class="checkbox filtersection__checkbox" type="checkbox" value="" name="specialism" />
+                                            <label class="filtersection__label">Land and Resources </label>
+                                        </li>
+                                        <li class="filtersection__optionlist" onclick="selectFilter(this)">
+                                            <input class="checkbox filtersection__checkbox" type="checkbox" value="" name="specialism" />
+                                            <label class="filtersection__label">Machinery and Business Assets</label>
+                                        </li>
+                                        <li class="filtersection__optionlist" onclick="selectFilter(this)">
+                                            <input class="checkbox filtersection__checkbox" type="checkbox" value="" name="specialism" />
+                                            <label class="filtersection__label">Management Consultancy </label>
+                                        </li>
+                                        <li class="filtersection__optionlist" onclick="selectFilter(this)">
+                                            <input class="checkbox filtersection__checkbox" type="checkbox" value="" name="specialism" />
+                                            <label class="filtersection__label">Minerals and Waste Management</label>
+                                        </li>
+                                        <li class="filtersection__optionlist" onclick="selectFilter(this)">
+                                            <input class="checkbox filtersection__checkbox" type="checkbox" value="" name="specialism" />
+                                            <label class="filtersection__label">Personal Property </label>
+                                        </li>
+                                        <li class="filtersection__optionlist" onclick="selectFilter(this)">
+                                            <input class="checkbox filtersection__checkbox" type="checkbox" value="" name="specialism" />
+                                            <label class="filtersection__label">Planning and Development</label>
+                                        </li>
+                                        <li class="filtersection__optionlist" onclick="selectFilter(this)">
+                                            <input class="checkbox filtersection__checkbox" type="checkbox" value="" name="specialism" />
+                                            <label class="filtersection__label">Project Management </label>
+                                        </li>
+                                        <li class="filtersection__optionlist" onclick="selectFilter(this)">
+                                            <input class="checkbox filtersection__checkbox" type="checkbox" value="" name="specialism" />
+                                            <label class="filtersection__label">Property Finance and Investment</label>
+                                        </li>
+                                        <li class="filtersection__optionlist" onclick="selectFilter(this)">
+                                            <input class="checkbox filtersection__checkbox" type="checkbox" value="" name="specialism" />
+                                            <label class="filtersection__label">Quantity Surveying </label>
+                                        </li>
+                                        <li class="filtersection__optionlist" onclick="selectFilter(this)">
+                                            <input class="checkbox filtersection__checkbox" type="checkbox" value="" name="specialism" />
+                                            <label class="filtersection__label">Research</label>
+                                        </li>
+                                        <li class="filtersection__optionlist" onclick="selectFilter(this)">
+                                            <input class="checkbox filtersection__checkbox" type="checkbox" value="" name="specialism" />
+                                            <label class="filtersection__label">Residential </label>
+                                        </li>
+                                        <li class="filtersection__optionlist" onclick="selectFilter(this)">
+                                            <input class="checkbox filtersection__checkbox" type="checkbox" value="" name="specialism" />
+                                            <label class="filtersection__label">Rural</label>
+                                        </li>
+                                        <li class="filtersection__optionlist" onclick="selectFilter(this)">
+                                            <input class="checkbox filtersection__checkbox" type="checkbox" value="" name="specialism" />
+                                            <label class="filtersection__label">Taxarion Allowances </label>
+                                        </li>
+                                        <li class="filtersection__optionlist" onclick="selectFilter(this)">
+                                            <input class="checkbox filtersection__checkbox" type="checkbox" value="" name="specialism" />
+                                            <label class="filtersection__label">Telecommunications</label>
+                                        </li>
+                                    </form>
+                                </ul>
+                                <h3 class="filtersection__closecont">
+                                    <a href="javascript:void(0);" title="Apply & Close" onclick="closeFilter()" class="filtersection__close filtersection--applyclose mar-tpbt--30">Apply & Close</a>
+                                    <a href="javascript:void(0);" title="Close" onclick="closeFilter()" class="filtersection__close filtersection--onlyclose mar-tpbt--30">Close</a>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="col--9">
+                            <div class="searchcontainer hide--mobile">
+                                <form class="searchcontainer__searchform" action="#">
+                                    <input class="searchcontainer__search input" type="search" placeholder="Search for something..." value="Affordable Housing" autocomplete="off">
+                                    <a class="searchcontainer__searchicon icon icon--search" href="javascript:void(0); title=" search"=""></a>
+                                </form>
+                            </div>
+                            <div class="latestarticle">
+                                <div class="latestarticle__container">
+                                    <div class="latestarticle__sortby">
+                                        <form action="#">
+                                            <p class="latestarticle__sortbytitle">Sort by:</p>
+                                            <div class="dropdown latestarticle__dropdown">
+                                                <select>
+                                                    <option>Date</option>
+                                                    <option>Relevance</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <ul class="filtersection__appliedfilter filtersection--appliedfiltermobile"></ul>
+                                    <h2 class="latestarticle__heading title title--artlistheading">Showing <strong class="fnt-stl--itlc">59  results</strong></h2>
+                                    <div class="latestarticle__cardlistcont">
+                                        <div class="latestarticle__card">
+                                            <div class="latestarticle__cardimagecont">
+                                                <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/clientlib-base/resources/images/related__article/latest__article1__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/clientlib-base/resources/images/related__article/latest__article1__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/clientlib-base/resources/images/related__article/latest__article1__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/clientlib-base/resources/images/related__article/latest__article1__1x.png" alt="Article" longdesc="Time for a change of use">
+                                                </picture>
+                                            </div>
+                                            <div class="latestarticle__carddetail">
+                                                <h3 class="latestarticle__cardlabel title title-size--sm fnt-clr--blgrn fnt-fmly--jornalbold">PROPERTY JOURNAL</h3>
+                                                <h4 class="latestarticle__articleheading para para-size--artdesc">
+                                                <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
+                                                One Dutch company has taken the innovative step of creating a sustainable floating farm 
+                                                </h4>
+                                                <p class="latestarticle__articledate para para-size--sm">Adam Branson  <strong>17 April 2020</strong></p>
+                                                <div class="latestarticle__tagcont" id="taginfo1">
+                                                <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing"> Affordable Housing</a></p>
+                                                <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Ethics</a></p>
+                                                <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Data</a></p>
+                                                <a class="latestarticle__tagmore" onclick="seemoreTag(1)" href="javascript:void(0);" title="Click to see more tagging">Click to see more tagging</a>
+                                                <p class="latestarticle__tag dis--none"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Tag example</a></p>
+                                                <p class="latestarticle__tag dis--none"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Tag example</a></p>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="latestarticle__card">
+                                            <div class="latestarticle__cardimagecont">
+                                                <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/clientlib-base/resources/images/related__article/article__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/clientlib-base/resources/images/related__article/article__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/clientlib-base/resources/images/related__article/article__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/clientlib-base/resources/images/related__article/article__1x.png" alt="Article">
+                                                </picture>
+                                            </div>
+                                            <div class="latestarticle__carddetail">
+                                                <h3 class="latestarticle__cardlabel title title-size--sm fnt-fmly--oswaldsemibold">MODUS</h3>
+                                                <h4 class="latestarticle__articleheading para para-size--artdesc">
+                                                    <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
+                                                    One Dutch company has taken the innovative step of creating a sustainable floating farm 
+                                                </h4>
+                                                <p class="latestarticle__articledate para para-size--sm">Adam Branson  <strong>17 April 2020</strong></p>
+                                                <div class="latestarticle__tagcont" id="taginfo2">
+                                                    <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing"> Affordable Housing</a></p>
+                                                    <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Ethics</a></p>
+                                                    <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Data</a></p>
+                                                    <a class="latestarticle__tagmore" onclick="seemoreTag(2)" href="javascript:void(0);" title="Click to see more tagging">Click to see more tagging</a>
+                                                    <p class="latestarticle__tag dis--none"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Tag example</a></p>
+                                                    <p class="latestarticle__tag dis--none"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Tag example</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="latestarticle__card">
+                                            <div class="latestarticle__cardimagecont">
+                                                <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/clientlib-base/resources/images/related__article/latest__article2__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/clientlib-base/resources/images/related__article/latest__article2__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/clientlib-base/resources/images/related__article/latest__article2__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/clientlib-base/resources/images/related__article/latest__article2__1x.png" alt="Article" longdesc="Time for a change of use">
+                                                </picture>
+                                            </div>
+                                            <div class="latestarticle__carddetail">
+                                                <h3 class="latestarticle__cardlabel title title-size--sm fnt-clr--trgrn fnt-fmly--jornalbold">LAND JOURNAL</h3>
+                                                <h4 class="latestarticle__articleheading para para-size--artdesc">
+                                                <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
+                                                Those responsible for land are obliged to deal with any ash trees suffering from dieback, but can rely on an increasing
+                                                </h4>
+                                                <p class="latestarticle__articledate para para-size--sm">Adam Branson  <strong>17 April 2020</strong></p>
+                                                <div class="latestarticle__tagcont" id="taginfo3">
+                                                <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing"> Affordable Housing</a></p>
+                                                <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Ethics</a></p>
+                                                <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Data</a></p>
+                                                <a class="latestarticle__tagmore" onclick="seemoreTag(3)" href="javascript:void(0);" title="Click to see more tagging">Click to see more tagging</a>
+                                                <p class="latestarticle__tag dis--none"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Tag example</a></p>
+                                                <p class="latestarticle__tag dis--none"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Tag example</a></p>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="latestarticle__card">
+                                            <div class="latestarticle__cardimagecont">
+                                                <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/clientlib-base/resources/images/related__article/latest__article3__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/clientlib-base/resources/images/related__article/latest__article3__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/clientlib-base/resources/images/related__article/latest__article3__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/clientlib-base/resources/images/related__article/latest__article3__1x.png" alt="Article" longdesc="Time for a change of use">
+                                                </picture>
+                                            </div>
+                                            <div class="latestarticle__carddetail">
+                                                <h3 class="latestarticle__cardlabel title title-size--sm fnt-clr--cobalt fnt-fmly--jornalbold">CONSTRUCTION JOURNAL</h3>
+                                                <h4 class="latestarticle__articleheading para para-size--artdesc">
+                                                <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
+                                                The challenges created by the UK construction industry’s current payment practices
+                                                </h4>
+                                                <p class="latestarticle__articledate para para-size--sm">Adam Branson  <strong>17 April 2020</strong></p>
+                                                <div class="latestarticle__tagcont" id="taginfo4">
+                                                <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing"> Affordable Housing</a></p>
+                                                <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Ethics</a></p>
+                                                <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Data</a></p>
+                                                <a class="latestarticle__tagmore" onclick="seemoreTag(4)" href="javascript:void(0);" title="Click to see more tagging">Click to see more tagging</a>
+                                                <p class="latestarticle__tag dis--none"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Tag example</a></p>
+                                                <p class="latestarticle__tag dis--none"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Tag example</a></p>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="latestarticle__card">
+                                            <div class="latestarticle__cardimagecont">
+                                                <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/clientlib-base/resources/images/related__article/latest__article1__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/clientlib-base/resources/images/related__article/latest__article1__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/clientlib-base/resources/images/related__article/latest__article1__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/clientlib-base/resources/images/related__article/latest__article1__1x.png" alt="Article" longdesc="Time for a change of use">
+                                                </picture>
+                                            </div>
+                                            <div class="latestarticle__carddetail">
+                                                <h3 class="latestarticle__cardlabel title title-size--sm fnt-clr--blgrn fnt-fmly--jornalbold">PROPERTY JOURNAL</h3>
+                                                <h4 class="latestarticle__articleheading para para-size--artdesc">
+                                                <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
+                                                One Dutch company has taken the innovative step of creating a sustainable floating farm 
+                                                </h4>
+                                                <p class="latestarticle__articledate para para-size--sm">Adam Branson  <strong>17 April 2020</strong></p>
+                                                <div class="latestarticle__tagcont" id="taginfo5">
+                                                <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing"> Affordable Housing</a></p>
+                                                <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Ethics</a></p>
+                                                <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Data</a></p>
+                                                <a class="latestarticle__tagmore" onclick="seemoreTag(5)" href="javascript:void(0);" title="Click to see more tagging">Click to see more tagging</a>
+                                                <p class="latestarticle__tag dis--none"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Tag example</a></p>
+                                                <p class="latestarticle__tag dis--none"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Tag example</a></p>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="latestarticle__card">
+                                            <div class="latestarticle__cardimagecont">
+                                                <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/clientlib-base/resources/images/related__article/article__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/clientlib-base/resources/images/related__article/article__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/clientlib-base/resources/images/related__article/article__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/clientlib-base/resources/images/related__article/article__1x.png" alt="Article">
+                                                </picture>
+                                            </div>
+                                            <div class="latestarticle__carddetail">
+                                                <h3 class="latestarticle__cardlabel title title-size--sm fnt-fmly--oswaldsemibold">MODUS</h3>
+                                                <h4 class="latestarticle__articleheading para para-size--artdesc">
+                                                    <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
+                                                    One Dutch company has taken the innovative step of creating a sustainable floating farm 
+                                                </h4>
+                                                <p class="latestarticle__articledate para para-size--sm">Adam Branson  <strong>17 April 2020</strong></p>
+                                                <div class="latestarticle__tagcont" id="taginfo6">
+                                                    <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing"> Affordable Housing</a></p>
+                                                    <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Ethics</a></p>
+                                                    <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Data</a></p>
+                                                    <a class="latestarticle__tagmore" onclick="seemoreTag(6)" href="javascript:void(0);" title="Click to see more tagging">Click to see more tagging</a>
+                                                    <p class="latestarticle__tag dis--none"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Tag example</a></p>
+                                                    <p class="latestarticle__tag dis--none"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Tag example</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="latestarticle__card">
+                                            <div class="latestarticle__cardimagecont">
+                                                <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/clientlib-base/resources/images/related__article/latest__article4__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/clientlib-base/resources/images/related__article/latest__article4__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/clientlib-base/resources/images/related__article/latest__article4__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/clientlib-base/resources/images/related__article/latest__article4__1x.png" alt="Article" longdesc="Time for a change of use">
+                                                </picture>
+                                            </div>
+                                            <div class="latestarticle__carddetail">
+                                                <h3 class="latestarticle__cardlabel title title-size--sm fnt-clr--cobalt fnt-fmly--jornalbold">BUILT ENVIRONMENT JOURNAL</h3>
+                                                <h4 class="latestarticle__articleheading para para-size--artdesc">
+                                                <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
+                                                With investors seeking more sustainable options, digital technologies are making wooden buildings competitive
+                                                </h4>
+                                                <p class="latestarticle__articledate para para-size--sm">Adam Branson  <strong>17 April 2020</strong></p>
+                                                <div class="latestarticle__tagcont" id="taginfo7">
+                                                <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing"> Affordable Housing</a></p>
+                                                <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Ethics</a></p>
+                                                <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Data</a></p>
+                                                <a class="latestarticle__tagmore" onclick="seemoreTag(7)" href="javascript:void(0);" title="Click to see more tagging">Click to see more tagging</a>
+                                                <p class="latestarticle__tag dis--none"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Tag example</a></p>
+                                                <p class="latestarticle__tag dis--none"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Tag example</a></p>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="latestarticle__card">
+                                            <div class="latestarticle__cardimagecont">
+                                                <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/clientlib-base/resources/images/related__article/article__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/clientlib-base/resources/images/related__article/article__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/clientlib-base/resources/images/related__article/article__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/clientlib-base/resources/images/related__article/article__1x.png" alt="Article">
+                                                </picture>
+                                            </div>
+                                            <div class="latestarticle__carddetail">
+                                                <h3 class="latestarticle__cardlabel title title-size--sm fnt-fmly--oswaldsemibold">MODUS</h3>
+                                                <h4 class="latestarticle__articleheading para para-size--artdesc">
+                                                    <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
+                                                    One Dutch company has taken the innovative step of creating a sustainable floating farm 
+                                                </h4>
+                                                <p class="latestarticle__articledate para para-size--sm">Adam Branson  <strong>17 April 2020</strong></p>
+                                                <div class="latestarticle__tagcont" id="taginfo8">
+                                                    <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing"> Affordable Housing</a></p>
+                                                    <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Ethics</a></p>
+                                                    <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Data</a></p>
+                                                    <a class="latestarticle__tagmore" onclick="seemoreTag(8)" href="javascript:void(0);" title="Click to see more tagging">Click to see more tagging</a>
+                                                    <p class="latestarticle__tag dis--none"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Tag example</a></p>
+                                                    <p class="latestarticle__tag dis--none"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Tag example</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="latestarticle__card">
+                                            <div class="latestarticle__cardimagecont">
+                                                <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/clientlib-base/resources/images/related__article/latest__article2__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/clientlib-base/resources/images/related__article/latest__article2__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/clientlib-base/resources/images/related__article/latest__article2__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/clientlib-base/resources/images/related__article/latest__article2__1x.png" alt="Article" longdesc="Time for a change of use">
+                                                </picture>
+                                            </div>
+                                            <div class="latestarticle__carddetail">
+                                                <h3 class="latestarticle__cardlabel title title-size--sm fnt-clr--blgrn fnt-fmly--jornalbold">LAND JOURNAL</h3>
+                                                <h4 class="latestarticle__articleheading para para-size--artdesc">
+                                                <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
+                                                Those responsible for land are obliged to deal with any ash trees suffering from dieback, but can rely on an increasing
+                                                </h4>
+                                                <p class="latestarticle__articledate para para-size--sm">Adam Branson  <strong>17 April 2020</strong></p>
+                                                <div class="latestarticle__tagcont" id="taginfo9">
+                                                <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing"> Affordable Housing</a></p>
+                                                <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Ethics</a></p>
+                                                <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Data</a></p>
+                                                <a class="latestarticle__tagmore" onclick="seemoreTag(9)" href="javascript:void(0);" title="Click to see more tagging">Click to see more tagging</a>
+                                                <p class="latestarticle__tag dis--none"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Tag example</a></p>
+                                                <p class="latestarticle__tag dis--none"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Tag example</a></p>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="latestarticle__card">
+                                            <div class="latestarticle__cardimagecont">
+                                                <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="/clientlib-base/resources/images/related__article/article__3x.png">
+                                                    <source media="(min-width: 960px)" srcset="/clientlib-base/resources/images/related__article/article__2x.png">
+                                                    <source media="(min-width: 560px)" srcset="/clientlib-base/resources/images/related__article/article__1x.png">
+                                                    <img class="latestarticle__cardimage" src="/clientlib-base/resources/images/related__article/article__1x.png" alt="Article">
+                                                </picture>
+                                            </div>
+                                            <div class="latestarticle__carddetail">
+                                                <h3 class="latestarticle__cardlabel title title-size--sm fnt-fmly--oswaldsemibold">MODUS</h3>
+                                                <h4 class="latestarticle__articleheading para para-size--artdesc">
+                                                    <a class="latestarticle__cardlink" href="javascript:void(0);" title="go to article">go to article</a>
+                                                    One Dutch company has taken the innovative step of creating a sustainable floating farm 
+                                                </h4>
+                                                <p class="latestarticle__articledate para para-size--sm">Adam Branson  <strong>17 April 2020</strong></p>
+                                                <div class="latestarticle__tagcont" id="taginfo10">
+                                                    <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing"> Affordable Housing</a></p>
+                                                    <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Ethics</a></p>
+                                                    <p class="latestarticle__tag"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Data</a></p>
+                                                    <a class="latestarticle__tagmore" onclick="seemoreTag(10)" href="javascript:void(0);" title="Click to see more tagging">Click to see more tagging</a>
+                                                    <p class="latestarticle__tag dis--none"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Tag example</a></p>
+                                                    <p class="latestarticle__tag dis--none"><a class="latestarticle__taglink" href="javascript:void(0);" title="Affordable Housing">Tag example</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="javascript:void(0);" class="latestarticle__loadbtn btn" title="Load More">Load More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Footer Start-->
+        <footer class="ricsfooter">
+            <div class="container container--fluid">
+                <div class="container--content">
+                    <div class="rics--row flx-dir--mobclm">
+                        <div class="ricsfooter__left col--4">
+                            <h6 class="ricsfooter__heading ricsfooter--modus col--9">Modus</h6>
+                            <nav role="navigation" aria-label="Modus footer navigation" class="ricsfooter__nav col--9">
+                                <ul class="ricsfooter__navlistcont">
+                                    <li class="ricsfooter__navlist">
+                                        <a class="ricsfooter__navlink" href="javascript:void(0);" title="Contact Us">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="ricsfooter__ctr col--4">
+                            <h6 class="ricsfooter__heading ricsfooter--journal col--9">Journals</h6>
+                            <nav role="navigation" aria-label="Journals footer navigation" class="ricsfooter__nav col--9">
+                                <ul class="ricsfooter__navlistcont">
+                                    <li class="ricsfooter__navlist">
+                                        <a class="ricsfooter__navlink" href="javascript:void(0);" title="Contact Us">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="ricsfooter__right col--4">
+                            <div class="col--12 ricsfooter__rightinner">
+                                <h1 class="ricsfooter__heading">
+                                    <a class="ricsfooter__logolink" href="javascript:void(0);" title="RICS">RICS</a>
+                                </h1>
+                                <div class="ricsfooter__scllinks rics--row col--auto">
+                                    <a class="ricsfooter__socialsharinglink icon icon-wht--fbicon" href="javascript:void(0);" title="Facebook">Facebook</a>
+                                    <a class="ricsfooter__socialsharinglink icon icon-wht--twtr" href="javascript:void(0);" title="Twitter">Twitter</a>
+                                    <a class="ricsfooter__socialsharinglink icon icon-wht--lkdln" href="javascript:void(0);" title="LinkeedIn">LinkeedIn</a>
+                                </div>
+                            </div>
+                            <nav role="navigation" aria-label="Footer navigation" class="ricsfooter__nav col--12">
+                                <ul class="ricsfooter__navlistcont">
+                                    <li class="ricsfooter__navlist">
+                                        <a class="ricsfooter__navlink" href="javascript:void(0);" title="RICS.org">Visit <u>RICS.org</u></a>
+                                    </li>
+                                    <li class="ricsfooter__navlist">
+                                        <a class="ricsfooter__navlink" href="javascript:void(0);" title="About RICS">About RICS</a>
+                                    </li>
+                                    <li class="ricsfooter__navlist">
+                                        <a class="ricsfooter__navlink" href="javascript:void(0);" title="Privacy & Cookie Policy">Privacy & Cookie Policy</a>
+                                    </li>
+                                    <li class="ricsfooter__navlist">
+                                        <a class="ricsfooter__navlink" href="javascript:void(0);" title="Terms and Conditions">Terms and Conditions</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="rics--row">
+                                <nav role="navigation" aria-label="Copyrights information" class="ricsfooter__nav col--auto">
+                                    <ul class="ricsfooter__navlistcont ricsfooter--copyright">
+                                        <li class="ricsfooter__navlist">
+                                            Copyright 2020 RICS.org. All rights reserved
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--Footer End-->
+        <script data-env="development" src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.7.1/less.js"></script>
+        <script src="/clientlib-base/js/rics.js"></script>
+    </body>
+</html>

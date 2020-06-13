@@ -5,11 +5,13 @@
    display: inline-block;
    width: 100%;
    border-bottom: solid 1px @ricsblack;
+   position: relative;
    &__heading{
       border-bottom: solid 1px @ricsblack;
       .fnt-stl--itlc{
          font-family: @RICS--Italic;
          font-style: normal!important;
+         font-weight: normal!important;
       }
    }
    &__card{
@@ -130,6 +132,24 @@
       width: 170px;
       padding: 7px 0;
    }
+   &__sortby{
+      border: solid 1px @ricsblack;
+      position: absolute;
+      right: 0;
+      top: 20px;
+      padding: 0 10px;
+   }
+   &__sortbytitle{
+      .default--font();
+      font-size: 18px;
+      line-height: 30px;
+      float: left;
+      margin-right: 15px;
+      padding-top: 4px;
+   }
+   &__dropdown{
+      float: left;
+   }
 }
 .special{
    &__listcont{
@@ -156,6 +176,36 @@
    &__heading{
       margin: 15px 0 0px;
    }
+   &__refine{
+      margin-left: 15px;
+      border: solid 1px @ricsblack;
+      width: 100px;
+      padding: 7px 5px 6px;
+      .default--font();
+      font-size: 14px;
+      margin-top: 40px;
+      display: none;
+      position: relative;
+      cursor: pointer;
+      &::after{
+         position: absolute;
+         right: 5px;
+         border-top: solid 7px @ricsblack;
+         border-left: solid 5px transparent;
+         border-right: solid 5px transparent;
+         content: "";
+         top: 50%;
+         margin-top: -3.5px;
+      }
+   }
+   &--refineactive{
+      background: @ricsblack;
+      color: @ricswhite;
+      &::after{
+         border-top: 0;
+         border-bottom: solid 7px @ricswhite;
+      }
+   }
 }
 @media (max-width: 991.98px) {
    .latestarticle{
@@ -174,11 +224,6 @@
       margin-left: 5%;
       margin-right: 5%;
       border-bottom: solid 1px @ricsblack;
-      &__heading{
-         .fnt-stl--itlc{
-            display: none;
-         }
-      }
       &__card{
          margin-top: 7px;
       }
@@ -248,6 +293,15 @@
             top: 0;
          }
       }
+      &__sortbytitle{
+         font-size: 14px;
+         line-height: 20px;
+      }
+      &__sortby{
+         top: -64px;
+         right: auto;
+         left: 105px;
+      }
    }
    .special{
       &__heading{
@@ -257,6 +311,9 @@
          margin-right: auto;
          .dis--blk{
             display: inline;
+         }
+         .hide--desktop{
+            display: inline!important;
          }
       }
       &__listcont{
@@ -269,6 +326,9 @@
       &__link{
          font-size: 20px;
          line-height: 24px;
+      }
+      &__refine{
+         display: block;
       }
    }
    .seemore--tag{

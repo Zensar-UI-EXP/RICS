@@ -1,0 +1,190 @@
+@import "./partials/variables.less";  
+@import "./partials/mixins.less";
+
+.filtersection{
+   height: 100%;
+   margin-top: 173px;
+   position: relative;
+   &::after{
+      height: 1px;
+      width: 30px;
+      content: "";
+      position: absolute;
+      right: -30px;
+      bottom: 173px;
+      background: @ricsblack;
+   }
+   &::before{
+      height: 1px;
+      width: 100%;
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 173px;
+      background: @ricsblack;
+   }
+   &__options{
+      padding: 30px 0 20px;
+      border-top: solid 1px @charcoal--grey50;
+      margin-top: 10px;
+      &:last-child{
+         border-bottom: solid 1px @charcoal--grey50;
+      }
+   }
+   &__optionlist{
+      margin-top: 20px;
+      line-height: 37px;
+      width: 100%;
+      display: inline-block;
+      cursor: pointer;
+   }
+   &__checkbox{
+      float: left;
+   }
+   &__label{
+      margin-left: 15px;
+      .default--font();
+      float: left;
+      margin-top: -3px;
+      cursor: pointer;
+   }
+   &__optionheading{
+      position: relative;
+      margin-bottom: 10px;
+   }
+   &__expand{
+      position: absolute;
+      right: 0;
+      top: 50%;
+      width: 16px;
+      height: 4px;
+      margin-top: -2px;
+      background: @charcoal--grey;
+      cursor: pointer;
+   }
+   &--collapsed{
+      .filtersection__form{
+         display: none;
+      }
+      .filtersection__expand::after{
+         height: 16px;
+         width: 4px;
+         right: 6px;
+         top: -6px;
+         content: "";
+         position: absolute;
+         background: @charcoal--grey;
+      }
+   }
+   &__appliedfilter{
+      margin-top: 65px;
+      display: none;
+   }
+   &__appliedfilterlist{
+      background: @verylight--pinktwo;
+      padding: 5px 20px 5px 10px;
+      position: relative;
+      margin-bottom: 5px;
+   }
+   &__appliedfilterkey{
+      .default--font();
+      color: @charcoal--grey;
+      text-transform: capitalize;
+   }
+   &__appliedfiltervalue{
+      .default--font();
+      font-family: @RICS--Bold;
+      color: @charcoal--grey;
+      margin-left: 5px;
+   }
+   &__clearfilter{
+      background: url(../resources/images/icon__close.png) no-repeat @verylight--pinktwo;
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      margin-top: -6px;
+      background-size: 100%;
+   }
+   &__clearall{
+      .default--font();
+      font-family: @RICS--Bold;
+      color: @charcoal--grey;
+      font-size: 18px;
+      text-decoration: underline;
+      float: right;
+      display: none;
+      &:hover{
+         opacity: 0.7;
+      }
+   }
+   &__closecont{
+      display: none;
+   }
+   &__close{
+      .default--font();
+      font-family: @RICS--Medium;
+      font-size: 14px;
+      float: right;
+      text-decoration: underline;
+   }
+   &--applyclose{
+      display: none;
+   }
+}
+@media (max-width: 767.98px) {
+   .filtersection{
+      position: absolute;
+      background: @ricswhite;
+      z-index: 3;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      padding-left: 0;
+      padding-right: 0;
+      overflow: hidden;
+      left: 50%;
+      margin-left: -50%;
+      padding: 0 15px;
+      display: none;
+      height: 43vh;
+      overflow-y: auto;
+      &__options{
+         border-top: 0;
+         border-bottom: solid 1px @charcoal--grey50;
+         padding: 15px 0 20px;
+      }
+      &__optionheading.title-size--sm{
+         font-size: 15px!important;
+      }
+      &__optionlist{
+         margin-top: 10px;
+      }
+      &__label{
+         font-size: 15px;
+      }
+      &__title{
+         display: none;
+      }
+      &::before{
+         display: none;
+      }
+      &__expand{
+         display: none;
+      }
+      &__appliedfilter{
+         margin-top: 0;
+         margin-bottom: 10px;
+      }
+      &__appliedfilterkey{
+         font-size: 12px;
+      }
+      &__appliedfiltervalue{
+         font-size: 12px;
+      }
+      &__closecont{
+         display: block;
+      }
+   }
+}
