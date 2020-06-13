@@ -431,4 +431,11 @@
   .ricslighbox__closeicon {
     right: 3%;
   }
+  .dropdown {
+    min-width: 100px;
+  }
+  .dropdown select {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }

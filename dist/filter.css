@@ -1,0 +1,220 @@
+.filtersection {
+  height: 100%;
+  margin-top: 173px;
+  position: relative;
+}
+.filtersection::after {
+  height: 1px;
+  width: 30px;
+  content: "";
+  position: absolute;
+  right: -30px;
+  bottom: 173px;
+  background: #000000;
+}
+.filtersection::before {
+  height: 1px;
+  width: 100%;
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 173px;
+  background: #000000;
+}
+.filtersection__options {
+  padding: 30px 0 20px;
+  border-top: solid 1px rgba(76, 77, 77, 0.5);
+  margin-top: 10px;
+}
+.filtersection__options:last-child {
+  border-bottom: solid 1px rgba(76, 77, 77, 0.5);
+}
+.filtersection__optionlist {
+  margin-top: 20px;
+  line-height: 37px;
+  width: 100%;
+  display: inline-block;
+  cursor: pointer;
+}
+.filtersection__checkbox {
+  float: left;
+}
+.filtersection__label {
+  margin-left: 15px;
+  font-family: 'HelveticaNeueLTPro-Regular';
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  float: left;
+  margin-top: -3px;
+  cursor: pointer;
+}
+.filtersection__optionheading {
+  position: relative;
+  margin-bottom: 10px;
+}
+.filtersection__expand {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 16px;
+  height: 4px;
+  margin-top: -2px;
+  background: #4c4d4d;
+  cursor: pointer;
+}
+.filtersection--collapsed .filtersection__form {
+  display: none;
+}
+.filtersection--collapsed .filtersection__expand::after {
+  height: 16px;
+  width: 4px;
+  right: 6px;
+  top: -6px;
+  content: "";
+  position: absolute;
+  background: #4c4d4d;
+}
+.filtersection__appliedfilter {
+  margin-top: 65px;
+  display: none;
+}
+.filtersection__appliedfilterlist {
+  background: #f9f7f7;
+  padding: 5px 20px 5px 10px;
+  position: relative;
+  margin-bottom: 5px;
+}
+.filtersection__appliedfilterkey {
+  font-family: 'HelveticaNeueLTPro-Regular';
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  color: #4c4d4d;
+  text-transform: capitalize;
+}
+.filtersection__appliedfiltervalue {
+  font-family: 'HelveticaNeueLTPro-Regular';
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-family: 'HelveticaNeueLTPro-Bold';
+  color: #4c4d4d;
+  margin-left: 5px;
+}
+.filtersection__clearfilter {
+  background: url(../resources/images/icon__close.png) no-repeat #f9f7f7;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -6px;
+  background-size: 100%;
+}
+.filtersection__clearall {
+  font-family: 'HelveticaNeueLTPro-Regular';
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-family: 'HelveticaNeueLTPro-Bold';
+  color: #4c4d4d;
+  font-size: 18px;
+  text-decoration: underline;
+  float: right;
+  display: none;
+}
+.filtersection__clearall:hover {
+  opacity: 0.7;
+}
+.filtersection__closecont {
+  display: none;
+}
+.filtersection__close {
+  font-family: 'HelveticaNeueLTPro-Regular';
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  font-family: 'HelveticaNeueLTPro-Medium';
+  font-size: 14px;
+  float: right;
+  text-decoration: underline;
+}
+.filtersection--applyclose {
+  display: none;
+}
+@media (max-width: 767.98px) {
+  .filtersection {
+    position: absolute;
+    background: #ffffff;
+    z-index: 3;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+    left: 50%;
+    margin-left: -50%;
+    padding: 0 15px;
+    display: none;
+    height: 43vh;
+    overflow-y: auto;
+  }
+  .filtersection__options {
+    border-top: 0;
+    border-bottom: solid 1px rgba(76, 77, 77, 0.5);
+    padding: 15px 0 20px;
+  }
+  .filtersection__optionheading.title-size--sm {
+    font-size: 15px!important;
+  }
+  .filtersection__optionlist {
+    margin-top: 10px;
+  }
+  .filtersection__label {
+    font-size: 15px;
+  }
+  .filtersection__title {
+    display: none;
+  }
+  .filtersection::before {
+    display: none;
+  }
+  .filtersection__expand {
+    display: none;
+  }
+  .filtersection__appliedfilter {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .filtersection__appliedfilterkey {
+    font-size: 12px;
+  }
+  .filtersection__appliedfiltervalue {
+    font-size: 12px;
+  }
+  .filtersection__closecont {
+    display: block;
+  }
+}
