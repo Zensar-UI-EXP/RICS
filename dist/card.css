@@ -33,7 +33,7 @@
 }
 .cardlayout--fullcolmn .cardlayout__content {
   display: block;
-  padding: 60px 15px 70px;
+  padding: 60px 15px 80px;
 }
 .cardlayout--fullcolmn .cardlayout__content .col--6 {
   width: 100%;
@@ -46,7 +46,7 @@
   max-width: 100%;
 }
 .cardlayout--fullcolmn .cardlayout__content .cardlayout__desc {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .cardlayout--fullcolmn .cardlayout__authinfo strong {
   display: inline;
@@ -54,7 +54,7 @@
 }
 .cardlayout--fullcolmn .cardlayout__authinfo {
   position: absolute;
-  bottom: 45px;
+  bottom: 30px;
 }
 .cardlayout__pageinfo {
   text-transform: uppercase;
@@ -98,7 +98,7 @@
 .cardlayout__desc {
   margin-bottom: 30px;
   line-height: 22px!important;
-  font-size: 18px!important;
+  font-size: 21px!important;
   line-height: 27px!important;
 }
 .cardlayout__subheading {
@@ -180,7 +180,7 @@
   width: 200px;
 }
 .pagelist__cont {
-  width: 24%;
+  width: calc(24% - 15px);
   background: #fffded;
   padding: 30px;
   min-height: 260px;

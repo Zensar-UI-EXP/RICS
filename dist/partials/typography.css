@@ -108,13 +108,13 @@ a {
 .icon--play {
   background: url(../../resources/images/icon__playvideo__2x.png) no-repeat transparent;
   background-size: contain;
-  width: 189px;
-  height: 189px;
+  width: 140px;
+  height: 140px;
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-top: -94.5px;
-  margin-left: -94.5px;
+  margin-top: -70px;
+  margin-left: -70px;
   z-index: 6;
 }
 .icon--fbicon {
@@ -485,9 +485,6 @@ a {
 .slider img {
   width: 100%;
 }
-.slider--fade img {
-  animation: fading 5s;
-}
 .slider__arrow {
   position: absolute;
   width: 50px;
@@ -518,6 +515,14 @@ a {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
 .bg--blgrnwithopct {
@@ -570,6 +575,11 @@ td {
   color: #000000;
   font-size: 21px;
   line-height: 29px;
+  min-width: 265px;
+}
+th:first-child,
+td:first-child {
+  min-width: 130px;
 }
 th {
   font-family: 'HelveticaNeueLTPro-Medium';
@@ -693,7 +703,7 @@ strong.fnt-stl--itlc {
   color: #000000;
 }
 .title--pageinfo {
-  font-size: 42px;
+  font-size: 40px;
   line-height: 58px;
   margin-bottom: 0;
   margin-top: 20px;
@@ -790,6 +800,8 @@ strong.fnt-stl--itlc {
 .title-size--jnlpghead {
   font-size: 45px;
   line-height: 61px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .title-size--jnlbrsbhead {
   font-size: 45px;
@@ -800,7 +812,7 @@ strong.fnt-stl--itlc {
   line-height: 14px;
 }
 .title-size--jnlcrdsbhead {
-  font-size: 30px;
+  font-size: 28px;
   line-height: 40px;
 }
 .title-size--jrnlcrd {

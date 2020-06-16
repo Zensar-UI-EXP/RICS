@@ -1,7 +1,7 @@
 .ricsrltopics {
   width: 100%;
   display: inline-block;
-  margin: 5px auto;
+  margin: 75px auto 25px;
 }
 .ricsrltopics__container {
   justify-content: space-between;
@@ -136,6 +136,7 @@
   font-weight: bold;
   line-height: 0.78;
   display: inline-block;
+  text-transform: uppercase;
 }
 .ricsrlart__articleheading {
   font-family: 'HelveticaNeueLTPro-Regular';

@@ -88,6 +88,7 @@
 }
 .ricsartcf__slider {
   position: relative;
+  overflow: hidden;
 }
 .ricsartcf--fstltrnrml {
   font-size: 24px;
@@ -109,7 +110,7 @@
   letter-spacing: normal;
   color: #000000;
   font-size: 18px;
-  font-family: 'HelveticaNeueLTPro-Italic';
+  font-family: 'HelveticaNeueLTPro-Italic' !important;
   color: #4c4d4d;
   line-height: 30px;
 }
@@ -213,7 +214,7 @@
 }
 .ricsartcf--jrnlrhtcontent {
   font-family: 'OpenSans-SemiBold';
-  font-size: 25px;
+  font-size: 24px;
   line-height: 38px;
 }
 .ricsarttbl__headingcont {
