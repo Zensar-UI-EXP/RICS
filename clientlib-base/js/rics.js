@@ -163,7 +163,7 @@ function expandTable() {
       let bodyElement = document.body;
       modalElement.style.display = "block";
       bodyElement.style.overflow = "hidden";
-      bodyElement.classList.add("fixed--body");
+      // bodyElement.classList.add("fixed--body");
 }
 
 function closeLightbox() {

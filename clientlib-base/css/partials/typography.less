@@ -110,13 +110,13 @@ a {
    &--play{
       background: url(../../resources/images/icon__playvideo__2x.png) no-repeat transparent;
       background-size: contain;
-      width: 189px;
-      height: 189px;
+      width: 140px;
+      height: 140px;
       position: absolute;
       left: 50%;
       top: 50%;
-      margin-top: -94.5px;
-      margin-left: -94.5px;
+      margin-top: -70px;
+      margin-left: -70px;
       z-index: 6;
    }
    &--fbicon{
@@ -538,8 +538,11 @@ a {
    }
    &--fade{
       img {
-         animation: fading 5s;
+         // animation: fading 3s;
       }
+   }
+   img {
+      // animation: slide 1s;
    }
    &__arrow{
       position: absolute;
@@ -571,6 +574,10 @@ a {
 @keyframes fading{
    0%    {opacity:0}
    100%  {opacity:1}
+}
+@keyframes slide {
+   0% { transform: translateX(-100%);  }
+   100% { transform: translateX(0%); }
 }
 .bg{
    &--blgrnwithopct{
@@ -616,6 +623,10 @@ th, td{
    .default--font();
    font-size: 21px;
    line-height: 29px;
+   min-width: 265px;
+   &:first-child{
+      min-width: 130px;
+   }
 }
 th{
    font-family: @RICS--Medium;
@@ -751,7 +762,7 @@ strong{
 .title{
    .default-title--font();
    &--pageinfo{
-      font-size: 42px;
+      font-size: 40px;
       line-height: 58px;
       margin-bottom: 0;
       margin-top: 20px;
@@ -842,6 +853,8 @@ strong{
       &--jnlpghead{
          font-size: 45px;
          line-height: 61px;
+         margin-top: 20px;
+         margin-bottom: 20px;
       }
       &--jnlbrsbhead{
          font-size: 45px;
@@ -852,7 +865,7 @@ strong{
          line-height: 14px;
       }
       &--jnlcrdsbhead{
-         font-size: 30px;
+         font-size: 28px;
          line-height: 40px;
       }
       &--jrnlcrd{
