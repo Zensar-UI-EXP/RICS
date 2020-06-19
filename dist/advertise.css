@@ -1,5 +1,5 @@
 .advertise {
-  margin: 100px auto 100px;
+  margin: 125px auto;
   width: 100%;
 }
 .advertise__heading {
@@ -27,8 +27,9 @@
     border-top: solid 1px #979797;
     border-bottom: solid 1px #979797;
     padding: 15px 0 30px;
-    margin: 0 auto;
+    margin: 15px 5%;
     width: 90%;
+    display: inline-block;
   }
   .advertise__heading {
     font-size: 10px!important;

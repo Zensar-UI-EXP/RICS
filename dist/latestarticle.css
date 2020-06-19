@@ -3,6 +3,7 @@
   width: 100%;
   border-bottom: solid 1px #000000;
   position: relative;
+  margin: 25px auto;
 }
 .latestarticle__heading {
   border-bottom: solid 1px #000000;
@@ -169,6 +170,11 @@
 .latestarticle__dropdown {
   float: left;
 }
+.special {
+  margin: 25px auto;
+  display: inline-block;
+  width: 100%;
+}
 .special__listcont {
   margin-top: 65px;
 }
@@ -245,6 +251,8 @@
     margin-left: 5%;
     margin-right: 5%;
     border-bottom: solid 1px #000000;
+    margin-top: 15px!important;
+    margin-bottom: 15px!important;
   }
   .latestarticle__card {
     margin-top: 7px;
@@ -320,15 +328,20 @@
     line-height: 20px;
   }
   .latestarticle__sortby {
-    top: -64px;
+    top: -79px;
     right: auto;
     left: 105px;
+  }
+  .special {
+    margin-top: 15px!important;
+    margin-bottom: 15px!important;
   }
   .special__heading {
     width: 90%;
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 15px;
   }
   .special__heading .dis--blk {
     display: inline;

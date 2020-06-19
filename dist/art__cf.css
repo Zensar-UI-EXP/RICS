@@ -1,7 +1,7 @@
 .ricsartcf {
   width: 100%;
   display: inline-block;
-  margin: 5px auto;
+  margin: 30px auto;
   display: flex;
 }
 .ricsartcf__heading {
@@ -217,6 +217,9 @@
   font-size: 24px;
   line-height: 38px;
 }
+.ricsarttbl {
+  margin: 30px auto;
+}
 .ricsarttbl__headingcont {
   margin-top: 70px;
   background: #02837c;
@@ -264,6 +267,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  margin: 30px auto;
 }
 .ricsartrightcnt__container {
   margin-right: 15px;
@@ -300,6 +304,10 @@
   display: inline-block;
 }
 @media (max-width: 767.98px) {
+  .ricsartcf {
+    margin-top: 15px!important;
+    margin-bottom: 15px!important;
+  }
   .ricsartcf__container {
     flex-direction: column;
   }
@@ -407,53 +415,46 @@
     font-size: 19px;
     line-height: 22px;
   }
-  .ricsartrightcnt__rhtcontent {
-    font-size: 16px;
-    line-height: 22px;
-  }
-  .ricsartimgntxt__container {
-    flex-direction: column;
-  }
-  .ricsartimgntxt__txt,
-  .ricsartimgntxt__midcol,
-  .ricsartimgntxt__rhtcol {
-    width: 100%;
-    max-width: 100%;
-  }
-  .ricsartimgntxt--txtwithleftspace .ricsartimgntxt__txt {
-    margin-left: 0!important;
-  }
-  .ricsartimgntxt__rhtcol {
-    align-self: flex-start !important;
-    padding-left: 0;
-    padding-right: 15px!important;
-    border-top: solid 1px #979797;
-    border-bottom: solid 1px #979797;
-    padding-bottom: 25px;
-    margin-bottom: 25px;
-  }
-  .ricsartimgntxt__txt {
-    font-size: 12px;
-    margin-top: 5px!important;
-    line-height: 17px;
-  }
-  .ricsartimgntxt__advheading {
-    font-size: 10px;
-    padding: 10px 0;
-  }
-  .ricsartimgntxt__video,
-  .ricsartimgntxt__videoposter {
-    height: 45vw;
-  }
   .ricsartrightcnt {
     position: static;
+    margin-top: 0!important;
+    margin-bottom: 15px!important;
   }
   .ricsartrightcnt__container {
     margin-right: 0;
     width: 100%;
   }
   .ricsartrightcnt__rhtcontent {
+    font-size: 16px;
+    line-height: 22px;
     margin-bottom: 0;
-    margin-top: 25px;
+    margin-top: 10px;
+  }
+  .ricsarttbl {
+    margin-top: 15px!important;
+    margin-bottom: 15px!important;
+  }
+  .ricsarttbl__container .rics--row {
+    flex-direction: column;
+  }
+  .ricsarttbl__midcol {
+    width: 100%;
+    max-width: 100%;
+  }
+  .ricsarttbl__tablename {
+    font-size: 11px;
+    line-height: 15px;
+  }
+  .ricsarttbl__headingcont {
+    position: relative;
+  }
+  .ricsarttbl__headingcont:before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #ffffff 84%);
+    width: 62px;
+    content: "";
+    height: 100%;
   }
 }

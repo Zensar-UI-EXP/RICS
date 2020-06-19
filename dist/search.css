@@ -2,7 +2,8 @@
   padding: 20px;
   background: #f9f7f7;
   position: relative;
-  margin-bottom: 35px;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 .searchcontainer__search {
   background: transparent;
@@ -25,7 +26,7 @@
   .searchcontainer {
     padding: 0;
     width: calc(100% - 30px);
-    margin: 0 auto;
+    margin: 30px auto 0;
   }
   .searchcontainer__search {
     font-size: 14px!important;

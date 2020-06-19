@@ -528,32 +528,62 @@ a {
 .bg--blgrnwithopct {
   background: rgba(2, 131, 124, 0.1);
 }
+.bg--blgrnwithopct.container--spacing {
+  margin: 30px auto!important;
+}
 .bg--cobaltwithopct {
   background: rgba(27, 70, 147, 0.1);
+}
+.bg--cobaltwithopct.container--spacing {
+  margin: 30px auto!important;
 }
 .bg--mdgrnwithopct {
   background: rgba(108, 60, 20, 0.1);
 }
+.bg--mdgrnwithopct.container--spacing {
+  margin: 30px auto!important;
+}
 .bg--trgrnwithopct {
   background: rgba(0, 128, 0, 0.1);
+}
+.bg--trgrnwithopct.container--spacing {
+  margin: 30px auto!important;
 }
 .bg--offwhite {
   background: #fffce2;
 }
+.bg--offwhite.container--spacing {
+  margin: 30px auto!important;
+}
 .bg--vrlghtpnk {
   background: #f9f7f7 !important;
+}
+.bg--vrlghtpnk.container--spacing {
+  margin: 30px auto!important;
 }
 .bg--sclyt {
   background: rgba(2, 131, 124, 0.1);
 }
+.bg--sclyt.container--spacing {
+  margin: 30px auto!important;
+}
 .bg--cobalt {
   background: #1b4693 !important;
+}
+.bg--cobalt.container--spacing {
+  margin: 30px auto!important;
 }
 .bg--mdgrn {
   background: #6c3c14 !important;
 }
+.bg--mdgrn.container--spacing {
+  margin: 30px auto!important;
+}
 .bg--trgrn {
   background: #008000 !important;
+}
+.bg--trgrn.container--spacing {
+  margin: 30px auto!important;
 }
 table {
   background: #f9f7f7;
@@ -705,8 +735,8 @@ strong.fnt-stl--itlc {
 .title--pageinfo {
   font-size: 40px;
   line-height: 58px;
-  margin-bottom: 0;
-  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-top: 45px;
   font-family: 'HelveticaNeueLTPro-Medium';
 }
 .title--smalldesc {
@@ -838,6 +868,9 @@ strong.fnt-stl--itlc {
   line-height: normal;
   letter-spacing: normal;
   color: #000000;
+}
+.para--imgbtm {
+  margin-bottom: 25px!important;
 }
 .para--txtwithleftcol1space {
   margin-left: 8.33333% !important;

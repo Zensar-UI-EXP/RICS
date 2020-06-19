@@ -1,10 +1,11 @@
 .ricsartimgntxt {
   width: 100%;
   display: inline-block;
-  margin: 5px auto 20px;
+  margin: 30px auto 20px;
 }
 .ricsartimgntxt__img {
   width: 100%;
+  display: block;
 }
 .ricsartimgntxt__txt {
   margin: 20px 0 0!important;
@@ -71,6 +72,46 @@
 .ricsartimgntxt__advimage {
   width: auto;
   max-width: 100%;
+}
+@media (max-width: 767.98px) {
+  .ricsartimgntxt {
+    margin-top: 15px!important;
+    margin-bottom: 0!important;
+  }
+  .ricsartimgntxt__container {
+    flex-direction: column;
+  }
+  .ricsartimgntxt__txt,
+  .ricsartimgntxt__midcol,
+  .ricsartimgntxt__rhtcol {
+    width: 100%;
+    max-width: 100%;
+  }
+  .ricsartimgntxt--txtwithleftspace .ricsartimgntxt__txt {
+    margin-left: 0!important;
+  }
+  .ricsartimgntxt__rhtcol {
+    align-self: flex-start !important;
+    padding-left: 0;
+    padding-right: 15px!important;
+    border-top: solid 1px #979797;
+    border-bottom: solid 1px #979797;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+  }
+  .ricsartimgntxt__txt {
+    font-size: 12px;
+    margin-top: 5px!important;
+    line-height: 17px;
+  }
+  .ricsartimgntxt__advheading {
+    font-size: 10px;
+    padding: 10px 0;
+  }
+  .ricsartimgntxt__video,
+  .ricsartimgntxt__videoposter {
+    height: 45vw;
+  }
 }
 *::-webkit-media-controls-panel {
   display: none!important;

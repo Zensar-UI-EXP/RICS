@@ -1,6 +1,6 @@
 .filtersection {
-  height: 100%;
-  margin-top: 173px;
+  height: calc(100% - 223px);
+  margin-top: 198px;
   position: relative;
 }
 .filtersection::after {
@@ -9,7 +9,7 @@
   content: "";
   position: absolute;
   right: -30px;
-  bottom: 173px;
+  bottom: 0;
   background: #000000;
 }
 .filtersection::before {
@@ -18,7 +18,7 @@
   content: "";
   position: absolute;
   right: 0;
-  bottom: 173px;
+  bottom: 0;
   background: #000000;
 }
 .filtersection__options {
