@@ -3,9 +3,10 @@
 
 .ricsartimgntxt{
    .component--default();
-   margin: 5px auto 20px;
+   margin: 30px auto 20px;
    &__img{
       width: 100%;
+      display: block;
    }
    &__txt{
       margin: 20px 0 0!important;
@@ -58,6 +59,44 @@
    &__advimage{
       width: auto;
       max-width: 100%;
+   }
+}
+@media (max-width: 767.98px) {
+   .ricsartimgntxt{
+      margin-top: 15px!important;
+      margin-bottom: 0!important;
+      &__container{
+         flex-direction: column;
+      }
+      &__txt, &__midcol, &__rhtcol{
+         width: 100%;
+         max-width: 100%;
+      }
+      &--txtwithleftspace .ricsartimgntxt__txt{
+         margin-left: 0!important;
+      }
+      &__rhtcol{
+         align-self: flex-start!important;
+         padding-left: 0;
+         padding-right: 15px!important;
+         margin-bottom: 25px;
+         border-top: solid 1px @brown--grey;
+         border-bottom: solid 1px @brown--grey;
+         padding-bottom: 25px;
+         margin-bottom: 25px;
+      }
+      &__txt{
+         font-size: 12px;
+         margin-top: 5px!important;
+         line-height: 17px;
+      }
+      &__advheading{
+         font-size: 10px;
+         padding: 10px 0;
+      }
+      &__video, &__videoposter{
+         height: 45vw;
+      }
    }
 }
 

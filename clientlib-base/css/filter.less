@@ -2,8 +2,8 @@
 @import "./partials/mixins.less";
 
 .filtersection{
-   height: 100%;
-   margin-top: 173px;
+   height: calc(100% - 223px);
+   margin-top: 198px;
    position: relative;
    &::after{
       height: 1px;
@@ -11,7 +11,7 @@
       content: "";
       position: absolute;
       right: -30px;
-      bottom: 173px;
+      bottom: 0;
       background: @ricsblack;
    }
    &::before{
@@ -20,7 +20,7 @@
       content: "";
       position: absolute;
       right: 0;
-      bottom: 173px;
+      bottom: 0;
       background: @ricsblack;
    }
    &__options{
