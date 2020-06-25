@@ -6,10 +6,7 @@
    margin: 30px auto;
    display: flex;
    &__heading{
-      .default--font();
-      font-size: 26px;
-      line-height: 34px;
-      font-family: @Modus;
+      .default--font(@fontFamily:@Modus; @fontSize: 26px; @lineHeight: 34px);
       margin-bottom: 30px;
    }
    &__bigfont{
@@ -20,34 +17,22 @@
    }
    &__content{
       margin-bottom: 30px;
-      .default--font();
-      font-size: 18px;
-      line-height: 30px;
+      .default--font(@fontSize: 18px; @lineHeight: 30px;);
    }
    &__rhtcontent{
-      .default--font();
-      font-family: @Modus;
-      font-size: 24px;
-      line-height: 38px;
+      .default--font(@fontFamily:@Modus; @fontSize: 24px; @lineHeight: 38px);
       border-top: solid 1px @blue--green;
       padding: 12px 0 0;
       margin-bottom: 30px;
    }
    &__smalldesc{
-      .default--font();
-      font-size: 14px;
-      font-style: italic;
-      line-height: 20px;
-      color: @charcoal--grey;
+      .default--font(@fontSize: 14px; @color: @charcoal--grey; @lineHeight: 20px; @fontStyle: italic);
       display: inline-block;
    }
    &__link{
       text-decoration: underline;
-      .default--font();
-      font-size: 18px;
-      line-height: 30px;
+      .default--font(@fontSize: 18px; @color: @blue--green; @lineHeight: 30px);
       word-break: break-all;
-      color: @blue--green;
       &:hover{
          color: @ricsblack;
       }
@@ -69,11 +54,7 @@
    }
    &--txtlink{
       width: 515px;
-      .default--font();
-      font-size: 18px;
-      font-family: @RICS--Italic!important;
-      color: @charcoal--grey;
-      line-height: 30px;
+      .default--fontfamilyimp(@fontFamily: @RICS--Italic; @fontSize: 18px; @color: @charcoal--grey; @lineHeight: 30px);
       a{
          font-family: @RICS--Italic;   
       }
@@ -90,19 +71,12 @@
    }
    &__lsttitle{
       display: inline-block;
-      .default--font();
-      font-size: 21px;
-      line-height: 34px;
-      font-family: @RICS--Bold;
-      color: @blue--green;
-      font-weight: bold;
+      .default--font(@fontFamily:@RICS--Bold; @fontWeight: bold;@fontSize: 21px; @fontStyle: normal; @color: @blue--green; @lineHeight: 34px);
    }
    &__lstdesc{
       margin-left: 30px;
-      .default--font();
+      .default--font(@fontSize: 21px; @lineHeight: 34px);
       margin-top: 5px;
-      font-size: 21px;
-      line-height: 34px;
    }
    &--headingwithbr{
       border-top: solid 1px @blue--green;
@@ -118,16 +92,10 @@
    }
    &__scndlist{
       list-style: disc inside;
-      .default--font();
-      font-size: 21px;
-      line-height: 34px;
+      .default--font(@fontSize: 21px; @lineHeight: 34px);
    }
    &--scndheading{
-      .default--font();
-      font-family: @Journals--SemiBold;
-      font-size: 25px;
-      color: @blue--green;
-      line-height: 38px;
+      .default--font(@fontFamily:@Journals--SemiBold; @fontSize: 25px; @color: @blue--green; @lineHeight: 38px);
       margin-bottom: 10px;
       .ricsartcf{
          &__bigfont{
@@ -159,8 +127,7 @@
       margin-top: 70px;
       background: @blue--green;
       padding: 20px;
-      .default--font();
-      color: @ricswhite;
+      .default--font(@color: @ricswhite;);
       position: relative;
    }
    &__expndtbl{
@@ -173,11 +140,7 @@
       overflow: hidden;
    }
    &__tablename{
-      .default--font();
-      font-size: 21px;
-      line-height: 29px;
-      font-family: @RICS--Medium;
-      color: @ricswhite;
+      .default--font(@fontFamily:@RICS--Medium; @fontSize: 21px; @color: @ricswhite; @lineHeight: 29px);
       &.fnt-stl--itlc{
          font-family: @RICS--Italic;
          font-style: normal!important;
@@ -194,20 +157,13 @@
       margin-right: 15px;
    }
    &__rhtcontent{
-      .default--font();
-      font-family: @Modus;
-      font-size: 24px;
-      line-height: 38px;
+      .default--font(@fontFamily:@Modus; @fontSize: 24px; @lineHeight: 38px);
       border-top: solid 1px @blue--green;
       padding: 12px 0 0;
       margin-bottom: 120px;
    }
    &__smalldesc{
-      .default--font();
-      font-size: 14px;
-      font-style: italic;
-      line-height: 20px;
-      color: @charcoal--grey;
+      .default--font(@fontSize: 14px; @fontStyle: italic; @color: @charcoal--grey; @lineHeight: 20px);
       display: inline-block;
    }
 }
