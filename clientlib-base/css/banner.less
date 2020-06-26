@@ -11,10 +11,7 @@
       position: relative;
    }
    &__contentitle{
-      .default--font();
-      font-size: 36px;
-      color: @ricswhite;
-      line-height: 1.2;
+      .default--font(@fontSize: 36px; @color: @ricswhite; @lineHeight: 1.2);
    }
    &__contentheading{
       position: absolute;
@@ -22,20 +19,13 @@
       padding: 5px 15px;
       left: 0;
       bottom: 35px;
-      .default--font();
-      font-size: 20px;
-      font-weight: 500;
-      line-height: 2;
+      .default--font(@fontSize: 20px; @fontWeight: 500; @lineHeight: 2);
    }
    &__contentdesc{
-      .default--font();
-      line-height: 1.62;
-      color: @ricswhite;
+      .default--font(@color: @ricswhite; @lineHeight: 1.62);
    }
    &__contentauthorinfo{
-      .default--font();
-      line-height: 1.88;
-      color: @ricswhite;
+      .default--font(@color: @ricswhite; @lineHeight: 1.88);
       margin-top: 50px;
    }
    &__contentauthorimgcont{
@@ -77,13 +67,9 @@
       display: block;
    }
    &__heading{
-      .default--font();
-      font-family: @Modus--SemiBold;
-      font-size: 22px;
-      line-height: 14px;
+      .default--font(@fontFamily:@Modus--SemiBold; @fontSize: 22px; @lineHeight: 14px);
       display: inline-block;
       text-transform: uppercase;
-      font-weight: normal;
       margin-bottom: 0;
    }
    &__authorname {
@@ -92,20 +78,14 @@
    }
    &__subheading{
       margin: 20px 0 20px;
-      .default--font();
-      font-family: @Modus--Medium;
-      font-size: 65px;
-      line-height: 80px;
+      .default--font(@fontFamily:@Modus--Medium; @fontSize: 65px; @lineHeight: 80px);
    }
    &__desc{
-      .default--font();
-      font-size: 25px;
-      line-height: 37px;
+      .default--font(@fontSize: 25px; @lineHeight: 37px);
    }
    &__authorname, &__authordate{
       margin: 35px 0 25px;
-      .default--font();
-      line-height: 36px;
+      .default--font(@lineHeight: 36px);
       white-space: nowrap;
       strong{
          font-family: @RICS--Medium;
@@ -113,8 +93,7 @@
    }
    &__tag{
       background: @very--lightpink;
-      .default--font();
-      font-size: 14px;
+      .default--font(@fontSize: 14px);
       text-align: center;
       padding: 7px 8px;
       margin: 10px 3px 0px 0!important;
@@ -220,6 +199,7 @@
       flex: 0 0 100%;
       padding-left: 0!important;
       padding-right: 0!important;
+      min-height: 38.5vw;
       @media (max-width: 767.98px) {
          position: relative!important;
          display: flex;
@@ -454,6 +434,7 @@
          padding-right: 0!important;
          position: relative!important;
          display: flex;
+         min-height: 50px;
       }
       &__heading{
          background: @ricswhite;

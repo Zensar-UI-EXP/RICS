@@ -87,14 +87,11 @@
       margin-bottom: 5px;
    }
    &__appliedfilterkey{
-      .default--font();
-      color: @charcoal--grey;
+      .default--font(@color: @charcoal--grey);
       text-transform: capitalize;
    }
    &__appliedfiltervalue{
-      .default--font();
-      font-family: @RICS--Bold;
-      color: @charcoal--grey;
+      .default--font(@fontFamily:@RICS--Bold; @color: @charcoal--grey);
       margin-left: 5px;
    }
    &__clearfilter{
@@ -108,10 +105,7 @@
       background-size: 100%;
    }
    &__clearall{
-      .default--font();
-      font-family: @RICS--Bold;
-      color: @charcoal--grey;
-      font-size: 18px;
+      .default--font(@fontFamily:@RICS--Bold; @fontSize: 18px; @color: @charcoal--grey);
       text-decoration: underline;
       float: right;
       display: none;
@@ -123,9 +117,7 @@
       display: none;
    }
    &__close{
-      .default--font();
-      font-family: @RICS--Medium;
-      font-size: 14px;
+      .default--font(@fontFamily:@RICS--Medium; @fontSize: 14px);
       float: right;
       text-decoration: underline;
    }

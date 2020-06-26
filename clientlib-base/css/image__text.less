@@ -7,12 +7,11 @@
    &__img{
       width: 100%;
       display: block;
+      min-height: 27vw;
    }
    &__txt{
       margin: 20px 0 0!important;
-      .default--font();
-      font-size: 14px;
-      line-height: 20px;
+      .default--font(@fontSize: 14px; @lineHeight: 20px);
    }
    &--txtwithleftspace .ricsartimgntxt__txt{
       margin-left: 8.33333%!important;
@@ -22,12 +21,8 @@
       margin-left: 15px;
    }
    &__advheading{
-      .default--font();
-      font-size: 14px;
-      line-height: 2.43;
-      letter-spacing: 0.5px;
+      .default--font(@fontSize: 14px; @color: @steel; @lineHeight: 2.43; @letterSpacing: 0.5px);
       text-align: center;
-      color: @steel;
    }
    &__advimage{
       width: 100%;
@@ -65,6 +60,9 @@
    .ricsartimgntxt{
       margin-top: 15px!important;
       margin-bottom: 0!important;
+      &__img{
+         min-height: 50px;
+      }
       &__container{
          flex-direction: column;
       }

@@ -470,19 +470,14 @@ a {
    border-radius: 0;
    -webkit-appearance: none;
    -webkit-border-radius: 0px;
-   .default--font();
-   font-size: 20px;
-   line-height: 28px;
-   color: @cool--greytwo;
+   .default--font(@fontSize: 20px; @color: @cool--greytwo; @lineHeight: 28px);
    padding: 10px 15px;
    margin: 0 auto;
 }
 .btn{
    background: @ricsblack;
-   .default--font();
-   line-height: 33px;
+   .default--font(@color: @ricswhite; @lineHeight: 33px);
    text-align: center;
-   color: @ricswhite;
    border: none;
    cursor: pointer;
    border: solid 1px @ricsblack;
@@ -535,6 +530,7 @@ a {
 .slider{
    img{
       width: 100%;
+      min-height: 35vw;
    }
    &--fade{
       img {
@@ -650,9 +646,7 @@ table{
 th, td{
    padding: 20px;
    border: solid 1px @ricsblack;
-   .default--font();
-   font-size: 21px;
-   line-height: 29px;
+   .default--font(@fontSize: 21px; @lineHeight: 29px);
    min-width: 265px;
    &:first-child{
       min-width: 130px;
@@ -799,10 +793,7 @@ strong{
       font-family: @RICS--Medium;
    }
    &--smalldesc{
-      .default--font();
-      line-height: 24px;
-      color: @charcoal--grey;
-      font-family: @RICS--Italic;
+      .default--font(@fontFamily:@RICS--Italic; @color: @charcoal--grey; @lineHeight: 24px);
       display: block;
       margin-top: 15px;
    }

@@ -57,10 +57,7 @@
    &__navlist{
       padding: 0px 10px 0 0;
       line-height: 30px!important;
-      .default--font();
-      font-size: 14px;
-      color: @ricswhite;
-      font-family: @Journals;
+      .default--font(@fontFamily:@Journals; @fontSize: 14px; @color: @ricswhite);
       &:first-child{
          padding-left: 0;
       }
@@ -69,11 +66,7 @@
       }
    }
    &__navlink{
-      .default--font();
-      font-size: 14px;
-      font-family: @Journals;
-      line-height: 30px!important;
-      color: rgba(255, 255, 255, 0.9);
+      .default--fontlineimp(@fontFamily:@Journals; @fontSize: 14px; @color: rgba(255, 255, 255, 0.9); @lineHeight: 30px);
       &:hover{
          color: rgba(255, 255, 255, 0.7);
       }

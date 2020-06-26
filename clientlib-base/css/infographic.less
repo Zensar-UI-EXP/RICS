@@ -9,10 +9,7 @@
       padding: 50px 0 40px;
    }
    &__heading{
-      .default--font();
-      font-family: @Modus;
-      font-size: 28px;
-      line-height: 1.31;
+      .default--font(@fontFamily:@Modus; @fontSize: 28px; @lineHeight: 1.31);
    }
    &__collist{
       margin: 30px 0;
@@ -24,14 +21,10 @@
       border-left: solid 2px @ricsblack;
    }
    &__colheading{
-      .default--font();
-      font-family: @Modus--SemiBold;
-      font-size: 38px;
-      line-height: 46px;
+      .default--font(@fontFamily:@Modus--SemiBold; @fontSize: 38px; @lineHeight: 46px);
    }
    &__coldesc{
-      .default--font();
-      font-size: 21px;
+      .default--font(@fontSize: 21px);
       padding: 15px 0 5px;
       line-height: 34px;
    }

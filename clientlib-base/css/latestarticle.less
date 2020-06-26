@@ -37,6 +37,7 @@
    &__cardimagecont{
       width: 45%;
       position: relative;
+      min-height: 14vw;
       &::before{
          background: @charcoal--grey;
          width: 100%;
@@ -86,8 +87,7 @@
    }
    &__tag{
       background: @very--lightpink;
-      .default--font();
-      font-size: 12px;
+      .default--font(@fontSize: 12px);
       text-align: center;
       padding: 5px 10px;
       margin: 7px 3px 0px 0!important;
@@ -141,9 +141,7 @@
       padding: 0 10px;
    }
    &__sortbytitle{
-      .default--font();
-      font-size: 18px;
-      line-height: 30px;
+      .default--font(@fontSize: 18px; @lineHeight: 30px);
       float: left;
       margin-right: 15px;
       padding-top: 4px;
@@ -185,8 +183,7 @@
       border: solid 1px @ricsblack;
       width: 100px;
       padding: 7px 5px 6px;
-      .default--font();
-      font-size: 14px;
+      .default--font(@fontSize: 14px);
       margin-top: 40px;
       display: none;
       position: relative;
@@ -238,6 +235,7 @@
       }
       &__cardimagecont{
          width: 50%;
+         min-height: 50px;
       }
       &__cardlabel{
          position: absolute;

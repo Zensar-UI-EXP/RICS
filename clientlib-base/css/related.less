@@ -8,9 +8,7 @@
       justify-content: space-between;
    }
    &__heading{
-      .default--font();
-      font-size: 21px;
-      line-height: 70px;
+      .default--font(@fontSize: 21px; @lineHeight: 70px);
       border-bottom: solid 1px @ricsblack;
       width: 100%;
    }
@@ -20,9 +18,7 @@
    }
    &__tag{
       background: @very--lightpink;
-      .default--font();
-      font-size: 14px;
-      letter-spacing: 0.58px;
+      .default--font(@fontSize: 14px; @letterSpacing: 0.58px);
       text-align: center;
       padding: 8px;
       margin: 0 3px 10px 0!important;
@@ -53,9 +49,7 @@
    .component--default();
    margin: 30px auto;
    &__heading{
-      .default--font();
-      font-size: 21px;
-      line-height: 70px;
+      .default--font(@fontSize: 21px; @lineHeight: 70px);
       border-bottom: solid 1px @ricsblack;
       width: 100%;
    }
@@ -100,30 +94,23 @@
       max-height: 235px;
       height: 100%;
       display: block;
+      min-height: 14vw;
    }
    &__carddetail{
       padding: 25px;
    }
    &__cardlabel{
-      .default--font();
-      font-size: 18px;
-      font-weight: bold;
-      line-height: 0.78;
+      .default--font(@fontSize: 18px; @fontWeight: bold; @lineHeight: 0.78);
       display: inline-block;
       text-transform: uppercase;
    }
    &__articleheading{
-      .default--font();
-      font-size: 26px;
-      font-weight: 500;
-      line-height: 1.38;
+      .default--font(@fontSize: 26px; @fontWeight: 500; @lineHeight: 1.38);
       margin: 20px 0;
       position: relative;
    }
    &__articledate{
-      .default--font();
-      font-size: 16px;
-      line-height: 22px;
+      .default--font(@fontSize: 16px; @lineHeight: 22px);
       margin-bottom: 50px;
       strong{
          margin-left: 30px;
@@ -132,9 +119,7 @@
    }
    &__tag{
       background: @very--lightpink;
-      .default--font();
-      font-size: 14px;
-      letter-spacing: 0.58px;
+      .default--font(@fontSize: 14px; @letterSpacing: 0.58px);
       text-align: center;
       padding: 8px;
       margin: 7px 3px 0px 0!important;
@@ -227,6 +212,9 @@
       &__cardimagecont{
          height: auto;
          width: 50%;
+      }
+      &__cardimage{
+         min-height: 50px;
       }
       &__cardlist{
          flex-direction: column;

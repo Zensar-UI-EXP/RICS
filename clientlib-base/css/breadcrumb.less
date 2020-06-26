@@ -14,18 +14,14 @@
       overflow: hidden;
       white-space: nowrap;
       position: relative;
-      .default--font();
-      font-size: 15px;
-      color: @slate--grey;
+      .default--font(@fontSize: 15px; @color: @slate--grey);
    }
    &__navlist{
-      .default--font();
-      font-size: 15px;
+      .default--font(@fontSize: 15px);
       padding: 0 3px;
    }
    &__navlink{
-      .default--font();
-      font-size: 15px;
+      .default--font(@fontSize: 15px);
       &:hover{
          opacity: 0.7;
          text-decoration: none;
@@ -33,9 +29,7 @@
    }
    &__morelink{
       position: absolute;
-      .default--font();
-      font-size: 15px;
-      color: @slate--grey;
+      .default--font(@fontSize: 15px; @color: @slate--grey);
       right: 0;
       top: 0;
       background: @ricswhite;

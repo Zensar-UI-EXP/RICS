@@ -18,6 +18,36 @@
    letter-spacing: @letterSpacing;
    color: @color;
 }
+.default--sizefamilylineimp(@fontFamily:@RICS; @fontSize: 16px; @fontWeight: normal; @fontStyle: normal; @color: @ricsblack; @lineHeight: normal; @letterSpacing: normal){
+   font-family: @fontFamily!important;
+   font-size: @fontSize!important;
+   font-weight: @fontWeight;
+   font-stretch: normal;
+   font-style: @fontStyle;
+   line-height: @lineHeight!important;
+   letter-spacing: @letterSpacing;
+   color: @color;
+}
+.default--fontlineimp(@fontFamily:@RICS; @fontSize: 16px; @fontWeight: normal; @fontStyle: normal; @color: @ricsblack; @lineHeight: normal; @letterSpacing: normal){
+   font-family: @fontFamily;
+   font-size: @fontSize;
+   font-weight: @fontWeight;
+   font-stretch: normal;
+   font-style: @fontStyle;
+   line-height: @lineHeight!important;
+   letter-spacing: @letterSpacing;
+   color: @color;
+}
+.default--fontcolorimp(@fontFamily:@RICS; @fontSize: 16px; @fontWeight: normal; @fontStyle: normal; @color: @ricsblack; @lineHeight: normal; @letterSpacing: normal){
+   font-family: @fontFamily;
+   font-size: @fontSize;
+   font-weight: @fontWeight;
+   font-stretch: normal;
+   font-style: @fontStyle;
+   line-height: @lineHeight;
+   letter-spacing: @letterSpacing;
+   color: @color!important;
+}
 .default-title--font(){
    font-family: @RICS;
    font-size: 30px;
