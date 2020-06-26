@@ -111,7 +111,6 @@ function checkNPlay(parentNode, youtubePlayer){
 var player = {};
 var ytPlayerIndex = 0;
 function playYTVideo(videoElement) {
-      videoElement = videoElement;
       playerid = 'player' + ytPlayerIndex;
       var videoURL = videoElement.attributes.datasrc.nodeValue.split('v=')[1];
       videoElement.innerHTML = "<div id='" + playerid + "' datasrc='" + videoURL + "'></div>";

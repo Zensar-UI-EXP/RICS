@@ -144,7 +144,6 @@
   padding-right: 15px;
   padding-left: 15px;
   flex: 0 0 auto;
-  width: auto;
   max-width: none;
 }
 .order--1 {
@@ -344,7 +343,6 @@
   display: inline-block;
 }
 .container--content {
-  max-width: 1600px;
   margin: 0 auto;
   text-align: left;
   max-width: 90%;

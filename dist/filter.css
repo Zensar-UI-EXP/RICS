@@ -161,10 +161,7 @@
     background: #ffffff;
     z-index: 3;
     width: 100%;
-    height: auto;
     margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
     overflow: hidden;
     left: 50%;
     margin-left: -50%;

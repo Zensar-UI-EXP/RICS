@@ -122,14 +122,13 @@
   padding-top: 0;
   margin: 0 0px 0 25px;
   position: relative;
-  line-height: 0.65 !important;
   top: -8px;
   font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 0.65 !important;
   letter-spacing: normal;
   color: #000000 !important;
 }

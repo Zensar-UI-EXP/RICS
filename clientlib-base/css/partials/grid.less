@@ -24,7 +24,7 @@
 	padding-right: 0;
 	padding-left: 0;
 }
-.col--commonstyles() {
+.col--commonstyles(@width: 100%) {
    position: relative;
 	width: 100%;
 	min-height: 1px;
@@ -103,9 +103,8 @@
 	   max-width: 100%;
    }
    &--auto{
-      .col--commonstyles();
+      .col--commonstyles(@width: auto);
       flex: 0 0 auto;
-      width: auto;
       max-width: none;
    }
 }
@@ -324,7 +323,6 @@
       }
    }
    &--content {
-      max-width: @content--width;
       margin: 0 auto;
       text-align: left;
       max-width: 90%;
