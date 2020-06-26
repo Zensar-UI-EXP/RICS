@@ -1,11 +1,11 @@
 body {
-  font-family: 'HelveticaNeueLTPro-Regular';
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #000000;
 }
 h1 {
-  font-family: 'HelveticaNeueLTPro-Bold';
+  font-family: 'HelveticaNeueLTPro-Bold', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-weight: bold;
   font-size: 3.5em;
   line-height: 1.2em;
@@ -13,7 +13,7 @@ h1 {
   padding: 0;
 }
 h2 {
-  font-family: 'HelveticaNeueLTPro-Medium';
+  font-family: 'HelveticaNeueLTPro-Medium', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-weight: 600;
   font-size: 2.75em;
   line-height: 1.2em;
@@ -21,7 +21,7 @@ h2 {
   padding: 0;
 }
 h3 {
-  font-family: 'HelveticaNeueLTPro-Medium';
+  font-family: 'HelveticaNeueLTPro-Medium', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-weight: 600;
   font-size: 2em;
   line-height: 1.2em;
@@ -29,7 +29,7 @@ h3 {
   padding: 0;
 }
 h4 {
-  font-family: 'HelveticaNeueLTPro-Medium';
+  font-family: 'HelveticaNeueLTPro-Medium', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-weight: 600;
   font-size: 1.5em;
   line-height: 1.2em;
@@ -37,7 +37,7 @@ h4 {
   padding: 0;
 }
 p {
-  font-family: 'HelveticaNeueLTPro-Regular';
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-weight: normal;
   font-size: 1em;
   margin: 0 0 0.3em 0;
@@ -47,11 +47,11 @@ p:last-child {
   margin-bottom: 0;
 }
 strong {
-  font-family: 'HelveticaNeueLTPro-Bold';
+  font-family: 'HelveticaNeueLTPro-Bold', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-weight: 600;
 }
 a {
-  font-family: 'HelveticaNeueLTPro-Medium';
+  font-family: 'HelveticaNeueLTPro-Medium', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-weight: normal;
 }
 ::selection {
@@ -322,7 +322,7 @@ a {
   border: none;
   font-size: 18px;
   line-height: 30px;
-  font-family: 'HelveticaNeueLTPro-Bold';
+  font-family: 'HelveticaNeueLTPro-Bold', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   padding: 5px 0;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -346,25 +346,25 @@ a {
   font-style: italic!important;
 }
 .fnt-fmly--ricsbold {
-  font-family: 'HelveticaNeueLTPro-Bold' !important;
+  font-family: 'HelveticaNeueLTPro-Bold', Helvetica, Arial, Verdana, Tahoma, sans-serif !important;
 }
 .fnt-fmly--oswald {
-  font-family: 'Oswald-Regular' !important;
+  font-family: 'Oswald-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif !important;
 }
 .fnt-fmly--oswaldsemibold {
-  font-family: 'Oswald-SemiBold' !important;
+  font-family: 'Oswald-SemiBold', Helvetica, Arial, Verdana, Tahoma, sans-serif !important;
 }
 .fnt-fmly--oswaldmedium {
-  font-family: 'Oswald-Medium' !important;
+  font-family: 'Oswald-Medium', Helvetica, Arial, Verdana, Tahoma, sans-serif !important;
 }
 .fnt-fmly--jornal {
-  font-family: 'OpenSans-Regular' !important;
+  font-family: 'OpenSans-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif !important;
 }
 .fnt-fmly--jornalsemibold {
-  font-family: 'OpenSans-SemiBold' !important;
+  font-family: 'OpenSans-SemiBold', Helvetica, Arial, Verdana, Tahoma, sans-serif !important;
 }
 .fnt-fmly--jornalbold {
-  font-family: 'OpenSans-Bold' !important;
+  font-family: 'OpenSans-Bold', Helvetica, Arial, Verdana, Tahoma, sans-serif !important;
 }
 .fnt-sz--24 {
   font-size: 24px;
@@ -418,33 +418,28 @@ a {
   border-radius: 0;
   -webkit-appearance: none;
   -webkit-border-radius: 0px;
-  font-family: 'HelveticaNeueLTPro-Regular';
-  font-size: 16px;
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 20px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #000000;
-  font-size: 20px;
   line-height: 28px;
+  letter-spacing: normal;
   color: #9a9b9c;
   padding: 10px 15px;
   margin: 0 auto;
 }
 .btn {
   background: #000000;
-  font-family: 'HelveticaNeueLTPro-Regular';
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #000000;
   line-height: 33px;
-  text-align: center;
+  letter-spacing: normal;
   color: #ffffff;
+  text-align: center;
   border: none;
   cursor: pointer;
   border: solid 1px #000000;
@@ -484,6 +479,7 @@ a {
 }
 .slider img {
   width: 100%;
+  min-height: 35vw;
 }
 .slider__arrow {
   position: absolute;
@@ -595,16 +591,14 @@ th,
 td {
   padding: 20px;
   border: solid 1px #000000;
-  font-family: 'HelveticaNeueLTPro-Regular';
-  font-size: 16px;
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 21px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 29px;
   letter-spacing: normal;
   color: #000000;
-  font-size: 21px;
-  line-height: 29px;
   min-width: 265px;
 }
 th:first-child,
@@ -612,7 +606,7 @@ td:first-child {
   min-width: 130px;
 }
 th {
-  font-family: 'HelveticaNeueLTPro-Medium';
+  font-family: 'HelveticaNeueLTPro-Medium', Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
 .tbl {
   position: relative;
@@ -720,10 +714,10 @@ html {
   pointer-events: none;
 }
 strong.fnt-stl--itlc {
-  font-family: 'HelveticaNeueLTPro-MediumItalic' !important;
+  font-family: 'HelveticaNeueLTPro-MediumItalic', Helvetica, Arial, Verdana, Tahoma, sans-serif !important;
 }
 .title {
-  font-family: 'HelveticaNeueLTPro-Regular';
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 30px;
   font-weight: normal;
   font-stretch: normal;
@@ -737,20 +731,17 @@ strong.fnt-stl--itlc {
   line-height: 58px;
   margin-bottom: 30px;
   margin-top: 45px;
-  font-family: 'HelveticaNeueLTPro-Medium';
+  font-family: 'HelveticaNeueLTPro-Medium', Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
 .title--smalldesc {
-  font-family: 'HelveticaNeueLTPro-Regular';
+  font-family: 'HelveticaNeueLTPro-Italic', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #000000;
   line-height: 24px;
+  letter-spacing: normal;
   color: #4c4d4d;
-  font-family: 'HelveticaNeueLTPro-Italic';
   display: block;
   margin-top: 15px;
 }
@@ -857,10 +848,10 @@ strong.fnt-stl--itlc {
   line-height: 46px;
 }
 .title-size--special strong {
-  font-family: 'HelveticaNeueLTPro-Medium';
+  font-family: 'HelveticaNeueLTPro-Medium', Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
 .para {
-  font-family: 'HelveticaNeueLTPro-Regular';
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -912,7 +903,7 @@ strong.fnt-stl--itlc {
 .para-size--artdesc {
   font-size: 22px;
   line-height: 32px;
-  font-family: 'HelveticaNeueLTPro-Medium';
+  font-family: 'HelveticaNeueLTPro-Medium', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   height: 65px;
   overflow: hidden;
 }

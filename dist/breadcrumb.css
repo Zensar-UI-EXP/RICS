@@ -12,39 +12,35 @@
   overflow: hidden;
   white-space: nowrap;
   position: relative;
-  font-family: 'HelveticaNeueLTPro-Regular';
-  font-size: 16px;
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 15px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #000000;
-  font-size: 15px;
   color: #686969;
 }
 .ricsbreadcrumb__navlist {
-  font-family: 'HelveticaNeueLTPro-Regular';
-  font-size: 16px;
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 15px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   color: #000000;
-  font-size: 15px;
   padding: 0 3px;
 }
 .ricsbreadcrumb__navlink {
-  font-family: 'HelveticaNeueLTPro-Regular';
-  font-size: 16px;
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 15px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   color: #000000;
-  font-size: 15px;
 }
 .ricsbreadcrumb__navlink:hover {
   opacity: 0.7;
@@ -52,15 +48,13 @@
 }
 .ricsbreadcrumb__morelink {
   position: absolute;
-  font-family: 'HelveticaNeueLTPro-Regular';
-  font-size: 16px;
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 15px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #000000;
-  font-size: 15px;
   color: #686969;
   right: 0;
   top: 0;

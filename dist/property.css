@@ -3,7 +3,7 @@
 }
 .propertylist__title {
   margin-bottom: 50px;
-  font-family: 'HelveticaNeueLTPro-Regular';
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
 .propertylist__inner {
   display: flex;
@@ -20,14 +20,14 @@
   width: 220px;
   margin-right: 30px;
   font-size: 16px;
-  font-family: 'HelveticaNeueLTPro-Medium';
+  font-family: 'HelveticaNeueLTPro-Medium', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   display: inline-block;
   line-height: 34px;
 }
 .propertylist__value {
   width: 230px;
   margin-right: 10px;
-  font-family: 'HelveticaNeueLTPro-Regular';
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 16px;
   display: inline-block;
   line-height: 34px;

@@ -55,17 +55,14 @@
 .ricsfooter__navlist {
   padding: 0px 10px 0 0;
   line-height: 30px!important;
-  font-family: 'HelveticaNeueLTPro-Regular';
-  font-size: 16px;
+  font-family: 'OpenSans-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #000000;
-  font-size: 14px;
   color: #ffffff;
-  font-family: 'OpenSans-Regular';
 }
 .ricsfooter__navlist:first-child {
   padding-left: 0;
@@ -74,17 +71,13 @@
   padding-right: 0;
 }
 .ricsfooter__navlink {
-  font-family: 'HelveticaNeueLTPro-Regular';
-  font-size: 16px;
+  font-family: 'OpenSans-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 30px !important;
   letter-spacing: normal;
-  color: #000000;
-  font-size: 14px;
-  font-family: 'OpenSans-Regular';
-  line-height: 30px!important;
   color: rgba(255, 255, 255, 0.9);
 }
 .ricsfooter__navlink:hover {

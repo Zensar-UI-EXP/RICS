@@ -48,6 +48,9 @@
 .cardlayout--fullcolmn .cardlayout__content .cardlayout__desc {
   margin-top: 20px;
 }
+.cardlayout--fullcolmn .cardlayout__img {
+  min-height: 14vw;
+}
 .cardlayout--fullcolmn .cardlayout__authinfo strong {
   display: inline;
   margin-left: 20px;
@@ -71,6 +74,7 @@
 .cardlayout__img {
   width: 100%;
   display: block;
+  min-height: 21vw;
 }
 .cardlayout__content {
   display: flex;
@@ -324,6 +328,7 @@
   }
   .cardlayout__img {
     position: relative;
+    min-height: 50px;
   }
   .cardlayout__subheading {
     -webkit-line-clamp: 3;
@@ -362,7 +367,7 @@
     display: none;
   }
   .cardlayout__authinfo strong {
-    font-family: 'HelveticaNeueLTPro-Regular';
+    font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   }
   .col--fst .cardlayout {
     margin-right: 5px!important;

@@ -6,19 +6,18 @@
 .ricsartimgntxt__img {
   width: 100%;
   display: block;
+  min-height: 27vw;
 }
 .ricsartimgntxt__txt {
   margin: 20px 0 0!important;
-  font-family: 'HelveticaNeueLTPro-Regular';
-  font-size: 16px;
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 20px;
   letter-spacing: normal;
   color: #000000;
-  font-size: 14px;
-  line-height: 20px;
 }
 .ricsartimgntxt--txtwithleftspace .ricsartimgntxt__txt {
   margin-left: 8.33333% !important;
@@ -28,19 +27,15 @@
   margin-left: 15px;
 }
 .ricsartimgntxt__advheading {
-  font-family: 'HelveticaNeueLTPro-Regular';
-  font-size: 16px;
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #000000;
-  font-size: 14px;
   line-height: 2.43;
   letter-spacing: 0.5px;
-  text-align: center;
   color: #848485;
+  text-align: center;
 }
 .ricsartimgntxt__advimage {
   width: 100%;
@@ -77,6 +72,9 @@
   .ricsartimgntxt {
     margin-top: 15px!important;
     margin-bottom: 0!important;
+  }
+  .ricsartimgntxt__img {
+    min-height: 50px;
   }
   .ricsartimgntxt__container {
     flex-direction: column;

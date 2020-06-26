@@ -1,5 +1,7 @@
 .ricssubnav {
   box-shadow: 0 4px 4px 0 rgba(212, 209, 209, 0.2);
+  z-index: 1;
+  position: relative;
 }
 .ricssubnav__submenunav {
   width: 100%;
@@ -27,14 +29,13 @@
   display: block;
 }
 .ricssubnav__submenulink {
-  font-family: 'HelveticaNeueLTPro-Regular';
-  font-size: 16px;
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  font-size: 18px;
   color: #000000;
   display: inline-block;
   position: relative;
@@ -45,7 +46,7 @@
 .ricssubnav__submenulink::before {
   display: block;
   content: attr(title);
-  font-family: 'HelveticaNeueLTPro-Bold';
+  font-family: 'HelveticaNeueLTPro-Bold', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   height: 0;
   overflow: hidden;
   visibility: hidden;
@@ -60,7 +61,7 @@
   display: none;
 }
 .ricssubnav--submenulinkactive {
-  font-family: 'OpenSans-Bold';
+  font-family: 'OpenSans-Bold', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   position: relative;
   top: -2px;
 }
@@ -75,7 +76,7 @@
   min-width: 100%;
 }
 .ricssubnav__drpdwnlink {
-  font-family: 'HelveticaNeueLTPro-Regular';
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -131,7 +132,7 @@
     font-weight: normal;
   }
   .ricssubnav--submenulinkactive {
-    font-family: 'OpenSans-Regular';
+    font-family: 'OpenSans-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   }
   .ricssubnav__drpdwnlistcont {
     position: relative;

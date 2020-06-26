@@ -9,7 +9,7 @@
   border-bottom: solid 1px #000000;
 }
 .latestarticle__heading .fnt-stl--itlc {
-  font-family: 'HelveticaNeueLTPro-Italic';
+  font-family: 'HelveticaNeueLTPro-Italic', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-style: normal!important;
   font-weight: normal!important;
 }
@@ -35,6 +35,7 @@
 .latestarticle__cardimagecont {
   width: 45%;
   position: relative;
+  min-height: 14vw;
 }
 .latestarticle__cardimagecont::before {
   background: #4c4d4d;
@@ -78,19 +79,18 @@
 }
 .latestarticle__articledate strong {
   margin-left: 30px;
-  font-family: 'HelveticaNeueLTPro-Medium';
+  font-family: 'HelveticaNeueLTPro-Medium', Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
 .latestarticle__tag {
   background: #e8e7e7;
-  font-family: 'HelveticaNeueLTPro-Regular';
-  font-size: 16px;
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 12px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   color: #000000;
-  font-size: 12px;
   text-align: center;
   padding: 5px 10px;
   margin: 7px 3px 0px 0!important;
@@ -103,7 +103,7 @@
 .latestarticle__taglink {
   color: #000000;
   font-weight: normal;
-  font-family: 'HelveticaNeueLTPro-Regular';
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
 .latestarticle__tagcont {
   position: relative;
@@ -153,16 +153,14 @@
   padding: 0 10px;
 }
 .latestarticle__sortbytitle {
-  font-family: 'HelveticaNeueLTPro-Regular';
-  font-size: 16px;
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 30px;
   letter-spacing: normal;
   color: #000000;
-  font-size: 18px;
-  line-height: 30px;
   float: left;
   margin-right: 15px;
   padding-top: 4px;
@@ -190,7 +188,7 @@
   font-size: 26px;
   font-weight: normal;
   line-height: 40px;
-  font-family: 'HelveticaNeueLTPro-Regular';
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
 .special__link:hover {
   opacity: 0.7;
@@ -204,15 +202,14 @@
   border: solid 1px #000000;
   width: 100px;
   padding: 7px 5px 6px;
-  font-family: 'HelveticaNeueLTPro-Regular';
-  font-size: 16px;
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   color: #000000;
-  font-size: 14px;
   margin-top: 40px;
   display: none;
   position: relative;
@@ -262,6 +259,7 @@
   }
   .latestarticle__cardimagecont {
     width: 50%;
+    min-height: 50px;
   }
   .latestarticle__cardlabel {
     position: absolute;

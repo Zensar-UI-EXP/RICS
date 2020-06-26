@@ -20,16 +20,13 @@
   align-self: center;
   align-content: flex-end;
   justify-content: flex-end;
-  font-family: 'HelveticaNeueLTPro-Regular';
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 500;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #000000;
-  font-weight: 500;
   line-height: 1.38;
+  letter-spacing: normal;
   color: #4b1963;
 }
 .ricsheader__ricslink {

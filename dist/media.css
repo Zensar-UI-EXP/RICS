@@ -294,7 +294,7 @@
   .title-size--lmd.ricsnewsltr__heading {
     font-size: 22px!important;
     line-height: 28px!important;
-    font-family: 'HelveticaNeueLTPro-Bold' !important;
+    font-family: 'HelveticaNeueLTPro-Bold', Helvetica, Arial, Verdana, Tahoma, sans-serif !important;
   }
   .title-size--lsmd {
     font-size: 16px;
@@ -317,7 +317,7 @@
   .title-size--md {
     font-size: 16px!important;
     line-height: 22px!important;
-    font-family: 'Oswald-Regular' !important;
+    font-family: 'Oswald-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif !important;
   }
   .title-size--md.pagelist__heading {
     font-size: 26px!important;
@@ -330,7 +330,7 @@
   .title-size--xmd {
     font-size: 32px;
     line-height: 40px;
-    font-family: 'Oswald-Regular' !important;
+    font-family: 'Oswald-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif !important;
   }
   .title-size--xmlrg {
     font-size: 30px!important;
@@ -392,7 +392,7 @@
   .para-size--artdesc {
     font-size: 11px!important;
     line-height: 15px!important;
-    font-family: 'HelveticaNeueLTPro-Regular';
+    font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   }
   .para-size--lrg {
     font-size: 20px;

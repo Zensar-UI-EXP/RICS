@@ -7,16 +7,14 @@
   justify-content: space-between;
 }
 .ricsrltopics__heading {
-  font-family: 'HelveticaNeueLTPro-Regular';
-  font-size: 16px;
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 21px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 70px;
   letter-spacing: normal;
   color: #000000;
-  font-size: 21px;
-  line-height: 70px;
   border-bottom: solid 1px #000000;
   width: 100%;
 }
@@ -26,16 +24,14 @@
 }
 .ricsrltopics__tag {
   background: #e8e7e7;
-  font-family: 'HelveticaNeueLTPro-Regular';
-  font-size: 16px;
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
-  letter-spacing: normal;
-  color: #000000;
-  font-size: 14px;
   letter-spacing: 0.58px;
+  color: #000000;
   text-align: center;
   padding: 8px;
   margin: 0 3px 10px 0!important;
@@ -59,7 +55,7 @@
 .ricsrltopics__taglink {
   color: #000000;
   font-weight: normal;
-  font-family: 'HelveticaNeueLTPro-Regular';
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
 .ricsrlart {
   width: 100%;
@@ -67,16 +63,14 @@
   margin: 30px auto;
 }
 .ricsrlart__heading {
-  font-family: 'HelveticaNeueLTPro-Regular';
-  font-size: 16px;
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 21px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 70px;
   letter-spacing: normal;
   color: #000000;
-  font-size: 21px;
-  line-height: 70px;
   border-bottom: solid 1px #000000;
   width: 100%;
 }
@@ -119,68 +113,60 @@
   max-height: 235px;
   height: 100%;
   display: block;
+  min-height: 14vw;
 }
 .ricsrlart__carddetail {
   padding: 25px;
 }
 .ricsrlart__cardlabel {
-  font-family: 'HelveticaNeueLTPro-Regular';
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #000000;
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 18px;
   font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
   line-height: 0.78;
+  letter-spacing: normal;
+  color: #000000;
   display: inline-block;
   text-transform: uppercase;
 }
 .ricsrlart__articleheading {
-  font-family: 'HelveticaNeueLTPro-Regular';
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #000000;
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 26px;
   font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
   line-height: 1.38;
+  letter-spacing: normal;
+  color: #000000;
   margin: 20px 0;
   position: relative;
 }
 .ricsrlart__articledate {
-  font-family: 'HelveticaNeueLTPro-Regular';
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 22px;
   letter-spacing: normal;
   color: #000000;
-  font-size: 16px;
-  line-height: 22px;
   margin-bottom: 50px;
 }
 .ricsrlart__articledate strong {
   margin-left: 30px;
-  font-family: 'HelveticaNeueLTPro-Medium';
+  font-family: 'HelveticaNeueLTPro-Medium', Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
 .ricsrlart__tag {
   background: #e8e7e7;
-  font-family: 'HelveticaNeueLTPro-Regular';
-  font-size: 16px;
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
-  letter-spacing: normal;
-  color: #000000;
-  font-size: 14px;
   letter-spacing: 0.58px;
+  color: #000000;
   text-align: center;
   padding: 8px;
   margin: 7px 3px 0px 0!important;
@@ -236,7 +222,7 @@
 .ricsrlart__taglink {
   color: #000000;
   font-weight: normal;
-  font-family: 'HelveticaNeueLTPro-Regular';
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
 @media (max-width: 767.98px) {
   .ricsrltopics {
@@ -280,6 +266,9 @@
   .ricsrlart__cardimagecont {
     height: auto;
     width: 50%;
+  }
+  .ricsrlart__cardimage {
+    min-height: 50px;
   }
   .ricsrlart__cardlist {
     flex-direction: column;

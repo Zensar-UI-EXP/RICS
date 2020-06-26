@@ -1,6 +1,5 @@
 .ricsinfographic {
   width: 100%;
-  display: inline-block;
   display: flex;
   margin: 5px 0px 5px 0px;
 }
@@ -8,17 +7,14 @@
   padding: 50px 0 40px;
 }
 .ricsinfographic__heading {
-  font-family: 'HelveticaNeueLTPro-Regular';
-  font-size: 16px;
+  font-family: 'Oswald-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 28px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 1.31;
   letter-spacing: normal;
   color: #000000;
-  font-family: 'Oswald-Regular';
-  font-size: 28px;
-  line-height: 1.31;
 }
 .ricsinfographic__collist {
   margin: 30px 0;
@@ -30,33 +26,29 @@
   border-left: solid 2px #000000;
 }
 .ricsinfographic__colheading {
-  font-family: 'HelveticaNeueLTPro-Regular';
-  font-size: 16px;
+  font-family: 'Oswald-SemiBold', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 38px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 46px;
   letter-spacing: normal;
   color: #000000;
-  font-family: 'Oswald-SemiBold';
-  font-size: 38px;
-  line-height: 46px;
 }
 .ricsinfographic__coldesc {
-  font-family: 'HelveticaNeueLTPro-Regular';
-  font-size: 16px;
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 21px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   color: #000000;
-  font-size: 21px;
   padding: 15px 0 5px;
   line-height: 34px;
 }
 .ricsinfographic__desc {
-  font-family: 'HelveticaNeueLTPro-Regular';
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;

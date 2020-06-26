@@ -41,7 +41,7 @@
 }
 .filtersection__label {
   margin-left: 15px;
-  font-family: 'HelveticaNeueLTPro-Regular';
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -90,27 +90,24 @@
   margin-bottom: 5px;
 }
 .filtersection__appliedfilterkey {
-  font-family: 'HelveticaNeueLTPro-Regular';
+  font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #000000;
   color: #4c4d4d;
   text-transform: capitalize;
 }
 .filtersection__appliedfiltervalue {
-  font-family: 'HelveticaNeueLTPro-Regular';
+  font-family: 'HelveticaNeueLTPro-Bold', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #000000;
-  font-family: 'HelveticaNeueLTPro-Bold';
   color: #4c4d4d;
   margin-left: 5px;
 }
@@ -125,17 +122,14 @@
   background-size: 100%;
 }
 .filtersection__clearall {
-  font-family: 'HelveticaNeueLTPro-Regular';
-  font-size: 16px;
+  font-family: 'HelveticaNeueLTPro-Bold', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #000000;
-  font-family: 'HelveticaNeueLTPro-Bold';
   color: #4c4d4d;
-  font-size: 18px;
   text-decoration: underline;
   float: right;
   display: none;
@@ -147,16 +141,14 @@
   display: none;
 }
 .filtersection__close {
-  font-family: 'HelveticaNeueLTPro-Regular';
-  font-size: 16px;
+  font-family: 'HelveticaNeueLTPro-Medium', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   color: #000000;
-  font-family: 'HelveticaNeueLTPro-Medium';
-  font-size: 14px;
   float: right;
   text-decoration: underline;
 }

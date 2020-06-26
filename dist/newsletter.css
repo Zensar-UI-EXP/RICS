@@ -13,17 +13,14 @@
   padding-right: 0;
 }
 .ricsnewsltr__heading {
-  font-family: 'HelveticaNeueLTPro-Regular';
-  font-size: 16px;
+  font-family: 'HelveticaNeueLTPro-Medium', Helvetica, Arial, Verdana, Tahoma, sans-serif !important;
+  font-size: 36px !important;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 50px !important;
   letter-spacing: normal;
   color: #000000;
-  font-size: 36px!important;
-  line-height: 50px!important;
-  font-family: 'HelveticaNeueLTPro-Medium' !important;
   margin-bottom: 20px;
 }
 .ricsnewsltr__desc {
@@ -44,7 +41,7 @@
   display: inline-block;
 }
 .ricsnewsltr__messagecontainer {
-  font-family: 'HelveticaNeueLTPro-Medium';
+  font-family: 'HelveticaNeueLTPro-Medium', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 21px;
   text-align: center;
   line-height: 30px;
@@ -99,7 +96,7 @@
   }
   .ricsnewsltr__heading {
     font-size: 22px!important;
-    font-family: 'HelveticaNeueLTPro-Bold' !important;
+    font-family: 'HelveticaNeueLTPro-Bold', Helvetica, Arial, Verdana, Tahoma, sans-serif !important;
     margin-bottom: 10px;
   }
   .ricsnewsltr__desc {
