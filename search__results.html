@@ -86,8 +86,9 @@
                         <div class="col--12">
                             <div class="searchcontainer hide--desktop">
                                 <form class="searchcontainer__searchform" action="#">
-                                    <input class="searchcontainer__search input" type="search" placeholder="Search for something..." value="Affordable Housing" autocomplete="off">
-                                    <a class="searchcontainer__searchicon icon icon--search" href="javascript:void(0); title="search"></a>
+                                    <label for="searchMobileInput" class="dis--none">Search for something...</label>
+                                    <input id="searchMobileInput" class="searchcontainer__search input" type="search" placeholder="Search for something..." value="Affordable Housing" autocomplete="off">
+                                    <a class="searchcontainer__searchicon icon icon--search" href="javascript:void(0);" title="search"></a>
                                 </form>
                             </div>
                             <div class="special">
@@ -115,7 +116,7 @@
                                     <a href="javascript:void(0);" title="Close" onclick="closeFilter()" class="filtersection__close filtersection--onlyclose">Close</a>
                                 </h3>
                                 <ul class="filtersection__appliedfilter filtersection--appliedfilterdesktop"></ul>
-                                <ul class="filtersection__options">
+                                <div class="filtersection__options">
                                     <h4 class="filtersection__optionheading title title-size--sm fnt-fmly--ricsbold fnt-clr--chrgry">
                                         Publication
                                         <span class="filtersection__expand" onclick="expandCollapse(this)"></span>
@@ -131,7 +132,7 @@
                                         </li>
                                     </form>
                                 </ul>
-                                <ul class="filtersection__options">
+                                <div class="filtersection__options">
                                     <h4 class="filtersection__optionheading title title-size--sm fnt-fmly--ricsbold fnt-clr--chrgry">
                                         Specialism
                                         <span class="filtersection__expand" onclick="expandCollapse(this)"></span>
@@ -240,8 +241,9 @@
                         <div class="col--9">
                             <div class="searchcontainer hide--mobile">
                                 <form class="searchcontainer__searchform" action="#">
-                                    <input class="searchcontainer__search input" type="search" placeholder="Search for something..." value="Affordable Housing" autocomplete="off">
-                                    <a class="searchcontainer__searchicon icon icon--search" href="javascript:void(0); title="search"></a>
+                                    <label for="searchDesktopInput" class="dis--none">Search for something...</label>
+                                    <input id="searchDesktopInput" class="searchcontainer__search input" type="search" placeholder="Search for something..." value="Affordable Housing" autocomplete="off">
+                                    <a class="searchcontainer__searchicon icon icon--search" href="javascript:void(0);" title="search"></a>
                                 </form>
                             </div>
                             <div class="latestarticle">
