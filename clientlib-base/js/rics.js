@@ -530,3 +530,8 @@ function closeFilter(){
       filterElement[0].style.display = "none";
       document.body.classList.remove("fixed--layout");
 }
+
+function openNewTab (thisElement) {
+      window.open(thisElement.href, '_blank');
+      event.preventDefault();
+}
