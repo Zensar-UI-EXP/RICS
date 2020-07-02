@@ -156,6 +156,7 @@
   padding: 7px 8px;
   margin: 10px 3px 0px 0!important;
   float: left;
+  cursor: pointer;
 }
 .ricsartbanner__tag:hover {
   background: #ffffff;
@@ -384,7 +385,7 @@
 .banner--journal .banner__authinfo {
   color: #000000 !important;
 }
-.banner--journal .banner__imgcont{
+.banner--journal .banner__imgcont {
   min-height: 57.5vw;
 }
 @media (max-width: 767.98px) {

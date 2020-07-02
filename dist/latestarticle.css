@@ -95,6 +95,7 @@
   padding: 5px 10px;
   margin: 7px 3px 0px 0!important;
   display: inline-block;
+  cursor: pointer;
 }
 .latestarticle__tag:hover {
   background: #ffffff;
