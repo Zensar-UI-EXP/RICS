@@ -156,6 +156,7 @@
   padding: 7px 8px;
   margin: 10px 3px 0px 0!important;
   float: left;
+  cursor: pointer;
 }
 .ricsartbanner__tag:hover {
   background: #ffffff;
@@ -261,7 +262,7 @@
   flex: 0 0 100%;
   padding-left: 0!important;
   padding-right: 0!important;
-  min-height: 38.5vw;
+  height: 38.5vw;
 }
 @media (max-width: 767.98px) {
   .banner__imgcont {
@@ -384,8 +385,8 @@
 .banner--journal .banner__authinfo {
   color: #000000 !important;
 }
-.banner--journal .banner__imgcont{
-  min-height: 57.5vw;
+.banner--journal .banner__imgcont {
+  height: 57.5vw;
 }
 @media (max-width: 767.98px) {
   .ricsartbanner {

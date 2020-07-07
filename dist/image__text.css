@@ -6,7 +6,7 @@
 .ricsartimgntxt__img {
   width: 100%;
   display: block;
-  min-height: 27vw;
+  height: 38vw;
 }
 .ricsartimgntxt__txt {
   margin: 20px 0 0!important;
@@ -67,6 +67,9 @@
 .ricsartimgntxt__advimage {
   width: auto;
   max-width: 100%;
+}
+.col--6 .ricsartimgntxt__img {
+  height: 27vw;
 }
 @media (max-width: 767.98px) {
   .ricsartimgntxt {

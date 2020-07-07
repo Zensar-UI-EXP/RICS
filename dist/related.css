@@ -36,6 +36,7 @@
   padding: 8px;
   margin: 0 3px 10px 0!important;
   float: left;
+  cursor: pointer;
 }
 .ricsrltopics__tag:hover {
   background: #ffffff;
@@ -113,7 +114,7 @@
   max-height: 235px;
   height: 100%;
   display: block;
-  min-height: 14vw;
+  height: 14vw;
 }
 .ricsrlart__carddetail {
   padding: 25px;

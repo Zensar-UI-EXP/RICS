@@ -478,7 +478,7 @@ a {
 }
 .slider img {
   width: 100%;
-  min-height: 35vw;
+  height: 35vw;
 }
 .slider__arrow {
   position: absolute;
