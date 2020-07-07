@@ -1,6 +1,6 @@
 .ricssubnav {
   box-shadow: 0 4px 4px 0 rgba(212, 209, 209, 0.2);
-  z-index: 2;
+  z-index: 1;
   position: relative;
 }
 .ricssubnav__submenunav {
