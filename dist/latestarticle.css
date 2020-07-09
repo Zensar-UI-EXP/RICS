@@ -35,7 +35,8 @@
 .latestarticle__cardimagecont {
   width: 45%;
   position: relative;
-  height: 14vw;
+  min-height: 14vw;
+  flex: 0 0 39%;
 }
 .latestarticle__cardimagecont::before {
   background: #4c4d4d;
@@ -57,6 +58,8 @@
 .latestarticle__carddetail {
   padding: 15px 30px;
   width: 70%;
+  flex: 0 0 61%;
+  overflow: hidden;
 }
 .latestarticle__articleheading {
   margin: 15px 0 20px;
@@ -101,6 +104,9 @@
   background: #ffffff;
   text-decoration: underline;
 }
+.latestarticle__tag:last-child {
+  margin-right: 0;
+}
 .latestarticle__taglink {
   color: #000000;
   font-weight: normal;
@@ -117,9 +123,9 @@
   width: 3px;
   height: 3px;
   display: inline-block;
-  position: relative;
-  top: 21px;
-  left: 1px;
+  position: absolute;
+  bottom: 7px;
+  right: 7px;
   background: #4c4d4d;
 }
 .latestarticle__tagmore::after {
@@ -139,6 +145,14 @@
   height: 3px;
   background: #4c4d4d;
   left: 6px;
+}
+.latestarticle__tagspan {
+  position: absolute;
+  width: 25px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background: #fff;
 }
 .latestarticle__loadbtn {
   display: block;

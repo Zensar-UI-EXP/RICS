@@ -139,11 +139,11 @@
   padding: 50px 0;
 }
 .ricsartcf__scndlistcont {
-  padding-left: 15px;
+  padding-left: 30px;
   margin-top: 20px;
 }
 .ricsartcf__scndlist {
-  list-style: disc inside;
+  list-style: disc outside;
   font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 21px;
   font-weight: normal;
@@ -152,6 +152,7 @@
   line-height: 34px;
   letter-spacing: normal;
   color: #000000;
+  padding-left: 10px;
 }
 .ricsartcf--scndheading {
   font-family: 'OpenSans-SemiBold', Helvetica, Arial, Verdana, Tahoma, sans-serif;
