@@ -947,3 +947,34 @@ strong.fnt-stl--itlc {
 .fixed--layout {
   position: fixed;
 }
+.st_facebook_large{
+  margin: 0 30px 0 15px;
+}
+.st_facebook_large .stLarge{
+  width: 31px;
+  height: 31px;
+  background: url(clientlib-base/resources/images/icon__fb.svg) no-repeat transparent!important;
+  background-size: cover!important;
+}
+.st_twitter_large{
+  margin: 0 30px 0 0px;
+}
+.st_twitter_large .stLarge{
+  width: 31px;
+  height: 31px;
+  background: url(clientlib-base/resources/images/icon__twitter.svg) no-repeat transparent!important;
+  background-size: cover!important;
+}
+.st_linkedin_large{
+  margin: 0 30px 0 0px;
+}
+.st_linkedin_large .stLarge{
+  width: 31px;
+  height: 31px;
+  background: url(clientlib-base/resources/images/icon__linkedin.svg) no-repeat transparent!important;
+  background-size: cover!important;
+}
+.stButton{
+  margin-left: 0!important;
+  margin-right: 0!important;
+}
