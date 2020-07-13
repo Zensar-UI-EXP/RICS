@@ -543,19 +543,22 @@ function getAllTag() {
             var addFullElipsis = {};
             for (var i = 0; i < allTagElement.length; i++) {
                   var childElementWidth = 0;
-                  for (var j = 0; j < allTagElement[i].children.length; j++) {
-                        childElementWidth += allTagElement[i].children[j].clientWidth || allTagElement[i].children[j].offsetWidth;
-                        childElementWidth += 9;
-                        if (j === allTagElement[i].children.length - 2 && (childElementWidth + 50) < tagContElementWidth && (childElementWidth + allTagElement[i].children[j+1].offsetWidth) > tagContElementWidth) {
-                              var lastTagWidth = tagContElementWidth - childElementWidth;
-                              allTagElement[i].children[j+1].style.cssText = "width: " + lastTagWidth + 'px' + ";overflow: hidden; text-overflow: ellipsis; white-space: nowrap; position: relative; top: 7px;";
-                        } else if (j === allTagElement[i].children.length - 2 && (childElementWidth + 50) > tagContElementWidth) {
-                              addFullElipsis[i] = true;
+                  if (!allTagElement[i].classList.contains("checking--done")){
+                        for (var j = 0; j < allTagElement[i].children.length; j++) {
+                              childElementWidth += allTagElement[i].children[j].clientWidth || allTagElement[i].children[j].offsetWidth;
+                              childElementWidth += 9;
+                              if (j === allTagElement[i].children.length - 2 && (childElementWidth + 50) < tagContElementWidth && (childElementWidth + allTagElement[i].children[j+1].offsetWidth) > tagContElementWidth) {
+                                    var lastTagWidth = tagContElementWidth - childElementWidth;
+                                    allTagElement[i].children[j+1].style.cssText = "width: " + lastTagWidth + 'px' + ";overflow: hidden; text-overflow: ellipsis; white-space: nowrap; position: relative; top: 7px;";
+                              } else if (j === allTagElement[i].children.length - 2 && (childElementWidth + 50) > tagContElementWidth) {
+                                    addFullElipsis[i] = true;
+                              }
                         }
-                  }
-                  if (addFullElipsis[i]) {
-                        var elipsisElement = "<span class='latestarticle__tagspan'></span><a class='latestarticle__tagmore' onclick='seemoreTag(" + (i + 1) + ")' href='javascript:void(0);' title='Click to see more tagging'>Click to see more tagging</a>";
-                        allTagElement[i].innerHTML += elipsisElement;
+                        if (addFullElipsis[i]) {
+                              var elipsisElement = "<span class='latestarticle__tagspan'></span><a class='latestarticle__tagmore' onclick='seemoreTag(" + (i + 1) + ")' href='javascript:void(0);' title='Click to see more tagging'>Click to see more tagging</a>";
+                              allTagElement[i].innerHTML += elipsisElement;
+                        }
+                        allTagElement[i].classList.add("checking--done");
                   }
             }
       }
