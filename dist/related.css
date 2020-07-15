@@ -244,6 +244,7 @@
   .ricsrltopics__heading {
     font-size: 14px;
     line-height: 42px;
+    border-bottom: solid 1.5px @ricsblack;
   }
   .ricsrltopics__tagcont {
     padding-top: 25px;
