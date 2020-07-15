@@ -459,6 +459,9 @@
     border-left: 0;
     padding-left: 0px;
   }
+  .infotxt__desc.fnt-fmly--jornal {
+    font-family: 'OpenSans-SemiBold', Helvetica, Arial, Verdana, Tahoma, sans-serif !important;
+  }
   .banner {
     max-width: calc(100% - 30px);
     margin: 15px;
