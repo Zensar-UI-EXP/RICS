@@ -980,3 +980,7 @@ strong.fnt-stl--itlc {
   margin-left: 0!important;
   margin-right: 0!important;
 }
+.mob-flxdir--row .col--6 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
