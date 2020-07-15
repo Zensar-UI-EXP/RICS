@@ -301,6 +301,7 @@
                right: 100%;
                content: "";
                top: 0px;
+               left: auto;
                box-shadow: @pageboxshadow;
                background: @blue--green40;
             }
@@ -317,6 +318,28 @@
             &.bg--trgrn{
                &::after {
                   background: @true--green60;
+               }
+            }
+         }
+         .pagelist__cont:hover{
+            .pagelist__desc{
+               &::after{
+                  background: @blue--green40!important;
+               }
+               &.bg--cobalt{
+                  &::after {
+                     background: @ricscobalt60!important;
+                  }
+               }
+               &.bg--mdgrn{
+                  &::after {
+                     background: @mud--green60!important;
+                  }
+               }
+               &.bg--trgrn{
+                  &::after {
+                     background: @true--green60!important;
+                  }
                }
             }
          }
