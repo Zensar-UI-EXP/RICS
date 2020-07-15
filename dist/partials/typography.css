@@ -906,7 +906,7 @@ strong.fnt-stl--itlc {
   font-size: 22px;
   line-height: 32px;
   font-family: 'HelveticaNeueLTPro-Medium', Helvetica, Arial, Verdana, Tahoma, sans-serif;
-  height: 65px;
+  height: 65px!important;
   overflow: hidden;
 }
 .para-size--jnlpghead {

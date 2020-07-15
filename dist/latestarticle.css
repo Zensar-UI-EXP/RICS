@@ -35,7 +35,7 @@
 .latestarticle__cardimagecont {
   width: 45%;
   position: relative;
-  min-height: 14vw;
+  height: 14vw;
   flex: 0 0 39%;
 }
 .latestarticle__cardimagecont::before {

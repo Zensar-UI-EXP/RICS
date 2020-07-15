@@ -73,8 +73,9 @@
       margin-bottom: 0;
    }
    &__authorname {
-      width: 190px!important;
-      max-width: 190px!important;
+      width: auto!important;
+      min-width: 190px!important;
+      max-width: initial!important;
    }
    &__subheading{
       margin: 20px 0 20px;
@@ -313,9 +314,6 @@
       }
       .banner__subheading, .banner__desc, .banner__authinfo{
          color: @ricsblack!important;
-      }
-      .banner__imgcont{
-         height: 57.5vw;
       }
    }
 }

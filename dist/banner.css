@@ -385,9 +385,6 @@
 .banner--journal .banner__authinfo {
   color: #000000 !important;
 }
-.banner--journal .banner__imgcont {
-  height: 57.5vw;
-}
 @media (max-width: 767.98px) {
   .ricsartbanner {
     margin-top: 15px!important;
