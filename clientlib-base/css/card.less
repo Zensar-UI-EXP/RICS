@@ -80,7 +80,10 @@
    &__img{
       width: 100%;
       display: block;
-      height: 21vw;
+      height: 100%;
+      left: 0;
+      top: 0;
+      position: absolute;
    }
    &__content{
       display: flex;
@@ -90,6 +93,7 @@
       position: relative;
       padding-left: 0!important;
       padding-right: 0!important;
+      padding-top: 50%;
       &::before{
          background: @charcoal--grey;
          width: 100%;
@@ -178,6 +182,7 @@
          border-bottom: solid 1px @blue--green;
          color: @ricswhite;
          height: 50%;
+         overflow: hidden;
          &::after{
             position: absolute;
             width: 100%;
@@ -393,7 +398,6 @@
       }
       &__img{
          position: relative;
-         min-height: 50px;
       }
       &__subheading{
          -webkit-line-clamp: 3;

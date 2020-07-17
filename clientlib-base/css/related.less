@@ -73,8 +73,8 @@
    }
    &__cardimagecont{
       width: 100%;
-      max-height: 235px;
       position: relative;
+      padding-top: 50%;
       &::before{
          background: @charcoal--grey;
          width: 100%;
@@ -92,10 +92,11 @@
    }
    &__cardimage{
       width: 100%;
-      max-height: 235px;
       height: 100%;
       display: block;
-      height: 14vw;
+      position: absolute;
+      left: 0;
+      top: 0;
    }
    &__carddetail{
       padding: 25px;
@@ -186,7 +187,7 @@
          }
       }
       &__heading{
-         font-size: 14px;
+         font-size: 18px;
          line-height: 42px;
          border-bottom: solid 1.5px @ricsblack;
       }
@@ -214,6 +215,7 @@
       &__cardimagecont{
          height: auto;
          width: 50%;
+         padding-top: 25%;
       }
       &__cardimage{
          min-height: 50px;
@@ -266,7 +268,7 @@
          display: none;
       }
       &__tag{
-         font-size: 9px;
+         font-size: 12px;
          padding: 5px;
          margin-top: 3px;
       }

@@ -201,7 +201,7 @@
       flex: 0 0 100%;
       padding-left: 0!important;
       padding-right: 0!important;
-      height: 38.5vw;
+      padding-top: 43.75%;
       @media (max-width: 767.98px) {
          position: relative!important;
          display: flex;
@@ -295,6 +295,9 @@
    &__img{
       width: 100%;
       height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
    }
    &--journal{
       border-top: solid 1px @ricscobalt;
@@ -330,20 +333,20 @@
          line-height: 38px;
       }
       &__desc{
-         font-size: 15px;
-         line-height: 22px;
+         font-size: 18px;
+         line-height: 24px;
       }
       &__authorname, &__authordate{
-         font-size: 10px;
+         font-size: 14px;
          line-height: 36px;
          margin: 20px 0 0;
       }
       &__tag{
-         font-size: 9px;
+         font-size: 12px;
       }
       &--jrnlheading{
-         font-size: 10px;
-         line-height: 14px;
+         font-size: 14px;
+         line-height: 18px;
       }
       &--jrnlsubheading{
          font-size: 22px;
@@ -437,7 +440,6 @@
          padding-right: 0!important;
          position: relative!important;
          display: flex;
-         min-height: 50px;
       }
       &__heading{
          background: @ricswhite;
@@ -457,13 +459,13 @@
       }
       &__desc{
          margin-bottom: 30px;
-         font-size: 14px!important;
-         line-height: 21px!important;
+         font-size: 18px!important;
+         line-height: 24px!important;
       }
       &__authinfo{
          position: static;
          margin: 0 10px 10px!important;
-         font-size: 12px!important;
+         font-size: 16px!important;
       }
    }
 }
