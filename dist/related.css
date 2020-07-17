@@ -94,8 +94,8 @@
 }
 .ricsrlart__cardimagecont {
   width: 100%;
-  max-height: 235px;
   position: relative;
+  padding-top: 50%;
 }
 .ricsrlart__cardimagecont::before {
   background: #4c4d4d;
@@ -111,10 +111,11 @@
 }
 .ricsrlart__cardimage {
   width: 100%;
-  max-height: 235px;
   height: 100%;
   display: block;
-  height: 14vw;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .ricsrlart__carddetail {
   padding: 25px;
@@ -242,9 +243,9 @@
     margin-bottom: 25px;
   }
   .ricsrltopics__heading {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 42px;
-    border-bottom: solid 1.5px @ricsblack;
+    border-bottom: solid 1.5px #000000;
   }
   .ricsrltopics__tagcont {
     padding-top: 25px;
@@ -268,6 +269,7 @@
   .ricsrlart__cardimagecont {
     height: auto;
     width: 50%;
+    padding-top: 25%;
   }
   .ricsrlart__cardimage {
     min-height: 50px;
@@ -320,7 +322,7 @@
     display: none;
   }
   .ricsrlart__tag {
-    font-size: 9px;
+    font-size: 12px;
     padding: 5px;
     margin-top: 3px;
   }

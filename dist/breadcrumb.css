@@ -72,17 +72,17 @@
     margin-bottom: 25px;
   }
   .ricsbreadcrumb__navlistcont {
-    font-size: 10px;
+    font-size: 12px;
     width: 165px;
   }
   .ricsbreadcrumb.hide--submenu {
     margin-top: 168px;
   }
   .ricsbreadcrumb__navlink {
-    font-size: 10px;
+    font-size: 12px;
   }
   .ricsbreadcrumb__navlist {
-    font-size: 10px;
+    font-size: 12px;
   }
   .ricsbreadcrumb__morelink {
     top: -5px;

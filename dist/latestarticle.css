@@ -35,7 +35,7 @@
 .latestarticle__cardimagecont {
   width: 45%;
   position: relative;
-  height: 14vw;
+  padding-top: 22.5%;
   flex: 0 0 39%;
 }
 .latestarticle__cardimagecont::before {
@@ -54,6 +54,9 @@
   width: 100%;
   height: 100%;
   display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .latestarticle__carddetail {
   padding: 15px 30px;
@@ -274,7 +277,6 @@
   }
   .latestarticle__cardimagecont {
     width: 50%;
-    min-height: 50px;
   }
   .latestarticle__cardlabel {
     position: absolute;
@@ -299,7 +301,7 @@
   }
   .latestarticle__tag {
     padding: 3px 5px!important;
-    font-size: 9px!important;
+    font-size: 12px!important;
   }
   .latestarticle__tagmore {
     top: 20px;

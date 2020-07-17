@@ -205,6 +205,7 @@ function hidenav() {
 }
 
 function toggleSubMenu(thisElement, menuIndex, drpdwnIndex) {
+      drpdwnIndex = drpdwnIndex || thisElement.textContent;
       let showElement = document.getElementById("menu" + menuIndex + "drpdwn" + drpdwnIndex);
       if (!showElement.offsetWidth) {
             hideDropdown();

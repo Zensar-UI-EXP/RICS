@@ -6,7 +6,10 @@
 .ricsartimgntxt__img {
   width: 100%;
   display: block;
-  height: 38vw;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 .ricsartimgntxt__txt {
   margin: 20px 0 0!important;
@@ -42,12 +45,18 @@
 }
 .ricsartimgntxt__midcol {
   position: relative;
+  padding-top: 43.75%;
+}
+.ricsartimgntxt--videocol {
+  padding-top: 56.25%;
 }
 .ricsartimgntxt__video {
   width: 100%;
   object-fit: cover;
-  height: 34vw;
-  position: relative;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .ricsartimgntxt__video iframe {
   width: 100%;
@@ -56,7 +65,7 @@
 .ricsartimgntxt__videoposter {
   position: absolute;
   width: 100%;
-  height: 34vw;
+  height: 100%;
   left: 0;
   top: 0;
   z-index: 5;
@@ -68,8 +77,8 @@
   width: auto;
   max-width: 100%;
 }
-.col--6 .ricsartimgntxt__img {
-  height: 27vw;
+.col--6 .ricsartimgntxt__midcol {
+  padding-top: 56.25%;
 }
 @media (max-width: 767.98px) {
   .ricsartimgntxt {
@@ -108,10 +117,6 @@
   .ricsartimgntxt__advheading {
     font-size: 10px;
     padding: 10px 0;
-  }
-  .ricsartimgntxt__video,
-  .ricsartimgntxt__videoposter {
-    height: 45vw;
   }
 }
 *::-webkit-media-controls-panel {

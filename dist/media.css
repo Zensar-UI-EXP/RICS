@@ -118,7 +118,7 @@
     height: 66px;
     margin-left: -33px;
     top: 0;
-    margin-top: 88px;
+    margin-top: 50px;
   }
   .input {
     font-size: 14px;
@@ -131,10 +131,10 @@
   }
   th,
   td {
-    font-size: 11px;
+    font-size: 16px;
     padding: 10px 15px;
     width: 30%;
-    line-height: 17px;
+    line-height: 24px;
   }
   th:first-child,
   td:first-child {
@@ -297,12 +297,15 @@
     font-family: 'HelveticaNeueLTPro-Bold', Helvetica, Arial, Verdana, Tahoma, sans-serif !important;
   }
   .title-size--lsmd {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .title-size--lsmd.fnt-fmly--oswald {
+    font-family: 'Oswald-Medium', Helvetica, Arial, Verdana, Tahoma, sans-serif !important;
   }
   .title-size--dxsmdfstbgfnt {
-    font-size: 16px!important;
-    line-height: 22px!important;
+    font-size: 18px!important;
+    line-height: 24px!important;
   }
   .title-size--dxsmdfstbgfnt::first-letter {
     font-size: 58px!important;
@@ -372,14 +375,14 @@
     margin-right: auto;
     margin-top: 10px;
     margin-bottom: 15px!important;
-    width: 90%;
-    max-width: 90%;
-    font-size: 12px;
+    width: calc(100% - 30px);
+    max-width: calc(100% - 30px);
+    font-size: 14px;
     line-height: 18px;
   }
   .para-size--cf {
-    font-size: 15px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 24px;
     margin-bottom: 15px;
   }
   .para-size--md {

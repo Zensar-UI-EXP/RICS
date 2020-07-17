@@ -74,7 +74,10 @@
 .cardlayout__img {
   width: 100%;
   display: block;
-  height: 21vw;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
 }
 .cardlayout__content {
   display: flex;
@@ -84,6 +87,7 @@
   position: relative;
   padding-left: 0!important;
   padding-right: 0!important;
+  padding-top: 50%;
 }
 .cardlayout__imgcont::before {
   background: #4c4d4d;
@@ -169,6 +173,7 @@
   border-bottom: solid 1px #02837c;
   color: #ffffff;
   height: 50%;
+  overflow: hidden;
 }
 .pagelist--withimg .pagelist__desc::after {
   position: absolute;
@@ -361,7 +366,6 @@
   }
   .cardlayout__img {
     position: relative;
-    min-height: 50px;
   }
   .cardlayout__subheading {
     -webkit-line-clamp: 3;
