@@ -264,7 +264,7 @@
     margin-bottom: 15px;
   }
   .title--smalldesc {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 10px!important;
     line-height: 18px;
   }
@@ -284,8 +284,8 @@
     line-height: 14px!important;
   }
   .title-size--pmd {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 20px;
+    line-height: 26px;
   }
   .title-size--lmd {
     font-size: 19px!important;

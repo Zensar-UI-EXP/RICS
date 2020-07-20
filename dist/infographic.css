@@ -4,7 +4,7 @@
   margin: 5px 0px 5px 0px;
 }
 .ricsinfographic__container {
-  padding: 50px 0 40px;
+  padding: 75px 0;
 }
 .ricsinfographic__heading {
   font-family: 'Oswald-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
@@ -114,14 +114,14 @@
     line-height: 48px;
   }
   .ricsinfographic__coldesc {
-    font-size: 15px;
+    font-size: 18px;
     padding-top: 10px;
     margin-bottom: 0px!important;
-    line-height: 22px;
+    line-height: 24px;
   }
   .ricsinfographic__desc {
-    font-size: 12px;
-    line-height: 17px;
+    font-size: 14px;
+    line-height: 20px;
   }
   .ricsinfographic__midcol:first-child {
     margin-bottom: 30px;

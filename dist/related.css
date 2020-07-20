@@ -251,7 +251,7 @@
     padding-top: 25px;
   }
   .ricsrltopics__tag {
-    font-size: 9px;
+    font-size: 12px;
   }
   .ricsrlart {
     margin-top: 15px!important;
@@ -290,6 +290,7 @@
   .ricsrlart__heading {
     font-size: 14px;
     line-height: 42px;
+    border-bottom-width: 2px;
   }
   .ricsrlart__cardlabel {
     font-size: 10px;
@@ -329,7 +330,7 @@
   .ricsrlart__tagcont {
     width: 100%;
     overflow: hidden;
-    height: 28px;
+    height: 32px;
     position: relative;
   }
   .ricsrlart__tagcont::after {

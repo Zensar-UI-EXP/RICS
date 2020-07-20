@@ -81,7 +81,7 @@
 }
 .cardlayout__content {
   display: flex;
-  padding: 60px 15px 45px;
+  padding: 60px 30px 45px;
 }
 .cardlayout__imgcont {
   position: relative;
@@ -100,8 +100,8 @@
 }
 .cardlayout__heading {
   position: absolute;
-  bottom: -40px;
-  left: 15px;
+  bottom: -50px;
+  left: 30px;
 }
 .cardlayout__desc {
   margin-bottom: 30px;
@@ -365,7 +365,7 @@
     display: none;
   }
   .cardlayout__img {
-    position: relative;
+    position: absolute;
   }
   .cardlayout__subheading {
     -webkit-line-clamp: 3;

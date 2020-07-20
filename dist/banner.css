@@ -314,12 +314,12 @@
 .banner__subheading,
 .banner__desc {
   color: #ffffff !important;
-  margin: 0 30px 0 20px;
+  margin: 0 30px 0 30px;
 }
 .banner__heading {
   position: absolute;
   left: 0;
-  top: 30px;
+  top: 60px;
   z-index: 1;
 }
 @media (max-width: 767.98px) {
@@ -334,7 +334,7 @@
   }
 }
 .banner__subheading {
-  margin-top: 40px;
+  margin-top: 70px;
   margin-bottom: 30px;
 }
 @media (max-width: 767.98px) {
@@ -350,7 +350,7 @@
 }
 .banner__authinfo {
   position: absolute;
-  bottom: 30px;
+  bottom: 60px;
   left: 20px;
   z-index: 1;
   color: #ffffff !important;
