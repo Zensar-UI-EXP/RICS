@@ -352,8 +352,8 @@
     margin-bottom: 15px!important;
   }
   .special__heading {
-    width: 90%;
-    max-width: 90%;
+    width: calc(100% - 30px);
+    max-width: calc(100% - 30px);
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;

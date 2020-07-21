@@ -121,6 +121,7 @@
 }
 .ricscookies__content {
   color: #ffffff !important;
+  display: inline;
 }
 .ricscookies__link {
   color: #ffffff !important;

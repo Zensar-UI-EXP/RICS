@@ -943,6 +943,9 @@ strong.fnt-stl--itlc {
 .hide--desktop {
   display: none!important;
 }
+.hide--both {
+  display: none;
+}
 .error {
   color: #a30000 !important;
 }
