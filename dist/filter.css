@@ -155,7 +155,7 @@
 .filtersection--applyclose {
   display: none;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .filtersection {
     position: absolute;
     background: #ffffff;

@@ -67,7 +67,7 @@
 .ricsbreadcrumb--navlast {
   color: #686969;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .ricsbreadcrumb {
     margin-bottom: 25px;
   }

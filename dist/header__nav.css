@@ -156,7 +156,7 @@
 .ricsnav--jornalslist .ricsnav__chevronicon.ricsnav--chevronactive {
   top: 2px;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .ricsnav {
     position: fixed;
     width: 100%;

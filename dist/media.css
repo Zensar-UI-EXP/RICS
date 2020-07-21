@@ -12,7 +12,7 @@
     line-height: 20px!important;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   body {
     padding-top: 150px;
   }

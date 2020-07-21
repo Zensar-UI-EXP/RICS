@@ -260,7 +260,7 @@
     margin-bottom: 10px!important;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .latestarticle {
     max-width: 90%;
     margin-left: 5%;
@@ -380,5 +380,17 @@
   }
   .seemore--tag.ricsrlart__tagcont:after {
     display: none;
+  }
+}
+@media (max-width: 1199.98px) {
+  .latestarticle__cardimagecont {
+    flex: 0 0 45%;
+  }
+  .latestarticle__carddetail {
+    flex: 0 0 55%;
+  }
+  .latestarticle__articleheading {
+    width: 100%;
+    max-width: 100%;
   }
 }

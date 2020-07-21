@@ -5,11 +5,7 @@
 }
 .ricsartimgntxt__img {
   width: 100%;
-  display: block;
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 0;
+  height: 43.75%;
 }
 .ricsartimgntxt__txt {
   margin: 20px 0 0!important;
@@ -45,7 +41,6 @@
 }
 .ricsartimgntxt__midcol {
   position: relative;
-  padding-top: 43.75%;
 }
 .ricsartimgntxt--videocol {
   padding-top: 56.25%;
@@ -77,10 +72,10 @@
   width: auto;
   max-width: 100%;
 }
-.col--6 .ricsartimgntxt__midcol {
-  padding-top: 56.25%;
+.col--6 .ricsartimgntxt__img {
+  height: 56.25%;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .ricsartimgntxt {
     margin-top: 15px!important;
     margin-bottom: 0!important;
