@@ -45,6 +45,7 @@
   letter-spacing: normal;
   color: #000000;
   padding: 15px 0 5px;
+  word-wrap: break-word;
 }
 .ricsinfographic__desc {
   font-family: 'HelveticaNeueLTPro-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif;
