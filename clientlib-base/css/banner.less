@@ -63,8 +63,15 @@
 .ricsartbanner{
    .component--default();
    margin: 40px auto;
+   &__authorrow{
+      display: block;
+      width: 100%;
+      float: left;
+   }
    &__tagcont{
       display: block;
+      margin-top: 30px;
+      float: left;
    }
    &__heading{
       .default--font(@fontFamily:@Modus--SemiBold; @fontSize: 22px; @lineHeight: 14px);
@@ -84,13 +91,19 @@
    }
    &__desc{
       .default--font(@fontSize: 25px; @lineHeight: 37px);
+      margin-bottom: 35px;
    }
    &__authorname, &__authordate{
-      margin: 35px 0 25px;
-      .default--font(@lineHeight: 36px);
-      white-space: nowrap;
+      .default--font(@lineHeight: 20px);
+      white-space: normal;
+      word-break: break-all;
+      overflow-wrap: anywhere;
+      word-wrap: break-word;
+      float: left;
       strong{
          font-family: @RICS--Medium;
+         float: left;
+         margin-right: 5px;
       }
    }
    &__tag{
