@@ -141,7 +141,7 @@
       padding-right: 20px;
       letter-spacing: -2.15px!important;
       margin-bottom: 0;
-      @media (max-width: 768px) {
+      @media (max-width: 834px) {
          display: block;
          border-right: 0;
          width: 100%;
@@ -164,7 +164,7 @@
    &__container{
       display: flex;
       position: relative;
-      @media (max-width: 768px) {
+      @media (max-width: 834px) {
          flex-direction: column-reverse;
       }
       &:hover{
@@ -191,7 +191,7 @@
       z-index: 1;
       width: 600px;
       max-width: 600px;
-      @media (max-width: 768px) {
+      @media (max-width: 834px) {
          padding: 20px 0!important;
       }
    }
@@ -203,7 +203,7 @@
       padding-left: 0!important;
       padding-right: 0!important;
       padding-top: 43.75%;
-      @media (max-width: 768px) {
+      @media (max-width: 834px) {
          position: relative!important;
          display: flex;
       }
@@ -258,7 +258,7 @@
       left: 0;
       top: 60px;
       z-index: 1;
-      @media (max-width: 768px) {
+      @media (max-width: 834px) {
          background: @ricswhite;
          padding: 10px;
          top: auto;
@@ -271,7 +271,7 @@
    &__subheading{
       margin-top: 70px;
       margin-bottom: 30px;
-      @media (max-width: 768px) {
+      @media (max-width: 834px) {
          margin-top: 0;
          font-family: @Modus!important;
       }
@@ -321,7 +321,7 @@
       }
    }
 }
-@media (max-width: 768px) {
+@media (max-width: 834px) {
    .ricsartbanner{
       margin-top: 15px!important;
       margin-bottom: 15px!important;
@@ -469,6 +469,28 @@
          position: static;
          margin: 0 10px 10px!important;
          font-size: 16px!important;
+      }
+   }
+}
+@media (min-width: 834.02px) and (max-width: 992px) {
+   .banner{
+      &__leftcol{
+         width: 450px;
+         max-width: 450px;
+      }
+      &__heading{
+         top: 30px;
+      }
+      &__subheading{
+         margin-top: 30px;
+         margin-bottom: 20px;
+      }
+      &__authinfo{
+         bottom: 30px;
+      }
+      &__desc{
+         line-height: 24px!important;
+         font-size: 20px!important;
       }
    }
 }

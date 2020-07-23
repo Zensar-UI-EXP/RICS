@@ -50,7 +50,7 @@
 .bg--trgrnwithopct .propertylist__heading {
   color: #008000 !important;
 }
-@media (max-width: 768px) {
+@media (max-width: 834px) {
   .propertylist {
     width: calc(100% - 30px);
     margin: 25px auto;

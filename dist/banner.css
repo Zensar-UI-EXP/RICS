@@ -200,7 +200,7 @@
   letter-spacing: -2.15px !important;
   margin-bottom: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 834px) {
   .infotxt__title {
     display: block;
     border-right: 0;
@@ -225,7 +225,7 @@
   display: flex;
   position: relative;
 }
-@media (max-width: 768px) {
+@media (max-width: 834px) {
   .banner__container {
     flex-direction: column-reverse;
   }
@@ -252,7 +252,7 @@
   width: 600px;
   max-width: 600px;
 }
-@media (max-width: 768px) {
+@media (max-width: 834px) {
   .banner__leftcol {
     padding: 20px 0!important;
   }
@@ -266,7 +266,7 @@
   padding-right: 0!important;
   padding-top: 43.75%;
 }
-@media (max-width: 768px) {
+@media (max-width: 834px) {
   .banner__imgcont {
     position: relative!important;
     display: flex;
@@ -323,7 +323,7 @@
   top: 60px;
   z-index: 1;
 }
-@media (max-width: 768px) {
+@media (max-width: 834px) {
   .banner__heading {
     background: #ffffff;
     padding: 10px;
@@ -338,7 +338,7 @@
   margin-top: 70px;
   margin-bottom: 30px;
 }
-@media (max-width: 768px) {
+@media (max-width: 834px) {
   .banner__subheading {
     margin-top: 0;
     font-family: 'Oswald-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif !important;
@@ -390,7 +390,7 @@
 .banner--journal .banner__authinfo {
   color: #000000 !important;
 }
-@media (max-width: 768px) {
+@media (max-width: 834px) {
   .ricsartbanner {
     margin-top: 15px!important;
     margin-bottom: 15px!important;

@@ -27,7 +27,7 @@
   height: 2px;
   background: #000000;
 }
-@media (max-width: 768px) {
+@media (max-width: 834px) {
   .pagentfound {
     margin: 100px auto;
     width: calc(100% - 30px);

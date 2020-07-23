@@ -84,7 +84,7 @@
 .ricsnewsltr__unsubscribsuccess {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 834px) {
   .ricsnewsltr {
     margin-top: 75px!important;
     margin-bottom: 75px!important;

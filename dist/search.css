@@ -22,7 +22,7 @@
   background-size: 100%!important;
   top: 47px;
 }
-@media (max-width: 768px) {
+@media (max-width: 834px) {
   .searchcontainer {
     padding: 0;
     width: calc(100% - 30px);
