@@ -561,6 +561,8 @@
   .banner__subheading {
     margin-top: 30px;
     margin-bottom: 20px;
+    max-height: 110px;
+    overflow: hidden;
   }
   .banner__authinfo {
     bottom: 30px;
@@ -568,5 +570,27 @@
   .banner__desc {
     line-height: 24px!important;
     font-size: 20px!important;
+    height: 100px;
+    overflow: hidden;
+  }
+}
+@media (min-width: 992.02px) and (max-width: 1024) {
+  .banner__heading {
+    top: 30px;
+  }
+  .banner__subheading {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    max-height: 110px;
+    overflow: hidden;
+  }
+  .banner__authinfo {
+    bottom: 30px;
+  }
+  .banner__desc {
+    line-height: 24px!important;
+    font-size: 20px!important;
+    height: 100px;
+    overflow: hidden;
   }
 }

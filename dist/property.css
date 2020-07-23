@@ -107,3 +107,13 @@
     margin-right: 0px;
   }
 }
+@media (min-width: 992.02px) and (max-width: 1240px) {
+  .propertylist__label {
+    width: 180px;
+    margin-right: 10px;
+  }
+  .propertylist__value {
+    width: 180px;
+    margin-right: 0px;
+  }
+}
