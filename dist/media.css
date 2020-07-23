@@ -461,3 +461,16 @@
     margin: 15px auto!important;
   }
 }
+@media (min-width: 834.02px) and (max-width: 992px) {
+  .title-size--jnlbrsbhead {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .title-size--xmd {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .title-size--sm {
+    font-size: 16px;
+  }
+}

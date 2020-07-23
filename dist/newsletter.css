@@ -1,7 +1,7 @@
 .ricsnewsltr {
   width: 100%;
   display: inline-block;
-  margin: 105px auto;
+  margin: 105px auto 155px;
 }
 .ricsnewsltr__container {
   justify-content: space-around;
@@ -87,7 +87,7 @@
 @media (max-width: 834px) {
   .ricsnewsltr {
     margin-top: 75px!important;
-    margin-bottom: 75px!important;
+    margin-bottom: 125px!important;
   }
   .ricsnewsltr__inner {
     width: 80%;

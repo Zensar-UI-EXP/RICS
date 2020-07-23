@@ -326,6 +326,10 @@
     font-size: 12px;
     padding: 5px;
     margin-top: 3px;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
   }
   .ricsrlart__tagcont {
     width: 100%;

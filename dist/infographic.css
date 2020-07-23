@@ -127,3 +127,13 @@
     margin-bottom: 30px;
   }
 }
+@media (min-width: 834.02px) and (max-width: 992px) {
+  .ricsinfographic__colheading {
+    font-size: 32px;
+  }
+  .ricsinfographic__coldesc {
+    font-size: 18px;
+    line-height: 24px;
+    word-break: break-word;
+  }
+}

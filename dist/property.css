@@ -97,3 +97,13 @@
     border-bottom: solid 1px #008000 !important;
   }
 }
+@media (min-width: 834.02px) and (max-width: 992px) {
+  .propertylist__label {
+    width: 150px;
+    margin-right: 10px;
+  }
+  .propertylist__value {
+    width: 150px;
+    margin-right: 0px;
+  }
+}
