@@ -5,8 +5,9 @@
    .component--default();
    margin: 30px auto 20px;
    &__img{
-      width: 100%;
+      width: calc(100% - 30px);
       height: 43.75%;
+      margin-left: 15px;
    }
    &__txt{
       margin: 20px 0 0!important;
@@ -63,12 +64,23 @@
 .col--6{
    .ricsartimgntxt__img{
       height: 56.25%;
+      margin-left: 15px;
+      margin-right: 15px;
+      width: calc(100% - 30px);
    }
 }
 @media (max-width: 834px) {
    .ricsartimgntxt{
       margin-top: 15px!important;
       margin-bottom: 0!important;
+      &__video{
+         width: calc(100% - 30px);
+         left: 15px;
+      }
+      &__videoposter{
+         width: calc(100% - 30px);
+         left: 15px;
+      }
       &__img{
          min-height: 50px;
       }
