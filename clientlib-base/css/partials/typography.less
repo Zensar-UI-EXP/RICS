@@ -356,11 +356,16 @@ a {
       -moz-appearance: none;
       appearance: none;
       width: 100%;
+      background: url(../../resources/images/dropdown__arrow.png) no-repeat right center transparent;
+      background-size: 10px;
       &::-ms-expand{
          display: none;
       }
+      &:focus{
+         outline: 0;
+      }
    }
-   &::after{
+   &__arrow{
       position: absolute;
       content: "";
       right: 0;
@@ -981,7 +986,7 @@ strong{
       width: auto!important;
       overflow: visible!important;
       height: auto!important;
-      max-height: max-content;
+      max-height: max-content!important;
       .latestarticle__tagmore, .latestarticle__tagspan, .ricsrlart__tagmore{
          display: none;
       }
@@ -1043,4 +1048,9 @@ strong{
          }
       }
    }
+}
+.root.container.responsivegrid{
+   max-width: 100%;
+   padding-right: 0!important;
+   padding-left: 0!important;
 }

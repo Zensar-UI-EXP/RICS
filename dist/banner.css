@@ -574,7 +574,7 @@
     overflow: hidden;
   }
 }
-@media (min-width: 992.02px) and (max-width: 1024) {
+@media (min-width: 992.02px) and (max-width: 1024px) {
   .banner__heading {
     top: 30px;
   }
