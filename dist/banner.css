@@ -108,10 +108,16 @@
   margin-bottom: 0;
 }
 .ricsartbanner__authorname {
-  width: 70%!important;
+  width: 58%!important;
   min-width: 190px!important;
-  max-width: 70%!important;
-  flex: 0 0 70%;
+  max-width: 58%!important;
+  flex: 0 0 58%;
+}
+.ricsartbanner__authordate {
+  flex: 0 0 42%!important;
+  max-width: 42%!important;
+  margin-right: 0!important;
+  padding-right: 0!important;
 }
 .ricsartbanner__subheading {
   margin: 20px 0 20px;
