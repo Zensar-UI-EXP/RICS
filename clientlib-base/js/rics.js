@@ -53,6 +53,8 @@ function openSearch() {
       searchLinkElement[0].style.display = "none";
       let searchInputElement = document.getElementsByClassName("ricsnav__rightsearchform");
       searchInputElement[0].style.display = "block";
+      let inputElement = document.querySelector(".ricsnav__rightsearchform .ricsnav__rightsearch")
+      inputElement.focus();
       let rightNavElement = document.getElementsByClassName("ricsnav__rightlistcont");
       rightNavElement[0].classList.add("search--open");
       if (window.innerWidth <= 576) {
@@ -176,6 +178,7 @@ function closeLightbox() {
 function toggleMenu(thisElement, menuIndex) {
       let showElement = document.getElementById("menu" + menuIndex);
       let chevronElement = document.getElementsByClassName("ricsnav__chevronicon");
+      window.scrollTo(0, 0);
       if (!showElement.offsetWidth) {
             hidenav();
             hideDropdown();
@@ -423,16 +426,16 @@ function expandCollapse(thisElement) {
       checkNAddRemoveClass(thisElement, "filtersection__options", "filtersection--collapsed");
 }
 
-var dropdownElement = document.querySelector(".dropdown");
-if (dropdownElement){
-      dropdownElement.onclick = function(e){
-            for (var i = 0; i < e.srcElement.childNodes.length; i++){
-                  if (e.srcElement.childNodes[i].nodeName.toLowerCase() == "select"){
-                        e.srcElement.childNodes[i].select();
-                  }
-            }
-      }
-}
+// var dropdownElement = document.querySelector(".dropdown");
+// if (dropdownElement){
+//       dropdownElement.onclick = function(e){
+//             for (var i = 0; i < e.srcElement.childNodes.length; i++){
+//                   if (e.srcElement.childNodes[i].nodeName.toLowerCase() == "select"){
+//                         e.srcElement.childNodes[i].select();
+//                   }
+//             }
+//       }
+// }
 
 var selectedFilterList = [];
 var thisElementList = [];
@@ -556,7 +559,7 @@ function getAllTag() {
                               }
                         }
                         if (addFullElipsis[i]) {
-                              var elipsisElement = "<span class='latestarticle__tagspan'></span><a class='latestarticle__tagmore' onclick='seemoreTag(" + (i + 1) + ")' href='javascript:void(0);' title='Click to see more tagging'>Click to see more tagging</a>";
+                              var elipsisElement = "<span class='latestarticle__tagspan'></span><a class='latestarticle__tagmore' onclick='seemoreTag(" + (i) + ")' href='javascript:void(0);' title='Click to see more tagging'>Click to see more tagging</a>";
                               allTagElement[i].innerHTML += elipsisElement;
                         }
                         allTagElement[i].classList.add("checking--done");
@@ -568,3 +571,15 @@ function getAllTag() {
 setTimeout(function(){
       getAllTag();
 }, 700);
+
+var loadmoreBtn = document.querySelector(".latestarticle__loadbtn");
+var articleList = document.querySelectorAll(".latestarticle__card");
+if (loadmoreBtn) {
+      loadmoreBtn.onclick = function(e) {
+            var scrollTopPosition = articleList[articleList.length-1].offsetTop;
+            var loadmorePosition = loadmoreBtn.offsetTop + 300;
+            setTimeout(function(){
+                  window.scrollTo(0, loadmorePosition);
+            }, 300);
+      }
+}
