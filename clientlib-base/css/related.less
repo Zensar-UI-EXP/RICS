@@ -180,6 +180,8 @@
       margin-top: 15px!important;
       margin-bottom: 15px!important;
       &__container{
+         -webkit-flex-direction: column;
+         -ms-flex-direction: column;
          flex-direction: column;
       }
       .col--5{
@@ -216,6 +218,8 @@
          display: -ms-flexbox;      /* TWEENER - IE 10 */
          display: -webkit-flex;     /* NEW - Chrome */
          display: flex;
+         -webkit-flex-direction: row;
+         -ms-flex-direction: row;
          flex-direction: row;
          position: relative;
          border-bottom: 0;
@@ -229,6 +233,8 @@
          min-height: 50px;
       }
       &__cardlist{
+         -webkit-flex-direction: column;
+         -ms-flex-direction: column;
          flex-direction: column;
          padding-top: 5px;
       }

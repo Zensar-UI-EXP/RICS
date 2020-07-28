@@ -103,6 +103,8 @@
       &--spacing{
          margin: 0px auto!important;
          .rics--row{
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
             flex-direction: column;
             [class^="col--"]{
                width: 100%;
@@ -236,6 +238,8 @@
             margin-top: -10px!important;
             margin-bottom: 15px!important;
             .rics--row{
+               -webkit-flex-direction: row!important;
+               -ms-flex-direction: row!important;
                flex-direction: row!important;
                padding-left: 15px!important;
                padding-right: 15px!important;
@@ -261,6 +265,8 @@
             display: -ms-flexbox;      /* TWEENER - IE 10 */
             display: -webkit-flex;     /* NEW - Chrome */
             display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
             flex-direction: column;
             max-width: 100%;
             margin-left: 0!important;
@@ -304,6 +310,8 @@
    .flx{
       &-dir{
          &--mobclm, &--mobclmrvrs{
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
             flex-direction: column;
             &>{
                .col{
@@ -315,6 +323,8 @@
             }
          }
          &--mobclmrvrs{
+            -webkit-flex-direction: column-reverse;
+            -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
          }
       }
