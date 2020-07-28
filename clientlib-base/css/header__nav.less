@@ -5,11 +5,19 @@
    border-bottom: solid 1px @ricsblack;
    &__cont{
       width: 100%;
-      display: flex;
+      display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: -webkit-flex;     /* NEW - Chrome */
+      display: flex;  
       flex-direction: row;
    }
    &__leftlistcont{
-      display: flex;
+      display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: -webkit-flex;     /* NEW - Chrome */
+      display: flex;  
       flex-direction: row;
       padding-left: 0!important;
    }
@@ -68,14 +76,22 @@
       }
    }
    &__rightlistcont{
-      display: flex;
+      display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: -webkit-flex;     /* NEW - Chrome */
+      display: flex;  
       justify-content: flex-end;
       flex-direction: row;
       padding-right: 0!important;
    }
    &__rightlist{
       list-style: insidec!important;
-      display: flex;
+      display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: -webkit-flex;     /* NEW - Chrome */
+      display: flex;  
       justify-content: flex-end;
       padding-top: 27px;
       border-right: solid 1px @ricsblack;

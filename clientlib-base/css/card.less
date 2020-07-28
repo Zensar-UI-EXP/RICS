@@ -86,7 +86,11 @@
       position: absolute;
    }
    &__content{
-      display: flex;
+      display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: -webkit-flex;     /* NEW - Chrome */
+      display: flex;  
       padding: 60px 30px 45px;
    }
    &__imgcont{
@@ -142,7 +146,11 @@
    }
 }
 .pagelist{
-   display: flex;
+   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+   display: -ms-flexbox;      /* TWEENER - IE 10 */
+   display: -webkit-flex;     /* NEW - Chrome */
+   display: flex;  
    justify-content: space-between;
    width: 100%;
    margin: 25px auto;
@@ -353,7 +361,11 @@
          width: 100%;
          border: solid 7px @ricsblack;
          margin-top: -7px;
-         display: flex;
+         display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+         display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+         display: -ms-flexbox;      /* TWEENER - IE 10 */
+         display: -webkit-flex;     /* NEW - Chrome */
+         display: flex;  
          padding: 10px;
          justify-content: space-around;
          min-height: 150px;

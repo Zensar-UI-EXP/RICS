@@ -149,11 +149,19 @@
    }
 }
 .infotxt{
-   display: flex;
+   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+   display: -ms-flexbox;      /* TWEENER - IE 10 */
+   display: -webkit-flex;     /* NEW - Chrome */
+   display: flex;  
    margin: 25px auto;
    &__container{
       padding: 30px 0 10px;
-      display: flex;
+      display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: -webkit-flex;     /* NEW - Chrome */
+      display: flex;  
       align-items: center;
    }
    &__title{
@@ -181,7 +189,11 @@
       text-transform: uppercase;
    }
    &__container{
-      display: flex;
+      display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: -webkit-flex;     /* NEW - Chrome */
+      display: flex;  
       position: relative;
       @media (max-width: 834px) {
          flex-direction: column-reverse;
@@ -224,7 +236,11 @@
       padding-top: 43.75%;
       @media (max-width: 834px) {
          position: relative!important;
-         display: flex;
+         display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+         display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+         display: -ms-flexbox;      /* TWEENER - IE 10 */
+         display: -webkit-flex;     /* NEW - Chrome */
+         display: flex;  
       }
       &::before{
          background: @charcoal--grey;
@@ -460,7 +476,11 @@
          padding-left: 0!important;
          padding-right: 0!important;
          position: relative!important;
-         display: flex;
+         display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+         display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+         display: -ms-flexbox;      /* TWEENER - IE 10 */
+         display: -webkit-flex;     /* NEW - Chrome */
+         display: flex;  
       }
       &__heading{
          background: @ricswhite;
