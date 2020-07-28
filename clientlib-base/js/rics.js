@@ -29,9 +29,9 @@ function gotoSlide(n) {
 }
 
 function showDivs(n) {
-      let i;
-      let x = document.getElementsByClassName("slider").length ? document.getElementsByClassName("slider")[0].childNodes : [];
-      let y = [];
+      var i;
+      var x = document.getElementsByClassName("slider").length ? document.getElementsByClassName("slider")[0].childNodes : [];
+      var y = [];
       for (i = 0; i < x.length; i++) {
             if (x[i].nodeName.toLowerCase() === "picture"){
                   y.push(x[i]);
@@ -49,13 +49,13 @@ function showDivs(n) {
 }
 
 function openSearch() {
-      let searchLinkElement = document.getElementsByClassName("ricsnav--searchlink");
+      var searchLinkElement = document.getElementsByClassName("ricsnav--searchlink");
       searchLinkElement[0].style.display = "none";
-      let searchInputElement = document.getElementsByClassName("ricsnav__rightsearchform");
+      var searchInputElement = document.getElementsByClassName("ricsnav__rightsearchform");
       searchInputElement[0].style.display = "block";
-      let inputElement = document.querySelector(".ricsnav__rightsearchform .ricsnav__rightsearch")
+      var inputElement = document.querySelector(".ricsnav__rightsearchform .ricsnav__rightsearch")
       inputElement.focus();
-      let rightNavElement = document.getElementsByClassName("ricsnav__rightlistcont");
+      var rightNavElement = document.getElementsByClassName("ricsnav__rightlistcont");
       rightNavElement[0].classList.add("search--open");
       if (window.innerWidth <= 576) {
             hidenav();
@@ -63,11 +63,11 @@ function openSearch() {
 }
 
 function hideSearch() {
-      let searchLinkElement = document.getElementsByClassName("ricsnav--searchlink");
+      var searchLinkElement = document.getElementsByClassName("ricsnav--searchlink");
       searchLinkElement[0].style.display = "block";
-      let searchInputElement = document.getElementsByClassName("ricsnav__rightsearchform");
+      var searchInputElement = document.getElementsByClassName("ricsnav__rightsearchform");
       searchInputElement[0].style.display = "none";
-      let rightNavElement = document.getElementsByClassName("ricsnav__rightlistcont");
+      var rightNavElement = document.getElementsByClassName("ricsnav__rightlistcont");
       rightNavElement[0].classList.remove("search--open");
 }
 
@@ -160,24 +160,24 @@ function stopVideo() {
 }
 
 function expandTable() {
-      let modalElement = document.getElementById("ricsLighbox");
-      let bodyElement = document.body;
+      var modalElement = document.getElementById("ricsLighbox");
+      var bodyElement = document.body;
       modalElement.style.display = "block";
       bodyElement.style.overflow = "hidden";
       // bodyElement.classList.add("fixed--body");
 }
 
 function closeLightbox() {
-      let modalElement = document.getElementById("ricsLighbox");
-      let bodyElement = document.body;
+      var modalElement = document.getElementById("ricsLighbox");
+      var bodyElement = document.body;
       modalElement.style.display = "none";
       bodyElement.style.overflow = "auto";
       bodyElement.classList.remove("fixed--body");
 }
 
 function toggleMenu(thisElement, menuIndex) {
-      let showElement = document.getElementById("menu" + menuIndex);
-      let chevronElement = document.getElementsByClassName("ricsnav__chevronicon");
+      var showElement = document.getElementById("menu" + menuIndex);
+      var chevronElement = document.getElementsByClassName("ricsnav__chevronicon");
       window.scrollTo(0, 0);
       if (!showElement.offsetWidth) {
             hidenav();
@@ -193,15 +193,15 @@ function toggleMenu(thisElement, menuIndex) {
 }
 
 function hidenav() {
-      let navElements = document.getElementsByClassName("ricssubnav__submenunav");
+      var navElements = document.getElementsByClassName("ricssubnav__submenunav");
       for (var i = 0; i < navElements.length; i++) {
             navElements[i].style.display = "none";
       }
-      // let menuLinkElements = document.getElementsByClassName("ricsnav__leftlink");
+      // var menuLinkElements = document.getElementsByClassName("ricsnav__leftlink");
       // for (var i = 0; i < menuLinkElements.length; i++) {
       //       menuLinkElements[i].classList.remove("ricsnav--leftlistactive");
       // }
-      let chevronElement = document.getElementsByClassName("ricsnav__chevronicon");
+      var chevronElement = document.getElementsByClassName("ricsnav__chevronicon");
       for (var i = 0; i < chevronElement.length; i++) {
             chevronElement[i].classList.remove("ricsnav--chevronactive");
       }
@@ -209,7 +209,7 @@ function hidenav() {
 
 function toggleSubMenu(thisElement, menuIndex, drpdwnIndex) {
       drpdwnIndex = drpdwnIndex || thisElement.textContent;
-      let showElement = document.getElementById("menu" + menuIndex + "drpdwn" + drpdwnIndex);
+      var showElement = document.getElementById("menu" + menuIndex + "drpdwn" + drpdwnIndex);
       if (!showElement.offsetWidth) {
             hideDropdown();
             showElement.style.display = "block";
@@ -221,27 +221,27 @@ function toggleSubMenu(thisElement, menuIndex, drpdwnIndex) {
 }
 
 function hideDropdown() {
-      let navElements = document.getElementsByClassName("ricssubnav__drpdwnlistcont");
+      var navElements = document.getElementsByClassName("ricssubnav__drpdwnlistcont");
       for (var i = 0; i < navElements.length; i++) {
             navElements[i].style.display = "none";
       }
-      let menuLinkElements = document.getElementsByClassName("ricssubnav__submenulink");
+      var menuLinkElements = document.getElementsByClassName("ricssubnav__submenulink");
       for (var i = 0; i < menuLinkElements.length; i++) {
             menuLinkElements[i].classList.remove("ricssubnav--submenuactive");
       }
-      let chevronElement = document.getElementsByClassName("ricssubnav__chevronicon");
+      var chevronElement = document.getElementsByClassName("ricssubnav__chevronicon");
       for (var i = 0; i < chevronElement.length; i++) {
             chevronElement[i].classList.remove("ricssubnav--chevronactive");
       }
 }
 
 function viewFullBreadcrumb() {
-      let breadcrumbElement = document.getElementsByClassName("ricsbreadcrumb__navlistcont");
+      var breadcrumbElement = document.getElementsByClassName("ricsbreadcrumb__navlistcont");
       breadcrumbElement[0].classList.add("remove-ovrflw--hdn");
 }
 
 function seemoreTag(tagContIndex) {
-      let tagContElement = document.getElementById("taginfo" + tagContIndex);
+      var tagContElement = document.getElementById("taginfo" + tagContIndex);
       tagContElement.classList.add("seemore--tag");
       for (var i = 0; i < tagContElement.childNodes.length; i++) {
             if (tagContElement.childNodes[i].classList) {
