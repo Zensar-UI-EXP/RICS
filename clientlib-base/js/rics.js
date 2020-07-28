@@ -572,14 +572,16 @@ setTimeout(function(){
       getAllTag();
 }, 700);
 
-var loadmoreBtn = document.querySelector(".latestarticle__loadbtn");
-var articleList = document.querySelectorAll(".latestarticle__card");
-if (loadmoreBtn) {
-      loadmoreBtn.onclick = function(e) {
-            var scrollTopPosition = articleList[articleList.length-1].offsetTop;
-            var loadmorePosition = loadmoreBtn.offsetTop + 300;
-            setTimeout(function(){
-                  window.scrollTo(0, loadmorePosition);
-            }, 300);
-      }
-}
+// var loadmoreBtn = document.querySelector(".latestarticle__loadbtn");
+// var articleList = document.querySelectorAll(".latestarticle__card");
+// if (loadmoreBtn) {
+//       loadmoreBtn.onclick = function(e) {
+//             // var scrollTopPosition = articleList[articleList.length-1].offsetTop;
+//             var loadmorePosition = loadmoreBtn.offsetTop + 300;
+//             loadmoreBtn.disabled = true;
+//             setTimeout(function(){
+//                   window.scrollTo(0, loadmorePosition);
+//                   loadmoreBtn.removeAttribute("disabled");
+//             }, 300);
+//       }
+// }
