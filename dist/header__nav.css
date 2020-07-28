@@ -250,3 +250,11 @@
     display: block;
   }
 }
+@media (min-width: 834.02px) and (max-width: 992px) {
+  .ricsnav__rightlist:first-child {
+    padding-right: 20px;
+  }
+  .ricsnav__rightlist:last-child {
+    padding-left: 20px;
+  }
+}

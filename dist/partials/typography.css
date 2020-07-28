@@ -456,9 +456,11 @@ a {
   color: #000000;
   text-decoration: none;
 }
-.btn[disabled="true"] {
+.btn[disabled] {
   background: #dbdbdb;
   border-color: #dbdbdb;
+  cursor: not-allowed;
+  color: #000000;
 }
 .txt-trns--uppercase {
   text-transform: uppercase;
