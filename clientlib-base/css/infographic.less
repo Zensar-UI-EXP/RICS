@@ -2,10 +2,6 @@
 @import "./partials/mixins.less";
 
 .ricsinfographic{
-   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-   display: -ms-flexbox;      /* TWEENER - IE 10 */
-   display: -webkit-flex;     /* NEW - Chrome */
    .component--default(@display: flex);
    margin: 5px 0px 5px 0px;
    &__container{
@@ -16,10 +12,6 @@
    }
    &__collist{
       margin: 30px 0;
-      display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-      display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-      display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: -webkit-flex;     /* NEW - Chrome */
       display: flex;
       flex-wrap: wrap;
       padding-left: 0!important;
@@ -54,8 +46,6 @@
          width: 90%;
          margin: 0 auto;
          .rics--row{
-            -webkit-flex-direction: column;
-            -ms-flex-direction: column;
             flex-direction: column;
          }
       }
@@ -83,8 +73,6 @@
          flex: 0 0 100%;
       }
       &__collist{
-         -webkit-flex-direction: column;
-         -ms-flex-direction: column;
          flex-direction: column;
          margin-top: 40px;
       }
