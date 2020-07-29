@@ -38,7 +38,7 @@
    &--fullcolmn{
       .cardlayout__content{
          display: block;
-         padding: 60px 15px 80px;
+         padding: 60px 30px 80px;
          .col--6{
             width: 100%;
             max-width: 415px;
@@ -48,6 +48,8 @@
          }
          .cardlayout__subheading{
             max-width: 100%;
+            max-height: 80px;
+            overflow: hidden;
          }
          .cardlayout__desc{
             margin-top: 20px;
@@ -56,13 +58,20 @@
       .cardlayout__img{
          height: 100%;
       }
-      .cardlayout__authinfo strong{
-         display: inline;
-         margin-left: 20px;
+      .cardlayout__authinfo{
+         span{
+            margin-right: 20px;
+         }
+         strong{
+            display: inline;
+            white-space: nowrap;
+         }
       }
       .cardlayout__authinfo{
          position: absolute;
          bottom: 30px;
+         left: 30px;
+         width: calc(100% - 60px);
       }
    }
    &__pageinfo{
@@ -111,8 +120,10 @@
    }
    &__desc{
       margin-bottom: 30px;
-      font-size: 21px!important;
-      line-height: 27px!important;
+      font-size: 18px!important;
+      line-height: 24px!important;
+      max-height: 96px;
+      overflow: hidden;
    }
    &__subheading{
       max-width: 235px;

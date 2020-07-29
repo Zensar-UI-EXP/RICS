@@ -38,10 +38,10 @@
       z-index: 1;
    }
    &__cardimagecont{
-      width: 45%;
+      width: 430px;
       position: relative;
-      padding-top: 22.5%;
-      flex: 0 0 39%;
+      height: 215px;
+      flex: 0 0 430px;
       &::before{
          background: @charcoal--grey;
          width: 100%;
@@ -61,14 +61,13 @@
       width: 100%;
       height: 100%;
       display: block;
-      position: absolute;
       left: 0;
       top: 0;
    }
    &__carddetail{
       padding: 15px 30px;
-      width: 70%;
-      flex: 0 0 61%;
+      width: calc(100% - 430px);
+      flex: 0 0 calc(100% - 430px);
       overflow: hidden;
    }
    &__articleheading{
@@ -86,8 +85,8 @@
       text-overflow: ellipsis;
    }
    &__articledate{
-      margin-bottom: 30px;
-      font-size: 16px!important;
+      margin-bottom: 10px;
+      font-size: 14px!important;
       line-height: 22px!important;
       strong{
          margin-left: 30px;
@@ -370,14 +369,15 @@
 @media (max-width: 1199.98px) {
    .latestarticle{
       &__cardimagecont{
-         flex: 0 0 45%;
+         flex: 0 0 360px;
+         height: 180px;
       }
       &__carddetail{
-         flex: 0 0 55%;
+         flex: 0 0 calc(100% - 360px);
       }
       &__articleheading{
          width: 100%;
          max-width: 100%;
       }
-   }   
+   }
 }

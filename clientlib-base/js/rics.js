@@ -308,11 +308,10 @@ function getCookies(){
       // return cookies;
 }
 
-function checkNSetCookies() {
+function checkNSetCookies(value) {
       var myDate = new Date();
       myDate.setMonth(myDate.getMonth() + 12);
-      console.log(myDate);
-      document.cookie = "AcceptRICSCookie=1; expires= "+ myDate +"; path=/";
+      document.cookie = "AcceptRICSCookie="+value+"; expires= "+ myDate +"; path=/";
       hidecookieElement();
 }
 

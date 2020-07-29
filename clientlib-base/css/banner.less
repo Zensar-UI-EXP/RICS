@@ -290,15 +290,20 @@
    &__subheading{
       margin-top: 70px;
       margin-bottom: 30px;
+      max-height: 215px;
+      overflow: hidden;
       @media (max-width: 834px) {
          margin-top: 0;
          font-family: @Modus!important;
+         height: auto;
       }
    }
    &__desc{
       line-height: 34px!important;
       margin-bottom: 45px;
       font-size: 23px!important;
+      max-height: 70px;
+      overflow: hidden;
    }
    &__authinfo{
       position: absolute;
@@ -482,6 +487,7 @@
          margin-bottom: 30px;
          font-size: 18px!important;
          line-height: 24px!important;
+         height: auto;
       }
       &__authinfo{
          position: static;
@@ -524,7 +530,7 @@
       &__subheading{
          margin-top: 30px;
          margin-bottom: 20px;
-         max-height: 110px;
+         max-height: 165px;
          overflow: hidden;
       }
       &__authinfo{
@@ -533,7 +539,29 @@
       &__desc{
          line-height: 24px!important;
          font-size: 20px!important;
-         height: 100px;
+         max-height: 50px;
+         overflow: hidden;
+      }
+   }
+}
+@media (min-width: 1024.02px) and (max-width: 1320px) {
+   .banner{
+      &__heading{
+         top: 45px;
+      }
+      &__authinfo{
+         bottom: 45px;
+      }
+      &__subheading{
+         margin-top: 45px;
+         margin-bottom: 20px;
+         max-height: 167px;
+         overflow: hidden;
+      }
+      &__desc{
+         line-height: 24px!important;
+         font-size: 20px!important;
+         max-height: 50px;
          overflow: hidden;
       }
    }
