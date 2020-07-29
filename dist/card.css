@@ -33,7 +33,7 @@
 }
 .cardlayout--fullcolmn .cardlayout__content {
   display: block;
-  padding: 60px 15px 80px;
+  padding: 60px 30px 80px;
 }
 .cardlayout--fullcolmn .cardlayout__content .col--6 {
   width: 100%;
@@ -44,6 +44,8 @@
 }
 .cardlayout--fullcolmn .cardlayout__content .cardlayout__subheading {
   max-width: 100%;
+  max-height: 80px;
+  overflow: hidden;
 }
 .cardlayout--fullcolmn .cardlayout__content .cardlayout__desc {
   margin-top: 20px;
@@ -51,13 +53,18 @@
 .cardlayout--fullcolmn .cardlayout__img {
   height: 100%;
 }
+.cardlayout--fullcolmn .cardlayout__authinfo span {
+  margin-right: 20px;
+}
 .cardlayout--fullcolmn .cardlayout__authinfo strong {
   display: inline;
-  margin-left: 20px;
+  white-space: nowrap;
 }
 .cardlayout--fullcolmn .cardlayout__authinfo {
   position: absolute;
   bottom: 30px;
+  left: 30px;
+  width: calc(100% - 60px);
 }
 .cardlayout__pageinfo {
   text-transform: uppercase;
@@ -105,8 +112,10 @@
 }
 .cardlayout__desc {
   margin-bottom: 30px;
-  font-size: 21px!important;
-  line-height: 27px!important;
+  font-size: 18px!important;
+  line-height: 24px!important;
+  max-height: 96px;
+  overflow: hidden;
 }
 .cardlayout__subheading {
   max-width: 235px;

@@ -268,6 +268,9 @@ a {
 .mar-rht--0 {
   margin-right: 0!important;
 }
+.mar-rht--20 {
+  margin-right: 20px!important;
+}
 .mar-tpbt--30 {
   margin-top: 30px!important;
   margin-bottom: 30px!important;
@@ -455,6 +458,14 @@ a {
   background: #ffffff;
   color: #000000;
   text-decoration: none;
+}
+.btn--black {
+  background: #000000 !important;
+  color: #ffffff !important;
+}
+.btn--black:hover {
+  background: #ffffff !important;
+  color: #000000 !important;
 }
 .btn[disabled] {
   background: #dbdbdb;
@@ -842,8 +853,8 @@ strong.fnt-stl--itlc {
   line-height: 14px;
 }
 .title-size--jnlcrdsbhead {
-  font-size: 28px;
-  line-height: 40px;
+  font-size: 26px;
+  line-height: 36px;
 }
 .title-size--jrnlcrd {
   font-size: 28px;

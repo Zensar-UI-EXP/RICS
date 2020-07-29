@@ -356,17 +356,22 @@
 .banner__subheading {
   margin-top: 70px;
   margin-bottom: 30px;
+  max-height: 215px;
+  overflow: hidden;
 }
 @media (max-width: 834px) {
   .banner__subheading {
     margin-top: 0;
     font-family: 'Oswald-Regular', Helvetica, Arial, Verdana, Tahoma, sans-serif !important;
+    height: auto;
   }
 }
 .banner__desc {
   line-height: 34px!important;
   margin-bottom: 45px;
   font-size: 23px!important;
+  max-height: 70px;
+  overflow: hidden;
 }
 .banner__authinfo {
   position: absolute;
@@ -549,6 +554,7 @@
     margin-bottom: 30px;
     font-size: 18px!important;
     line-height: 24px!important;
+    height: auto;
   }
   .banner__authinfo {
     position: static;
@@ -587,7 +593,7 @@
   .banner__subheading {
     margin-top: 30px;
     margin-bottom: 20px;
-    max-height: 110px;
+    max-height: 165px;
     overflow: hidden;
   }
   .banner__authinfo {
@@ -596,7 +602,27 @@
   .banner__desc {
     line-height: 24px!important;
     font-size: 20px!important;
-    height: 100px;
+    max-height: 50px;
+    overflow: hidden;
+  }
+}
+@media (min-width: 1024.02px) and (max-width: 1320px) {
+  .banner__heading {
+    top: 45px;
+  }
+  .banner__authinfo {
+    bottom: 45px;
+  }
+  .banner__subheading {
+    margin-top: 45px;
+    margin-bottom: 20px;
+    max-height: 167px;
+    overflow: hidden;
+  }
+  .banner__desc {
+    line-height: 24px!important;
+    font-size: 20px!important;
+    max-height: 50px;
     overflow: hidden;
   }
 }

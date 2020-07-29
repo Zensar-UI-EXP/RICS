@@ -65,6 +65,9 @@
   background-size: contain;
   padding-bottom: 37px;
 }
+.ricsnav--jornalslink.ricsnav--leftlistactive {
+  padding-bottom: 40px;
+}
 .ricsnav--leftlistactive {
   border-bottom: solid 4px #000000;
 }
