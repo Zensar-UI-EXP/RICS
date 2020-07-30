@@ -12,7 +12,7 @@
   padding-left: 0!important;
 }
 .ricsnav__leftlist {
-  list-style: insidec!important;
+  list-style: none!important;
 }
 .ricsnav__leftlist:first-child {
   padding-right: 45px;
