@@ -197,7 +197,7 @@
          &::after{
             position: absolute;
             width: 100%;
-            height: 26px;
+            height: 45px;
             content: "";
             left: 0;
             bottom: 0;
@@ -257,7 +257,7 @@
    }
    &__desc{
       margin: 15px 0 20px;
-      line-height: 30px!important;
+      line-height: 26px!important;
       font-size: 21px!important;
    }
    &__link{
@@ -464,6 +464,16 @@
       .col--4{
          &:nth-child(-n+3){
             margin-bottom: 10px;
+         }
+      }
+   }
+}
+@media (min-width: 834.02px) and (max-width: 1199.98px) {
+   .pagelist{
+      &__cont{
+         &::before{
+            bottom: 20px;
+            right: 25px;
          }
       }
    }
