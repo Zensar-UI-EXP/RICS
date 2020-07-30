@@ -6,7 +6,6 @@
 .ricsartimgntxt__img {
   width: calc(100% - 30px);
   height: 43.75%;
-  margin-left: 15px;
 }
 .ricsartimgntxt__txt {
   margin: 20px 0 0!important;
@@ -75,9 +74,7 @@
 }
 .col--6 .ricsartimgntxt__img {
   height: 56.25%;
-  margin-left: 15px;
-  margin-right: 15px;
-  width: calc(100% - 30px);
+  width: 100%;
 }
 @media (max-width: 834px) {
   .ricsartimgntxt {
@@ -94,6 +91,8 @@
   }
   .ricsartimgntxt__img {
     min-height: 50px;
+    margin-left: 15px;
+    width: calc(100% - 30px) !important;
   }
   .ricsartimgntxt__container {
     flex-direction: column;
