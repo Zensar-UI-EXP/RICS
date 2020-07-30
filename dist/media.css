@@ -125,6 +125,10 @@
   .btn {
     font-size: 15px;
   }
+  .btn:hover {
+    background: #000;
+    color: #fff;
+  }
   table {
     width: 150%;
   }
@@ -472,7 +476,7 @@
   .title-size--sm {
     font-size: 16px;
   }
-  .title-size--jrnlcrd{
+  .title-size--jrnlcrd {
     font-size: 24px;
     line-height: 30px;
   }
@@ -481,7 +485,7 @@
   .para-size--artdesc {
     height: 40px!important;
   }
-  .title-size--jrnlcrd{
+  .title-size--jrnlcrd {
     font-size: 24px;
     line-height: 30px;
   }
