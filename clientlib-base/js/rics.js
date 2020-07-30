@@ -523,7 +523,7 @@ function openFilter(thisElement){
       thisElement.classList.add("special--refineactive");
       var filterElement = document.getElementsByClassName("filtersection");
       filterElement[0].style.display = "block";
-      document.body.classList.add("fixed--layout");
+      // document.body.classList.add("fixed--layout");
 }
 
 function closeFilter(){
@@ -585,12 +585,36 @@ setTimeout(function(){
 //       }
 // }
 
+// $(document).ready(function(){
+//       function checkBreadCrumb() {
+//             var breadcrumbElement = document.querySelector(".ricsbreadcrumb__navlistcont");
+//             if (breadcrumbElement) {
+//                   var breadcrumbMoreElement = document.querySelector(".ricsbreadcrumb__morelink");
+//                   var breadcrumbWidth = 0;
+//                   for (var i = 0; i < breadcrumbElement.children.length; i++) {
+//                         breadcrumbWidth += breadcrumbElement.children[i].offsetWidth;
+//                         if (i == breadcrumbElement.children.length-1) {
+//                               if (breadcrumbWidth <= breadcrumbElement.offsetWidth) {
+//                                     breadcrumbMoreElement.click();
+//                               }
+//                         } else {
+//                               breadcrumbWidth += 6;
+//                         }
+//                   }
+//             }
+//       }
+//       setTimeout(function(){
+//             checkBreadCrumb();
+//       }, 100);
+// });
+
 function checkBreadCrumb() {
       var breadcrumbElement = document.querySelector(".ricsbreadcrumb__navlistcont");
       if (breadcrumbElement) {
             var breadcrumbMoreElement = document.querySelector(".ricsbreadcrumb__morelink");
             var breadcrumbWidth = 0;
             for (var i = 0; i < breadcrumbElement.children.length; i++) {
+                  console.log(breadcrumbElement.children[i].clientWidth);
                   breadcrumbWidth += breadcrumbElement.children[i].offsetWidth;
             }
             if (breadcrumbWidth <= breadcrumbElement.offsetWidth) {
@@ -598,5 +622,6 @@ function checkBreadCrumb() {
             }
       }
 }
-
-checkBreadCrumb();
+setTimeout(function(){
+      checkBreadCrumb();
+}, 900);
