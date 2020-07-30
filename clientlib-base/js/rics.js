@@ -584,3 +584,19 @@ setTimeout(function(){
 //             }, 300);
 //       }
 // }
+
+function checkBreadCrumb() {
+      var breadcrumbElement = document.querySelector(".ricsbreadcrumb__navlistcont");
+      if (breadcrumbElement) {
+            var breadcrumbMoreElement = document.querySelector(".ricsbreadcrumb__morelink");
+            var breadcrumbWidth = 0;
+            for (var i = 0; i < breadcrumbElement.children.length; i++) {
+                  breadcrumbWidth += breadcrumbElement.children[i].offsetWidth;
+            }
+            if (breadcrumbWidth <= breadcrumbElement.offsetWidth) {
+                  breadcrumbMoreElement.click();
+            }
+      }
+}
+
+checkBreadCrumb();
