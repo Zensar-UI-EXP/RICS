@@ -99,11 +99,11 @@
 }
 @media (min-width: 834.02px) and (max-width: 992px) {
   .propertylist__label {
-    width: 150px;
+    width: 120px;
     margin-right: 10px;
   }
   .propertylist__value {
-    width: 150px;
+    width: 120px;
     margin-right: 0px;
   }
 }
